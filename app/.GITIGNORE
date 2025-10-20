@@ -16,4 +16,4 @@ database_script/*.sql
 
 # === Archivos de entorno ===
 .env
-.venv.*
+
