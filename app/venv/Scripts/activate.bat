@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=C:\Users\darwi\OneDrive\Documentos\materia frameworks sabados\estructura base inicial en clases\FAST-API 1\FAST-API 1\app\venv"
+set "VIRTUAL_ENV=C:\Users\darwi\Downloads\proyecto v2 tareas del hogar by emanuel darwin\proyecto-base-cuatrimestre-3\proyecto-base-cuatrimestre-3\app\venv"
 
 if not defined PROMPT set PROMPT=$P$G
 

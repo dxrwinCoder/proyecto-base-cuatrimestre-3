@@ -1,0 +1,20 @@
+# Navegar a la carpeta del backend
+cd hometasks-backend
+
+# Crear entorno virtual
+python -m venv venv
+
+# Activar entorno virtual
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# Actualizar python
+python.exe -m pip install --upgrade pip
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Iniciar servidor
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000

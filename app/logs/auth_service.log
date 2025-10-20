@@ -1,0 +1,8 @@
+2025-10-20 00:58:21 - auth_service - INFO - Intentando autenticar al miembro con correo: darwin@example.com
+2025-10-20 00:58:22 - auth_service - INFO - Autenticación exitosa para el miembro: darwin ejemplo 1
+2025-10-20 00:58:22 - auth_service - INFO - Generando token de acceso para miembro: darwin ejemplo 1
+2025-10-20 00:58:22 - auth_service - INFO - Token de acceso generado exitosamente
+2025-10-20 01:05:05 - auth_service - INFO - Intentando autenticar al miembro con correo: darwin@example.com
+2025-10-20 01:05:05 - auth_service - INFO - Autenticación exitosa para el miembro: darwin ejemplo 1
+2025-10-20 01:05:05 - auth_service - INFO - Generando token de acceso para miembro: darwin ejemplo 1
+2025-10-20 01:05:05 - auth_service - INFO - Token de acceso generado exitosamente
