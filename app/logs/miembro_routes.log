@@ -1,0 +1,8 @@
+2025-10-26 22:00:52 - miembro_routes - INFO - [miembro_routes.py:51] - Buscando miembro con ID: 1
+2025-10-26 22:00:52 - miembro_routes - INFO - [miembro_routes.py:69] - Miembro encontrado: darwin ejemplo 1
+2025-10-26 22:51:01 - miembro_routes - INFO - [miembro_routes.py:51] - Buscando miembro con ID: 1
+2025-10-26 22:51:01 - miembro_routes - INFO - [miembro_routes.py:69] - Miembro encontrado: darwin ejemplo 1
+2025-10-26 23:20:04 - miembro_routes - INFO - [miembro_routes.py:51] - Buscando miembro con ID: 1
+2025-10-26 23:20:04 - miembro_routes - INFO - [miembro_routes.py:69] - Miembro encontrado: darwin ejemplo 1
+2025-10-26 23:53:33 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-10-27 00:30:23 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros

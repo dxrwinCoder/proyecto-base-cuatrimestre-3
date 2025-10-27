@@ -6,3 +6,59 @@
 2025-10-20 01:05:05 - security - INFO - Contraseña verificada correctamente
 2025-10-20 01:05:05 - security - INFO - Generando token de acceso
 2025-10-20 01:05:05 - security - INFO - Token de acceso generado exitosamente
+2025-10-25 15:06:16 - security - INFO - Generando hash de contraseña
+2025-10-25 15:06:17 - security - INFO - Hash de contraseña generado exitosamente
+2025-10-25 15:12:40 - security - INFO - Generando hash de contraseña
+2025-10-25 15:12:41 - security - INFO - Hash de contraseña generado exitosamente
+2025-10-25 15:50:42 - security - INFO - Verificando contraseña
+2025-10-25 15:50:43 - security - INFO - Contraseña verificada correctamente
+2025-10-25 15:50:43 - security - INFO - Generando token de acceso
+2025-10-25 15:50:43 - security - INFO - Token de acceso generado exitosamente
+2025-10-25 23:26:09 - security - INFO - [security.py:13] - Generando hash de contraseña
+2025-10-25 23:26:10 - security - INFO - [security.py:18] - Hash de contraseña generado exitosamente
+2025-10-25 23:42:49 - security - INFO - [security.py:13] - Generando hash de contraseña
+2025-10-25 23:42:49 - security - INFO - [security.py:18] - Hash de contraseña generado exitosamente
+2025-10-25 23:42:49 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-25 23:42:50 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-25 23:45:19 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-25 23:45:19 - security - WARNING - [security.py:31] - Verificación de contraseña fallida
+2025-10-25 23:45:39 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-25 23:45:39 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-25 23:45:39 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-25 23:45:39 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-25 23:55:36 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-25 23:55:36 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-25 23:55:36 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-25 23:55:36 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-26 21:11:16 - security - INFO - [security.py:13] - Generando hash de contraseña
+2025-10-26 21:11:17 - security - INFO - [security.py:18] - Hash de contraseña generado exitosamente
+2025-10-26 21:11:17 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-26 21:11:17 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-26 21:13:10 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-26 21:13:10 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-26 21:13:10 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-26 21:13:10 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-26 21:16:02 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-26 21:16:02 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-26 21:16:02 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-26 21:16:02 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-26 22:00:45 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-26 22:00:46 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-26 22:00:46 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-26 22:00:46 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-26 22:50:51 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-26 22:50:51 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-26 22:50:51 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-26 22:50:51 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-26 23:40:17 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-26 23:40:18 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-26 23:40:18 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-26 23:40:18 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-27 00:29:45 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-27 00:29:45 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-27 00:29:45 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-27 00:29:45 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-27 00:32:04 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-27 00:32:04 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-27 00:32:04 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-27 00:32:04 - security - INFO - [security.py:44] - Token de acceso generado exitosamente

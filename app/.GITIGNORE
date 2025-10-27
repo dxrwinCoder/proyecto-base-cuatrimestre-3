@@ -8,7 +8,7 @@ __pycache__/
 *.pyo
 
 # === Archivos de configuración sensibles ===
-config/config.py
+
 
 # === Archivos de base de datos o scripts ===
 database_script/*.sql

@@ -1,5 +1,6 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import OAuth2PasswordBearer
 from db.database import engine, Base
 from sqlalchemy.ext.asyncio import AsyncEngine
 from models.hogar import Hogar
@@ -10,13 +11,42 @@ from models.miembro import Miembro
 from models.tarea import Tarea
 from models.mensaje import Mensaje
 from models.evento import Evento
+from routes import (
+    permiso_routes,
+    tarea_routes,
+    mensaje_routes,
+    auth_routes,
+    hogar_routes,
+    evento_routes,
+    modulo_routes,
+    miembro_routes,
+)
 
 from utils.logger import setup_logger
 
 logger = setup_logger("main")
-from routes import  permiso_routes,tarea_routes, mensaje_routes, auth_routes, hogar_routes,evento_routes, modulo_routes
 
-app = FastAPI(title="HomeTasks API")
+app = FastAPI(
+    title="HomeTasks API",
+    description="API para gestión de tareas del hogar",
+    version="1.0.0",
+    # Esto le dice a Swagger qué ruta usar para el botón "Authorize"
+    swagger_ui_init_oauth={"usePkceWithAuthorizationCodeGrant": False},
+)
+
+# Configura el esquema de seguridad para Swagger
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login-swagger")
+
+
+# Middleware para redirigir /auth/login → /auth/login-swagger
+@app.middleware("http")
+async def redirect_login(request: Request, call_next):
+    if request.url.path == "/auth/login" and request.method == "POST":
+        # Cambiamos la URL temporalmente
+        request.scope["path"] = "/auth/login-swagger"
+    response = await call_next(request)
+    return response
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -34,6 +64,7 @@ app.include_router(auth_routes.router)
 app.include_router(hogar_routes.router)
 app.include_router(evento_routes.router)
 app.include_router(modulo_routes.router)
+app.include_router(miembro_routes.router)
 
 
 @app.on_event("startup")
@@ -48,6 +79,7 @@ async def startup():
     except Exception as e:
         logger.error(f"Error durante el inicio de la aplicación: {str(e)}")
         raise
+
 
 @app.get("/")
 async def root():

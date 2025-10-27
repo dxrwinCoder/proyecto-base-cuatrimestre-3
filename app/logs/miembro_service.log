@@ -1,0 +1,10 @@
+2025-10-26 22:00:52 - miembro_service - INFO - [miembro_service.py:50] - Buscando miembro con ID: 1
+2025-10-26 22:00:52 - miembro_service - INFO - [miembro_service.py:56] - Miembro encontrado: darwin ejemplo 1
+2025-10-26 22:51:01 - miembro_service - INFO - [miembro_service.py:50] - Buscando miembro con ID: 1
+2025-10-26 22:51:01 - miembro_service - INFO - [miembro_service.py:56] - Miembro encontrado: darwin ejemplo 1
+2025-10-26 23:20:04 - miembro_service - INFO - [miembro_service.py:50] - Buscando miembro con ID: 1
+2025-10-26 23:20:04 - miembro_service - INFO - [miembro_service.py:56] - Miembro encontrado: darwin ejemplo 1
+2025-10-26 23:53:33 - miembro_service - INFO - [miembro_service.py:174] - Obteniendo todos los miembros
+2025-10-26 23:53:33 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 5 miembros
+2025-10-27 00:30:23 - miembro_service - INFO - [miembro_service.py:174] - Obteniendo todos los miembros
+2025-10-27 00:30:23 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 5 miembros

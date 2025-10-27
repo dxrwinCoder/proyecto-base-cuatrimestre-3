@@ -6,3 +6,92 @@
 2025-10-20 01:05:05 - auth_service - INFO - Autenticación exitosa para el miembro: darwin ejemplo 1
 2025-10-20 01:05:05 - auth_service - INFO - Generando token de acceso para miembro: darwin ejemplo 1
 2025-10-20 01:05:05 - auth_service - INFO - Token de acceso generado exitosamente
+2025-10-25 15:06:16 - auth_service - INFO - Intentando crear nuevo miembro con correo: darwin@example.com
+2025-10-25 15:06:17 - auth_service - INFO - Miembro creado exitosamente: darwin ejemplo 1
+2025-10-25 15:06:17 - auth_service - INFO - Generando token de acceso para miembro: darwin ejemplo 1
+2025-10-25 15:06:17 - auth_service - ERROR - Error al crear token para miembro darwin ejemplo 1: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT roles.id AS roles_id, roles.nombre AS roles_nombre, roles.descripcion AS roles_descripcion, roles.estado AS roles_estado, roles.fecha_creacion AS roles_fecha_creacion, roles.fecha_actualizacion AS roles_fecha_actualizacion 
+FROM roles 
+WHERE roles.id = %s]
+[parameters: [{'pk_1': 2}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s)
+2025-10-25 15:11:06 - auth_service - INFO - Intentando crear nuevo miembro con correo: darwin@example.com
+2025-10-25 15:11:06 - auth_service - WARNING - Intento de registro con correo ya existente: darwin@example.com
+2025-10-25 15:11:06 - auth_service - WARNING - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-10-25 15:12:40 - auth_service - INFO - Intentando crear nuevo miembro con correo: darwinandres@example2.com
+2025-10-25 15:12:41 - auth_service - INFO - Miembro creado exitosamente: darwin ejemplo 2
+2025-10-25 15:12:41 - auth_service - INFO - Generando token de acceso para miembro: darwin ejemplo 2
+2025-10-25 15:12:41 - auth_service - ERROR - Error al crear token para miembro darwin ejemplo 2: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT roles.id AS roles_id, roles.nombre AS roles_nombre, roles.descripcion AS roles_descripcion, roles.estado AS roles_estado, roles.fecha_creacion AS roles_fecha_creacion, roles.fecha_actualizacion AS roles_fecha_actualizacion 
+FROM roles 
+WHERE roles.id = %s]
+[parameters: [{'pk_1': 1}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s)
+2025-10-25 15:50:42 - auth_service - INFO - Intentando autenticar al miembro con correo: darwin@example.com
+2025-10-25 15:50:43 - auth_service - INFO - Autenticación exitosa para el miembro: darwin ejemplo 1
+2025-10-25 15:50:43 - auth_service - INFO - Generando token de acceso para miembro: darwin ejemplo 1
+2025-10-25 15:50:43 - auth_service - INFO - Token de acceso generado exitosamente
+2025-10-25 23:26:09 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'ejemplo 3', 'correo_electronico': 'ejemplo3@example.com', 'id_rol': 2, 'id_hogar': 1}
+2025-10-25 23:26:09 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: ejemplo3@example.com
+2025-10-25 23:26:09 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=ejemplo 3, rol=2, hogar=1
+2025-10-25 23:26:10 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: ejemplo 3 (ID: 3)
+2025-10-25 23:26:10 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000002692F677EF0>, 'nombre_completo': 'ejemplo 3', 'contrasena_hash': '$2b$12$g8RF9iGa.wyc.EInVrsQIe5eAKIs6dsTUwN6MIHJBqP2ZccqV23H2', 'id_hogar': 1, 'estado': True, 'fecha_actualizacion': datetime.datetime(2025, 10, 25, 23, 26, 10), 'correo_electronico': 'ejemplo3@example.com', 'id': 3, 'id_rol': 2, 'fecha_creacion': datetime.datetime(2025, 10, 25, 23, 26, 10)}
+2025-10-25 23:26:10 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: ejemplo 3
+2025-10-25 23:26:10 - auth_service - ERROR - [auth_service.py:139] - Error al crear token para miembro ejemplo 3: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT roles.id AS roles_id, roles.nombre AS roles_nombre, roles.descripcion AS roles_descripcion, roles.estado AS roles_estado, roles.fecha_creacion AS roles_fecha_creacion, roles.fecha_actualizacion AS roles_fecha_actualizacion 
+FROM roles 
+WHERE roles.id = %s]
+[parameters: [{'pk_1': 2}]]
+(Background on this error at: https://sqlalche.me/e/20/xd2s)
+2025-10-25 23:42:49 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'ejemplo 4', 'correo_electronico': 'ejemplo4@example.com', 'id_rol': 2, 'id_hogar': 1}
+2025-10-25 23:42:49 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: ejemplo4@example.com
+2025-10-25 23:42:49 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=ejemplo 4, rol=2, hogar=1
+2025-10-25 23:42:49 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: ejemplo 4 (ID: 4)
+2025-10-25 23:42:49 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001D982B0DD90>, 'nombre_completo': 'ejemplo 4', 'contrasena_hash': '$2b$12$CEPCf34IYfcew7AHL7SDq.HMWWXd.CUM8t7z5V0MZcQeBRV5yOMnW', 'id_hogar': 1, 'estado': True, 'fecha_actualizacion': datetime.datetime(2025, 10, 25, 23, 42, 49), 'correo_electronico': 'ejemplo4@example.com', 'id': 4, 'id_rol': 2, 'fecha_creacion': datetime.datetime(2025, 10, 25, 23, 42, 49)}
+2025-10-25 23:42:49 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: ejemplo 4
+2025-10-25 23:42:50 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-25 23:45:19 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: ejemplo4@example.com
+2025-10-25 23:45:19 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: ejemplo4@example.com
+2025-10-25 23:45:39 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: ejemplo4@example.com
+2025-10-25 23:45:39 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: ejemplo 4
+2025-10-25 23:45:39 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: ejemplo 4
+2025-10-25 23:45:39 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-25 23:55:35 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: darwinandres@example2.com
+2025-10-25 23:55:36 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: darwin ejemplo 2
+2025-10-25 23:55:36 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: darwin ejemplo 2
+2025-10-25 23:55:36 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-26 21:11:16 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'admin', 'correo_electronico': 'admin@gmail.com', 'id_rol': 1, 'id_hogar': 1}
+2025-10-26 21:11:16 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: admin@gmail.com
+2025-10-26 21:11:16 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=admin, rol=1, hogar=1
+2025-10-26 21:11:17 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: admin (ID: 5)
+2025-10-26 21:11:17 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001F6E394DE50>, 'nombre_completo': 'admin', 'contrasena_hash': '$2b$12$tDKfvP7fPx5Xmx/zaWZYVePb0eBZ1R8ybQwtNXfCucB7nEeZoLHWO', 'id_hogar': 1, 'estado': True, 'fecha_actualizacion': datetime.datetime(2025, 10, 26, 21, 11, 17), 'correo_electronico': 'admin@gmail.com', 'id': 5, 'id_rol': 1, 'fecha_creacion': datetime.datetime(2025, 10, 26, 21, 11, 17)}
+2025-10-26 21:11:17 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-26 21:11:17 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-26 21:13:10 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-10-26 21:13:10 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-10-26 21:13:10 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-26 21:13:10 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-26 21:16:02 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-10-26 21:16:02 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-10-26 21:16:02 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-26 21:16:02 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-26 22:00:45 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-10-26 22:00:46 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-10-26 22:00:46 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-26 22:00:46 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-26 22:50:51 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-10-26 22:50:51 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-10-26 22:50:51 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-26 22:50:51 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-26 23:40:16 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-10-26 23:40:18 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-10-26 23:40:18 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-26 23:40:18 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-27 00:29:45 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-10-27 00:29:45 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-10-27 00:29:45 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-27 00:29:45 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-10-27 00:32:04 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-10-27 00:32:04 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-10-27 00:32:04 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-10-27 00:32:04 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente

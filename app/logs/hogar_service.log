@@ -1,0 +1,12 @@
+2025-10-26 20:59:08 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 20:59:08 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 20:59:22 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 20:59:22 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 21:02:44 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 21:02:45 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 21:03:10 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 21:03:10 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 21:03:21 - hogar_service - INFO - [hogar_service.py:29] - Obteniendo hogar con ID: 1
+2025-10-26 21:03:21 - hogar_service - INFO - [hogar_service.py:32] - Hogar encontrado: Hogar Principal
+2025-10-26 21:04:02 - hogar_service - INFO - [hogar_service.py:29] - Obteniendo hogar con ID: 1
+2025-10-26 21:04:02 - hogar_service - INFO - [hogar_service.py:32] - Hogar encontrado: Hogar Principal

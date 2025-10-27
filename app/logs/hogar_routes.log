@@ -1,0 +1,12 @@
+2025-10-26 20:59:08 - hogar_routes - INFO - [hogar_routes.py:43] - Listando hogares activos
+2025-10-26 20:59:08 - hogar_routes - INFO - [hogar_routes.py:45] - Se encontraron 1 hogares activos
+2025-10-26 20:59:22 - hogar_routes - INFO - [hogar_routes.py:43] - Listando hogares activos
+2025-10-26 20:59:22 - hogar_routes - INFO - [hogar_routes.py:45] - Se encontraron 1 hogares activos
+2025-10-26 21:02:44 - hogar_routes - INFO - [hogar_routes.py:43] - Listando hogares activos
+2025-10-26 21:02:45 - hogar_routes - INFO - [hogar_routes.py:45] - Se encontraron 1 hogares activos
+2025-10-26 21:03:10 - hogar_routes - INFO - [hogar_routes.py:43] - Listando hogares activos
+2025-10-26 21:03:10 - hogar_routes - INFO - [hogar_routes.py:45] - Se encontraron 1 hogares activos
+2025-10-26 21:03:21 - hogar_routes - INFO - [hogar_routes.py:27] - Buscando hogar con ID: 1
+2025-10-26 21:03:21 - hogar_routes - INFO - [hogar_routes.py:32] - Hogar encontrado: Hogar Principal
+2025-10-26 21:04:02 - hogar_routes - INFO - [hogar_routes.py:27] - Buscando hogar con ID: 1
+2025-10-26 21:04:02 - hogar_routes - INFO - [hogar_routes.py:32] - Hogar encontrado: Hogar Principal
