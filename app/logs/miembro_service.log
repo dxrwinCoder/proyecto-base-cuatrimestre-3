@@ -8,3 +8,20 @@
 2025-10-26 23:53:33 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 5 miembros
 2025-10-27 00:30:23 - miembro_service - INFO - [miembro_service.py:174] - Obteniendo todos los miembros
 2025-10-27 00:30:23 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 5 miembros
+2025-10-27 20:06:41 - miembro_service - INFO - [miembro_service.py:174] - Obteniendo todos los miembros
+2025-10-27 20:06:41 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 5 miembros
+2025-10-27 20:07:28 - miembro_service - INFO - [miembro_service.py:56] - Buscando miembro con ID: 1
+2025-10-27 20:07:28 - miembro_service - INFO - [miembro_service.py:66] - Miembro encontrado: darwin ejemplo 1
+2025-10-27 20:07:28 - miembro_service - INFO - [miembro_service.py:101] - Actualizando miembro: 1
+2025-10-27 20:07:28 - miembro_service - ERROR - [miembro_service.py:136] - Error de base de datos al actualizar miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles` (`id`) ON DELETE RESTRICT)')
+[SQL: UPDATE miembros SET nombre_completo=%s, correo_electronico=%s, id_rol=%s, id_hogar=%s, fecha_actualizacion=now() WHERE miembros.id = %s]
+[parameters: ('string', 'user@example.com', 0, 0, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-10-27 20:07:45 - miembro_service - INFO - [miembro_service.py:56] - Buscando miembro con ID: 1
+2025-10-27 20:07:45 - miembro_service - INFO - [miembro_service.py:66] - Miembro encontrado: darwin ejemplo 1
+2025-10-27 20:08:15 - miembro_service - INFO - [miembro_service.py:56] - Buscando miembro con ID: 1
+2025-10-27 20:08:15 - miembro_service - INFO - [miembro_service.py:66] - Miembro encontrado: darwin ejemplo 1
+2025-10-27 20:08:15 - miembro_service - INFO - [miembro_service.py:147] - Desactivando miembro: 1
+2025-10-27 20:08:15 - miembro_service - INFO - [miembro_service.py:160] - Miembro desactivado exitosamente: 1
+2025-10-27 20:09:20 - miembro_service - INFO - [miembro_service.py:174] - Obteniendo todos los miembros
+2025-10-27 20:09:20 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 5 miembros

@@ -62,3 +62,11 @@
 2025-10-27 00:32:04 - security - INFO - [security.py:29] - Contraseña verificada correctamente
 2025-10-27 00:32:04 - security - INFO - [security.py:39] - Generando token de acceso
 2025-10-27 00:32:04 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-27 14:00:28 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-27 14:00:28 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-27 14:00:28 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-27 14:00:28 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-10-27 20:05:39 - security - INFO - [security.py:26] - Verificando contraseña
+2025-10-27 20:05:40 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-10-27 20:05:40 - security - INFO - [security.py:39] - Generando token de acceso
+2025-10-27 20:05:40 - security - INFO - [security.py:44] - Token de acceso generado exitosamente

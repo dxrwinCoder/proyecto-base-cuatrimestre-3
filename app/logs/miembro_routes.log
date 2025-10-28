@@ -6,3 +6,14 @@
 2025-10-26 23:20:04 - miembro_routes - INFO - [miembro_routes.py:69] - Miembro encontrado: darwin ejemplo 1
 2025-10-26 23:53:33 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
 2025-10-27 00:30:23 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-10-27 20:06:41 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-10-27 20:07:28 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 1
+2025-10-27 20:07:28 - miembro_routes - ERROR - [miembro_routes.py:187] - Error al actualizar miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles` (`id`) ON DELETE RESTRICT)')
+[SQL: UPDATE miembros SET nombre_completo=%s, correo_electronico=%s, id_rol=%s, id_hogar=%s, fecha_actualizacion=now() WHERE miembros.id = %s]
+[parameters: ('string', 'user@example.com', 0, 0, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-10-27 20:07:45 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 1
+2025-10-27 20:07:45 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: darwin ejemplo 1
+2025-10-27 20:08:15 - miembro_routes - INFO - [miembro_routes.py:201] - Intentando eliminar miembro: 1
+2025-10-27 20:08:15 - miembro_routes - INFO - [miembro_routes.py:222] - Miembro eliminado exitosamente: 1
+2025-10-27 20:09:20 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros

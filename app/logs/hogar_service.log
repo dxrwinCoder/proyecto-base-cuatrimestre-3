@@ -10,3 +10,5 @@
 2025-10-26 21:03:21 - hogar_service - INFO - [hogar_service.py:32] - Hogar encontrado: Hogar Principal
 2025-10-26 21:04:02 - hogar_service - INFO - [hogar_service.py:29] - Obteniendo hogar con ID: 1
 2025-10-26 21:04:02 - hogar_service - INFO - [hogar_service.py:32] - Hogar encontrado: Hogar Principal
+2025-10-27 20:11:15 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-27 20:11:15 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos

@@ -1,49 +1,36 @@
-from pydantic import BaseModel, Field
-from datetime import date
+from pydantic import BaseModel
+from datetime import date, datetime
 from typing import Optional
-from enum import Enum
 
-class CategoriaEnum(str, Enum):
-    limpieza = "limpieza"
-    cocina = "cocina"
-    compras = "compras"
-    mantenimiento = "mantenimiento"
-
-class RepeticionEnum(str, Enum):
-    ninguna = "ninguna"
-    diaria = "diaria"
-    semanal = "semanal"
-
-class EstadoTareaEnum(str, Enum):
-    pendiente = "pendiente"
-    completada = "completada"
 
 class TareaBase(BaseModel):
-    titulo: str = Field(..., min_length=1, max_length=100)
+    titulo: str
     descripcion: Optional[str] = None
-    categoria: CategoriaEnum
+    categoria: str
+    tipo_tarea: str
     fecha_limite: Optional[date] = None
-    repeticion: RepeticionEnum = RepeticionEnum.ninguna
+    repeticion: str = "ninguna"
     asignado_a: int
-    ubicacion: Optional[str] = Field(None, max_length=50)
+    id_hogar: int
+    ubicacion: Optional[str] = None
+    id_evento: Optional[int] = None
+
 
 class TareaCreate(TareaBase):
-    id_hogar: int
+    pass
+
 
 class TareaUpdate(BaseModel):
-    titulo: Optional[str] = Field(None, min_length=1, max_length=100)
-    descripcion: Optional[str] = None
-    categoria: Optional[CategoriaEnum] = None
-    fecha_limite: Optional[date] = None
-    repeticion: Optional[RepeticionEnum] = None
-    asignado_a: Optional[int] = None
-    ubicacion: Optional[str] = Field(None, max_length=50)
-    estado_tarea: Optional[EstadoTareaEnum] = None
+    estado_actual: Optional[str] = None  # Solo se permite actualizar el estado
+    # Otros campos no se editan una vez asignada
+
 
 class Tarea(TareaBase):
     id: int
-    id_hogar: int
-    estado_tarea: EstadoTareaEnum = EstadoTareaEnum.pendiente
+    estado_actual: str
+    id_sesion_mensaje: Optional[str] = None
+    tiempo_total_segundos: Optional[int] = None
+    fecha_asignacion: datetime
 
     class Config:
         from_attributes = True
