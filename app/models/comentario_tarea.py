@@ -21,7 +21,7 @@ class ComentarioTarea(Base):
     id_miembro = Column(
         Integer, ForeignKey("miembros.id", ondelete="CASCADE"), nullable=False
     )
-    contenido = Column(Text)
-    url_imagen = Column(String(255), nullable=True)  # URL de imagen subida (opcional)
+    contenido = Column(Text, nullable=False)
+    url_imagen = Column(String(255), nullable=True)
     fecha_creacion = Column(DateTime, default=func.now())
     estado = Column(Boolean, default=True)

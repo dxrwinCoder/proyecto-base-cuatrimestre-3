@@ -1,13 +1,12 @@
 from pydantic import BaseModel
-from datetime import date, datetime
+from datetime import date
 from typing import Optional
 
 
 class TareaBase(BaseModel):
     titulo: str
     descripcion: Optional[str] = None
-    categoria: str
-    tipo_tarea: str
+    categoria: str  # 'limpieza', 'cocina', 'compras', 'mantenimiento'
     fecha_limite: Optional[date] = None
     repeticion: str = "ninguna"
     asignado_a: int
@@ -20,17 +19,15 @@ class TareaCreate(TareaBase):
     pass
 
 
-class TareaUpdate(BaseModel):
-    estado_actual: Optional[str] = None  # Solo se permite actualizar el estado
-    # Otros campos no se editan una vez asignada
+class TareaUpdateEstado(BaseModel):
+    estado_actual: str  # 'en_progreso', 'completada'
 
 
 class Tarea(TareaBase):
     id: int
     estado_actual: str
-    id_sesion_mensaje: Optional[str] = None
     tiempo_total_segundos: Optional[int] = None
-    fecha_asignacion: datetime
+    fecha_asignacion: str
 
     class Config:
         from_attributes = True

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 from db.database import get_db
-from schemas.tarea import TareaCreate, TareaUpdate, Tarea
+from schemas.tarea import TareaCreate, TareaUpdateEstado, Tarea
 from services.tarea_service import (
     crear_tarea,
     obtener_tarea_por_id,
@@ -82,7 +82,7 @@ async def listar_mis_tareas(
 @router.put("/{tarea_id}/estado", response_model=Tarea)
 async def cambiar_estado_tarea(
     tarea_id: int,
-    update: TareaUpdate,
+    update: TareaUpdateEstado,
     db: AsyncSession = Depends(get_db),
     current_user=Depends(obtener_miembro_actual),
 ):
@@ -101,4 +101,18 @@ async def cambiar_estado_tarea(
         raise
     except Exception as e:
         logger.error(f"Error al actualizar estado de tarea {tarea_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error interno")
+
+
+@router.get("/evento/{evento_id}", response_model=list[Tarea])
+async def listar_tareas_por_evento_endpoint(
+    evento_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user=Depends(obtener_miembro_actual),
+):
+    try:
+        tareas = await listar_tareas_por_evento(db, evento_id)
+        return [t for t in tareas if t.id_hogar == current_user.id_hogar]
+    except Exception as e:
+        logger.error(f"Error al listar tareas del evento {evento_id}: {str(e)}")
         raise HTTPException(status_code=500, detail="Error interno")

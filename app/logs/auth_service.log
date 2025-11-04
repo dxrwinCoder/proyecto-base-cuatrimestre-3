@@ -103,3 +103,7 @@ WHERE roles.id = %s]
 2025-10-27 20:05:40 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
 2025-10-27 20:05:40 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
 2025-10-27 20:05:40 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-03 18:43:57 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@gmail.com
+2025-11-03 18:43:58 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: admin
+2025-11-03 18:43:58 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: admin
+2025-11-03 18:43:58 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente

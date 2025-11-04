@@ -2,17 +2,13 @@ from pydantic import BaseModel
 from typing import Optional
 
 
-class ComentarioTareaBase(BaseModel):
+class ComentarioTareaCreate(BaseModel):
     id_tarea: int
     contenido: str
     url_imagen: Optional[str] = None
 
 
-class ComentarioTareaCreate(ComentarioTareaBase):
-    pass
-
-
-class ComentarioTarea(ComentarioTareaBase):
+class ComentarioTarea(ComentarioTareaCreate):
     id: int
     id_miembro: int
 

@@ -24,10 +24,9 @@ class Notificacion(Base):
     id_tarea = Column(
         Integer, ForeignKey("tareas.id", ondelete="SET NULL"), nullable=True
     )
-    id_evento = Column(
-        Integer, ForeignKey("eventos.id", ondelete="SET NULL"), nullable=True
-    )
-    tipo = Column(String(50), nullable=False)  # ej: "cambio_estado_tarea"
+    tipo = Column(
+        String(50), nullable=False
+    )  # ej: "nueva_tarea", "cambio_estado", "nuevo_comentario"
     mensaje = Column(Text, nullable=False)
     leido = Column(Boolean, default=False)
     fecha_creacion = Column(DateTime, default=func.now())

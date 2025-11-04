@@ -1,16 +1,18 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import OAuth2PasswordBearer
+
+# from fastapi.security import OAuth2PasswordBearer
 from db.database import engine, Base
-from sqlalchemy.ext.asyncio import AsyncEngine
-from models.hogar import Hogar
-from models.rol import Rol
-from models.modulo import Modulo
-from models.permiso import Permiso
-from models.miembro import Miembro
-from models.tarea import Tarea
-from models.mensaje import Mensaje
-from models.evento import Evento
+
+# from sqlalchemy.ext.asyncio import AsyncEngine
+# from models.hogar import Hogar
+# from models.rol import Rol
+# from models.modulo import Modulo
+# from models.permiso import Permiso
+# from models.miembro import Miembro
+# from models.tarea import Tarea
+# from models.mensaje import Mensaje
+# from models.evento import Evento
 from routes import (
     permiso_routes,
     tarea_routes,
@@ -31,21 +33,21 @@ app = FastAPI(
     description="API para gestión de tareas del hogar",
     version="1.0.0",
     # Esto le dice a Swagger qué ruta usar para el botón "Authorize"
-    swagger_ui_init_oauth={"usePkceWithAuthorizationCodeGrant": False},
+    # swagger_ui_init_oauth={"usePkceWithAuthorizationCodeGrant": False},
 )
 
 # Configura el esquema de seguridad para Swagger
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login-swagger")
+# oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login-swagger")
 
 
 # Middleware para redirigir /auth/login → /auth/login-swagger
-@app.middleware("http")
-async def redirect_login(request: Request, call_next):
-    if request.url.path == "/auth/login" and request.method == "POST":
-        # Cambiamos la URL temporalmente
-        request.scope["path"] = "/auth/login-swagger"
-    response = await call_next(request)
-    return response
+# @app.middleware("http")
+# async def redirect_login(request: Request, call_next):
+#     if request.url.path == "/auth/login" and request.method == "POST":
+#         # Cambiamos la URL temporalmente
+#         request.scope["path"] = "/auth/login-swagger"
+#     response = await call_next(request)
+#     return response
 
 
 app.add_middleware(

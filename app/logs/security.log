@@ -70,3 +70,7 @@
 2025-10-27 20:05:40 - security - INFO - [security.py:29] - Contraseña verificada correctamente
 2025-10-27 20:05:40 - security - INFO - [security.py:39] - Generando token de acceso
 2025-10-27 20:05:40 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
+2025-11-03 18:43:57 - security - INFO - [security.py:26] - Verificando contraseña
+2025-11-03 18:43:58 - security - INFO - [security.py:29] - Contraseña verificada correctamente
+2025-11-03 18:43:58 - security - INFO - [security.py:39] - Generando token de acceso
+2025-11-03 18:43:58 - security - INFO - [security.py:44] - Token de acceso generado exitosamente
