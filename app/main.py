@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # from fastapi.security import OAuth2PasswordBearer
 from db.database import engine, Base
+from contextlib import asynccontextmanager
 
 # from sqlalchemy.ext.asyncio import AsyncEngine
 # from models.hogar import Hogar
@@ -28,10 +29,20 @@ from utils.logger import setup_logger
 
 logger = setup_logger("main")
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Iniciar la app
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+    yield
+
+
 app = FastAPI(
     title="HomeTasks API",
     description="API para gestión de tareas del hogar",
     version="1.0.0",
+    lifespan=lifespan,
     # Esto le dice a Swagger qué ruta usar para el botón "Authorize"
     # swagger_ui_init_oauth={"usePkceWithAuthorizationCodeGrant": False},
 )

@@ -1,0 +1,6 @@
+2025-11-04 01:47:51 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-04 01:47:51 - tarea_service - ERROR - [tarea_service.py:22] - Error al crear tarea: 'async_generator' object has no attribute 'add'
+2025-11-04 01:47:52 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-04 01:47:52 - tarea_service - ERROR - [tarea_service.py:22] - Error al crear tarea: 'async_generator' object has no attribute 'add'
+2025-11-04 01:47:52 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-04 01:47:52 - tarea_service - ERROR - [tarea_service.py:22] - Error al crear tarea: 'async_generator' object has no attribute 'add'
