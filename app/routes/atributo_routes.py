@@ -1,13 +1,23 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from db.database import get_db
-from schemas.atributo import AtributoCreate, AtributoUpdate, Atributo
-from services.atributo_service import *
+from schemas.atributo import (
+    AtributoCreate,
+    AtributoUpdate,
+    Atributo as AtributoSchema,
+)
+from services.atributo_service import (
+    crear_atributo,
+    obtener_atributo,
+    listar_atributos_activos,
+    actualizar_atributo,
+    eliminar_atributo_logico,
+)
 
 router = APIRouter(prefix="/atributos", tags=["Atributos"])
 
 
-@router.post("/", response_model=Atributo)
+@router.post("/", response_model=AtributoSchema)
 async def crear_atributo_endpoint(
     atributo: AtributoCreate, db: AsyncSession = Depends(get_db)
 ):
@@ -16,7 +26,7 @@ async def crear_atributo_endpoint(
     )
 
 
-@router.get("/{atributo_id}", response_model=Atributo)
+@router.get("/{atributo_id}", response_model=AtributoSchema)
 async def ver_atributo(atributo_id: int, db: AsyncSession = Depends(get_db)):
     attr = await obtener_atributo(db, atributo_id)
     if not attr or not attr.estado:
@@ -24,12 +34,12 @@ async def ver_atributo(atributo_id: int, db: AsyncSession = Depends(get_db)):
     return attr
 
 
-@router.get("/", response_model=list[Atributo])
+@router.get("/", response_model=list[AtributoSchema])
 async def listar_atributos(db: AsyncSession = Depends(get_db)):
     return await listar_atributos_activos(db)
 
 
-@router.put("/{atributo_id}", response_model=Atributo)
+@router.put("/{atributo_id}", response_model=AtributoSchema)
 async def actualizar_atributo_endpoint(
     atributo_id: int, updates: AtributoUpdate, db: AsyncSession = Depends(get_db)
 ):

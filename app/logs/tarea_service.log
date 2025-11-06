@@ -212,3 +212,31 @@
 2025-11-06 05:53:45 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
 2025-11-06 05:53:45 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
 2025-11-06 05:53:45 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-06 06:36:31 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 06:36:31 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-06 06:36:47 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-06 06:41:19 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 06:41:19 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1

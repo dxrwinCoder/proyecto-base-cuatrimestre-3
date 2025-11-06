@@ -2,7 +2,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from db.database import get_db
 from schemas.evento import EventoCreate, Evento
-from services.evento_service import crear_evento, listar_eventos_por_hogar
+from services.evento_service import (
+    crear_evento,
+    listar_eventos_por_hogar as service_listar_eventos_por_hogar,
+)
 
 router = APIRouter(prefix="/eventos", tags=["Eventos"])
 
@@ -18,5 +21,7 @@ async def crear_evento_endpoint(evento: EventoCreate, db: AsyncSession = Depends
 #     return evento
 
 @router.get("/hogar/{hogar_id}", response_model=list[Evento])
-async def listar_eventos_por_hogar(hogar_id: int, db: AsyncSession = Depends(get_db)):
-    return await listar_eventos_por_hogar(db, hogar_id)
+async def listar_eventos_por_hogar_endpoint(
+    hogar_id: int, db: AsyncSession = Depends(get_db)
+):
+    return await service_listar_eventos_por_hogar(db, hogar_id)

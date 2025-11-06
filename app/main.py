@@ -22,6 +22,7 @@ from routes import (
     hogar_routes,
     evento_routes,
     modulo_routes,
+    atributo_routes,
     miembro_routes,
 )
 
@@ -89,6 +90,7 @@ app.include_router(auth_routes.router)
 app.include_router(hogar_routes.router)
 app.include_router(evento_routes.router)
 app.include_router(modulo_routes.router)
+app.include_router(atributo_routes.router)
 app.include_router(miembro_routes.router)
 
 
