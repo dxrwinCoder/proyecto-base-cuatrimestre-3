@@ -1,6 +1,9 @@
 from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
+from pydantic import ConfigDict
+
+model_config = ConfigDict(from_attributes=True)
 
 
 class RolBase(BaseModel):
@@ -24,8 +27,8 @@ class Rol(RolBase):
     fecha_creacion: datetime
     fecha_actualizacion: datetime
 
-    class Config:
-        from_attributes = True
+    # class Config:
+    #     from_attributes = True
 
 
 class RolResponse(Rol):

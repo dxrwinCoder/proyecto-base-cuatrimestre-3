@@ -1,6 +1,10 @@
 from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
+from pydantic import ConfigDict
+
+model_config = ConfigDict(from_attributes=True)
+
 
 class EventoBase(BaseModel):
     titulo: str
@@ -10,11 +14,13 @@ class EventoBase(BaseModel):
     id_hogar: int
     creado_por: int
 
+
 class EventoCreate(EventoBase):
     pass
+
 
 class Evento(EventoBase):
     id: int
 
-    class Config:
-        from_attributes = True
+    # class Config:
+    #     from_attributes = True

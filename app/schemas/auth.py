@@ -1,5 +1,8 @@
 from pydantic import BaseModel, Field
 from typing import Optional
+from pydantic import ConfigDict
+
+model_config = ConfigDict(from_attributes=True)
 
 
 class MiembroLogin(BaseModel):

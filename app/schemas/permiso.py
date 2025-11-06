@@ -1,5 +1,9 @@
 from pydantic import BaseModel
 from typing import Optional
+from pydantic import ConfigDict
+
+model_config = ConfigDict(from_attributes=True)
+
 
 class PermisoBase(BaseModel):
     id_rol: int
@@ -9,14 +13,17 @@ class PermisoBase(BaseModel):
     puede_actualizar: Optional[bool] = False
     puede_eliminar: Optional[bool] = False
 
+
 class PermisoCreate(PermisoBase):
     pass
+
 
 class PermisoUpdate(PermisoBase):
     pass
 
+
 class Permiso(PermisoBase):
     id: int
 
-    class Config:
-        from_attributes = True
+    # class Config:
+    #     from_attributes = True

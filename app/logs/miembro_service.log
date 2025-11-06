@@ -29,3 +29,252 @@
 2025-11-03 18:44:04 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 5 miembros
 2025-11-03 18:59:19 - miembro_service - INFO - [miembro_service.py:56] - Buscando miembro con ID: 4
 2025-11-03 18:59:19 - miembro_service - INFO - [miembro_service.py:66] - Miembro encontrado: ejemplo 4
+2025-11-05 23:06:20 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Nuevo Miembro
+2025-11-05 23:06:20 - miembro_service - WARNING - [miembro_service.py:24] - Intento de crear miembro con correo existente: nuevo@example.com
+2025-11-05 23:06:20 - miembro_service - ERROR - [miembro_service.py:42] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-05 23:06:20 - miembro_service - INFO - [miembro_service.py:174] - Obteniendo todos los miembros
+2025-11-05 23:06:20 - miembro_service - INFO - [miembro_service.py:178] - Se encontraron 3 miembros
+2025-11-05 23:06:20 - miembro_service - INFO - [miembro_service.py:56] - Buscando miembro con ID: 1
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:66] - Miembro encontrado: Test User
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:56] - Buscando miembro con ID: 999
+2025-11-05 23:06:21 - miembro_service - WARNING - [miembro_service.py:68] - Miembro no encontrado con ID: 999
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:81] - Listando miembros activos del hogar: 1
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:89] - Se encontraron 3 miembros activos
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:56] - Buscando miembro con ID: 1
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:66] - Miembro encontrado: Test User
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:101] - Actualizando miembro: 1
+2025-11-05 23:06:21 - miembro_service - INFO - [miembro_service.py:130] - Miembro actualizado exitosamente: 1
+2025-11-05 23:11:24 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Nuevo Miembro
+2025-11-05 23:11:24 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 8
+2025-11-05 23:11:24 - miembro_service - INFO - [miembro_service.py:187] - Obteniendo todos los miembros
+2025-11-05 23:11:24 - miembro_service - INFO - [miembro_service.py:191] - Se encontraron 8 miembros
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-05 23:11:25 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:87] - Listando miembros activos del hogar: 1
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:95] - Se encontraron 8 miembros activos
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-05 23:11:25 - miembro_service - INFO - [miembro_service.py:143] - Miembro actualizado exitosamente: 1
+2025-11-05 23:18:51 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Nuevo Miembro
+2025-11-05 23:18:51 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 8
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:187] - Obteniendo todos los miembros
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:191] - Se encontraron 8 miembros
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-05 23:18:52 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:87] - Listando miembros activos del hogar: 1
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:95] - Se encontraron 8 miembros activos
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-05 23:18:52 - miembro_service - INFO - [miembro_service.py:143] - Miembro actualizado exitosamente: 1
+2025-11-06 00:43:56 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Nuevo Miembro
+2025-11-06 00:43:57 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:43:57 - miembro_service - INFO - [miembro_service.py:188] - Obteniendo todos los miembros
+2025-11-06 00:43:57 - miembro_service - INFO - [miembro_service.py:192] - Se encontraron 1 miembros
+2025-11-06 00:43:58 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 00:43:58 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-06 00:43:59 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-06 00:43:59 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-06 00:43:59 - miembro_service - INFO - [miembro_service.py:87] - Listando miembros activos del hogar: 1
+2025-11-06 00:43:59 - miembro_service - INFO - [miembro_service.py:95] - Se encontraron 1 miembros activos
+2025-11-06 00:44:00 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 00:44:00 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-06 00:44:00 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-06 00:44:00 - miembro_service - INFO - [miembro_service.py:143] - Miembro actualizado exitosamente: 1
+2025-11-06 00:44:00 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 00:44:00 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Usuario Actualizado
+2025-11-06 00:44:00 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-06 00:44:00 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-06 00:44:01 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro a Eliminar
+2025-11-06 00:44:01 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:01 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 2
+2025-11-06 00:44:01 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro a Eliminar
+2025-11-06 00:44:01 - miembro_service - INFO - [miembro_service.py:161] - Desactivando miembro: 2
+2025-11-06 00:44:01 - miembro_service - INFO - [miembro_service.py:174] - Miembro desactivado exitosamente: 2
+2025-11-06 00:44:02 - miembro_service - INFO - [miembro_service.py:204] - Contando miembros activos del hogar: 1
+2025-11-06 00:44:02 - miembro_service - INFO - [miembro_service.py:210] - Se encontraron 1 miembros activos
+2025-11-06 00:44:02 - miembro_service - INFO - [miembro_service.py:222] - Obteniendo miembros con rol: 1
+2025-11-06 00:44:02 - miembro_service - INFO - [miembro_service.py:230] - Se encontraron 1 miembros con el rol 1
+2025-11-06 00:44:03 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Primer Miembro
+2025-11-06 00:44:03 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:03 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Otro Miembro
+2025-11-06 00:44:03 - miembro_service - WARNING - [miembro_service.py:24] - Intento de crear miembro con correo existente: duplicado_45a84183@example.com
+2025-11-06 00:44:03 - miembro_service - ERROR - [miembro_service.py:48] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-06 00:44:04 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Otro Hogar
+2025-11-06 00:44:04 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:04 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Nuevo Miembro
+2025-11-06 00:44:05 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:05 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 00:44:05 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:05 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 00:44:05 - miembro_service - WARNING - [miembro_service.py:24] - Intento de crear miembro con correo existente: duplicado_67d019c7@example.com
+2025-11-06 00:44:05 - miembro_service - ERROR - [miembro_service.py:48] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-06 00:44:05 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Test
+2025-11-06 00:44:06 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:06 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 00:44:06 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro Test
+2025-11-06 00:44:06 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-06 00:44:06 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-06 00:44:06 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 00:44:06 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:06 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 3
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:87] - Listando miembros activos del hogar: 1
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:95] - Se encontraron 2 miembros activos
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Original
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:143] - Miembro actualizado exitosamente: 1
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 00:44:07 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro Actualizado
+2025-11-06 00:44:08 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 999
+2025-11-06 00:44:08 - miembro_service - WARNING - [miembro_service.py:118] - Miembro no encontrado para actualizar: 999
+2025-11-06 00:44:08 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 00:44:08 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:08 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-06 00:44:09 - miembro_service - WARNING - [miembro_service.py:132] - Correo electrónico ya existe: miembro2_d5127588@example.com
+2025-11-06 00:44:09 - miembro_service - ERROR - [miembro_service.py:147] - Error de validación al actualizar miembro: El correo electrónico ya está registrado
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Test
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:161] - Desactivando miembro: 1
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:174] - Miembro desactivado exitosamente: 1
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro Test
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:161] - Desactivando miembro: 999
+2025-11-06 00:44:09 - miembro_service - WARNING - [miembro_service.py:165] - Miembro no encontrado para desactivar: 999
+2025-11-06 00:44:09 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 00:44:10 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:10 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 00:44:10 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:10 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 3
+2025-11-06 00:44:10 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 00:44:10 - miembro_service - INFO - [miembro_service.py:188] - Obteniendo todos los miembros
+2025-11-06 00:44:11 - miembro_service - INFO - [miembro_service.py:192] - Se encontraron 3 miembros
+2025-11-06 00:44:11 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Hogar1 1
+2025-11-06 00:44:11 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:11 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Hogar1 2
+2025-11-06 00:44:11 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:11 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Hogar2
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:204] - Contando miembros activos del hogar: 1
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:210] - Se encontraron 2 miembros activos
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Admin 1
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Admin 2
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 00:44:12 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Usuario 1
+2025-11-06 00:44:13 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 00:44:13 - miembro_service - INFO - [miembro_service.py:222] - Obteniendo miembros con rol: 1
+2025-11-06 00:44:13 - miembro_service - INFO - [miembro_service.py:230] - Se encontraron 2 miembros con el rol 1
+2025-11-06 05:53:23 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Nuevo Miembro
+2025-11-06 05:53:24 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:25 - miembro_service - INFO - [miembro_service.py:188] - Obteniendo todos los miembros
+2025-11-06 05:53:25 - miembro_service - INFO - [miembro_service.py:192] - Se encontraron 1 miembros
+2025-11-06 05:53:25 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 05:53:25 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-06 05:53:26 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-06 05:53:26 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-06 05:53:26 - miembro_service - INFO - [miembro_service.py:87] - Listando miembros activos del hogar: 1
+2025-11-06 05:53:26 - miembro_service - INFO - [miembro_service.py:95] - Se encontraron 1 miembros activos
+2025-11-06 05:53:27 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 05:53:27 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Test User
+2025-11-06 05:53:27 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-06 05:53:27 - miembro_service - INFO - [miembro_service.py:143] - Miembro actualizado exitosamente: 1
+2025-11-06 05:53:27 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 05:53:27 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Usuario Actualizado
+2025-11-06 05:53:28 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-06 05:53:28 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-06 05:53:29 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro a Eliminar
+2025-11-06 05:53:29 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:29 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 2
+2025-11-06 05:53:29 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro a Eliminar
+2025-11-06 05:53:29 - miembro_service - INFO - [miembro_service.py:161] - Desactivando miembro: 2
+2025-11-06 05:53:29 - miembro_service - INFO - [miembro_service.py:174] - Miembro desactivado exitosamente: 2
+2025-11-06 05:53:31 - miembro_service - INFO - [miembro_service.py:204] - Contando miembros activos del hogar: 1
+2025-11-06 05:53:31 - miembro_service - INFO - [miembro_service.py:210] - Se encontraron 1 miembros activos
+2025-11-06 05:53:32 - miembro_service - INFO - [miembro_service.py:222] - Obteniendo miembros con rol: 1
+2025-11-06 05:53:32 - miembro_service - INFO - [miembro_service.py:230] - Se encontraron 1 miembros con el rol 1
+2025-11-06 05:53:32 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Primer Miembro
+2025-11-06 05:53:33 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:33 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Otro Miembro
+2025-11-06 05:53:33 - miembro_service - WARNING - [miembro_service.py:24] - Intento de crear miembro con correo existente: duplicado_b037ea92@example.com
+2025-11-06 05:53:33 - miembro_service - ERROR - [miembro_service.py:48] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-06 05:53:34 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Otro Hogar
+2025-11-06 05:53:34 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:35 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Nuevo Miembro
+2025-11-06 05:53:35 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:35 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 05:53:36 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:36 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 05:53:36 - miembro_service - WARNING - [miembro_service.py:24] - Intento de crear miembro con correo existente: duplicado_2bb3df38@example.com
+2025-11-06 05:53:36 - miembro_service - ERROR - [miembro_service.py:48] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-06 05:53:36 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Test
+2025-11-06 05:53:36 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:36 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 05:53:36 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro Test
+2025-11-06 05:53:37 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 999
+2025-11-06 05:53:37 - miembro_service - WARNING - [miembro_service.py:74] - Miembro no encontrado con ID: 999
+2025-11-06 05:53:37 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 05:53:37 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:37 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 3
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:87] - Listando miembros activos del hogar: 1
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:95] - Se encontraron 2 miembros activos
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Original
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:143] - Miembro actualizado exitosamente: 1
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 05:53:38 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro Actualizado
+2025-11-06 05:53:39 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 999
+2025-11-06 05:53:39 - miembro_service - WARNING - [miembro_service.py:118] - Miembro no encontrado para actualizar: 999
+2025-11-06 05:53:39 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 05:53:39 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:39 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:107] - Actualizando miembro: 1
+2025-11-06 05:53:40 - miembro_service - WARNING - [miembro_service.py:132] - Correo electrónico ya existe: miembro2_4990f4fa@example.com
+2025-11-06 05:53:40 - miembro_service - ERROR - [miembro_service.py:147] - Error de validación al actualizar miembro: El correo electrónico ya está registrado
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Test
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:161] - Desactivando miembro: 1
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:174] - Miembro desactivado exitosamente: 1
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:62] - Buscando miembro con ID: 1
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:72] - Miembro encontrado: Miembro Test
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:161] - Desactivando miembro: 999
+2025-11-06 05:53:40 - miembro_service - WARNING - [miembro_service.py:165] - Miembro no encontrado para desactivar: 999
+2025-11-06 05:53:40 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 1
+2025-11-06 05:53:41 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:41 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 2
+2025-11-06 05:53:41 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:41 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro 3
+2025-11-06 05:53:41 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 05:53:41 - miembro_service - INFO - [miembro_service.py:188] - Obteniendo todos los miembros
+2025-11-06 05:53:41 - miembro_service - INFO - [miembro_service.py:192] - Se encontraron 3 miembros
+2025-11-06 05:53:42 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Hogar1 1
+2025-11-06 05:53:42 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:42 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Hogar1 2
+2025-11-06 05:53:42 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:42 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Miembro Hogar2
+2025-11-06 05:53:43 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 05:53:43 - miembro_service - INFO - [miembro_service.py:204] - Contando miembros activos del hogar: 1
+2025-11-06 05:53:43 - miembro_service - INFO - [miembro_service.py:210] - Se encontraron 2 miembros activos
+2025-11-06 05:53:43 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Admin 1
+2025-11-06 05:53:43 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 1
+2025-11-06 05:53:43 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Admin 2
+2025-11-06 05:53:44 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 2
+2025-11-06 05:53:44 - miembro_service - INFO - [miembro_service.py:15] - Creando nuevo miembro: Usuario 1
+2025-11-06 05:53:44 - miembro_service - INFO - [miembro_service.py:45] - Miembro creado exitosamente: 3
+2025-11-06 05:53:44 - miembro_service - INFO - [miembro_service.py:222] - Obteniendo miembros con rol: 1
+2025-11-06 05:53:44 - miembro_service - INFO - [miembro_service.py:230] - Se encontraron 2 miembros con el rol 1

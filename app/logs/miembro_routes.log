@@ -20,3 +20,86 @@
 2025-11-03 18:44:04 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
 2025-11-03 18:59:19 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 4
 2025-11-03 18:59:19 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: ejemplo 4
+2025-11-05 23:06:20 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Nuevo Miembro (nuevo@example.com)
+2025-11-05 23:06:20 - miembro_routes - WARNING - [miembro_routes.py:48] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-05 23:06:20 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-11-05 23:06:20 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 1
+2025-11-05 23:06:21 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: Test User
+2025-11-05 23:06:21 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 999
+2025-11-05 23:06:21 - miembro_routes - WARNING - [miembro_routes.py:86] - Miembro no encontrado con ID: 999
+2025-11-05 23:06:21 - miembro_routes - INFO - [miembro_routes.py:130] - Listando miembros activos para el hogar ID: 1
+2025-11-05 23:06:21 - miembro_routes - INFO - [miembro_routes.py:132] - Se encontraron 3 miembros activos en el hogar 1
+2025-11-05 23:06:21 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 1
+2025-11-05 23:06:21 - miembro_routes - INFO - [miembro_routes.py:179] - Miembro actualizado exitosamente: 1
+2025-11-05 23:11:24 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Nuevo Miembro (nuevo_e6a7fec0@example.com)
+2025-11-05 23:11:24 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Nuevo Miembro
+2025-11-05 23:11:24 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-11-05 23:11:25 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 1
+2025-11-05 23:11:25 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: Test User
+2025-11-05 23:11:25 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 999
+2025-11-05 23:11:25 - miembro_routes - WARNING - [miembro_routes.py:86] - Miembro no encontrado con ID: 999
+2025-11-05 23:11:25 - miembro_routes - INFO - [miembro_routes.py:130] - Listando miembros activos para el hogar ID: 1
+2025-11-05 23:11:25 - miembro_routes - INFO - [miembro_routes.py:132] - Se encontraron 8 miembros activos en el hogar 1
+2025-11-05 23:11:25 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 1
+2025-11-05 23:11:25 - miembro_routes - INFO - [miembro_routes.py:179] - Miembro actualizado exitosamente: 1
+2025-11-05 23:18:51 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Nuevo Miembro (nuevo_8027a77d@example.com)
+2025-11-05 23:18:51 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Nuevo Miembro
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 1
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: Test User
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 999
+2025-11-05 23:18:52 - miembro_routes - WARNING - [miembro_routes.py:86] - Miembro no encontrado con ID: 999
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:130] - Listando miembros activos para el hogar ID: 1
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:132] - Se encontraron 8 miembros activos en el hogar 1
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 1
+2025-11-05 23:18:52 - miembro_routes - INFO - [miembro_routes.py:179] - Miembro actualizado exitosamente: 1
+2025-11-06 00:43:56 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Nuevo Miembro (nuevo_85a0c41c@example.com)
+2025-11-06 00:43:57 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Nuevo Miembro
+2025-11-06 00:43:57 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-11-06 00:43:58 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 1
+2025-11-06 00:43:58 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: Test User
+2025-11-06 00:43:59 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 999
+2025-11-06 00:43:59 - miembro_routes - WARNING - [miembro_routes.py:86] - Miembro no encontrado con ID: 999
+2025-11-06 00:43:59 - miembro_routes - INFO - [miembro_routes.py:130] - Listando miembros activos para el hogar ID: 1
+2025-11-06 00:43:59 - miembro_routes - INFO - [miembro_routes.py:132] - Se encontraron 1 miembros activos en el hogar 1
+2025-11-06 00:44:00 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 1
+2025-11-06 00:44:00 - miembro_routes - INFO - [miembro_routes.py:179] - Miembro actualizado exitosamente: 1
+2025-11-06 00:44:00 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 999
+2025-11-06 00:44:00 - miembro_routes - WARNING - [miembro_routes.py:158] - Miembro no encontrado para actualizar: 999
+2025-11-06 00:44:01 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Miembro a Eliminar (eliminar_e28461e2@example.com)
+2025-11-06 00:44:01 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Miembro a Eliminar
+2025-11-06 00:44:01 - miembro_routes - INFO - [miembro_routes.py:201] - Intentando eliminar miembro: 2
+2025-11-06 00:44:01 - miembro_routes - INFO - [miembro_routes.py:222] - Miembro eliminado exitosamente: 2
+2025-11-06 00:44:02 - miembro_routes - INFO - [miembro_routes.py:255] - Solicitando cantidad de miembros para el hogar: 1
+2025-11-06 00:44:02 - miembro_routes - INFO - [miembro_routes.py:273] - Solicitando miembros con rol: 1
+2025-11-06 00:44:03 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Primer Miembro (duplicado_45a84183@example.com)
+2025-11-06 00:44:03 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Primer Miembro
+2025-11-06 00:44:03 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Otro Miembro (duplicado_45a84183@example.com)
+2025-11-06 00:44:03 - miembro_routes - WARNING - [miembro_routes.py:48] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-06 00:44:04 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Miembro Otro Hogar (otrohogar_f9a527c2@example.com)
+2025-11-06 00:44:04 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Miembro Otro Hogar
+2025-11-06 05:53:23 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Nuevo Miembro (nuevo_0f1856cf@example.com)
+2025-11-06 05:53:24 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Nuevo Miembro
+2025-11-06 05:53:25 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-11-06 05:53:25 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 1
+2025-11-06 05:53:25 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: Test User
+2025-11-06 05:53:26 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 999
+2025-11-06 05:53:26 - miembro_routes - WARNING - [miembro_routes.py:86] - Miembro no encontrado con ID: 999
+2025-11-06 05:53:26 - miembro_routes - INFO - [miembro_routes.py:130] - Listando miembros activos para el hogar ID: 1
+2025-11-06 05:53:26 - miembro_routes - INFO - [miembro_routes.py:132] - Se encontraron 1 miembros activos en el hogar 1
+2025-11-06 05:53:27 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 1
+2025-11-06 05:53:27 - miembro_routes - INFO - [miembro_routes.py:179] - Miembro actualizado exitosamente: 1
+2025-11-06 05:53:28 - miembro_routes - INFO - [miembro_routes.py:154] - Intentando actualizar miembro: 999
+2025-11-06 05:53:28 - miembro_routes - WARNING - [miembro_routes.py:158] - Miembro no encontrado para actualizar: 999
+2025-11-06 05:53:29 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Miembro a Eliminar (eliminar_41562528@example.com)
+2025-11-06 05:53:29 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Miembro a Eliminar
+2025-11-06 05:53:29 - miembro_routes - INFO - [miembro_routes.py:201] - Intentando eliminar miembro: 2
+2025-11-06 05:53:29 - miembro_routes - INFO - [miembro_routes.py:222] - Miembro eliminado exitosamente: 2
+2025-11-06 05:53:31 - miembro_routes - INFO - [miembro_routes.py:255] - Solicitando cantidad de miembros para el hogar: 1
+2025-11-06 05:53:32 - miembro_routes - INFO - [miembro_routes.py:273] - Solicitando miembros con rol: 1
+2025-11-06 05:53:32 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Primer Miembro (duplicado_b037ea92@example.com)
+2025-11-06 05:53:33 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Primer Miembro
+2025-11-06 05:53:33 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Otro Miembro (duplicado_b037ea92@example.com)
+2025-11-06 05:53:33 - miembro_routes - WARNING - [miembro_routes.py:48] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-06 05:53:34 - miembro_routes - INFO - [miembro_routes.py:41] - Intentando crear miembro: Miembro Otro Hogar (otrohogar_9cad86d8@example.com)
+2025-11-06 05:53:34 - miembro_routes - INFO - [miembro_routes.py:45] - Miembro creado exitosamente: Miembro Otro Hogar

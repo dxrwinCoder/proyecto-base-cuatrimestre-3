@@ -1,5 +1,8 @@
 from pydantic import BaseModel
 from typing import Optional
+from pydantic import ConfigDict
+
+model_config = ConfigDict(from_attributes=True)
 
 
 class AtributoMiembroBase(BaseModel):
@@ -19,5 +22,5 @@ class AtributoMiembroUpdate(BaseModel):
 class AtributoMiembro(AtributoMiembroBase):
     id: int
 
-    class Config:
-        from_attributes = True
+    # class Config:
+    #     from_attributes = True

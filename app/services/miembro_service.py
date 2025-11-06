@@ -35,7 +35,13 @@ async def crear_miembro(db: AsyncSession, data: dict):
         )
         db.add(miembro)
         await db.commit()
-        await db.refresh(miembro)
+        # Recargar con rol usando eager loading
+        result = await db.execute(
+            select(Miembro)
+            .options(joinedload(Miembro.rol))
+            .where(Miembro.id == miembro.id)
+        )
+        miembro = result.scalar_one()
         logger.info(f"Miembro creado exitosamente: {miembro.id}")
         return miembro
     except ValueError as e:
@@ -99,7 +105,14 @@ async def listar_miembros_activos_por_hogar(db: AsyncSession, hogar_id: int):
 async def actualizar_miembro(db: AsyncSession, miembro_id: int, data: dict):
     try:
         logger.info(f"Actualizando miembro: {miembro_id}")
-        miembro = await db.get(Miembro, miembro_id)
+        # Usar select con joinedload para cargar el rol
+        query = (
+            select(Miembro)
+            .options(joinedload(Miembro.rol))
+            .where(Miembro.id == miembro_id)
+        )
+        result = await db.execute(query)
+        miembro = result.scalar_one_or_none()
 
         if not miembro:
             logger.warning(f"Miembro no encontrado para actualizar: {miembro_id}")
@@ -126,9 +139,10 @@ async def actualizar_miembro(db: AsyncSession, miembro_id: int, data: dict):
                 setattr(miembro, key, value)
 
         await db.commit()
-        await db.refresh(miembro)
+        # await db.refresh(miembro, ["rol"])  # Refrescar incluyendo el rol
         logger.info(f"Miembro actualizado exitosamente: {miembro_id}")
-        return miembro
+        # ¡Use la función que ya carga el objeto con el 'joinedload' (rol)!
+        return await obtener_miembro(db, miembro_id)
     except ValueError as e:
         logger.error(f"Error de validación al actualizar miembro: {str(e)}")
         raise

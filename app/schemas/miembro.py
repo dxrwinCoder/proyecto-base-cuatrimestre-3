@@ -1,6 +1,9 @@
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
 from datetime import datetime
+from pydantic import ConfigDict
+
+model_config = ConfigDict(from_attributes=True)
 
 
 class MiembroBase(BaseModel):
@@ -28,8 +31,8 @@ class Miembro(MiembroBase):
     fecha_creacion: datetime
     fecha_actualizacion: datetime
 
-    class Config:
-        from_attributes = True
+    # class Config:
+    #     from_attributes = True
 
 
 class MiembroResponse(Miembro):

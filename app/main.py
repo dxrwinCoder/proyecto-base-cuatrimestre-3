@@ -32,10 +32,22 @@ logger = setup_logger("main")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Iniciar la app
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+    # Startup: Iniciar la app
+    try:
+        logger.info("Iniciando la aplicación...")
+        # Crea todas las tablas en la base de datos
+        async with engine.begin() as conn:
+            logger.info("Creando tablas en la base de datos...")
+            await conn.run_sync(Base.metadata.create_all)
+            logger.info("Tablas creadas exitosamente")
+    except Exception as e:
+        logger.error(f"Error durante el inicio de la aplicación: {str(e)}")
+        raise
+
     yield
+
+    # Shutdown: Código de limpieza (si es necesario)
+    logger.info("Cerrando la aplicación...")
 
 
 app = FastAPI(
@@ -78,20 +90,6 @@ app.include_router(hogar_routes.router)
 app.include_router(evento_routes.router)
 app.include_router(modulo_routes.router)
 app.include_router(miembro_routes.router)
-
-
-@app.on_event("startup")
-async def startup():
-    try:
-        logger.info("Iniciando la aplicación...")
-        # Crea todas las tablas en la base de datos
-        async with engine.begin() as conn:
-            logger.info("Creando tablas en la base de datos...")
-            await conn.run_sync(Base.metadata.create_all)
-            logger.info("Tablas creadas exitosamente")
-    except Exception as e:
-        logger.error(f"Error durante el inicio de la aplicación: {str(e)}")
-        raise
 
 
 @app.get("/")

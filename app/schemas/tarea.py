@@ -1,6 +1,9 @@
-from pydantic import BaseModel
-from datetime import date
+from pydantic import BaseModel, ConfigDict, field_serializer
+from datetime import date, datetime
 from typing import Optional
+
+
+model_config = ConfigDict(from_attributes=True)
 
 
 class TareaBase(BaseModel):
@@ -27,7 +30,13 @@ class Tarea(TareaBase):
     id: int
     estado_actual: str
     tiempo_total_segundos: Optional[int] = None
-    fecha_asignacion: str
+    fecha_asignacion: datetime
 
-    class Config:
-        from_attributes = True
+    @field_serializer("fecha_asignacion")
+    def serialize_fecha_asignacion(self, fecha_asignacion: datetime, _info):
+        """Convierte datetime a string ISO format"""
+        return fecha_asignacion.isoformat() if fecha_asignacion else None
+
+
+# class Config:
+#     from_attributes = True
