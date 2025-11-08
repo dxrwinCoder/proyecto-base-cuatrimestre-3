@@ -1,26 +1,51 @@
+# services/tarea_service.py
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from models.tarea import Tarea
 from models.comentario_tarea import ComentarioTarea
-from models.notificacion import Notificacion
+from models.miembro import Miembro
 import time
 from utils.logger import setup_logger
+
+# --- ¡LOS IMPORTS DE LOS PARCHES! ---
+from services.notificacion_service import crear_notificacion
+from schemas.notificacion import NotificacionCreate
+from schemas.tarea import TareaCreate  # ¡Asumiendo que tiene TareaCreate!
+from schemas.comentario_tarea import (
+    ComentarioTareaCreate,
+)  # ¡Asumiendo que tiene este schema!
 
 logger = setup_logger("tarea_service")
 
 
-async def crear_tarea(db: AsyncSession, data: dict):
+async def crear_tarea(db: AsyncSession, data: TareaCreate, creador_id: int):
     try:
-        logger.info(f"Creando tarea con datos: {data}")
-        tarea = Tarea(**data)
+        logger.info(f"Creando tarea con datos: {data.titulo}")
+
+        tarea_data = data.model_dump()
+        tarea_data["creado_por"] = creador_id
+
+        tarea = Tarea(**tarea_data)
         db.add(tarea)
-        await db.commit()
+
+        await db.flush()
         await db.refresh(tarea)
-        logger.info(f"Tarea creada exitosamente con ID: {tarea.id}")
+
+        logger.info(f"Tarea creada (sin commit) con ID: {tarea.id}")
+
+        if tarea.asignado_a != creador_id:
+            notif_data = NotificacionCreate(
+                id_miembro_destino=tarea.asignado_a,
+                id_miembro_origen=creador_id,
+                id_tarea=tarea.id,
+                tipo="nueva_tarea",
+                mensaje=f"Se te asignó una nueva tarea: '{tarea.titulo}'",
+            )
+            await crear_notificacion(db, notif_data)
+
         return tarea
     except Exception as e:
         logger.error(f"Error al crear tarea: {str(e)}")
-        await db.rollback()
         raise
 
 
@@ -36,6 +61,10 @@ async def obtener_tarea_por_id(db: AsyncSession, tarea_id: int):
     except Exception as e:
         logger.error(f"Error al obtener tarea {tarea_id}: {str(e)}")
         raise
+
+
+# --- ¡AQUÍ ESTÁ LA LÓGICA QUE FALTABA! ---
+# (¡Estas funciones las había borrado sin querer!)
 
 
 async def listar_tareas_por_miembro(db: AsyncSession, miembro_id: int):
@@ -69,8 +98,10 @@ async def listar_tareas_por_evento(db: AsyncSession, evento_id: int):
 async def listar_tareas_por_tipo(db: AsyncSession, tipo_tarea: str, hogar_id: int):
     try:
         logger.info(f"Listando tareas de tipo '{tipo_tarea}' en hogar {hogar_id}")
+        # ¡OJO! Su DDL no tiene 'tipo_tarea' en la tabla 'tareas', tiene 'categoria'
+        # Voy a asumir que se refería a 'categoria'
         stmt = select(Tarea).where(
-            Tarea.tipo_tarea == tipo_tarea,
+            Tarea.categoria == tipo_tarea,  # <-- ¡Cambiado de tipo_tarea a categoria!
             Tarea.id_hogar == hogar_id,
             Tarea.estado == True,
         )
@@ -83,6 +114,9 @@ async def listar_tareas_por_tipo(db: AsyncSession, tipo_tarea: str, hogar_id: in
         raise
 
 
+# --- FIN DE LA LÓGICA QUE FALTABA ---
+
+
 async def actualizar_estado_tarea(
     db: AsyncSession, tarea_id: int, nuevo_estado: str, miembro_id: int
 ):
@@ -93,78 +127,94 @@ async def actualizar_estado_tarea(
         tarea = await obtener_tarea_por_id(db, tarea_id)
         if not tarea:
             logger.warning(f"No se puede actualizar estado: tarea {tarea_id} no existe")
-            return None
+            raise ValueError(f"Tarea {tarea_id} no existe")
 
-        if tarea.asignado_a != miembro_id:
+        if tarea.asignado_a != miembro_id and tarea.creado_por != miembro_id:
             logger.warning(
                 f"Miembro {miembro_id} no está autorizado para actualizar la tarea {tarea_id}"
             )
-            return None
+            raise ValueError(f"No autorizado para actualizar esta tarea")
 
         if nuevo_estado not in ["pendiente", "en_progreso", "completada", "cancelada"]:
             logger.error(f"Estado inválido: {nuevo_estado}")
             raise ValueError("Estado de tarea no válido")
 
-        # Registrar tiempo solo si se completa por primera vez
         if nuevo_estado == "completada" and tarea.estado_actual != "completada":
             tiempo_seg = int(time.time() - tarea.fecha_asignacion.timestamp())
             tarea.tiempo_total_segundos = tiempo_seg
             logger.info(f"Tarea {tarea_id} completada en {tiempo_seg} segundos")
 
         tarea.estado_actual = nuevo_estado
-        await db.commit()
-        await db.refresh(tarea)
-        logger.info(f"Estado de tarea {tarea_id} actualizado a '{nuevo_estado}'")
 
-        # Notificación al creador (quien asignó la tarea)
-        notif = Notificacion(
-            id_miembro_destino=tarea.asignado_a,  # Ajustar si el creador es diferente
-            id_miembro_origen=miembro_id,
-            id_tarea=tarea_id,
-            tipo="cambio_estado_tarea",
-            mensaje=f"La tarea '{tarea.titulo}' ahora está '{nuevo_estado}'",
+        await db.flush()
+
+        logger.info(
+            f"Estado de tarea {tarea_id} actualizado (sin commit) a '{nuevo_estado}'"
         )
-        db.add(notif)
-        await db.commit()
-        logger.info(f"Notificación enviada por cambio de estado en tarea {tarea_id}")
 
+        if tarea.creado_por and tarea.creado_por != miembro_id:
+            notif_data = NotificacionCreate(
+                id_miembro_destino=tarea.creado_por,
+                id_miembro_origen=miembro_id,
+                id_tarea=tarea_id,
+                tipo="cambio_estado_tarea",
+                mensaje=f"La tarea '{tarea.titulo}' ahora está '{nuevo_estado}'",
+            )
+            await crear_notificacion(db, notif_data)
+            logger.info(
+                f"Notificación enviada (sin commit) por cambio de estado en tarea {tarea_id}"
+            )
+
+        await db.refresh(tarea)
         return tarea
-    except Exception as e:
+    except (ValueError, Exception) as e:
         logger.error(f"Error al actualizar estado de tarea {tarea_id}: {str(e)}")
-        await db.rollback()
         raise
 
 
-async def agregar_comentario_a_tarea(db: AsyncSession, data: dict):
+async def agregar_comentario_a_tarea(
+    db: AsyncSession, data: ComentarioTareaCreate, miembro_id: int
+):
     try:
-        logger.info(f"Agregando comentario a tarea {data.get('id_tarea')}")
-        comentario = ComentarioTarea(**data)
+        logger.info(f"Agregando comentario a tarea {data.id_tarea}")
+
+        comentario_data = data.model_dump()
+        comentario_data["id_miembro"] = miembro_id
+
+        comentario = ComentarioTarea(**comentario_data)
         db.add(comentario)
-        await db.commit()
+
+        await db.flush()
         await db.refresh(comentario)
 
-        # Notificar al asignado
-        tarea = await obtener_tarea_por_id(db, data["id_tarea"])
+        tarea = await obtener_tarea_por_id(db, data.id_tarea)
         if tarea:
-            notif = Notificacion(
-                id_miembro_destino=tarea.asignado_a,
-                id_miembro_origen=data["id_miembro"],
-                id_tarea=data["id_tarea"],
-                tipo="nuevo_comentario",
-                mensaje="Se agregó un comentario a la tarea",
-            )
-            db.add(notif)
-            await db.commit()
-            logger.info(
-                f"Comentario y notificación creados para tarea {data['id_tarea']}"
-            )
+            id_destino = None
+            if tarea.asignado_a == miembro_id and tarea.creado_por:
+                id_destino = tarea.creado_por
+            elif tarea.creado_por == miembro_id:
+                id_destino = tarea.asignado_a
+
+            if id_destino and id_destino != miembro_id:
+                notif_data = NotificacionCreate(
+                    id_miembro_destino=id_destino,
+                    id_miembro_origen=miembro_id,
+                    id_tarea=data.id_tarea,
+                    tipo="nuevo_comentario",
+                    mensaje=f"Hay un nuevo comentario en la tarea '{tarea.titulo}'",
+                )
+                await crear_notificacion(db, notif_data)
+                logger.info(
+                    f"Comentario y notificación creados (sin commit) para tarea {data.id_tarea}"
+                )
+            else:
+                logger.info(
+                    f"Comentario creado (sin commit) para tarea {data.id_tarea}"
+                )
         else:
-            logger.warning(
-                f"No se pudo notificar: tarea {data['id_tarea']} no encontrada"
-            )
+            logger.warning(f"No se pudo notificar: tarea {data.id_tarea} no encontrada")
 
         return comentario
     except Exception as e:
         logger.error(f"Error al agregar comentario: {str(e)}")
-        await db.rollback()
         raise

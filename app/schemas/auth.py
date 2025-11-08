@@ -2,8 +2,6 @@ from pydantic import BaseModel, Field
 from typing import Optional
 from pydantic import ConfigDict
 
-model_config = ConfigDict(from_attributes=True)
-
 
 class MiembroLogin(BaseModel):
     correo_electronico: str
@@ -19,6 +17,8 @@ class MiembroRegistro(BaseModel):
     id_rol: int
     id_hogar: int
 
+    model_config = ConfigDict(from_attributes=True)
+
 
 class Token(BaseModel):
     access_token: str
@@ -27,8 +27,12 @@ class Token(BaseModel):
     id_miembro: int
     id_hogar: int
 
+    model_config = ConfigDict(from_attributes=True)
+
 
 # Nuevo esquema solo para Swagger UI
 class OAuth2PasswordRequestFormCompat(BaseModel):
     username: str  # correo electrónico
     password: str  # contraseña
+
+    model_config = ConfigDict(from_attributes=True)

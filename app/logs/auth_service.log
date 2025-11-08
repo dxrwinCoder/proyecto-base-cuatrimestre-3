@@ -416,3 +416,877 @@ WHERE roles.id = %s]
 2025-11-06 06:41:19 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
 2025-11-06 06:41:19 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
 2025-11-06 06:41:19 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 16:10:11 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:10:11 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-06 16:10:11 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 16:10:12 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-06 16:10:12 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000289A4355010>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 21, 10, 12), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 21, 10, 12), 'contrasena_hash': '$2b$12$XdDHhtAqVDph1rHuvEggrerG86tFLxgtQ8Awk0Inccx3p0C5jx.Im', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 16:10:12 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-06 16:10:12 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 16:10:12 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:10:12 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-06 16:10:12 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-06 16:10:12 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:10:12 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:10:13 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 16:10:13 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 16:10:13 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 16:10:13 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 16:10:14 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 16:10:14 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-06 16:10:15 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 16:10:15 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 16:10:16 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_4feb6f2e@example.com
+2025-11-06 16:10:16 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 16:10:16 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_b5ac557b@example.com
+2025-11-06 16:10:17 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_b5ac557b@example.com
+2025-11-06 16:10:17 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 16:10:17 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 16:10:17 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_03b1511a@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:10:17 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_03b1511a@example.com
+2025-11-06 16:10:17 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 16:10:17 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-06 16:10:17 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000289A43A4410>, 'correo_electronico': 'nuevo_03b1511a@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 21, 10, 17), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 21, 10, 17), 'contrasena_hash': '$2b$12$9nouPOrn4KZacjktaYAeF.bfXKO41qKXA9IOWH2fKmm2fPVtSWvtm', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 16:10:18 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:10:18 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 16:10:18 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-06 16:10:18 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-06 16:10:18 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000289A43A5250>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 21, 10, 18), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 21, 10, 18), 'contrasena_hash': '$2b$12$mDFjWUZYpakLPXeW2TXIMe9R8nxHjJeu5JKoSOulXibUVLRxa2.Ti', 'nombre_completo': 'Usuario 1', 'id_hogar': 1}
+2025-11-06 16:10:18 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:10:18 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 16:10:18 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-06 16:10:18 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:10:18 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:10:18 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 16:10:18 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 16:24:39 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:24:39 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-06 16:24:39 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 16:24:40 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-06 16:24:40 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BC16D51850>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 21, 24, 40), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 21, 24, 40), 'contrasena_hash': '$2b$12$inL1Hc8l03Jx/1we/yTq..hDkTb1.XYW//Psq2Bz00EV1z7RKaGEC', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 16:24:40 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-06 16:24:40 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 16:24:40 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:24:40 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-06 16:24:40 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-06 16:24:40 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:24:40 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:24:41 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 16:24:41 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 16:24:41 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 16:24:41 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 16:24:42 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 16:24:42 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-06 16:24:43 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 16:24:43 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 16:24:44 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_10ade7c6@example.com
+2025-11-06 16:24:44 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 16:24:45 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_083c3b1a@example.com
+2025-11-06 16:24:45 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_083c3b1a@example.com
+2025-11-06 16:24:45 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 16:24:45 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 16:24:45 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_ff7e20ed@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:24:45 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_ff7e20ed@example.com
+2025-11-06 16:24:45 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 16:24:46 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-06 16:24:46 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BC16D75B50>, 'correo_electronico': 'nuevo_ff7e20ed@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 21, 24, 46), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 21, 24, 46), 'contrasena_hash': '$2b$12$tIWusw53LXRWVE7C/O7qKuogf7JQxeHX1bONi82T2OQPXt29okFlS', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 16:24:46 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:24:46 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 16:24:46 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-06 16:24:46 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-06 16:24:46 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BC16D75A30>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 21, 24, 46), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 21, 24, 46), 'contrasena_hash': '$2b$12$A6tQ0DyCboDiH5uTn0wDiuXbMURHX1EsMzmD71XHHaoSiTVTAXJIO', 'nombre_completo': 'Usuario 1', 'id_hogar': 1}
+2025-11-06 16:24:46 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 16:24:46 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 16:24:46 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-06 16:24:46 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:24:46 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 16:24:47 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 16:24:47 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:39:33 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:39:33 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-06 17:39:33 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 17:39:33 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-06 17:39:33 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BEF910F7D0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 39, 33), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 39, 33), 'contrasena_hash': '$2b$12$.8tz4yFpLqw./JFqeZEv6eWQ/YbvJBB15EdXll/d5WkroNgT/h8OK', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 17:39:33 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-06 17:39:33 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:39:34 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:39:34 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-06 17:39:34 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-06 17:39:34 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:39:34 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:39:34 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 17:39:35 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 17:39:35 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 17:39:35 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:39:35 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 17:39:36 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-06 17:39:36 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 17:39:36 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 17:39:37 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_d185acf8@example.com
+2025-11-06 17:39:38 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 17:39:38 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_1961a6a3@example.com
+2025-11-06 17:39:38 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_1961a6a3@example.com
+2025-11-06 17:39:39 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 17:39:39 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 17:39:39 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_2634f863@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:39:39 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_2634f863@example.com
+2025-11-06 17:39:39 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 17:39:39 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-06 17:39:39 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BEF90FB530>, 'correo_electronico': 'nuevo_2634f863@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 39, 39), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 39, 39), 'contrasena_hash': '$2b$12$KVHZOde0ajDsMcNHdPMqvuaYC2uMYqU2MucZtmwvM9I2JE3CQtEQ2', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 17:39:39 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:39:39 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 17:39:39 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-06 17:39:40 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-06 17:39:40 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BEF90FB770>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 39, 40), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 39, 40), 'contrasena_hash': '$2b$12$iAAR/HUxfZIa7CMfmlr9sO7J7aIo.QawXbBHmm27ThkKhqfXE.t6G', 'nombre_completo': 'Usuario 1', 'id_hogar': 1}
+2025-11-06 17:39:40 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:39:40 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 17:39:40 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-06 17:39:40 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:39:40 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:39:40 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 17:39:40 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:49:23 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:49:23 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-06 17:49:23 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 17:49:23 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-06 17:49:23 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000002B1C0D025D0>, 'id': 2, 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 49, 23), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 49, 23), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$HYkMn7hgPUJWjY6KZ8roI.ERsz7iD/ZXUFnH31a9X7.09VWPa6bLa', 'id_hogar': 1}
+2025-11-06 17:49:23 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-06 17:49:24 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:49:24 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:49:24 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-06 17:49:24 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-06 17:49:24 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:49:24 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:49:24 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 17:49:25 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 17:49:25 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 17:49:25 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:49:25 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 17:49:26 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-06 17:49:26 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 17:49:26 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 17:49:27 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_4bdf127d@example.com
+2025-11-06 17:49:27 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 17:49:28 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_b2131ffc@example.com
+2025-11-06 17:49:28 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_b2131ffc@example.com
+2025-11-06 17:49:28 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 17:49:28 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 17:49:28 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_ca3ecb8a@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:49:28 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_ca3ecb8a@example.com
+2025-11-06 17:49:28 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 17:49:29 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-06 17:49:29 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000002B1C0D4FDD0>, 'id': 1, 'correo_electronico': 'nuevo_ca3ecb8a@example.com', 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 49, 29), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 49, 29), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$Ub2DFNenQE0NiZ46QqpkDudsaXfLVRcm5IbISKelF3JhJXnFjduH6', 'id_hogar': 1}
+2025-11-06 17:49:29 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:49:29 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 17:49:29 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-06 17:49:29 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-06 17:49:29 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000002B1C0D4F290>, 'id': 1, 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 49, 29), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 49, 29), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$coHsPq.e2.83DJqSkIWHeOAiM4RcAlbysKvNmWrtBjYC4ic60aQ7S', 'id_hogar': 1}
+2025-11-06 17:49:29 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:49:29 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 17:49:29 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-06 17:49:29 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:49:29 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:49:30 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 17:49:30 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:54:51 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:54:51 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-06 17:54:51 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 17:54:51 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-06 17:54:51 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000013581C03050>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 54, 51), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 54, 51), 'contrasena_hash': '$2b$12$6PZa7QXZTnUtAEut7MNcJ.pBytrb.48bsINumxnA106E0UyMq5oUK', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 17:54:51 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-06 17:54:51 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:54:52 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:54:52 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-06 17:54:52 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-06 17:54:52 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:54:52 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:54:52 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 17:54:52 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 17:54:52 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 17:54:52 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-06 17:54:53 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-06 17:54:53 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-06 17:54:54 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 17:54:54 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 17:54:55 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_8d7b44e9@example.com
+2025-11-06 17:54:55 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-06 17:54:56 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_b26f6713@example.com
+2025-11-06 17:54:56 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_b26f6713@example.com
+2025-11-06 17:54:56 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-06 17:54:56 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-06 17:54:56 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_1a3d624a@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:54:56 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_1a3d624a@example.com
+2025-11-06 17:54:56 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-06 17:54:57 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-06 17:54:57 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000013581C56390>, 'correo_electronico': 'nuevo_1a3d624a@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 54, 57), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 54, 57), 'contrasena_hash': '$2b$12$l0kdQUYkUrxJLMCwD7eQleF88AMxNdm/vW0gkwi8s2Beua/vjn0Qu', 'nombre_completo': 'Nuevo Usuario', 'id_hogar': 1}
+2025-11-06 17:54:57 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:54:57 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 17:54:57 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-06 17:54:57 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-06 17:54:57 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000013581C556D0>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 6, 22, 54, 57), 'fecha_actualizacion': datetime.datetime(2025, 11, 6, 22, 54, 57), 'contrasena_hash': '$2b$12$3.BW6TBicKXymkcmgXcvXObTXKxzpaX2PJ5/KaESxQooJ.8k1SqYK', 'nombre_completo': 'Usuario 1', 'id_hogar': 1}
+2025-11-06 17:54:57 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-06 17:54:57 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-06 17:54:57 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-06 17:54:57 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:54:57 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-06 17:54:58 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-06 17:54:58 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 17:48:21 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 17:48:21 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 17:48:21 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 17:48:22 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 17:48:22 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000143B41167B0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 7, 22, 48, 22), 'fecha_actualizacion': datetime.datetime(2025, 11, 7, 22, 48, 22), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$am8uQyvqD9teiY.TvAeo5OoXMQWs28F8oVIWzBgz08s1b3pnIdnDa', 'id_hogar': 1}
+2025-11-07 17:48:22 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 17:48:22 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 17:48:22 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 17:48:22 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 17:48:22 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 17:48:22 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 17:48:22 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 17:48:23 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 17:48:23 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 17:48:23 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 17:48:23 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 17:48:24 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 17:48:24 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 17:48:25 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 17:48:25 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 17:48:26 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_5f30e729@example.com
+2025-11-07 17:48:26 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 17:48:26 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_74b893f8@example.com
+2025-11-07 17:48:27 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_74b893f8@example.com
+2025-11-07 17:48:27 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 17:48:27 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 17:48:27 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_e5ab243b@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 17:48:27 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_e5ab243b@example.com
+2025-11-07 17:48:27 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 17:48:28 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 17:48:28 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000143B4161790>, 'correo_electronico': 'nuevo_e5ab243b@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 7, 22, 48, 28), 'fecha_actualizacion': datetime.datetime(2025, 11, 7, 22, 48, 28), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$Yj8z80xV7A9Fh2cE36..WextzZdlAVqC6LRN4zw4Yrv/rLHVzqmSW', 'id_hogar': 1}
+2025-11-07 17:48:28 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 17:48:28 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 17:48:28 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 17:48:28 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 17:48:28 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000143B4161BB0>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 7, 22, 48, 28), 'fecha_actualizacion': datetime.datetime(2025, 11, 7, 22, 48, 28), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$.lEUdOJ6NRLtAsS9RhNSVuOGrhPVNkaCiy6Xbq7pZ9jrkaqSMsfiy', 'id_hogar': 1}
+2025-11-07 17:48:28 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 17:48:28 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 17:48:28 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 17:48:28 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 17:48:28 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 17:48:29 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 17:48:29 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 18:42:41 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 18:42:41 - auth_service - ERROR - [auth_service.py:39] - Error de base de datos durante la autenticación: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Mensaje(mensajes)]'. Original exception was: Mapper 'Mapper[Miembro(miembros)]' has no property 'mensajes'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-07 18:50:18 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 18:50:18 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 18:50:18 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 18:50:18 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 18:50:18 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001FC0212F8F0>, 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 7, 23, 50, 18), 'fecha_actualizacion': datetime.datetime(2025, 11, 7, 23, 50, 18), 'correo_electronico': 'nuevo@example.com', 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$FrZKQ0DzjY1ESWiMjAUtjuxmZ/GfKIQr.yB7t3TOADrNhnEoy1cmK'}
+2025-11-07 18:50:18 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 18:50:18 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 18:50:19 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 18:50:19 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 18:50:19 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 18:50:19 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 18:50:19 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 18:50:19 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 18:50:20 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 18:50:20 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 18:50:20 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 18:50:20 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 18:50:20 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 18:50:21 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 18:50:21 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 18:50:22 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_d8c059b9@example.com
+2025-11-07 18:50:22 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 18:50:23 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_fa82aee3@example.com
+2025-11-07 18:50:23 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_fa82aee3@example.com
+2025-11-07 18:50:23 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 18:50:23 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 18:50:24 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_d0cd695e@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 18:50:24 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_d0cd695e@example.com
+2025-11-07 18:50:24 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 18:50:24 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 18:50:24 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001FC0217E810>, 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 7, 23, 50, 24), 'fecha_actualizacion': datetime.datetime(2025, 11, 7, 23, 50, 24), 'correo_electronico': 'nuevo_d0cd695e@example.com', 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$ibA2LxVxF417Y45wRxTKRO0ZsmZl0NaBFZYqCWCqXUWy86xWDo8wG'}
+2025-11-07 18:50:24 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 18:50:24 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 18:50:24 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 18:50:24 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 18:50:24 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001FC0217EB70>, 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 7, 23, 50, 24), 'fecha_actualizacion': datetime.datetime(2025, 11, 7, 23, 50, 24), 'correo_electronico': 'duplicado@example.com', 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$/JL8PODSq3OoV2vxf.S70uJZ00tdZcNjxGVFlE7DS.Du1XJp7pSE.'}
+2025-11-07 18:50:24 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 18:50:24 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 18:50:25 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 18:50:25 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 18:50:25 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 18:50:25 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 18:50:25 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:08:58 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:08:58 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 19:08:58 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 19:08:59 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 19:08:59 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000029B68607590>, 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 8, 59), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 8, 59), 'correo_electronico': 'nuevo@example.com', 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$Qy4lJVprSoPw2HWT03us7u9otCyU6jFMn/JrK3P1dJkpRVWaG4ahG'}
+2025-11-07 19:08:59 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 19:08:59 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:09:00 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:09:00 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 19:09:00 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 19:09:00 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:09:00 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:09:00 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 19:09:00 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 19:09:00 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 19:09:00 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:09:01 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 19:09:01 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 19:09:02 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 19:09:02 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 19:09:03 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_1452abe5@example.com
+2025-11-07 19:09:03 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 19:09:04 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_5cea0636@example.com
+2025-11-07 19:09:04 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_5cea0636@example.com
+2025-11-07 19:09:04 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 19:09:04 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 19:09:04 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_6be7f52a@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:09:04 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_6be7f52a@example.com
+2025-11-07 19:09:04 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 19:09:05 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 19:09:05 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000029B6866BAD0>, 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 9, 5), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 9, 5), 'correo_electronico': 'nuevo_6be7f52a@example.com', 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$RrpBXRiW35ZTJ2FrROpKne9Ti24UcyW7duHjSaiy8V2jgxqMiIAbe'}
+2025-11-07 19:09:05 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:09:05 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 19:09:05 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 19:09:05 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 19:09:05 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000029B6866BD10>, 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 9, 5), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 9, 5), 'correo_electronico': 'duplicado@example.com', 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$k0NergEl55bAPL58R6i7tulPZBcdgDSDx8LigGH/.0CzeRZkzRTbm'}
+2025-11-07 19:09:05 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:09:05 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 19:09:05 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 19:09:05 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:09:05 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:09:06 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 19:09:06 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:19:23 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:19:23 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 19:19:23 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 19:19:23 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 19:19:23 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000021A577BB170>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 19, 23), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 19, 23), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$oBzLHspraS1O1MSd.stLCusD9s0S2lsn0xSxpJbPSr0DjnE0Wtk1i'}
+2025-11-07 19:19:23 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 19:19:23 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:19:24 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:19:24 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 19:19:24 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 19:19:24 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:19:24 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:19:24 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 19:19:25 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 19:19:25 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 19:19:25 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:19:25 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 19:19:26 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 19:19:26 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 19:19:26 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 19:19:27 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_bcf49623@example.com
+2025-11-07 19:19:28 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 19:19:28 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_23f65d85@example.com
+2025-11-07 19:19:28 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_23f65d85@example.com
+2025-11-07 19:19:29 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 19:19:29 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 19:19:29 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_c90b9ca2@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:19:29 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_c90b9ca2@example.com
+2025-11-07 19:19:29 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 19:19:29 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 19:19:29 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000021A5780A390>, 'correo_electronico': 'nuevo_c90b9ca2@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 19, 29), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 19, 29), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$ibgN3pAEPYvL7iz9zvhapeto4M3k06ynmWQC3wN7m29XC5lUlIwAi'}
+2025-11-07 19:19:29 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:19:29 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 19:19:29 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 19:19:30 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 19:19:30 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000021A5780A390>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 19, 30), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 19, 30), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$TRfvAn7cg8xUWZPkTgnbK.pDOtdpt3yfFiqWXIGGCpDYnSc/DHUhy'}
+2025-11-07 19:19:30 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:19:30 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 19:19:30 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 19:19:30 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:19:30 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:19:30 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 19:19:30 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:34:52 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:34:52 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 19:34:52 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 19:34:52 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 19:34:52 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001CBF23CB5F0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 34, 52), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 34, 52), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$CGAbfljH3diXrZmBckYhO.sN4p3Kp644p42gZen0HwKgBDvFCmeb6'}
+2025-11-07 19:34:52 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 19:34:52 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:34:53 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:34:53 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 19:34:53 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 19:34:53 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:34:53 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:34:53 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 19:34:54 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 19:34:54 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 19:34:54 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 19:34:54 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 19:34:54 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 19:34:55 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 19:34:55 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 19:34:56 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_47c2ee80@example.com
+2025-11-07 19:34:56 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 19:34:57 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_5cdb6911@example.com
+2025-11-07 19:34:57 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_5cdb6911@example.com
+2025-11-07 19:34:57 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 19:34:57 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 19:34:58 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_1d298761@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:34:58 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_1d298761@example.com
+2025-11-07 19:34:58 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 19:34:58 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 19:34:58 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001CBF2412690>, 'correo_electronico': 'nuevo_1d298761@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 34, 58), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 34, 58), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$LnkaafOK5ZTU14tzwmdka.FTFVyvnyZ2hYLcKCwgucnLs6061QlrS'}
+2025-11-07 19:34:58 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:34:58 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 19:34:58 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 19:34:59 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 19:34:59 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001CBF2413110>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 0, 34, 59), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 0, 34, 59), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$4lcIAiYQogPEFAMh1rKJc.v.RurcMQZpk8tMy9cK884JfAzCyqE9e'}
+2025-11-07 19:34:59 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 19:34:59 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 19:34:59 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 19:34:59 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:34:59 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 19:34:59 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 19:34:59 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:23:39 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:23:39 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 20:23:39 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:23:39 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 20:23:39 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000028156E42FF0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 23, 39), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 23, 39), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$i0qe3t8jX.0Xa6p5pcIWqubvPh6W0VcOHMycWn3H1lmlJ34vkv2c2'}
+2025-11-07 20:23:39 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 20:23:39 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:23:40 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:23:40 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 20:23:40 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 20:23:40 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:23:40 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:23:41 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:23:41 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:23:41 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:23:41 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:23:42 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:23:43 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 20:23:43 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:23:43 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:23:45 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_2e3a92b3@example.com
+2025-11-07 20:23:45 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:23:46 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_3c8cf80c@example.com
+2025-11-07 20:23:47 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_3c8cf80c@example.com
+2025-11-07 20:23:47 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:23:47 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:23:47 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_edb91fcb@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:23:47 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_edb91fcb@example.com
+2025-11-07 20:23:47 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:23:48 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 20:23:48 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000028156E83A10>, 'correo_electronico': 'nuevo_edb91fcb@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 23, 48), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 23, 48), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$EOY9e9CBe/AJnp31dBemj.4C2FVVtbReBdLcY2KBff4QEyXNfvDVy'}
+2025-11-07 20:23:48 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:23:48 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:23:48 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 20:23:48 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 20:23:48 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000028156E81B50>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 23, 48), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 23, 48), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$t4RZctW6/7pPggN.3iQnXeKUR8WlAr4oVk7zV.YoH6IJpYYD9B54y'}
+2025-11-07 20:23:48 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:23:48 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:23:48 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 20:23:48 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:23:48 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:23:49 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:23:49 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:30:32 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:30:32 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 20:30:32 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:30:32 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 20:30:32 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000296D8E829F0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 30, 32), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 30, 32), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$qQYRMwHujj7UubsWDNVLnOp7dio99sZgAeIlL5na1C7Owlj1h.JKe'}
+2025-11-07 20:30:32 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 20:30:32 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:30:33 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:30:33 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 20:30:33 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 20:30:33 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:30:33 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:30:34 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:30:34 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:30:34 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:30:34 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:30:35 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:30:35 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 20:30:36 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:30:36 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:30:38 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_153b5611@example.com
+2025-11-07 20:30:38 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:30:39 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_8e02a674@example.com
+2025-11-07 20:30:39 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_8e02a674@example.com
+2025-11-07 20:30:40 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:30:40 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:30:40 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_dc544ee2@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:30:40 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_dc544ee2@example.com
+2025-11-07 20:30:40 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:30:40 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 20:30:40 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000296D8EC5550>, 'correo_electronico': 'nuevo_dc544ee2@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 30, 40), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 30, 40), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$JI391y4/93kwZzH9RkgmJ.I9s6CHT1Eo9kPbxPyBZ7i6rXYlMq8Mm'}
+2025-11-07 20:30:40 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:30:40 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:30:41 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 20:30:41 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 20:30:41 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000296D8EC6750>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 30, 41), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 30, 41), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$TiKnfnKid5c3LbTK6r7dpeBB2c0TR50gomingwee32bEEHSQIVxTK'}
+2025-11-07 20:30:41 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:30:41 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:30:41 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 20:30:41 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:30:41 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:30:42 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:30:42 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:40:32 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:40:32 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 20:40:32 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:40:33 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 20:40:33 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000020A9AEAAF90>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 40, 33), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 40, 33), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$xwtVZQUfRbTCZHOZHbVeSu5FVKsGKcuY1pnG1PJ7HzllltVqqnW36'}
+2025-11-07 20:40:33 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 20:40:33 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:40:34 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:40:34 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 20:40:34 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 20:40:34 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:40:34 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:40:34 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:40:35 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:40:35 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:40:35 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:40:36 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:40:36 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 20:40:37 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:40:37 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:40:39 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_284513a0@example.com
+2025-11-07 20:40:39 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:40:40 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_76c5a8dd@example.com
+2025-11-07 20:40:40 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_76c5a8dd@example.com
+2025-11-07 20:40:41 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:40:41 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:40:41 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_e89298d1@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:40:41 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_e89298d1@example.com
+2025-11-07 20:40:41 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:40:41 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 20:40:41 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000020A9AEF2330>, 'correo_electronico': 'nuevo_e89298d1@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 40, 41), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 40, 41), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$sk1aGw5/7nNtHLy/C/VOA.AjrohURXjPy/DivXlvAePlecwsk0AKi'}
+2025-11-07 20:40:42 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:40:42 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:40:42 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 20:40:42 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 20:40:42 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000020A9AEF2690>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 40, 42), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 40, 42), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$By/FWrZFkHbBZKJifWwc8.K7ModQwExZj5Fz1YUPWnTAmU4C/fYZG'}
+2025-11-07 20:40:42 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:40:42 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:40:42 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 20:40:42 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:40:42 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:40:43 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:40:43 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:46:02 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:46:02 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 20:46:02 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:46:02 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 20:46:02 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000026C41F77CB0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 46, 2), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 46, 2), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$x/9AOHSJZtsN9p.RzTWeCOLKTw.FxgA2lcNAfcyl/m2fdUWi3mohi'}
+2025-11-07 20:46:02 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 20:46:02 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:46:03 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:46:03 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 20:46:03 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 20:46:03 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:46:03 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:46:03 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:46:04 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:46:04 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:46:04 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:46:04 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:46:04 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 20:46:05 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:46:05 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:46:06 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_cb3c8d0b@example.com
+2025-11-07 20:46:06 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:46:07 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_013870be@example.com
+2025-11-07 20:46:07 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_013870be@example.com
+2025-11-07 20:46:07 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:46:07 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:46:07 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_c268b51c@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:46:07 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_c268b51c@example.com
+2025-11-07 20:46:07 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:46:08 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 20:46:08 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000026C420C1910>, 'correo_electronico': 'nuevo_c268b51c@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 46, 8), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 46, 8), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$lDw8DcsRFB0WxOwixwQYBOJThMxaIP4Om4Y7W51k0RuhtjpfjIJyK'}
+2025-11-07 20:46:08 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:46:08 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:46:08 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 20:46:08 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 20:46:08 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000026C422E87D0>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 46, 8), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 46, 8), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$CvTvLbyn9IXpUfNXuYr34evLbRwYYGp6.3qAcDzpjE9zXzx.9xwOO'}
+2025-11-07 20:46:08 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:46:08 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:46:08 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 20:46:08 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:46:08 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:46:09 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:46:09 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:48:44 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:48:44 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 20:48:44 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:48:44 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 20:48:44 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000024A0D12EF30>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 48, 44), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 48, 44), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$DNvUeFpC3EpXpL4XO58i0OLqA9nldc/kc0UPWzyEnswT5Rtv.OCOG'}
+2025-11-07 20:48:44 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 20:48:44 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:48:45 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:48:45 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 20:48:45 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 20:48:45 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:48:45 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:48:45 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:48:46 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:48:46 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:48:46 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:48:46 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:48:46 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 20:48:47 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:48:47 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:48:48 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_1283d904@example.com
+2025-11-07 20:48:48 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:48:48 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_f12023d4@example.com
+2025-11-07 20:48:49 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_f12023d4@example.com
+2025-11-07 20:48:49 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:48:49 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:48:49 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_03972119@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:48:49 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_03972119@example.com
+2025-11-07 20:48:49 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:48:50 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 20:48:50 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000024A0D177A70>, 'correo_electronico': 'nuevo_03972119@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 48, 50), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 48, 50), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$XlKOmoEcTAyEq3oWCAW0MugAi9.jJcOkwAuqMGg0iOLkGwtcFWHpC'}
+2025-11-07 20:48:50 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:48:50 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:48:50 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 20:48:50 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 20:48:50 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000024A0D177DD0>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 48, 50), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 48, 50), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$XCtMhAjiF/73bm7OaBGJ6erPNAoWmQdmwOuFrZyRemK0j.Na24Ji.'}
+2025-11-07 20:48:50 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:48:50 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:48:50 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 20:48:50 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:48:50 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:48:51 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:48:51 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:53:00 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:53:00 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 20:53:00 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:53:01 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 20:53:01 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000149A96DB0B0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 53, 1), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 53, 1), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$6DMNo.EeO2wBo5X2pCik1.x3NoNMnvBiwlNqlv8QENUC1Mlz74B9q'}
+2025-11-07 20:53:01 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 20:53:01 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:53:01 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:53:01 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 20:53:01 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 20:53:01 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:53:01 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:53:02 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:53:02 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:53:02 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:53:02 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:53:03 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:53:03 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 20:53:04 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:53:04 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:53:05 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_81986eda@example.com
+2025-11-07 20:53:05 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:53:06 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_e6ab75ff@example.com
+2025-11-07 20:53:06 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_e6ab75ff@example.com
+2025-11-07 20:53:06 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:53:06 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:53:06 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_1e6856ac@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:53:06 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_1e6856ac@example.com
+2025-11-07 20:53:06 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:53:07 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 20:53:07 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000149A97234D0>, 'correo_electronico': 'nuevo_1e6856ac@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 53, 7), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 53, 7), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$.I9tgtlsDGvzUi42tkqdT.92jPR7Xi1BKRxMboFIJ2Z93xw/Qbgf6'}
+2025-11-07 20:53:07 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:53:07 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:53:07 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 20:53:07 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 20:53:07 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000149A97231D0>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 53, 7), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 53, 7), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$1zou5IxS7bCqvx5NgBz0C.hQ0qivoWWlPKm.sRE9tTEwOz9vA3WT2'}
+2025-11-07 20:53:07 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:53:07 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:53:07 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 20:53:07 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:53:07 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:53:07 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:53:07 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:58:28 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:58:28 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 20:58:28 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:58:28 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 20:58:28 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000269C5B92E70>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 58, 28), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 58, 28), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$15/MtM4Bz3qvI/2uu1lgRe7h9.8VEwu5PygOzeIjLn3XIG42kdP2i'}
+2025-11-07 20:58:28 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 20:58:28 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:58:29 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:58:29 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 20:58:29 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 20:58:29 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:58:29 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:58:29 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:58:29 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:58:29 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:58:29 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 20:58:30 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 20:58:30 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 20:58:31 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:58:31 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:58:31 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_fe519b4c@example.com
+2025-11-07 20:58:32 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 20:58:32 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_d8da96c1@example.com
+2025-11-07 20:58:32 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_d8da96c1@example.com
+2025-11-07 20:58:32 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 20:58:32 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 20:58:33 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_57cf9e86@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:58:33 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_57cf9e86@example.com
+2025-11-07 20:58:33 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 20:58:33 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 20:58:33 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000269C5BD2D50>, 'correo_electronico': 'nuevo_57cf9e86@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 58, 33), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 58, 33), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$kGwVFexjV8O2rGUYEKiFduxm0CqYhNHnQPUNddkv7Nu5.1R5bbBuC'}
+2025-11-07 20:58:33 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:58:33 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:58:33 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 20:58:33 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 20:58:33 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000269C5BD2F90>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 1, 58, 33), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 1, 58, 33), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$KDNBTXFPuneiNpwlWXr8rOOHKX7o9NXOK/xq334SH2xa7tqu2T1HC'}
+2025-11-07 20:58:33 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 20:58:33 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 20:58:33 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 20:58:33 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:58:33 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 20:58:34 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 20:58:34 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:09:04 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:09:04 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo@example.com
+2025-11-07 21:09:04 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 21:09:04 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 2)
+2025-11-07 21:09:04 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001F06AFDAFF0>, 'correo_electronico': 'nuevo@example.com', 'id': 2, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 2, 9, 4), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 2, 9, 4), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$eKdjQcRe2ZLqH7LzKdhreujaW/8jnJyhFqprwnrejuSgNObZRPMp2'}
+2025-11-07 21:09:04 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Nuevo Usuario
+2025-11-07 21:09:04 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:09:05 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Otro Usuario', 'correo_electronico': 'test_auth@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:09:05 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: test_auth@example.com
+2025-11-07 21:09:05 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: test_auth@example.com
+2025-11-07 21:09:05 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 21:09:05 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 21:09:05 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 21:09:05 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 21:09:05 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 21:09:05 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:09:06 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_auth@example.com
+2025-11-07 21:09:06 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_auth@example.com
+2025-11-07 21:09:07 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 21:09:07 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 21:09:08 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_d9ffb6b3@example.com
+2025-11-07 21:09:08 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Test User
+2025-11-07 21:09:08 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: test_b71d7970@example.com
+2025-11-07 21:09:09 - auth_service - WARNING - [auth_service.py:33] - Contraseña incorrecta para el correo: test_b71d7970@example.com
+2025-11-07 21:09:09 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: noexiste@example.com
+2025-11-07 21:09:09 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: noexiste@example.com
+2025-11-07 21:09:09 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Nuevo Usuario', 'correo_electronico': 'nuevo_bed1be5b@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:09:09 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: nuevo_bed1be5b@example.com
+2025-11-07 21:09:09 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Nuevo Usuario, rol=1, hogar=1
+2025-11-07 21:09:09 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Nuevo Usuario (ID: 1)
+2025-11-07 21:09:09 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001F06B01EB10>, 'correo_electronico': 'nuevo_bed1be5b@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 2, 9, 9), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 2, 9, 9), 'nombre_completo': 'Nuevo Usuario', 'contrasena_hash': '$2b$12$NBScvZ.2/b.hCmstUGsIsu6NcbBOy73aqJvEUgaWPMLmAZdanY3XO'}
+2025-11-07 21:09:09 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 1', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:09:09 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 21:09:09 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Usuario 1, rol=1, hogar=1
+2025-11-07 21:09:10 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Usuario 1 (ID: 1)
+2025-11-07 21:09:10 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001F06B01E9F0>, 'correo_electronico': 'duplicado@example.com', 'id': 1, 'id_rol': 1, 'id_hogar': 1, 'estado': True, 'fecha_creacion': datetime.datetime(2025, 11, 8, 2, 9, 10), 'fecha_actualizacion': datetime.datetime(2025, 11, 8, 2, 9, 10), 'nombre_completo': 'Usuario 1', 'contrasena_hash': '$2b$12$OMpMD0aKbSE1r2oVCaHgvO5ljSKNpn7MWhIZz6FyRM.qzGiLMaske'}
+2025-11-07 21:09:10 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Usuario 2', 'correo_electronico': 'duplicado@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:09:10 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: duplicado@example.com
+2025-11-07 21:09:10 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: duplicado@example.com
+2025-11-07 21:09:10 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 21:09:10 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 21:09:10 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Test User
+2025-11-07 21:09:10 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:23:27 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Admin Principal', 'correo_electronico': 'admin@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:23:27 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: admin@example.com
+2025-11-07 21:23:27 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Admin Principal, rol=1, hogar=1
+2025-11-07 21:23:28 - auth_service - INFO - [auth_service.py:95] - Miembro creado exitosamente: Admin Principal (ID: 6)
+2025-11-07 21:23:28 - auth_service - DEBUG - [auth_service.py:98] - Detalles del miembro creado: {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001AD85698230>, 'nombre_completo': 'Admin Principal', 'contrasena_hash': '$2b$12$R/15m2YtvHwy9MEaUqpreeKuXw2kmpEAPviUspu0cCjTzg/EgL86u', 'id_hogar': 1, 'estado': True, 'fecha_actualizacion': datetime.datetime(2025, 11, 7, 21, 23, 28), 'correo_electronico': 'admin@example.com', 'id': 6, 'id_rol': 1, 'fecha_creacion': datetime.datetime(2025, 11, 7, 21, 23, 28)}
+2025-11-07 21:23:28 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 21:23:28 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:24:16 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 21:24:17 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 21:24:17 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 21:24:17 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:33:51 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 21:33:52 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 21:33:52 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 21:33:52 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:35:18 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Admin Principal', 'correo_electronico': 'admin@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:35:18 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: admin@example.com
+2025-11-07 21:35:18 - auth_service - WARNING - [auth_service.py:67] - Intento de registro con correo ya existente: admin@example.com
+2025-11-07 21:35:18 - auth_service - ERROR - [auth_service.py:74] - Error al verificar existencia de correo: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 21:35:18 - auth_service - WARNING - [auth_service.py:115] - Error de validación al crear miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-07 21:36:36 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 21:36:36 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 21:36:36 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 21:36:36 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:39:05 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 21:39:05 - auth_service - INFO - [auth_service.py:36] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 21:39:05 - auth_service - INFO - [auth_service.py:126] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 21:39:05 - auth_service - INFO - [auth_service.py:142] - Token de acceso generado exitosamente
+2025-11-07 21:58:56 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 21:58:56 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: admin@example.com
+2025-11-07 21:59:14 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Admin Principal', 'correo_electronico': 'admin@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 21:59:14 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: admin@example.com
+2025-11-07 21:59:14 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Admin Principal, rol=1, hogar=1
+2025-11-07 21:59:15 - auth_service - ERROR - [auth_service.py:101] - Error al confirmar la creación del miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)')
+[SQL: INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('Admin Principal', 'admin@example.com', '$2b$12$oUn0KtRgW4krYZUMGo3niOAusLhSSvhoh7FSrpX7QVmdXBWCx/ECu', 1, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 21:59:15 - auth_service - ERROR - [auth_service.py:108] - Error de base de datos al crear miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)')
+[SQL: INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('Admin Principal', 'admin@example.com', '$2b$12$oUn0KtRgW4krYZUMGo3niOAusLhSSvhoh7FSrpX7QVmdXBWCx/ECu', 1, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 21:59:15 - auth_service - ERROR - [auth_service.py:109] - Detalles del error: {'code': 'gkpj', 'statement': 'INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)', 'params': ('Admin Principal', 'admin@example.com', '$2b$12$oUn0KtRgW4krYZUMGo3niOAusLhSSvhoh7FSrpX7QVmdXBWCx/ECu', 1, 1, 1), 'orig': IntegrityError(1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)'), 'ismulti': False, 'hide_parameters': False, 'detail': [], 'connection_invalidated': False}
+2025-11-07 22:00:01 - auth_service - INFO - [auth_service.py:20] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 22:00:01 - auth_service - WARNING - [auth_service.py:29] - No se encontró ningún miembro con el correo: admin@example.com
+2025-11-07 22:00:07 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Admin Principal', 'correo_electronico': 'admin@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 22:00:07 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: admin@example.com
+2025-11-07 22:00:07 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Admin Principal, rol=1, hogar=1
+2025-11-07 22:00:07 - auth_service - ERROR - [auth_service.py:101] - Error al confirmar la creación del miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)')
+[SQL: INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('Admin Principal', 'admin@example.com', '$2b$12$NH6f/O/GEDnOYpCPTOvNauwvw8fHlj6ouy4UNu0UhfihTwLllzEFq', 1, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 22:00:07 - auth_service - ERROR - [auth_service.py:108] - Error de base de datos al crear miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)')
+[SQL: INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('Admin Principal', 'admin@example.com', '$2b$12$NH6f/O/GEDnOYpCPTOvNauwvw8fHlj6ouy4UNu0UhfihTwLllzEFq', 1, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 22:00:07 - auth_service - ERROR - [auth_service.py:109] - Detalles del error: {'code': 'gkpj', 'statement': 'INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)', 'params': ('Admin Principal', 'admin@example.com', '$2b$12$NH6f/O/GEDnOYpCPTOvNauwvw8fHlj6ouy4UNu0UhfihTwLllzEFq', 1, 1, 1), 'orig': IntegrityError(1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)'), 'ismulti': False, 'hide_parameters': False, 'detail': [], 'connection_invalidated': False}
+2025-11-07 22:07:24 - auth_service - DEBUG - [auth_service.py:49] - Datos de registro recibidos: {'nombre_completo': 'Admin Principal', 'correo_electronico': 'admin@example.com', 'id_rol': 1, 'id_hogar': 1}
+2025-11-07 22:07:24 - auth_service - INFO - [auth_service.py:53] - Intentando crear nuevo miembro con correo: admin@example.com
+2025-11-07 22:07:24 - auth_service - DEBUG - [auth_service.py:78] - Validando datos para nuevo miembro: nombre=Admin Principal, rol=1, hogar=1
+2025-11-07 22:07:25 - auth_service - ERROR - [auth_service.py:101] - Error al confirmar la creación del miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)')
+[SQL: INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('Admin Principal', 'admin@example.com', '$2b$12$TO0HOTwkUV/0rO7j3nIWlOGtnO0pG/2iUK.VjplhNyfYIyX7KvHde', 1, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 22:07:25 - auth_service - ERROR - [auth_service.py:108] - Error de base de datos al crear miembro: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)')
+[SQL: INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('Admin Principal', 'admin@example.com', '$2b$12$TO0HOTwkUV/0rO7j3nIWlOGtnO0pG/2iUK.VjplhNyfYIyX7KvHde', 1, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 22:07:25 - auth_service - ERROR - [auth_service.py:109] - Detalles del error: {'code': 'gkpj', 'statement': 'INSERT INTO miembros (nombre_completo, correo_electronico, contrasena_hash, id_rol, id_hogar, estado) VALUES (%s, %s, %s, %s, %s, %s)', 'params': ('Admin Principal', 'admin@example.com', '$2b$12$TO0HOTwkUV/0rO7j3nIWlOGtnO0pG/2iUK.VjplhNyfYIyX7KvHde', 1, 1, 1), 'orig': IntegrityError(1452, 'Cannot add or update a child row: a foreign key constraint fails (`hometasks`.`miembros`, CONSTRAINT `miembros_ibfk_2` FOREIGN KEY (`id_hogar`) REFERENCES `hogares` (`id`) ON DELETE CASCADE)'), 'ismulti': False, 'hide_parameters': False, 'detail': [], 'connection_invalidated': False}
+2025-11-07 22:27:02 - auth_service - INFO - [auth_service.py:58] - Intentando crear nuevo miembro con correo: admin@example.com
+2025-11-07 22:27:02 - auth_service - INFO - [auth_service.py:100] - Rol de Administrador detectado. Asignando todos los permisos para el rol ID: 1
+2025-11-07 22:27:02 - auth_service - INFO - [auth_service.py:136] - Se asignaron 1 permisos nuevos al rol Admin (ID: 1).
+2025-11-07 22:27:02 - auth_service - INFO - [auth_service.py:150] - Miembro creado (sin commit): Admin Principal (ID: 1)
+2025-11-07 22:27:02 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 22:27:02 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-07 22:27:30 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 22:27:30 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 22:27:30 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 22:27:30 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-07 22:34:01 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 22:34:02 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 22:34:02 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 22:34:02 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-07 22:43:23 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 22:43:23 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 22:43:23 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 22:43:23 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-07 22:44:20 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 22:44:20 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 22:44:20 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 22:44:20 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-07 22:50:13 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 22:50:14 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 22:50:14 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 22:50:14 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-07 23:20:31 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-07 23:20:32 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-07 23:20:32 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-07 23:20:32 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente

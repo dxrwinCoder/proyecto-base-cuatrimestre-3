@@ -1,5 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
+from sqlalchemy.orm import joinedload
 from models.mensaje import Mensaje
 from models.tarea import Tarea
 from uuid import uuid4
@@ -60,28 +61,26 @@ async def enviar_mensaje_en_sesion(
         raise
 
 
-async def obtener_mensajes_por_sesion(db: AsyncSession, sesion_id: str):
+async def obtener_mensajes_por_hogar(db: AsyncSession, hogar_id: int):
+    """
+    Obtiene TODOS los mensajes de un hogar, cargando el remitente (Miembro)
+    para evitar N+1 queries.
+    """
     try:
-        logger.info(f"Obteniendo mensajes de la sesión {sesion_id}")
-        stmt = select(Tarea).where(
-            Tarea.id_sesion_mensaje == sesion_id, Tarea.estado == True
-        )
-        result = await db.execute(stmt)
-        tarea_obj = result.scalar_one_or_none()
+        logger.info(f"Obteniendo mensajes del hogar {hogar_id}")
 
-        if not tarea_obj:
-            logger.warning(f"Sesión {sesion_id} no tiene tarea asociada")
-            return []
-
-        stmt_mensajes = select(Mensaje).where(
-            Mensaje.id_hogar == tarea_obj.id_hogar, Mensaje.estado == True
+        stmt_mensajes = (
+            select(Mensaje)
+            .where(Mensaje.id_hogar == hogar_id, Mensaje.estado == True)
+            .options(joinedload(Mensaje.remitente))  # <-- ¡EL PARCHE N+1!
+            .order_by(Mensaje.fecha_envio.asc())
         )
+
         result_mensajes = await db.execute(stmt_mensajes)
         mensajes = result_mensajes.scalars().all()
-        logger.info(
-            f"Se recuperaron {len(mensajes)} mensajes para la sesión {sesion_id}"
-        )
+
+        logger.info(f"Se recuperaron {len(mensajes)} mensajes para el hogar {hogar_id}")
         return mensajes
     except Exception as e:
-        logger.error(f"Error al obtener mensajes de la sesión {sesion_id}: {str(e)}")
+        logger.error(f"Error al obtener mensajes del hogar {hogar_id}: {str(e)}")
         raise

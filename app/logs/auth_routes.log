@@ -10,3 +10,23 @@
 2025-11-06 05:53:15 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001EB80219760>
 2025-11-06 06:36:25 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000022826A03740>
 2025-11-06 06:41:13 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000025561335CA0>
+2025-11-06 16:10:12 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x00000289A4349C40>
+2025-11-06 16:24:40 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001BC16D70800>
+2025-11-06 17:39:33 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001BEF9149CA0>
+2025-11-06 17:49:23 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000002B1C0D064B0>
+2025-11-06 17:54:51 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000013581C269C0>
+2025-11-07 17:48:22 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x00000143B4122BD0>
+2025-11-07 18:50:18 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001FC02143E30>
+2025-11-07 19:08:59 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000029B68648E60>
+2025-11-07 19:19:23 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000021A577E88F0>
+2025-11-07 19:34:52 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001CBF23E2810>
+2025-11-07 20:23:39 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000028156E59760>
+2025-11-07 20:30:32 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x00000296D8E99250>
+2025-11-07 20:40:33 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000020A9AEC9670>
+2025-11-07 20:46:02 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000026C42099850>
+2025-11-07 20:48:44 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x0000024A0D149670>
+2025-11-07 20:53:01 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x00000149A96F93A0>
+2025-11-07 20:58:28 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x00000269C5BA5850>
+2025-11-07 21:09:04 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001F06B0049B0>
+2025-11-07 21:23:28 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001AD856F0320>
+2025-11-07 22:27:02 - auth_routes - INFO - [auth_routes.py:34] - Miembro creado y transacción confirmada: admin@example.com

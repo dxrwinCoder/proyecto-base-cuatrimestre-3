@@ -3,8 +3,6 @@ from datetime import datetime
 from typing import Optional
 from pydantic import ConfigDict
 
-model_config = ConfigDict(from_attributes=True)
-
 
 class EventoBase(BaseModel):
     titulo: str
@@ -21,6 +19,8 @@ class EventoCreate(EventoBase):
 
 class Evento(EventoBase):
     id: int
+
+    model_config = ConfigDict(from_attributes=True)
 
     # class Config:
     #     from_attributes = True

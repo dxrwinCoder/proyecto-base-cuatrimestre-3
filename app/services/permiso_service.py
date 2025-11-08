@@ -4,41 +4,122 @@ from models.permiso import Permiso
 from models.miembro import Miembro
 from models.rol import Rol
 from models.modulo import Modulo
+from schemas.permiso import PermisoCreate, PermisoUpdate
+from sqlalchemy.exc import SQLAlchemyError
 
 
-async def asignar_permiso(db: AsyncSession, data: dict):
-    """
-    Asigna un nuevo permiso en la base de datos.
-
-    Args:
-        db (AsyncSession): Sesión de base de datos asíncrona
-        data (dict): Diccionario con los datos del permiso a crear
-
-    Returns:
-        Permiso: El permiso recién creado
-
-    Raises:
-        Exception: Si hay un error durante la creación del permiso
-    """
+async def asignar_permiso(db: AsyncSession, data: PermisoCreate):  # <-- ¡Recibe schema!
     try:
-        # Crear una instancia de Permiso con los datos proporcionados
-        permiso = Permiso(**data)
+        # ¡Validación añadida!
+        stmt = select(Permiso).where(
+            Permiso.id_rol == data.id_rol, Permiso.id_modulo == data.id_modulo
+        )
+        result = await db.execute(stmt)
+        if result.scalar_one_or_none():
+            raise ValueError("Este permiso ya existe para este rol y módulo")
 
-        # Añadir el nuevo permiso a la sesión de base de datos
+        permiso = Permiso(**data.model_dump())
         db.add(permiso)
 
-        # Confirmar la transacción
-        await db.commit()
-
-        # Actualizar el objeto con los datos de la base de datos
+        await db.flush()  # <-- ¡CAMBIO! de commit a flush
         await db.refresh(permiso)
 
         return permiso
-    except Exception as e:
-        # Revertir la transacción en caso de error
-        await db.rollback()
-        # Registrar el error o relanzar una excepción más específica
+    except (SQLAlchemyError, ValueError) as e:
+        await db.rollback()  # Aquí sí, porque es el inicio
         raise ValueError(f"Error al asignar permiso: {str(e)}")
+
+
+async def actualizar_permiso(
+    db: AsyncSession, permiso_id: int, updates: PermisoUpdate
+):  # <-- ¡Recibe schema!
+    try:
+        permiso = await db.get(Permiso, permiso_id)
+
+        if not permiso or not permiso.estado:
+            return None
+
+        update_data = updates.model_dump(exclude_unset=True)
+        for k, v in update_data.items():
+            setattr(permiso, k, v)
+
+        await db.flush()  # <-- ¡CAMBIO! de commit a flush
+        await db.refresh(permiso)
+        return permiso
+    except SQLAlchemyError as e:
+        raise ValueError(f"Error al actualizar permiso: {str(e)}")
+
+
+# ... (El resto de sus funciones de 'obtener' y 'verificar' están bien) ...
+
+
+# async def asignar_permiso(db: AsyncSession, data: dict):
+#     """
+#     Asigna un nuevo permiso en la base de datos.
+
+#     Args:
+#         db (AsyncSession): Sesión de base de datos asíncrona
+#         data (dict): Diccionario con los datos del permiso a crear
+
+#     Returns:
+#         Permiso: El permiso recién creado
+
+#     Raises:
+#         Exception: Si hay un error durante la creación del permiso
+#     """
+#     try:
+#         # Crear una instancia de Permiso con los datos proporcionados
+#         permiso = Permiso(**data)
+
+#         # Añadir el nuevo permiso a la sesión de base de datos
+#         db.add(permiso)
+
+#         # Confirmar la transacción
+#         await db.commit()
+
+#         # Actualizar el objeto con los datos de la base de datos
+#         await db.refresh(permiso)
+
+#         return permiso
+#     except Exception as e:
+#         # Revertir la transacción en caso de error
+#         await db.rollback()
+#         # Registrar el error o relanzar una excepción más específica
+#         raise ValueError(f"Error al asignar permiso: {str(e)}")
+
+
+# async def actualizar_permiso(db: AsyncSession, permiso_id: int, updates: dict):
+#     """
+#     Actualiza un permiso existente en la base de datos.
+
+#     Args:
+#         db (AsyncSession): Sesión de base de datos asíncrona
+#         permiso_id (int): Identificador del permiso a actualizar
+#         updates (dict): Diccionario con los campos a actualizar
+
+#     Returns:
+#         Permiso|None: El permiso actualizado o None si no se encuentra
+#     """
+#     try:
+#         # Obtener el permiso por su ID
+#         permiso = await db.get(Permiso, permiso_id)
+
+#         # Verificar si el permiso existe y está activo
+#         if permiso and permiso.estado:
+#             # Actualizar los atributos del permiso
+#             for k, v in updates.items():
+#                 setattr(permiso, k, v)
+
+#             # Confirmar los cambios
+#             await db.commit()
+#             return permiso
+
+#         # Retornar None si el permiso no existe o no está activo
+#         return None
+#     except Exception as e:
+#         # Revertir la transacción en caso de error
+#         await db.rollback()
+#         raise ValueError(f"Error al actualizar permiso: {str(e)}")
 
 
 async def obtener_permisos_por_rol(db: AsyncSession, rol_id: int):
@@ -64,40 +145,6 @@ async def obtener_permisos_por_rol(db: AsyncSession, rol_id: int):
     except Exception as e:
         # Manejar cualquier error durante la consulta
         raise ValueError(f"Error al obtener permisos por rol: {str(e)}")
-
-
-async def actualizar_permiso(db: AsyncSession, permiso_id: int, updates: dict):
-    """
-    Actualiza un permiso existente en la base de datos.
-
-    Args:
-        db (AsyncSession): Sesión de base de datos asíncrona
-        permiso_id (int): Identificador del permiso a actualizar
-        updates (dict): Diccionario con los campos a actualizar
-
-    Returns:
-        Permiso|None: El permiso actualizado o None si no se encuentra
-    """
-    try:
-        # Obtener el permiso por su ID
-        permiso = await db.get(Permiso, permiso_id)
-
-        # Verificar si el permiso existe y está activo
-        if permiso and permiso.estado:
-            # Actualizar los atributos del permiso
-            for k, v in updates.items():
-                setattr(permiso, k, v)
-
-            # Confirmar los cambios
-            await db.commit()
-            return permiso
-
-        # Retornar None si el permiso no existe o no está activo
-        return None
-    except Exception as e:
-        # Revertir la transacción en caso de error
-        await db.rollback()
-        raise ValueError(f"Error al actualizar permiso: {str(e)}")
 
 
 async def verificar_permiso(

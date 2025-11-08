@@ -33,6 +33,7 @@ class Tarea(Base):
     id_hogar = Column(
         Integer, ForeignKey("hogares.id", ondelete="CASCADE"), nullable=False
     )
+    creado_por = Column(Integer, ForeignKey("miembros.id", ondelete="SET NULL"))
     ubicacion = Column(String(50), nullable=True)
     id_evento = Column(
         Integer, ForeignKey("eventos.id", ondelete="SET NULL"), nullable=True

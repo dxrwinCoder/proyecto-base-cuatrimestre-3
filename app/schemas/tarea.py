@@ -1,17 +1,16 @@
-from pydantic import BaseModel, ConfigDict, field_serializer
-from datetime import date, datetime
+# schemas/tarea.py
+from pydantic import BaseModel, ConfigDict, Field
 from typing import Optional
+from datetime import datetime, date
 
 
-model_config = ConfigDict(from_attributes=True)
-
-
+# Asumo que esta es su TareaBase
 class TareaBase(BaseModel):
     titulo: str
     descripcion: Optional[str] = None
-    categoria: str  # 'limpieza', 'cocina', 'compras', 'mantenimiento'
+    categoria: str  # Asumiendo que usa el ENUM o lo valida en otro lugar
     fecha_limite: Optional[date] = None
-    repeticion: str = "ninguna"
+    repeticion: Optional[str] = "ninguna"
     asignado_a: int
     id_hogar: int
     ubicacion: Optional[str] = None
@@ -19,24 +18,23 @@ class TareaBase(BaseModel):
 
 
 class TareaCreate(TareaBase):
+    # 'creado_por' no va aquí, se obtiene del token (current_user)
     pass
 
 
 class TareaUpdateEstado(BaseModel):
-    estado_actual: str  # 'en_progreso', 'completada'
+    estado_actual: str
 
 
 class Tarea(TareaBase):
     id: int
+    estado: bool
     estado_actual: str
-    tiempo_total_segundos: Optional[int] = None
+    fecha_creacion: datetime
+    fecha_actualizacion: datetime
     fecha_asignacion: datetime
+    tiempo_total_segundos: Optional[int] = None
 
-    @field_serializer("fecha_asignacion")
-    def serialize_fecha_asignacion(self, fecha_asignacion: datetime, _info):
-        """Convierte datetime a string ISO format"""
-        return fecha_asignacion.isoformat() if fecha_asignacion else None
+    creado_por: Optional[int] = None
 
-
-# class Config:
-#     from_attributes = True
+    model_config = ConfigDict(from_attributes=True)

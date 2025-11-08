@@ -1,25 +1,25 @@
-from pydantic import BaseModel
+# schemas/notificacion.py
+from pydantic import BaseModel, ConfigDict
 from typing import Optional
-from pydantic import ConfigDict
-
-model_config = ConfigDict(from_attributes=True)
+from datetime import datetime
 
 
 class NotificacionBase(BaseModel):
     id_miembro_destino: int
+    id_miembro_origen: Optional[int] = None
+    id_tarea: Optional[int] = None
+    id_evento: Optional[int] = None  # <-- ¡Añadido!
     tipo: str
     mensaje: str
 
 
 class NotificacionCreate(NotificacionBase):
-    id_miembro_origen: Optional[int] = None
-    id_tarea: Optional[int] = None
-    id_evento: Optional[int] = None
+    pass
 
 
 class Notificacion(NotificacionBase):
     id: int
     leido: bool
+    fecha_creacion: datetime
 
-    # class Config:
-    #     from_attributes = True
+    model_config = ConfigDict(from_attributes=True)

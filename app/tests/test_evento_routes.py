@@ -1,6 +1,6 @@
 import pytest
 import pytest_asyncio
-from datetime import datetime
+from datetime import datetime, UTC
 from httpx import AsyncClient, ASGITransport
 from main import app
 from db.database import get_db
@@ -13,7 +13,9 @@ async def client(db):
 
     app.dependency_overrides[get_db] = override_get_db
 
-    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
+    async with AsyncClient(
+        transport=ASGITransport(app=app), base_url="http://test"
+    ) as ac:
         yield ac
 
     app.dependency_overrides.clear()
@@ -24,7 +26,7 @@ async def test_crear_evento(client, setup_rol_hogar):
     payload = {
         "titulo": "Cumpleaños",
         "descripcion": "Fiesta",
-        "fecha_hora": datetime.utcnow().isoformat(),
+        "fecha_hora": datetime.now(UTC).isoformat(),
         "duracion_min": 120,
         "id_hogar": 1,
         "creado_por": 1,
@@ -44,7 +46,7 @@ async def test_listar_eventos_por_hogar(client, setup_rol_hogar):
         json={
             "titulo": "Reunión",
             "descripcion": None,
-            "fecha_hora": datetime.utcnow().isoformat(),
+            "fecha_hora": datetime.now(UTC).isoformat(),
             "duracion_min": 60,
             "id_hogar": 1,
             "creado_por": 1,
@@ -56,5 +58,3 @@ async def test_listar_eventos_por_hogar(client, setup_rol_hogar):
     data = resp.json()
     assert isinstance(data, list)
     assert len(data) >= 1
-
-

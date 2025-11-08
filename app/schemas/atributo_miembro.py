@@ -22,5 +22,7 @@ class AtributoMiembroUpdate(BaseModel):
 class AtributoMiembro(AtributoMiembroBase):
     id: int
 
+    model_config = ConfigDict(from_attributes=True)
+
     # class Config:
     #     from_attributes = True

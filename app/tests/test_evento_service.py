@@ -1,5 +1,5 @@
 import pytest
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 from services.evento_service import crear_evento, listar_eventos_por_hogar
 
 
@@ -8,13 +8,13 @@ async def test_crear_evento(db, setup_rol_hogar):
     data = {
         "titulo": "Reunión",
         "descripcion": "Reunión semanal",
-        "fecha_hora": datetime.utcnow().isoformat(),
+        "fecha_hora": datetime.now(UTC).isoformat(),
         "duracion_min": 30,
         "id_hogar": 1,
         "creado_por": 1,
     }
     # Ajustar: servicio espera dict con datetime, no string
-    data["fecha_hora"] = datetime.utcnow()
+    data["fecha_hora"] = datetime.now(UTC)
     evento = await crear_evento(db, data)
     assert evento.id is not None
     assert evento.titulo == "Reunión"
@@ -23,7 +23,7 @@ async def test_crear_evento(db, setup_rol_hogar):
 
 @pytest.mark.asyncio
 async def test_listar_eventos_por_hogar(db, setup_rol_hogar):
-    base_time = datetime.utcnow()
+    base_time = datetime.now(UTC)
     for i in range(2):
         await crear_evento(
             db,
@@ -40,5 +40,3 @@ async def test_listar_eventos_por_hogar(db, setup_rol_hogar):
     eventos = await listar_eventos_por_hogar(db, 1)
     assert isinstance(eventos, list)
     assert len(eventos) >= 2
-
-

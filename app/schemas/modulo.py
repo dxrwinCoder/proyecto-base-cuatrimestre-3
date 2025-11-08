@@ -2,8 +2,6 @@ from pydantic import BaseModel
 from typing import Optional
 from pydantic import ConfigDict
 
-model_config = ConfigDict(from_attributes=True)
-
 
 class ModuloBase(BaseModel):
     nombre: str
@@ -16,6 +14,8 @@ class ModuloCreate(ModuloBase):
 
 class Modulo(ModuloBase):
     id: int
+
+    model_config = ConfigDict(from_attributes=True)
 
     # class Config:
     #     from_attributes = True

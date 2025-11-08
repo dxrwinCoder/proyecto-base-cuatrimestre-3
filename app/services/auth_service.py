@@ -1,6 +1,11 @@
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from models.miembro import Miembro
+from models.rol import Rol
+from models.hogar import Hogar
+from models.modulo import Modulo
+from models.permiso import Permiso
+from schemas.auth import MiembroRegistro
 from sqlalchemy.orm import selectinload
 from utils.security import (
     verificar_contrasena,
@@ -43,82 +48,191 @@ async def autenticar_miembro(db: AsyncSession, correo: str, contrasena: str):
         raise
 
 
-async def crear_miembro(db: AsyncSession, datos_registro):
+async def crear_miembro(db: AsyncSession, datos: MiembroRegistro):
+    """
+    Servicio "calibrado" para crear un miembro.
+    - NO hace commit (usa flush).
+    - Asigna permisos de Admin si 'id_rol' es 1.
+    """
     try:
-        # Log detallado de los datos de registro
-        logger.debug(
-            f"Datos de registro recibidos: {datos_registro.model_dump(exclude={'contrasena'})}"
+        logger.info(
+            f"Intentando crear nuevo miembro con correo: {datos.correo_electronico}"
+        )
+
+        # 1. Verificar si ya existe el correo
+        existe_stmt = select(Miembro).where(
+            Miembro.correo_electronico == datos.correo_electronico
+        )
+        existe = await db.execute(existe_stmt)
+        if existe.scalar_one_or_none():
+            logger.warning(
+                f"Intento de registro con correo ya existente: {datos.correo_electronico}"
+            )
+            raise ValueError(
+                "El correo electrónico ya se encuentra registrado en el sistema"
+            )
+
+        # 2. Verificar que el rol y el hogar existan (esto previene el IntegrityError 1452)
+        rol_obj = await db.get(Rol, datos.id_rol)
+        hogar_obj = await db.get(Hogar, datos.id_hogar)
+
+        if not rol_obj:
+            raise ValueError(f"El rol con id {datos.id_rol} no existe.")
+        if not hogar_obj:
+            raise ValueError(f"El hogar con id {datos.id_hogar} no existe.")
+
+        # 3. Crear el miembro
+        contrasena_hash = obtener_hash_contrasena(datos.contrasena)
+        miembro = Miembro(
+            nombre_completo=datos.nombre_completo,
+            correo_electronico=datos.correo_electronico,
+            contrasena_hash=contrasena_hash,
+            id_rol=datos.id_rol,
+            id_hogar=datos.id_hogar,
+            estado=True,
+        )
+        db.add(miembro)
+        await db.flush()  # <-- ¡CAMBIO! de commit a flush
+
+        # --- MODIFICACIÓN: Asignar permisos automáticos a Admin ---
+        # Asumimos que el ID del rol 'Administrador' es 1
+        if miembro.id_rol == 1:
+            logger.info(
+                f"Rol de Administrador detectado. Asignando todos los permisos para el rol ID: {miembro.id_rol}"
+            )
+
+            # 1. Obtener todos los IDs de los módulos
+            modulos_result = await db.execute(select(Modulo.id))
+            todos_los_modulos_ids = modulos_result.scalars().all()
+
+            permisos_a_crear = []
+
+            # 2. Verificar permisos existentes (para no duplicar)
+            permisos_existentes_stmt = select(Permiso.id_modulo).where(
+                Permiso.id_rol == miembro.id_rol
+            )
+            permisos_existentes = (
+                (await db.execute(permisos_existentes_stmt)).scalars().all()
+            )
+            set_permisos_existentes = set(permisos_existentes)
+
+            for modulo_id in todos_los_modulos_ids:
+                if modulo_id not in set_permisos_existentes:
+                    permisos_a_crear.append(
+                        Permiso(
+                            id_rol=miembro.id_rol,
+                            id_modulo=modulo_id,
+                            puede_crear=True,
+                            puede_leer=True,
+                            puede_actualizar=True,
+                            puede_eliminar=True,
+                            estado=True,
+                        )
+                    )
+
+            if permisos_a_crear:
+                db.add_all(permisos_a_crear)
+                await db.flush()
+                logger.info(
+                    f"Se asignaron {len(permisos_a_crear)} permisos nuevos al rol Admin (ID: {miembro.id_rol})."
+                )
+        # --- FIN DE LA MODIFICACIÓN ---
+
+        await db.refresh(miembro)
+
+        # Recargar con el rol (necesario para crear el token)
+        miembro_con_rol = await db.execute(
+            select(Miembro)
+            .options(selectinload(Miembro.rol))
+            .where(Miembro.id == miembro.id)
         )
 
         logger.info(
-            f"Intentando crear nuevo miembro con correo: {datos_registro.correo_electronico}"
+            f"Miembro creado (sin commit): {miembro.nombre_completo} (ID: {miembro.id})"
         )
+        return miembro_con_rol.scalar_one()
 
-        # Verificar que el correo no exista
-        try:
-            existe = await db.execute(
-                Miembro.__table__.select().where(
-                    Miembro.correo_electronico == datos_registro.correo_electronico
-                )
-            )
-            miembro_existente = existe.scalar_one_or_none()
+    except (ValueError, Exception) as e:
+        logger.error(f"Error al crear miembro: {str(e)}")
+        raise  # Relanzar para que la ruta haga rollback
 
-            if miembro_existente:
-                logger.warning(
-                    f"Intento de registro con correo ya existente: {datos_registro.correo_electronico}"
-                )
-                raise ValueError(
-                    "El correo electrónico ya se encuentra registrado en el sistema"
-                )
-        except Exception as e:
-            logger.error(f"Error al verificar existencia de correo: {str(e)}")
-            raise
 
-        # Log de validación de datos antes de crear el miembro
-        logger.debug(
-            f"Validando datos para nuevo miembro: nombre={datos_registro.nombre_completo}, rol={datos_registro.id_rol}, hogar={datos_registro.id_hogar}"
-        )
+# async def crear_miembro(db: AsyncSession, datos_registro):
+#     try:
+#         # Log detallado de los datos de registro
+#         logger.debug(
+#             f"Datos de registro recibidos: {datos_registro.model_dump(exclude={'contrasena'})}"
+#         )
 
-        nuevo = Miembro(
-            nombre_completo=datos_registro.nombre_completo,
-            correo_electronico=datos_registro.correo_electronico,
-            contrasena_hash=obtener_hash_contrasena(datos_registro.contrasena),
-            id_rol=datos_registro.id_rol,
-            id_hogar=datos_registro.id_hogar,
-        )
+#         logger.info(
+#             f"Intentando crear nuevo miembro con correo: {datos_registro.correo_electronico}"
+#         )
 
-        try:
-            db.add(nuevo)
-            await db.commit()
-            await db.refresh(nuevo, with_for_update=True)
+#         # Verificar que el correo no exista
+#         try:
+#             existe = await db.execute(
+#                 Miembro.__table__.select().where(
+#                     Miembro.correo_electronico == datos_registro.correo_electronico
+#                 )
+#             )
+#             miembro_existente = existe.scalar_one_or_none()
 
-            logger.info(
-                f"Miembro creado exitosamente: {nuevo.nombre_completo} (ID: {nuevo.id})"
-            )
-            logger.debug(f"Detalles del miembro creado: {nuevo.__dict__}")
-            return nuevo
-        except Exception as commit_error:
-            logger.error(
-                f"Error al confirmar la creación del miembro: {str(commit_error)}"
-            )
-            await db.rollback()
-            raise
+#             if miembro_existente:
+#                 logger.warning(
+#                     f"Intento de registro con correo ya existente: {datos_registro.correo_electronico}"
+#                 )
+#                 raise ValueError(
+#                     "El correo electrónico ya se encuentra registrado en el sistema"
+#                 )
+#         except Exception as e:
+#             logger.error(f"Error al verificar existencia de correo: {str(e)}")
+#             raise
 
-    except SQLAlchemyError as e:
-        logger.error(f"Error de base de datos al crear miembro: {str(e)}")
-        logger.error(
-            f"Detalles del error: {e.__dict__ if hasattr(e, '__dict__') else 'Sin detalles adicionales'}"
-        )
-        await db.rollback()
-        raise
-    except ValueError as e:
-        logger.warning(f"Error de validación al crear miembro: {str(e)}")
-        raise
-    except Exception as e:
-        logger.error(f"Error inesperado al crear miembro: {str(e)}")
-        logger.error(f"Traza del error: {e.__traceback__}")
-        await db.rollback()
-        raise
+#         # Log de validación de datos antes de crear el miembro
+#         logger.debug(
+#             f"Validando datos para nuevo miembro: nombre={datos_registro.nombre_completo}, rol={datos_registro.id_rol}, hogar={datos_registro.id_hogar}"
+#         )
+
+#         nuevo = Miembro(
+#             nombre_completo=datos_registro.nombre_completo,
+#             correo_electronico=datos_registro.correo_electronico,
+#             contrasena_hash=obtener_hash_contrasena(datos_registro.contrasena),
+#             id_rol=datos_registro.id_rol,
+#             id_hogar=datos_registro.id_hogar,
+#         )
+
+#         try:
+#             db.add(nuevo)
+#             await db.commit()
+#             await db.refresh(nuevo, with_for_update=True)
+
+#             logger.info(
+#                 f"Miembro creado exitosamente: {nuevo.nombre_completo} (ID: {nuevo.id})"
+#             )
+#             logger.debug(f"Detalles del miembro creado: {nuevo.__dict__}")
+#             return nuevo
+#         except Exception as commit_error:
+#             logger.error(
+#                 f"Error al confirmar la creación del miembro: {str(commit_error)}"
+#             )
+#             await db.rollback()
+#             raise
+
+#     except SQLAlchemyError as e:
+#         logger.error(f"Error de base de datos al crear miembro: {str(e)}")
+#         logger.error(
+#             f"Detalles del error: {e.__dict__ if hasattr(e, '__dict__') else 'Sin detalles adicionales'}"
+#         )
+#         await db.rollback()
+#         raise
+#     except ValueError as e:
+#         logger.warning(f"Error de validación al crear miembro: {str(e)}")
+#         raise
+#     except Exception as e:
+#         logger.error(f"Error inesperado al crear miembro: {str(e)}")
+#         logger.error(f"Traza del error: {e.__traceback__}")
+#         await db.rollback()
+#         raise
 
 
 def crear_token_para_miembro(miembro: Miembro):

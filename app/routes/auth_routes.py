@@ -6,12 +6,7 @@ from sqlalchemy.orm import selectinload
 from utils.logger import setup_logger
 from db.database import get_db
 from models.miembro import Miembro
-from schemas.auth import (
-    MiembroLogin,
-    MiembroRegistro,
-    Token,
-    OAuth2PasswordRequestFormCompat,
-)
+from schemas.auth import MiembroLogin, MiembroRegistro, Token
 from services.auth_service import (
     autenticar_miembro,
     crear_miembro,
@@ -23,44 +18,54 @@ logger = setup_logger("auth_routes")
 router = APIRouter(prefix="/auth", tags=["Autenticación"])
 
 
-@router.post("/registro", status_code=status.HTTP_201_CREATED)
+@router.post("/registro", response_model=Token, status_code=status.HTTP_201_CREATED)
 async def registrar_miembro(datos: MiembroRegistro, db: AsyncSession = Depends(get_db)):
+    """
+    Ruta "calibrada" para registrar un miembro.
+    Maneja la transacción (commit/rollback).
+    """
     try:
-        # Crear el miembro
+        # 1. Llamar al servicio (que usa flush)
         miembro = await crear_miembro(db, datos)
 
-        # Cargar explícitamente el rol
-        result = await db.execute(
-            select(Miembro)
-            .options(selectinload(Miembro.rol))
-            .where(Miembro.id == miembro.id)
-        )
-        miembro_con_rol = result.scalar_one()
+        # 2. Si todo sale bien, la RUTA hace commit
+        await db.commit()
 
         logger.info(
-            f"Miembro creado y retornado desde el servicio auth_service {miembro_con_rol}"
+            f"Miembro creado y transacción confirmada: {miembro.correo_electronico}"
         )
 
-        # Crear token con el miembro que tiene el rol cargado
-        access_token = crear_token_para_miembro(miembro_con_rol)
-
+        # 3. Crear y devolver el token
+        token = crear_token_para_miembro(miembro)
         return Token(
-            access_token=access_token,
-            rol=miembro_con_rol.rol.nombre,
-            id_miembro=miembro_con_rol.id,
-            id_hogar=miembro_con_rol.id_hogar,
+            access_token=token, id_miembro=miembro.id, id_hogar=miembro.id_hogar
         )
+
     except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        # Error de lógica de negocio (ej. duplicado, rol no existe)
+        await db.rollback()
+        logger.warning(f"Error de validación al registrar miembro: {str(e)}")
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+    except Exception as e:
+        # Error inesperado del servidor
+        await db.rollback()
+        logger.error(f"Error interno al registrar miembro: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error interno al registrar el miembro.",
+        )
 
 
 @router.post("/login", response_model=Token)
 async def login(datos: MiembroLogin, db: AsyncSession = Depends(get_db)):
+
     miembro = await autenticar_miembro(db, datos.correo_electronico, datos.contrasena)
     if not miembro:
         raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED, detail="Credenciales incorrectas"
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Correo o contraseña incorrectas",
         )
+
     access_token = crear_token_para_miembro(miembro)
     return Token(
         access_token=access_token,

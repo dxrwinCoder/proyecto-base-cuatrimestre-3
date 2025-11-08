@@ -240,3 +240,232 @@
 2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
 2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
 2025-11-06 06:41:36 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-06 16:10:19 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 16:10:19 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:10:43 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-06 16:10:43 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-06 16:10:44 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-06 16:24:47 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 16:24:47 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-06 16:25:10 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-06 17:39:40 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:39:40 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-06 17:40:03 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-06 17:49:30 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:49:30 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:49:52 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-06 17:49:52 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-06 17:49:53 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-06 17:54:58 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:54:58 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-06 17:55:23 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-07 17:48:29 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-07 17:48:29 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-07 17:48:54 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'descripcion': None, 'categoria': 'cocina', 'fecha_limite': None, 'repeticion': 'ninguna', 'asignado_a': 1, 'id_hogar': 1, 'ubicacion': None, 'id_evento': None}
+2025-11-07 17:48:54 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Lavar platos', 'categoria': 'cocina', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:14] - Creando tarea con datos: {'titulo': 'Test', 'categoria': 'limpieza', 'asignado_a': 1, 'id_hogar': 1}
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:19] - Tarea creada exitosamente con ID: 1
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:90] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:29] - Buscando tarea con ID: 1
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:34] - Tarea encontrada: Test
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:112] - Tarea 1 completada en -17999 segundos
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:117] - Estado de tarea 1 actualizado a 'completada'
+2025-11-07 17:48:55 - tarea_service - INFO - [tarea_service.py:129] - Notificación enviada por cambio de estado en tarea 1
+2025-11-07 19:09:32 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 19:09:32 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 19:19:30 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 19:19:30 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 19:19:57 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 19:19:57 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 19:34:59 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 19:34:59 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 19:34:59 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 19:34:59 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 19:34:59 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 19:34:59 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 19:35:25 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 20:23:49 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 20:23:49 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:23:49 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 20:23:49 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:23:49 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 20:23:49 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 20:24:26 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 20:30:42 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 20:30:42 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:30:42 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 20:30:42 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:30:42 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 20:30:42 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 20:31:18 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 20:40:43 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 20:40:43 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:40:43 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 20:40:43 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:40:43 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 20:40:43 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 20:41:19 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:41:19 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:41:20 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 20:41:20 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:41:20 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 20:41:20 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:41:20 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 20:41:20 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 20:41:20 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 20:46:09 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 20:46:09 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:46:09 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 20:46:09 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:46:09 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 20:46:09 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 20:46:33 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 20:48:51 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 20:48:51 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:48:51 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 20:48:51 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:48:51 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 20:48:51 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 20:49:13 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 20:53:07 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 20:53:07 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:53:07 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 20:53:07 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:53:07 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 20:53:07 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 20:53:32 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:53:32 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:53:33 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 20:53:33 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:53:33 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 20:53:33 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:53:33 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 20:53:33 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 20:53:33 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 20:58:34 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 20:58:34 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:58:34 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 20:58:34 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:58:34 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 20:58:34 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 20:58:55 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:58:55 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:58:55 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 20:58:55 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:58:56 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 20:58:56 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 20:58:56 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 20:58:56 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 20:58:56 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 20:58:56 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 20:58:56 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-07 21:09:10 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-07 21:09:10 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 21:09:10 - tarea_service - INFO - [tarea_service.py:179] - Agregando comentario a tarea 1
+2025-11-07 21:09:10 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 21:09:10 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-07 21:09:10 - tarea_service - INFO - [tarea_service.py:207] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:124] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
+2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
