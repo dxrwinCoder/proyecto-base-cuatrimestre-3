@@ -1,0 +1,5 @@
+# endpoints.yml
+# Esta es la URL donde su servidor de acciones (rasa run actions)
+# estará escuchando. Es su puente a la base de datos de HomeTasks.
+action_endpoint:
+  url: "http://localhost:5055/webhook"

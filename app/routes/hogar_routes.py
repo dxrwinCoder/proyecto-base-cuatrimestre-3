@@ -24,27 +24,28 @@ logger = setup_logger("hogar_routes")
 router = APIRouter(prefix="/hogares", tags=["Hogares"])
 
 
-@router.post("/", response_model=Hogar, status_code=status.HTTP_201_CREATED)  # <-- 201
+@router.post("/", response_model=Hogar, status_code=status.HTTP_201_CREATED)
 async def crear_hogar_endpoint(
     hogar: HogarCreate,
     db: AsyncSession = Depends(get_db),
-    # --- ¡AÑADIR SEGURIDAD! ---
     current_user: Miembro = Depends(require_permission("Hogares", "crear")),
 ):
     try:
         logger.info(f"Intentando crear hogar: {hogar.nombre}")
-        resultado = await crear_hogar(db, hogar)  # El servicio ya no hace commit
+        resultado_modelo = await crear_hogar(db, hogar)
 
-        await db.commit()  # <-- ¡LA RUTA HACE COMMIT!
+        await db.commit()
 
+        # Convertir modelo SQLAlchemy a schema Pydantic usando from_orm
+        resultado = Hogar.from_orm(resultado_modelo)
         logger.info(f"Hogar creado exitosamente: {resultado.nombre}")
         return resultado
-    except ValueError as e:  # Capturar el error de duplicado
+    except ValueError as e:
         await db.rollback()
         logger.warning(f"Error de validación al crear hogar: {str(e)}")
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
     except Exception as e:
-        await db.rollback()  # <-- ¡LA RUTA HACE ROLLBACK!
+        await db.rollback()
         logger.error(f"Error al crear hogar: {str(e)}")
         raise HTTPException(status_code=500, detail="Error interno al crear hogar")
 
@@ -58,12 +59,14 @@ async def ver_hogar(
     try:
         logger.info(f"Buscando hogar con ID: {hogar_id}")
 
-        # --- ¡ESTA ES LA LÓGICA QUE FALTABA! ---
-        hogar = await obtener_hogar(db, hogar_id)
-        if not hogar:
+        # Obtener el modelo SQLAlchemy
+        hogar_modelo = await obtener_hogar(db, hogar_id)
+        if not hogar_modelo:
             logger.warning(f"Hogar no encontrado con ID: {hogar_id}")
             raise HTTPException(status_code=404, detail="Hogar no encontrado")
 
+        # Convertir modelo SQLAlchemy a schema Pydantic
+        hogar = Hogar.from_orm(hogar_modelo)
         logger.info(f"Hogar encontrado: {hogar.nombre}")
         return hogar
 
@@ -86,8 +89,11 @@ async def listar_hogares(
     try:
         logger.info("Listando hogares activos")
 
-        # Esta es la lógica que faltaba y que previene el 'input: None'
-        hogares = await listar_hogares_activos(db)
+        # Obtener los modelos SQLAlchemy
+        hogares_modelos = await listar_hogares_activos(db)
+        
+        # Convertir explícitamente a schemas Pydantic usando from_orm
+        hogares = [Hogar.from_orm(hogar) for hogar in hogares_modelos]
 
         logger.info(f"Se encontraron {len(hogares)} hogares activos")
         return hogares
@@ -106,14 +112,17 @@ async def actualizar_hogar_endpoint(
     current_user: Miembro = Depends(require_permission("Hogares", "actualizar")),
 ):
     try:
-        hogar_actualizado = await actualizar_hogar(db, hogar_id, hogar_data)
-        if not hogar_actualizado:
+        hogar_actualizado_modelo = await actualizar_hogar(db, hogar_id, hogar_data)
+        if not hogar_actualizado_modelo:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="Hogar no encontrado o inactivo",
             )
 
         await db.commit()
+        
+        # Convertir modelo SQLAlchemy a schema Pydantic usando from_orm
+        hogar_actualizado = Hogar.from_orm(hogar_actualizado_modelo)
         return hogar_actualizado
     except Exception as e:
         await db.rollback()

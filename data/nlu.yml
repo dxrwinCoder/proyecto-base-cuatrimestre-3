@@ -1,0 +1,244 @@
+# nlu.yml
+version: "3.1"
+
+nlu:
+  # --- Chitchat Básico ---
+  - intent: saludar
+    examples: |
+      - Hola
+      - Buenos días
+      - Buenas tardes
+      - ¿Qué tal?
+      - Hola bot
+
+  - intent: despedirse
+    examples: |
+      - Adiós
+      - Chao
+      - Hasta luego
+      - Nos vemos
+      - Tengo que irme
+
+  - intent: afirmar
+    examples: |
+      - Sí
+      - Claro
+      - Por supuesto
+      - Vale
+      - OK
+
+  - intent: negar
+    examples: |
+      - No
+      - Para nada
+      - En absoluto
+      - Nop
+
+  - intent: soy_bot
+    examples: |
+      - ¿Eres un bot?
+      - ¿Quién eres?
+      - ¿Eres una persona?
+
+  - intent: agradecer
+    examples: |
+      - Gracias
+      - Muchas gracias
+      - Te lo agradezco
+
+  - intent: insultar
+    examples: |
+      - Eres un bot tonto
+      - No sirves para nada
+
+  - intent: ayuda
+    examples: |
+      - ¿Qué puedes hacer?
+      - Ayuda
+      - ¿Cómo funcionas?
+
+  # --- Flujo Usuario (Tareas) ---
+  - intent: consultar_mis_tareas (DB)
+    examples: |
+      - ¿Qué tareas tengo pendientes?
+      - Muéstrame mis tareas
+      - ¿Qué tengo que hacer hoy?
+      - Lista mis asignaciones
+
+  - intent: consultar_estado_tarea (DB)
+    examples: |
+      - ¿Cuál es el estado de la tarea [lavar los platos](tarea_nombre)?
+      - ¿Ya se completó la tarea [pasear al perro](tarea_nombre)?
+      - Revisa el estado de la tarea [número 5](tarea_id)
+
+  - intent: preguntar_como_hacer_tarea (DB)
+    examples: |
+      - ¿Cómo hago para [lavar los platos](tarea_nombre)?
+      - Explícame la tarea [sacar la basura](tarea_nombre)
+      - ¿Qué implica la tarea [número 8](tarea_id)?
+      - Instrucciones para [limpiar el baño](tarea_nombre)
+
+  - intent: marcar_tarea_progreso (DB - Acción)
+    examples: |
+      - Marca la tarea [lavar platos](tarea_nombre) como "en progreso"
+      - Empecé a [pasear al perro](tarea_nombre)
+      - Estoy trabajando en la tarea [5](tarea_id)
+
+  - intent: marcar_tarea_completada (DB - Acción)
+    examples: |
+      - Marca [lavar platos](tarea_nombre) como completada
+      - Ya terminé de [sacar la basura](tarea_nombre)
+      - Tarea [5](tarea_id) finalizada
+
+  - intent: agregar_comentario_tarea (DB - Acción)
+    examples: |
+      - Agrega un comentario a la tarea [lavar platos](tarea_nombre): [No queda jabón](contenido_comentario)
+      - Comenta en la tarea [5](tarea_id) que [ya compré todo](contenido_comentario)
+
+  - intent: ver_comentarios_tarea (DB)
+    examples: |
+      - ¿Qué comentarios tiene la tarea [lavar platos](tarea_nombre)?
+      - Muéstrame la evidencia de la tarea [5](tarea_id)
+
+  - intent: consultar_tareas_categoria (DB)
+    examples: |
+      - Muéstrame las tareas de [limpieza](categoria_tarea)
+      - ¿Qué hay que hacer de [cocina](categoria_tarea)?
+
+  - intent: consultar_tareas_vencidas (DB)
+    examples: |
+      - ¿Qué tareas están vencidas?
+      - Muéstrame las tareas atrasadas
+
+  - intent: consultar_tiempo_total_tarea (DB)
+    examples: |
+      - ¿Cuánto tiempo me tomó [lavar los platos](tarea_nombre)?
+      - Revisa el tiempo de la tarea [5](tarea_id)
+
+  # --- Flujo Administrador (Gestión) ---
+  - intent: crear_tarea (DB - Acción)
+    examples: |
+      - Crea una nueva tarea: [Lavar el carro](tarea_nombre)
+      - Necesito añadir la tarea [comprar leche](tarea_nombre)
+      - Registra esta tarea: [limpiar el ático](tarea_nombre)
+
+  - intent: asignar_tarea_miembro (DB - Acción)
+    examples: |
+      - Asigna [lavar platos](tarea_nombre) a [Juan](miembro_nombre)
+      - Dale la tarea [5](tarea_id) a [María](miembro_nombre)
+      - Pon a [David](miembro_nombre) a [sacar la basura](tarea_nombre)
+
+  - intent: consultar_tareas_miembro (DB)
+    examples: |
+      - ¿Qué tareas tiene [Juan](miembro_nombre)?
+      - Muéstrame las tareas de [María](miembro_nombre)
+      - ¿Qué tiene asignado [David](miembro_nombre)?
+
+  - intent: consultar_tareas_hogar (DB)
+    examples: |
+      - ¿Cuáles son todas las tareas del hogar?
+      - Lista todas las tareas pendientes
+
+  - intent: sugerir_tarea_miembro (DB)
+    examples: |
+      - Sugiéreme una tarea para [Juan](miembro_nombre)
+      - ¿Qué tarea le debería asignar a [María](miembro_nombre)?
+      - ¿Quién es el mejor para [limpieza](categoria_tarea)?
+      - Basado en sus atributos, ¿qué le pongo a [David](miembro_nombre)?
+
+  - intent: eliminar_tarea (DB - Acción)
+    examples: |
+      - Elimina la tarea [lavar el carro](tarea_nombre)
+      - Borra la tarea [5](tarea_id)
+
+  - intent: modificar_tarea (DB - Acción)
+    examples: |
+      - Cambia la fecha de [lavar platos](tarea_nombre) para [mañana](fecha)
+      - Modifica la tarea [5](tarea_id)
+
+  - intent: crear_evento (DB - Acción)
+    examples: |
+      - Crea un evento familiar: [Cumpleaños de Ana](nombre_evento)
+      - Registra el evento [Paseo de Domingo](nombre_evento)
+
+  - intent: asociar_tarea_evento (DB - Acción)
+    examples: |
+      - Asocia la tarea [comprar pastel](tarea_nombre) al evento [Cumpleaños de Ana](nombre_evento)
+      - Vincula [limpiar sala](tarea_nombre) al [Cumpleaños de Ana](nombre_evento)
+
+  - intent: consultar_tareas_evento (DB)
+    examples: |
+      - ¿Qué tareas hay para el [Cumpleaños de Ana](nombre_evento)?
+      - Lista las tareas del evento [Paseo de Domingo](nombre_evento)
+
+  # --- Flujo Estadísticas (Gamificación) ---
+  - intent: consultar_ranking_semanal (DB)
+    examples: |
+      - ¿Cómo va el ranking de la semana?
+      - Muéstrame el ranking semanal
+      - ¿Quién va ganando?
+
+  - intent: consultar_mis_estadisticas (DB)
+    examples: |
+      - ¿Cómo voy yo?
+      - ¿Cuántas tareas he completado esta semana?
+      - Muéstrame mis estadísticas
+
+  - intent: consultar_estadisticas_miembro (DB)
+    examples: |
+      - ¿Cómo va [Juan](miembro_nombre) en el ranking?
+      - Estadísticas de [María](miembro_nombre)
+
+  - intent: quien_es_mas_responsable
+    examples: |
+      - ¿Quién es el más responsable?
+      - ¿Quién ha hecho más tareas?
+
+  # --- Flujo Miembros y Perfil ---
+  - intent: consultar_miembros_hogar (DB)
+    examples: |
+      - ¿Quiénes están en mi hogar?
+      - Lista todos los miembros
+
+  - intent: consultar_atributos_miembro (DB)
+    examples: |
+      - ¿Cuáles son los atributos de [Juan](miembro_nombre)?
+      - ¿Qué recompensa le gusta a [María](miembro_nombre)?
+      - Revisa la [edad](atributo_nombre) de [David](miembro_nombre)
+
+  - intent: modificar_mi_atributo (DB - Acción)
+    examples: |
+      - Cambia mi [recompensa favorita](atributo_nombre) a [helado](atributo_valor)
+      - Actualiza mi [edad](atributo_nombre) a [25](atributo_valor)
+
+  - intent: registrar_miembro (DB - Acción)
+    examples: |
+      - Registra un nuevo miembro: [Carlos](miembro_nombre)
+      - Añade a [Ana](miembro_nombre) al hogar
+
+  - intent: eliminar_miembro (DB - Acción)
+    examples: |
+      - Elimina a [Carlos](miembro_nombre) del hogar
+      - Saca a [Ana](miembro_nombre)
+
+  # --- Flujo Notificaciones y Chat ---
+  - intent: consultar_notificaciones (DB)
+    examples: |
+      - ¿Tengo notificaciones nuevas?
+      - Muéstrame mis alertas
+      - ¿Qué me he perdido?
+
+  - intent: marcar_notificaciones_leidas (DB - Acción)
+    examples: |
+      - Marca todas mis notificaciones como leídas
+      - Ya vi las alertas
+
+  - intent: enviar_mensaje_chat (DB - Acción)
+    examples: |
+      - Envía un mensaje al chat: [Recuerden sacar la basura](contenido_comentario)
+      - Dile a todos que [llegaré tarde](contenido_comentario)
+
+  - intent: consultar_chat_hogar (DB)
+    examples: |
+      - Muéstrame el chat del hogar
+      - ¿Qué han dicho en el chat?

@@ -62,13 +62,19 @@ async def listar_hogares_activos(db: AsyncSession):
     try:
         logger.info("Listando hogares activos")
 
-        # --- ¡ESTA ES LA LÓGICA QUE FALTABA! ---
         stmt = select(Hogar).where(Hogar.estado == True)
         result = await db.execute(stmt)
         hogares = result.scalars().all()
+        
+        # Asegurar que los datos estén cargados accediendo a los atributos
+        # Esto previene problemas de lazy loading después de cerrar la sesión
+        for hogar in hogares:
+            _ = hogar.id
+            _ = hogar.nombre
+            _ = hogar.estado
+        
         logger.info(f"Se encontraron {len(hogares)} hogares activos")
         return hogares
-        # --- FIN DEL ARREGLO ---
 
     except SQLAlchemyError as e:
         logger.error(f"Error de base de datos al listar hogares: {str(e)}")

@@ -1,0 +1,39 @@
+# data/rules.yml
+version: "3.1"
+
+rules:
+  - rule: Responder a saludo
+    description: El usuario saluda
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+
+  - rule: Responder a despedida
+    description: El usuario se despide de forma simple
+    steps:
+      - intent: despedirse
+      - action: utter_despedirse
+
+  - rule: Responder a agradecimiento
+    description: El usuario da las gracias
+    steps:
+      - intent: agradecer
+      - action: utter_agradecer
+
+  - rule: Responder a pregunta 'eres un bot'
+    description: El usuario pregunta por la identidad del bot
+    steps:
+      - intent: soy_bot
+      - action: utter_soy_bot
+
+  - rule: Responder a insulto
+    description: El usuario es grosero o usa lenguaje inapropiado
+    steps:
+      - intent: insultar
+      - action: utter_insulto_detectado
+
+  - rule: Manejar baja confianza (Fallback)
+    description: Regla para cuando el bot no entiende la intención del usuario
+    steps:
+      - intent: nlu_fallback
+      - action: utter_no_entiendo

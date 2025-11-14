@@ -1,0 +1,152 @@
+# domain.yml
+version: "3.1"
+
+# 1. INTENCIONES (40+ Intenciones)
+intents:
+  # Chitchat Básico
+  - saludar
+  - despedirse
+  - afirmar
+  - negar
+  - soy_bot
+  - agradecer
+  - insultar
+  - ayuda
+
+  # Flujo Usuario (Tareas)
+  - consultar_mis_tareas # DB
+  - consultar_estado_tarea # DB
+  - preguntar_como_hacer_tarea # DB
+  - marcar_tarea_progreso # DB (Acción)
+  - marcar_tarea_completada # DB (Acción)
+  - agregar_comentario_tarea # DB (Acción)
+  - ver_comentarios_tarea # DB
+  - consultar_tareas_categoria # DB
+  - consultar_tareas_vencidas # DB
+  - consultar_tiempo_total_tarea # DB
+
+  # Flujo Administrador (Gestión)
+  - crear_tarea # DB (Acción)
+  - asignar_tarea_miembro # DB (Acción)
+  - consultar_tareas_miembro # DB
+  - consultar_tareas_hogar # DB
+  - sugerir_tarea_miembro # DB (Lógica de IA)
+  - eliminar_tarea # DB (Acción)
+  - modificar_tarea # DB (Acción)
+  - crear_evento # DB (Acción)
+  - asociar_tarea_evento # DB (Acción)
+  - consultar_tareas_evento # DB
+
+  # Flujo Estadísticas (Gamificación)
+  - consultar_ranking_semanal # DB
+  - consultar_mis_estadisticas # DB
+  - consultar_estadisticas_miembro # DB
+  - quien_es_mas_responsable # (Sinónimo de ranking)
+
+  # Flujo Miembros y Perfil
+  - consultar_miembros_hogar # DB
+  - consultar_atributos_miembro # DB
+  - modificar_mi_atributo # DB (Acción)
+  - registrar_miembro # DB (Admin - Acción)
+  - eliminar_miembro # DB (Admin - Acción)
+
+  # Flujo Notificaciones y Chat
+  - consultar_notificaciones # DB
+  - marcar_notificaciones_leidas # DB (Acción)
+  - enviar_mensaje_chat # DB (Acción)
+  - consultar_chat_hogar # DB
+
+# 2. ENTIDADES (Palabras clave a extraer)
+entities:
+  - miembro_nombre
+  - tarea_nombre
+  - tarea_id
+  - categoria_tarea
+  - estado_tarea
+  - contenido_comentario
+  - fecha
+  - nombre_evento
+  - atributo_nombre
+  - atributo_valor
+
+# 3. SLOTS (Memoria del bot)
+slots:
+  miembro_nombre:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: miembro_nombre # Mapea la entidad 'miembro_nombre' al slot 'miembro_nombre'
+
+  tarea_id:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: tarea_id # Mapea la entidad 'tarea_id' al slot 'tarea_id'
+
+  categoria_tarea:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: categoria_tarea # Mapea la entidad 'categoria_tarea' al slot 'categoria_tarea'
+
+# 4. ACCIONES (Lo que el bot HACE - aquí se conecta a la BD)
+actions:
+  # Acciones de la Base de Datos (las 10+ solicitadas)
+  - action_consultar_mis_tareas
+  - action_consultar_estado_tarea
+  - action_explicar_tarea
+  - action_marcar_tarea_progreso
+  - action_marcar_tarea_completada
+  - action_agregar_comentario_tarea
+  - action_ver_comentarios_tarea
+  - action_consultar_tareas_categoria
+  - action_consultar_tareas_vencidas
+  - action_consultar_tiempo_total_tarea
+  - action_crear_tarea
+  - action_asignar_tarea_miembro
+  - action_consultar_tareas_miembro
+  - action_consultar_tareas_hogar
+  - action_sugerir_tarea_miembro
+  - action_eliminar_tarea
+  - action_modificar_tarea
+  - action_crear_evento
+  - action_asociar_tarea_evento
+  - action_consultar_tareas_evento
+  - action_consultar_ranking_semanal
+  - action_consultar_mis_estadisticas
+  - action_consultar_estadisticas_miembro
+  - action_consultar_miembros_hogar
+  - action_consultar_atributos_miembro
+  - action_modificar_mi_atributo
+  - action_registrar_miembro
+  - action_eliminar_miembro
+  - action_consultar_notificaciones
+  - action_marcar_notificaciones_leidas
+  - action_enviar_mensaje_chat
+  - action_consultar_chat_hogar
+
+# 5. RESPUESTAS (Lo que el bot DICE)
+responses:
+  utter_saludar:
+    - text: "Hola, soy el asistente de HomeTasks. ¿En qué puedo ayudarte hoy?"
+  utter_despedirse:
+    - text: "¡Ha sido un placer ayudarte! Que tengas un buen día."
+  utter_soy_bot:
+    - text: "Soy un asistente virtual diseñado para ayudarte a gestionar las tareas del hogar en la plataforma HomeTasks."
+  utter_agradecer:
+    - text: "¡De nada! Estoy aquí para servirte."
+  utter_ayuda:
+    - text: "Puedo ayudarte a: \n- Consultar tus tareas ('¿qué tareas tengo?')\n- Marcar tareas ('marca 'lavar platos' como completada')\n- Preguntar por el ranking ('¿quién va ganando la semana?')\n- (Admin) Crear tareas ('crea una tarea para Juan')"
+  utter_insulto_detectado:
+    - text: "Prefiero mantener una conversación profesional. Por favor, indícame cómo puedo asistirte con tus tareas."
+
+  # Respuestas genéricas para acciones
+  utter_accion_exitosa:
+    - text: "¡Listo! Acción completada."
+  utter_error_accion:
+    - text: "Lo siento, no pude completar esa acción. Revisa que tengas los permisos necesarios."
+  utter_error_bd:
+    - text: "Tuve un problema al conectarme con la base de datos. Por favor, inténtalo más tarde."

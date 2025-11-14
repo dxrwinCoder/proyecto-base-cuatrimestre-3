@@ -1,0 +1,19 @@
+# === Entorno virtual ===
+venv/
+
+
+# === Archivos de caché de Python ===
+__pycache__/
+*.pyc
+*.pyo
+
+# === Archivos de configuración sensibles ===
+
+
+# === Archivos de base de datos o scripts ===
+database_script/*.sql
+
+
+# === Archivos de entorno ===
+.env
+

@@ -1,0 +1,637 @@
+2025-10-26 20:59:08 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 20:59:08 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 20:59:22 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 20:59:22 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 21:02:44 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 21:02:45 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 21:03:10 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-26 21:03:10 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-10-26 21:03:21 - hogar_service - INFO - [hogar_service.py:29] - Obteniendo hogar con ID: 1
+2025-10-26 21:03:21 - hogar_service - INFO - [hogar_service.py:32] - Hogar encontrado: Hogar Principal
+2025-10-26 21:04:02 - hogar_service - INFO - [hogar_service.py:29] - Obteniendo hogar con ID: 1
+2025-10-26 21:04:02 - hogar_service - INFO - [hogar_service.py:32] - Hogar encontrado: Hogar Principal
+2025-10-27 20:11:15 - hogar_service - INFO - [hogar_service.py:46] - Listando hogares activos
+2025-10-27 20:11:15 - hogar_service - INFO - [hogar_service.py:50] - Se encontraron 1 hogares activos
+2025-11-06 16:10:20 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin efba66
+2025-11-06 16:10:20 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin efba66
+2025-11-06 16:10:21 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 81a8e9
+2025-11-06 16:10:21 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 81a8e9
+2025-11-06 16:10:21 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 81a8e9
+2025-11-06 16:10:21 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 324c2b
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 324c2b
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 256910
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 256910
+2025-11-06 16:10:23 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 256910
+2025-11-06 16:10:23 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:78] - Eliminando (lógico) hogar con ID: 2
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:89] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:54] - Actualizando hogar con ID: 1
+2025-11-06 16:10:23 - hogar_service - INFO - [hogar_service.py:69] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-06 16:10:24 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-06 16:10:24 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-06 16:10:24 - hogar_service - INFO - [hogar_service.py:78] - Eliminando (lógico) hogar con ID: 1
+2025-11-06 16:10:24 - hogar_service - INFO - [hogar_service.py:89] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-06 16:24:48 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 85c533
+2025-11-06 16:24:48 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 85c533
+2025-11-06 16:24:49 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 1df65f
+2025-11-06 16:24:49 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 1df65f
+2025-11-06 16:24:49 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 1df65f
+2025-11-06 16:24:49 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-06 16:24:50 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 12565b
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 12565b
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado dec085
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado dec085
+2025-11-06 16:24:50 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado dec085
+2025-11-06 16:24:50 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-06 16:24:50 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-06 17:39:41 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 0f6d5d
+2025-11-06 17:39:41 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 0f6d5d
+2025-11-06 17:39:42 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta b47049
+2025-11-06 17:39:42 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta b47049
+2025-11-06 17:39:42 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta b47049
+2025-11-06 17:39:42 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 17:39:43 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-06 17:39:43 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-06 17:39:43 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar e1ee81
+2025-11-06 17:39:43 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar e1ee81
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 902614
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 902614
+2025-11-06 17:39:44 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 902614
+2025-11-06 17:39:44 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-06 17:39:44 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-06 17:49:31 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin e0bba1
+2025-11-06 17:49:31 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin e0bba1
+2025-11-06 17:49:31 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta f437dd
+2025-11-06 17:49:31 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta f437dd
+2025-11-06 17:49:31 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta f437dd
+2025-11-06 17:49:31 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-06 17:49:33 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar d55db9
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar d55db9
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado f47a33
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado f47a33
+2025-11-06 17:49:33 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado f47a33
+2025-11-06 17:49:33 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-06 17:49:33 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-06 17:54:59 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 914cd0
+2025-11-06 17:54:59 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 914cd0
+2025-11-06 17:54:59 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 61133f
+2025-11-06 17:54:59 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 61133f
+2025-11-06 17:54:59 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 61133f
+2025-11-06 17:54:59 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-06 17:55:01 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar dcc3b4
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar dcc3b4
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado d8b592
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado d8b592
+2025-11-06 17:55:01 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado d8b592
+2025-11-06 17:55:01 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-06 17:55:01 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-06 17:55:02 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-06 17:55:02 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-06 17:55:02 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-06 17:55:02 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-06 17:55:02 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-06 17:55:02 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 17:48:30 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 923b22
+2025-11-07 17:48:30 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 923b22
+2025-11-07 17:48:31 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 28a55e
+2025-11-07 17:48:31 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 28a55e
+2025-11-07 17:48:31 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 28a55e
+2025-11-07 17:48:31 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 17:48:32 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 17:48:32 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 17:48:32 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 7ce0fd
+2025-11-07 17:48:32 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 7ce0fd
+2025-11-07 17:48:32 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 17458f
+2025-11-07 17:48:32 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 17458f
+2025-11-07 17:48:32 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 17458f
+2025-11-07 17:48:32 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 17:48:33 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 18:42:55 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Mensaje(mensajes)]'. Original exception was: Mapper 'Mapper[Miembro(miembros)]' has no property 'mensajes'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-07 18:42:56 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Mensaje(mensajes)]'. Original exception was: Mapper 'Mapper[Miembro(miembros)]' has no property 'mensajes'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-07 18:42:57 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Mensaje(mensajes)]'. Original exception was: Mapper 'Mapper[Miembro(miembros)]' has no property 'mensajes'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-07 18:42:59 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Mensaje(mensajes)]'. Original exception was: Mapper 'Mapper[Miembro(miembros)]' has no property 'mensajes'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-07 18:43:01 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Mensaje(mensajes)]'. Original exception was: Mapper 'Mapper[Miembro(miembros)]' has no property 'mensajes'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-07 18:50:27 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 315124
+2025-11-07 18:50:27 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 315124
+2025-11-07 18:50:27 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 956e9d
+2025-11-07 18:50:27 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 956e9d
+2025-11-07 18:50:28 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 956e9d
+2025-11-07 18:50:28 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 18:50:29 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 78eec5
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 78eec5
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 4742a4
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 4742a4
+2025-11-07 18:50:29 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 4742a4
+2025-11-07 18:50:29 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 18:50:29 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 18:50:30 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 18:50:30 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 18:50:30 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 18:50:30 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 18:50:30 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 18:50:30 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 19:09:08 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 32ddc8
+2025-11-07 19:09:08 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 32ddc8
+2025-11-07 19:09:08 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 4d462b
+2025-11-07 19:09:08 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 4d462b
+2025-11-07 19:09:08 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 4d462b
+2025-11-07 19:09:08 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 19:09:10 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar ad4b19
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar ad4b19
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 932437
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 932437
+2025-11-07 19:09:10 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 932437
+2025-11-07 19:09:10 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 19:09:10 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 19:19:32 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 4594b0
+2025-11-07 19:19:32 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 4594b0
+2025-11-07 19:19:33 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 0ff1c3
+2025-11-07 19:19:33 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 0ff1c3
+2025-11-07 19:19:33 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 0ff1c3
+2025-11-07 19:19:33 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 19:19:34 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 19:19:34 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 19:19:34 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 3bdde8
+2025-11-07 19:19:34 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 3bdde8
+2025-11-07 19:19:34 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 734e50
+2025-11-07 19:19:34 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 734e50
+2025-11-07 19:19:34 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 734e50
+2025-11-07 19:19:34 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 19:19:34 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 19:19:34 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 19:19:35 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 19:35:01 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 57d7ea
+2025-11-07 19:35:01 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 57d7ea
+2025-11-07 19:35:01 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 0621c1
+2025-11-07 19:35:01 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 0621c1
+2025-11-07 19:35:01 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 0621c1
+2025-11-07 19:35:01 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 19:35:02 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 19:35:02 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 4b3242
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 4b3242
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 61a1f6
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 61a1f6
+2025-11-07 19:35:03 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 61a1f6
+2025-11-07 19:35:03 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 19:35:03 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 20:23:51 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 1f6b35
+2025-11-07 20:23:51 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 1f6b35
+2025-11-07 20:23:52 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 0e5b1d
+2025-11-07 20:23:52 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 0e5b1d
+2025-11-07 20:23:52 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 0e5b1d
+2025-11-07 20:23:52 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:23:53 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 20:23:53 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 3c4e49
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 3c4e49
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 7e11f6
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 7e11f6
+2025-11-07 20:23:54 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 7e11f6
+2025-11-07 20:23:54 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 20:23:54 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 20:30:44 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 59cd25
+2025-11-07 20:30:44 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 59cd25
+2025-11-07 20:30:44 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 5c8f4e
+2025-11-07 20:30:44 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 5c8f4e
+2025-11-07 20:30:45 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 5c8f4e
+2025-11-07 20:30:45 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:30:46 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 20:30:46 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 20:30:46 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar fce4a2
+2025-11-07 20:30:46 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar fce4a2
+2025-11-07 20:30:46 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado a4a626
+2025-11-07 20:30:46 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado a4a626
+2025-11-07 20:30:46 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado a4a626
+2025-11-07 20:30:46 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 20:30:47 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 20:40:45 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 778b82
+2025-11-07 20:40:45 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 778b82
+2025-11-07 20:40:46 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta fa80dd
+2025-11-07 20:40:46 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta fa80dd
+2025-11-07 20:40:46 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta fa80dd
+2025-11-07 20:40:46 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:40:47 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 20:40:47 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 8e6a96
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 8e6a96
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 26bad6
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 26bad6
+2025-11-07 20:40:48 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 26bad6
+2025-11-07 20:40:48 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 20:40:48 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 20:46:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 35e943
+2025-11-07 20:46:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 35e943
+2025-11-07 20:46:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta f37d21
+2025-11-07 20:46:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta f37d21
+2025-11-07 20:46:10 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta f37d21
+2025-11-07 20:46:10 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 20:46:12 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 547f9a
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 547f9a
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 9972c1
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 9972c1
+2025-11-07 20:46:12 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 9972c1
+2025-11-07 20:46:12 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 20:46:12 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 20:48:52 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 7454d1
+2025-11-07 20:48:52 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 7454d1
+2025-11-07 20:48:52 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 1347c2
+2025-11-07 20:48:52 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 1347c2
+2025-11-07 20:48:52 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 1347c2
+2025-11-07 20:48:52 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:48:53 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 20:48:53 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 20:48:53 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 4f3087
+2025-11-07 20:48:53 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 4f3087
+2025-11-07 20:48:53 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 49bda6
+2025-11-07 20:48:53 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 49bda6
+2025-11-07 20:48:53 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 49bda6
+2025-11-07 20:48:53 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 20:48:54 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 20:53:09 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 0cea23
+2025-11-07 20:53:09 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 0cea23
+2025-11-07 20:53:09 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 04c4e0
+2025-11-07 20:53:09 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 04c4e0
+2025-11-07 20:53:09 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 04c4e0
+2025-11-07 20:53:09 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 20:53:10 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 330fcf
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 330fcf
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado c65699
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado c65699
+2025-11-07 20:53:10 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado c65699
+2025-11-07 20:53:10 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 20:53:10 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 20:53:11 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 20:58:35 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin 1239ca
+2025-11-07 20:58:35 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin 1239ca
+2025-11-07 20:58:36 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 9f7ff9
+2025-11-07 20:58:36 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 9f7ff9
+2025-11-07 20:58:36 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 9f7ff9
+2025-11-07 20:58:36 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 20:58:37 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar afbec7
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar afbec7
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado a98505
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado a98505
+2025-11-07 20:58:37 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado a98505
+2025-11-07 20:58:37 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 20:58:37 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 21:09:11 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Admin a4e619
+2025-11-07 21:09:11 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Admin a4e619
+2025-11-07 21:09:12 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Duplicado Ruta 9442cc
+2025-11-07 21:09:12 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Duplicado Ruta 9442cc
+2025-11-07 21:09:12 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: Hogar Duplicado Ruta 9442cc
+2025-11-07 21:09:12 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 9999
+2025-11-07 21:09:13 - hogar_service - WARNING - [hogar_service.py:49] - No se encontró hogar con ID: 9999
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar 4d3f53
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar 4d3f53
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: HogarDuplicado 6676f5
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): HogarDuplicado 6676f5
+2025-11-07 21:09:13 - hogar_service - WARNING - [hogar_service.py:20] - Intento de crear hogar con nombre duplicado: HogarDuplicado 6676f5
+2025-11-07 21:09:13 - hogar_service - ERROR - [hogar_service.py:36] - Error de base de datos al crear hogar: El nombre del hogar ya existe
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Activo 1
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Activo 1
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Inactivo
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Inactivo
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar Original
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar Original
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:85] - Actualizando hogar con ID: 1
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:100] - Hogar actualizado (sin commit): Hogar Actualizado
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar a Borrar
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar a Borrar
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 1
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 1
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 21:09:13 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar a Borrar
+2025-11-07 22:34:09 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 22:34:09 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 22:34:30 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 22:34:30 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar Principal
+2025-11-07 22:50:26 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 22:50:26 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-07 23:08:04 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-07 23:08:04 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar Principal
+2025-11-07 23:20:36 - hogar_service - INFO - [hogar_service.py:26] - Creando hogar con nombre: Hogar emanuel
+2025-11-07 23:20:36 - hogar_service - INFO - [hogar_service.py:33] - Hogar creado (sin commit): Hogar emanuel
+2025-11-07 23:21:00 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 23:21:00 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 2 hogares activos
+2025-11-07 23:21:24 - hogar_service - INFO - [hogar_service.py:109] - Eliminando (lógico) hogar con ID: 2
+2025-11-07 23:21:24 - hogar_service - INFO - [hogar_service.py:120] - Hogar eliminado lógicamente (sin commit): 2
+2025-11-07 23:31:56 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-07 23:31:56 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 16:19:57 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 16:19:57 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 16:20:52 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 16:20:52 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 16:24:06 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 16:24:06 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 16:27:29 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 16:27:29 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 16:27:43 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 16:27:43 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 16:28:21 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 16:28:21 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 16:44:02 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 16:44:02 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 19:19:16 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-13 19:19:17 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar Principal
+2025-11-13 19:23:20 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-13 19:23:20 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar Principal
+2025-11-13 19:41:37 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-13 19:41:37 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar Principal
+2025-11-13 19:51:21 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-13 19:51:21 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar Principal
+2025-11-13 19:51:25 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 19:51:25 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 20:19:37 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 20:19:37 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 21:59:35 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 21:59:35 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
+2025-11-13 21:59:40 - hogar_service - INFO - [hogar_service.py:42] - Obteniendo hogar con ID: 1
+2025-11-13 21:59:40 - hogar_service - INFO - [hogar_service.py:47] - Hogar encontrado: Hogar Principal
+2025-11-13 22:00:43 - hogar_service - INFO - [hogar_service.py:63] - Listando hogares activos
+2025-11-13 22:00:43 - hogar_service - INFO - [hogar_service.py:69] - Se encontraron 1 hogares activos
