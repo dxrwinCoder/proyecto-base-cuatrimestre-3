@@ -3954,3 +3954,87 @@
 2025-11-13 22:00:41 - security - INFO - [security.py:33] - Contraseña verificada correctamente
 2025-11-13 22:00:41 - security - INFO - [security.py:44] - Generando token de acceso
 2025-11-13 22:00:41 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-14 23:54:36 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-14 23:54:37 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-14 23:54:37 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-14 23:54:37 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-14 23:54:39 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-14 23:54:39 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-14 23:54:39 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-14 23:54:39 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 08:12:48 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 08:12:48 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 08:12:48 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 08:12:48 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 08:12:50 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 08:12:51 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 08:12:51 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 08:12:51 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:22:46 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:22:47 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:22:47 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:22:47 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:22:49 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:22:49 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:22:49 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:22:49 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:26:06 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:26:07 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:26:07 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:26:07 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:26:09 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:26:09 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:26:09 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:26:09 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:29:35 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:29:36 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:29:36 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:29:36 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:29:38 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:29:38 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:29:38 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:29:38 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:49:54 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:49:55 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:49:55 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:49:55 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 11:49:57 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 11:49:57 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 11:49:57 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 11:49:57 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 12:50:46 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 12:50:46 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 12:50:46 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 12:50:46 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 12:50:48 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 12:50:49 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 12:50:49 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 12:50:49 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 14:47:48 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 14:47:49 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 14:47:49 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 14:47:49 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 14:47:51 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 14:47:51 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 14:47:51 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 14:47:51 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 15:09:46 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 15:09:47 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 15:09:47 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 15:09:47 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 15:12:45 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-15 15:12:46 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-15 15:12:46 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 15:12:46 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 15:17:15 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 15:17:15 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 15:17:15 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 15:17:15 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 15:17:17 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 15:17:18 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 15:17:18 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 15:17:18 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-15 16:15:56 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-15 16:15:56 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-15 16:15:56 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-15 16:15:56 - security - INFO - [security.py:50] - Token de acceso generado exitosamente

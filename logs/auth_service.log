@@ -1358,3 +1358,89 @@ WHERE roles.id = %s]
 2025-11-13 22:00:41 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
 2025-11-13 22:00:41 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
 2025-11-13 22:00:41 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-14 23:54:36 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-14 23:54:37 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-14 23:54:37 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-14 23:54:37 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-14 23:54:39 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-14 23:54:39 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-14 23:54:39 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-14 23:54:39 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 08:12:47 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 08:12:48 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 08:12:48 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 08:12:48 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 08:12:50 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 08:12:51 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 08:12:51 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 08:12:51 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:22:46 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 11:22:47 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 11:22:47 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 11:22:47 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:22:49 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 11:22:49 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 11:22:49 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 11:22:49 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:26:06 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 11:26:07 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 11:26:07 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 11:26:07 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:26:09 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 11:26:09 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 11:26:09 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 11:26:09 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:29:35 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 11:29:36 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 11:29:36 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 11:29:36 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:29:38 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 11:29:38 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 11:29:38 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 11:29:38 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:49:54 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 11:49:55 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 11:49:55 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 11:49:55 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 11:49:57 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 11:49:57 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 11:49:57 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 11:49:57 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 12:50:45 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 12:50:46 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 12:50:46 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 12:50:46 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 12:50:48 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 12:50:49 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 12:50:49 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 12:50:49 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 14:47:48 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 14:47:49 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 14:47:49 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 14:47:49 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 14:47:51 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 14:47:51 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 14:47:51 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 14:47:51 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 15:09:46 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 15:09:47 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 15:09:47 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 15:09:47 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 15:12:45 - auth_service - INFO - [auth_service.py:58] - Intentando crear nuevo miembro con correo: emanuel@postman.com
+2025-11-15 15:12:46 - auth_service - INFO - [auth_service.py:150] - Miembro creado (sin commit): emanuel (ID: 3)
+2025-11-15 15:12:46 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 15:12:46 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 15:17:15 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 15:17:15 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 15:17:15 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 15:17:15 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 15:17:17 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: emanuel@ejemplo.com
+2025-11-15 15:17:18 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: emanuel
+2025-11-15 15:17:18 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: emanuel
+2025-11-15 15:17:18 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-15 16:15:55 - auth_service - INFO - [auth_service.py:25] - Intentando autenticar al miembro con correo: admin@example.com
+2025-11-15 16:15:56 - auth_service - INFO - [auth_service.py:41] - Autenticación exitosa para el miembro: Admin Principal
+2025-11-15 16:15:56 - auth_service - INFO - [auth_service.py:240] - Generando token de acceso para miembro: Admin Principal
+2025-11-15 16:15:56 - auth_service - INFO - [auth_service.py:256] - Token de acceso generado exitosamente
+2025-11-16 08:57:42 - auth_service - INFO - [auth_service.py:170] - Iniciando registro para: darwin@ejemplo.com (Rol ID: 1)
+2025-11-16 08:57:42 - auth_service - ERROR - [auth_service.py:214] - Error al crear miembro (rollback pendiente): Mapper 'mapped class Hogar->hogares' has no property 'miembros'

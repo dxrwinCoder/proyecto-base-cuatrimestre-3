@@ -15,7 +15,8 @@ class MiembroRegistro(BaseModel):
         ..., min_length=8, max_length=72
     )  # Contraseña entre 8 y 72 caracteres
     id_rol: int
-    id_hogar: int
+    id_hogar: Optional[int] = None
+    # id_hogar: int
 
     model_config = ConfigDict(from_attributes=True)
 

@@ -1,80 +1,48 @@
-# stories.yml
+# data/stories.yml
 version: "3.1"
 
 stories:
-  - story: Flujo simple - Saludar y despedir
-    steps:
-      - intent: saludar
-      - action: utter_saludar
-      - intent: despedirse
-      - action: utter_despedirse
-
-  - story: Flujo simple - Preguntar qué hace
-    steps:
-      - intent: soy_bot
-      - action: utter_soy_bot
-
-  - story: Flujo Usuario - Consultar mis tareas (DB)
+  - story: Flujo Usuario - Consultar mis tareas
     steps:
       - intent: consultar_mis_tareas
-      - action: action_consultar_mis_tareas # Llama al código Python (DB)
+      - action: action_consultar_mis_tareas
 
-  - story: Flujo Usuario - Marcar tarea completada (DB)
+  - story: Flujo Usuario - Marcar tarea completada
     steps:
       - intent: marcar_tarea_completada
         entities:
           - tarea_nombre: "lavar los platos"
-      - slot_was_set:
-          - tarea_nombre: "lavar los platos"
-      - action: action_marcar_tarea_completada # Llama al código Python (DB)
-      - action: utter_accion_exitosa
+      - action: action_marcar_tarea_completada
 
-  - story: Flujo Usuario - Preguntar cómo hacer tarea (DB)
-    steps:
-      - intent: preguntar_como_hacer_tarea
-        entities:
-          - tarea_id: "5"
-      - slot_was_set:
-          - tarea_id: "5"
-      - action: action_explicar_tarea # Llama al código Python (DB)
-
-  - story: Flujo Admin - Asignar tarea (DB)
-    steps:
-      - intent: asignar_tarea_miembro
-        entities:
-          - tarea_nombre: "pasear al perro"
-          - miembro_nombre: "Juan"
-      - slot_was_set:
-          - tarea_nombre: "pasear al perro"
-      - slot_was_set:
-          - miembro_nombre: "Juan"
-      - action: action_asignar_tarea_miembro # Llama al código Python (DB)
-      - action: utter_accion_exitosa
-
-  - story: Flujo Admin - Sugerir tarea (DB + Lógica)
-    steps:
-      - intent: sugerir_tarea_miembro
-        entities:
-          - miembro_nombre: "David"
-      - slot_was_set:
-          - miembro_nombre: "David"
-      - action: action_sugerir_tarea_miembro # Llama al código Python (DB)
-
-  - story: Flujo General - Consultar Ranking (DB)
+  - story: Flujo General - Consultar Ranking
     steps:
       - intent: consultar_ranking_semanal
-      - action: action_consultar_ranking_semanal # Llama al código Python (DB)
+      - action: action_consultar_ranking_semanal
 
-  - story: Flujo General - Consultar Atributos (DB)
+  - story: Flujo Admin - Consultar Miembros
     steps:
-      - intent: consultar_atributos_miembro
+      - intent: consultar_miembros_hogar
+      - action: action_consultar_miembros_hogar
+
+  - story: Flujo Admin - Consultar tareas de un miembro
+    steps:
+      - intent: admin_listar_tareas_miembro
         entities:
-          - miembro_nombre: "María"
-      - slot_was_set:
-          - miembro_nombre: "María"
-      - action: action_consultar_atributos_miembro # Llama al código Python (DB)
+          - miembro_nombre: "Emanuel"
+      - action: action_admin_listar_tareas_miembro
 
-  - story: Flujo General - Consultar Notificaciones (DB)
+  - story: Flujo Admin - Consultar tareas por estado
     steps:
-      - intent: consultar_notificaciones
-      - action: action_consultar_notificaciones # Llama al código Python (DB)
+      - intent: admin_listar_tareas_estado
+        entities:
+          - estado_tarea: "completada"
+      - action: action_admin_listar_tareas_estado
+
+  - story: Flujo Admin - Crear Tarea (Formulario)
+    steps:
+      - intent: admin_crear_tarea_simple
+      - action: crear_tarea_form
+      - active_loop: crear_tarea_form
+      - active_loop: null
+      - action: action_crear_tarea
+      - action: utter_accion_exitosa

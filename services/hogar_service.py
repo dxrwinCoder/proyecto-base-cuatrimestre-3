@@ -124,6 +124,51 @@ async def eliminar_hogar_logico(db: AsyncSession, hogar_id: int):
         raise
 
 
+async def _validar_nombre_hogar_duplicado(db: AsyncSession, nombre: str):
+    stmt = select(Hogar).where(Hogar.nombre == nombre)
+    result = await db.execute(stmt)
+    if result.scalar_one_or_none():
+        logger.warning(f"Intento de crear hogar con nombre duplicado: {nombre}")
+        raise ValueError("El nombre del hogar ya existe")
+
+
+# --- ¡NUEVA FUNCIÓN INTERNA PARA EL SERVICIO DE AUTH! ---
+async def crear_hogar_interno(db: AsyncSession, nombre_hogar: str) -> Hogar:
+    """
+    Función interna para ser llamada por otros servicios (ej. auth_service)
+    sin necesidad de pasar un schema Pydantic.
+    """
+    await _validar_nombre_hogar_duplicado(db, nombre_hogar)
+
+    logger.info(f"Creando hogar (interno) con nombre: {nombre_hogar}")
+    hogar = Hogar(nombre=nombre_hogar)
+    db.add(hogar)
+    await db.flush()
+    await db.refresh(hogar)
+    logger.info(f"Hogar (interno) creado (sin commit): {hogar.nombre}")
+    return hogar
+
+
+async def crear_hogar_interno(db: AsyncSession, nombre_hogar: str) -> Hogar:
+    """
+    Función interna para ser llamada por otros servicios (ej. auth_service)
+    sin necesidad de pasar un schema.
+    """
+    try:
+        await _validar_nombre_hogar_duplicado(db, nombre_hogar)
+        logger.info(f"Creando hogar (interno) con nombre: {nombre_hogar}")
+        hogar = Hogar(nombre=nombre_hogar)
+        db.add(hogar)
+        await db.flush()
+        await db.refresh(hogar)
+        logger.info(f"Hogar (interno) creado (sin commit): {hogar.nombre}")
+        return hogar
+    except (SQLAlchemyError, ValueError) as e:
+        logger.error(f"Error de base de datos al crear hogar interno: {str(e)}")
+        raise
+
+
+# --- FIN DE LA NUEVA FUNCIÓN ---
 # from sqlalchemy.ext.asyncio import AsyncSession
 # from models.hogar import Hogar
 # from utils.logger import setup_logger

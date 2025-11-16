@@ -20,13 +20,25 @@ class Miembro(Base):
         DateTime, server_default=func.now(), onupdate=func.now()
     )
 
-    # Relación con la tabla roles
+    # --- Relaciones "Calibradas" ---
+
+    # Relación con Rol (1-a-N, Miembro-Rol)
     rol = relationship("Rol", back_populates="miembros")
 
-    id = Column(Integer, primary_key=True)
-    # ... (El resto de sus columnas: nombre_completo, correo_electronico, etc.)
+    # Relación con Hogar (1-a-N, Miembro-Hogar)
+    # (Asumiendo que 'models/hogar.py' tiene: miembros = relationship("Miembro", ...))
+    hogar = relationship("Hogar", back_populates="miembros")
 
-    # --- ¡AÑADA ESTA LÍNEA (Lado 2 del N+1)! ---
+    # Relación con Mensaje (N+1 Fix)
     mensajes = relationship(
         "Mensaje", back_populates="remitente", foreign_keys="[Mensaje.id_remitente]"
     )
+
+    # Relación con Tarea (N+1 Fix)
+    # (Asumiendo que 'models/tarea.py' tiene: miembro_asignado = relationship("Miembro", foreign_keys=[asignado_a]))
+    tareas_asignadas = relationship(
+        "Tarea", back_populates="miembro_asignado", foreign_keys="[Tarea.asignado_a]"
+    )
+
+    # Relación con Comentario (N+1 Fix)
+    comentarios = relationship("ComentarioTarea", back_populates="miembro")

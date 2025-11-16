@@ -114,6 +114,7 @@ async def actualizar_hogar_endpoint(
             )
 
         await db.commit()
+        print("commit realizado")
         return hogar_actualizado
     except Exception as e:
         await db.rollback()

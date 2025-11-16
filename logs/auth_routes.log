@@ -30,3 +30,5 @@
 2025-11-07 21:09:04 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001F06B0049B0>
 2025-11-07 21:23:28 - auth_routes - INFO - [auth_routes.py:40] - Miembro creado y retornado desde el servicio auth_service <models.miembro.Miembro object at 0x000001AD856F0320>
 2025-11-07 22:27:02 - auth_routes - INFO - [auth_routes.py:34] - Miembro creado y transacción confirmada: admin@example.com
+2025-11-15 15:12:46 - auth_routes - INFO - [auth_routes.py:34] - Miembro creado y transacción confirmada: emanuel@postman.com
+2025-11-16 08:57:42 - auth_routes - ERROR - [auth_routes.py:52] - Error interno al registrar miembro: Mapper 'mapped class Hogar->hogares' has no property 'miembros'

@@ -3,7 +3,6 @@ version: "3.1"
 
 # 1. INTENCIONES (40+ Intenciones)
 intents:
-  # Chitchat Básico
   - saludar
   - despedirse
   - afirmar
@@ -24,6 +23,11 @@ intents:
   - consultar_tareas_categoria # DB
   - consultar_tareas_vencidas # DB
   - consultar_tiempo_total_tarea # DB
+
+  - admin_consultar_miembro_nombre
+  - admin_listar_tareas_miembro
+  - admin_listar_tareas_estado
+  - admin_crear_tarea_simple
 
   # Flujo Administrador (Gestión)
   - crear_tarea # DB (Acción)
@@ -58,6 +62,7 @@ intents:
 
 # 2. ENTIDADES (Palabras clave a extraer)
 entities:
+  - asignado_a_nombre
   - miembro_nombre
   - tarea_nombre
   - tarea_id
@@ -76,24 +81,66 @@ slots:
     influence_conversation: true
     mappings:
       - type: from_entity
-        entity: miembro_nombre # Mapea la entidad 'miembro_nombre' al slot 'miembro_nombre'
+        entity: miembro_nombre
 
   tarea_id:
     type: text
     influence_conversation: true
     mappings:
       - type: from_entity
-        entity: tarea_id # Mapea la entidad 'tarea_id' al slot 'tarea_id'
+        entity: tarea_id
 
   categoria_tarea:
     type: text
     influence_conversation: true
     mappings:
       - type: from_entity
-        entity: categoria_tarea # Mapea la entidad 'categoria_tarea' al slot 'categoria_tarea'
+        entity: categoria_tarea
+
+  tarea_nombre:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: tarea_nombre
+
+  # Slots para el Formulario de Tareas
+  slot_tarea_titulo:
+    type: text
+    mappings:
+      - type: from_text
+        intent: none
+
+  slot_tarea_categoria:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: categoria_tarea
+      - type: from_text
+        intent: none
+
+  slot_tarea_asignado_a:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: asignado_a_nombre
+      - type: from_text
+        intent: none
+
+  # Slot para el estado
+  estado_tarea:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: estado_tarea
 
 # 4. ACCIONES (Lo que el bot HACE - aquí se conecta a la BD)
 actions:
+  # --- ¡NUEVAS ACCIONES DE ADMIN! ---
+  - action_admin_consultar_miembro
+  - action_admin_listar_tareas_miembro
+  - action_admin_listar_tareas_estado
   # Acciones de la Base de Datos (las 10+ solicitadas)
   - action_consultar_mis_tareas
   - action_consultar_estado_tarea
@@ -131,22 +178,53 @@ actions:
 # 5. RESPUESTAS (Lo que el bot DICE)
 responses:
   utter_saludar:
-    - text: "Hola, soy el asistente de HomeTasks. ¿En qué puedo ayudarte hoy?"
-  utter_despedirse:
-    - text: "¡Ha sido un placer ayudarte! Que tengas un buen día."
-  utter_soy_bot:
-    - text: "Soy un asistente virtual diseñado para ayudarte a gestionar las tareas del hogar en la plataforma HomeTasks."
-  utter_agradecer:
-    - text: "¡De nada! Estoy aquí para servirte."
-  utter_ayuda:
-    - text: "Puedo ayudarte a: \n- Consultar tus tareas ('¿qué tareas tengo?')\n- Marcar tareas ('marca 'lavar platos' como completada')\n- Preguntar por el ranking ('¿quién va ganando la semana?')\n- (Admin) Crear tareas ('crea una tarea para Juan')"
-  utter_insulto_detectado:
-    - text: "Prefiero mantener una conversación profesional. Por favor, indícame cómo puedo asistirte con tus tareas."
+    - text: "¡Hola! Soy tu asistente de HomeTasks. ¿Listo para organizar el hogar? ¿En qué te ayudo?"
 
-  # Respuestas genéricas para acciones
+  utter_despedirse:
+    - text: "¡Ha sido un placer! Vuelve pronto. ¡Que tengas un día productivo!"
+
+  utter_soy_bot:
+    - text: 'Soy un asistente virtual "calibrado" para ayudarte a gestionar las tareas, eventos y miembros de tu hogar.'
+
+  utter_agradecer:
+    - text: "¡Con gusto! Estoy aquí para hacer la gestión del hogar más fácil."
+
+  utter_ayuda:
+    - text: 'Puedo ayudarte con esto:\n* Consulta tus tareas: ''¿qué tengo pendiente?''\n* Actualiza una tarea: ''marca "lavar platos" como completada''\n* Consulta el ranking: ''¿quién va ganando?''\n* (Admin) Consulta miembros: ''¿quiénes están en casa?'''
+
+  utter_insulto_detectado:
+    - text: "Entendido. Prefiero mantener nuestra conversación enfocada en la gestión del hogar. ¿En qué te puedo asistir?"
+
   utter_accion_exitosa:
-    - text: "¡Listo! Acción completada."
+    - text: "¡Hecho! Tarea completada exitosamente."
+    - text: "¡Perfecto! Lo he actualizado en el sistema."
+
   utter_error_accion:
-    - text: "Lo siento, no pude completar esa acción. Revisa que tengas los permisos necesarios."
+    - text: "Lo siento, parece que no pude completar esa acción. Es posible que no tengas los permisos necesarios para esta operación."
+
   utter_error_bd:
-    - text: "Tuve un problema al conectarme con la base de datos. Por favor, inténtalo más tarde."
+    - text: "¡Uy! Tuve un problema técnico al intentar conectarme a la base de datos. Por favor, inténtalo de nuevo en un momento."
+
+  utter_no_entiendo:
+    - text: "Disculpa, no te he seguido. ¿Puedes intentarlo de nuevo?"
+    - text: "Lo siento, no he entendido bien tu solicitud. ¿Podrías reformularla?"
+
+  utter_no_es_admin:
+    - text: "Lo siento, esta acción solo está permitida para Administradores."
+
+  utter_ask_slot_tarea_titulo:
+    - text: "¡Perfecto! Vamos a crear una nueva tarea. ¿Cuál sería el título o nombre de la tarea?"
+
+  utter_ask_slot_tarea_categoria:
+    - text: "Entendido. ¿A qué categoría pertenece? (ej. 'cocina', 'limpieza', 'compras')"
+
+  utter_ask_slot_tarea_asignado_a:
+    - text: "¡Genial! ¿A qué miembro del hogar le asignamos esta tarea? (Dime su nombre)"
+
+# --- ¡NUEVO! DEFINICIÓN DEL FORMULARIO ---
+forms:
+  crear_tarea_form:
+    required_slots:
+      - slot_tarea_titulo
+      - slot_tarea_categoria
+      - slot_tarea_asignado_a

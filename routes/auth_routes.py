@@ -5,8 +5,8 @@ from sqlalchemy import select
 from sqlalchemy.orm import selectinload
 from utils.logger import setup_logger
 from db.database import get_db
-from models.miembro import Miembro
 from schemas.auth import MiembroLogin, MiembroRegistro, Token
+from schemas.miembro import MiembroResponse
 from services.auth_service import (
     autenticar_miembro,
     crear_miembro,
@@ -26,28 +26,40 @@ async def registrar_miembro(datos: MiembroRegistro, db: AsyncSession = Depends(g
     """
     try:
         # 1. Llamar al servicio (que usa flush)
-        miembro = await crear_miembro(db, datos)
+        # 'miembro_modelo' es un objeto SQLAlchemy
+        miembro_modelo = await crear_miembro(db, datos)
 
         # 2. Si todo sale bien, la RUTA hace commit
         await db.commit()
 
+        # Refrescar el objeto después del commit para asegurar que todas
+        # las relaciones (como el nuevo hogar) estén cargadas.
+        await db.refresh(miembro_modelo.hogar)
+
         logger.info(
-            f"Miembro creado y transacción confirmada: {miembro.correo_electronico}"
+            f"Miembro creado y transacción confirmada: {miembro_modelo.correo_electronico}"
         )
 
         # 3. Crear y devolver el token
-        token = crear_token_para_miembro(miembro)
+        # El servicio 'crear_token_para_miembro' espera un objeto Miembro (que ya tenemos)
+        token_jwt = crear_token_para_miembro(miembro_modelo)
+
+        # Convertir el modelo SQLAlchemy (miembro_modelo) al schema Pydantic (MiembroResponse)
+        # Usamos .from_orm() porque su entorno está en Pydantic v1
+        miembro_schema = MiembroResponse.from_orm(miembro_modelo)
+
         return Token(
-            access_token=token, id_miembro=miembro.id, id_hogar=miembro.id_hogar
+            access_token=token_jwt,
+            id_miembro=miembro_schema.id,
+            id_hogar=miembro_schema.id_hogar,
+            rol=miembro_schema.rol,  # Pasamos el objeto RolResponse
         )
 
     except ValueError as e:
-        # Error de lógica de negocio (ej. duplicado, rol no existe)
         await db.rollback()
         logger.warning(f"Error de validación al registrar miembro: {str(e)}")
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
     except Exception as e:
-        # Error inesperado del servidor
         await db.rollback()
         logger.error(f"Error interno al registrar miembro: {str(e)}")
         raise HTTPException(

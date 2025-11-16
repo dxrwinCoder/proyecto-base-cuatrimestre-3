@@ -11,6 +11,7 @@ from sqlalchemy import (
     func,
 )
 from db.database import Base
+from sqlalchemy.orm import relationship
 
 
 class Tarea(Base):
@@ -44,3 +45,5 @@ class Tarea(Base):
     fecha_creacion = Column(DateTime, default=func.now())
     fecha_actualizacion = Column(DateTime, default=func.now(), onupdate=func.now())
     estado = Column(Boolean, default=True)
+
+    miembro_asignado = relationship("Miembro", foreign_keys=[asignado_a])

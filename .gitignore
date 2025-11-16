@@ -1,19 +1,79 @@
-# === Entorno virtual ===
+# === Entorno Virtual ===
+# Ignora el entorno virtual completo
 venv/
+app/venv/ # Ignorar venv anidado si existe
 
-
-# === Archivos de caché de Python ===
-__pycache__/
+# === Caché de Python y Pruebas ===
+# Ignora todos los directorios __pycache__ en cualquier subcarpeta
+**/__pycache__/
 *.pyc
-*.pyo
+.pytest_cache/
+app/.pytest_cache/
 
+# === Archivos Sensibles ===
+# Ignora el archivo de variables de entorno
+.env
+
+# === Logs ===
+# Ignora el directorio de logs de la app FastAPI
+app/logs/
+# Ignora logs de Rasa o cualquier otro .log
+*.log
+
+# === Archivos de Rasa ===
+# Ignora el caché de Rasa (archivos temporales)
+.rasa/cache/
+# === Archivos generados por RASA ===
+# Ignora el directorio de caché de Rasa (el que le sale en rojo)
+.rasa/
+
+# Ignorar los archivos YML de configuración de Rasa en la raíz
+config.yml
+domain.yml
+endpoints.yml
+credentials.yml
+
+data/
+# Ignorar el script de acciones
+actions/actions.py
+
+# === Scripts de Prueba (Ignorados por solicitud) ===
+# Ignorar el script de prueba interactivo
+probar_rasa_interactivo.py
+
+# Ignora el archivo de prueba de Spacy (solicitud anterior)
+app/tests/test_spacy.py
+tests/test_spacy.py
+
+
+# Ignora los resultados de 'rasa test'
+results/
+
+# Ignora los modelos entrenados (.tar.gz) en la carpeta 'models' raíz
+# (¡OJO! Esto NO ignora 'app/models/' que contiene su código SQLAlchemy)
+models/*.tar.gz
+
+# === Archivos de Pruebas ===
+# Ignora el caché de Pytest de la app
+app/.pytest_cache/
+
+# Ignora el archivo de prueba específico que solicitó
+test_spacy.py
+
+# === Logs ===
+# Ignora el directorio de logs y su contenido
+logs/
+*.log
+
+# === Archivos de Sistema Operativo e IDE ===
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
 # === Archivos de configuración sensibles ===
-
-
+FETCH_HEAD
 # === Archivos de base de datos o scripts ===
 database_script/*.sql
 
-
-# === Archivos de entorno ===
-.env
 

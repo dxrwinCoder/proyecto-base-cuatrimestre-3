@@ -7,3 +7,4 @@ from .miembro import Miembro
 from .tarea import Tarea
 from .mensaje import Mensaje
 from .evento import Evento
+from .estadisticas_semanales import EstadisticaSemanal

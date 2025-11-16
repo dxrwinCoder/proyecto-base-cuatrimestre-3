@@ -5,6 +5,12 @@ from models.rol import Rol
 from models.hogar import Hogar
 from models.modulo import Modulo
 from models.permiso import Permiso
+from models.miembro import Miembro
+from models.rol import Rol
+from models.hogar import Hogar
+from models.modulo import Modulo
+from models.permiso import Permiso
+from services.hogar_service import crear_hogar_interno
 from schemas.auth import MiembroRegistro
 from sqlalchemy.orm import selectinload
 from utils.security import (
@@ -48,95 +54,265 @@ async def autenticar_miembro(db: AsyncSession, correo: str, contrasena: str):
         raise
 
 
-async def crear_miembro(db: AsyncSession, datos: MiembroRegistro):
+async def _asignar_permisos_totales_a_rol(db: AsyncSession, id_rol: int):
     """
-    Servicio "calibrado" para crear un miembro.
+    (Función helper interna)
+    Otorga permisos CRUD completos para TODOS los módulos a un ID de rol.
+    """
+    logger.info(f"Asignando permisos totales al rol ID: {id_rol}")
+
+    modulos_result = await db.execute(select(Modulo.id))
+    todos_los_modulos_ids = modulos_result.scalars().all()
+
+    permisos_existentes_stmt = select(Permiso.id_modulo).where(Permiso.id_rol == id_rol)
+    permisos_existentes = (await db.execute(permisos_existentes_stmt)).scalars().all()
+    set_permisos_existentes = set(permisos_existentes)
+
+    permisos_a_crear = []
+    for modulo_id in todos_los_modulos_ids:
+        if modulo_id not in set_permisos_existentes:
+            permisos_a_crear.append(
+                Permiso(
+                    id_rol=id_rol,
+                    id_modulo=modulo_id,
+                    puede_crear=True,
+                    puede_leer=True,
+                    puede_actualizar=True,
+                    puede_eliminar=True,
+                    estado=True,
+                )
+            )
+
+    if permisos_a_crear:
+        db.add_all(permisos_a_crear)
+        await db.flush()
+        logger.info(
+            f"Se asignaron {len(permisos_a_crear)} permisos nuevos al rol ID: {id_rol}."
+        )
+
+
+async def _registrar_administrador(db: AsyncSession, datos: MiembroRegistro) -> Miembro:
+    """
+    Lógica de "Onboarding" para un nuevo Administrador.
+    Crea un Hogar y asigna permisos.
+    """
+    logger.info(
+        f"Iniciando flujo de registro de Administrador para: {datos.correo_electronico}"
+    )
+
+    # 1. Crear el Hogar primero
+    nombre_hogar = f"Hogar de {datos.nombre_completo}"
+    nuevo_hogar = await crear_hogar_interno(db, nombre_hogar)
+
+    # 2. Crear el Miembro (Admin)
+    contrasena_hash = obtener_hash_contrasena(datos.contrasena)
+    miembro = Miembro(
+        nombre_completo=datos.nombre_completo,
+        correo_electronico=datos.correo_electronico,
+        contrasena_hash=contrasena_hash,
+        id_rol=datos.id_rol,  # (Será 1)
+        id_hogar=nuevo_hogar.id,  # ¡Asignar el ID del nuevo hogar!
+        estado=True,
+    )
+    db.add(miembro)
+    await db.flush()  # Guardar miembro
+
+    # 3. Asignar permisos (basado en la lógica que ya teníamos)
+    await _asignar_permisos_totales_a_rol(db, miembro.id_rol)
+
+    return miembro
+
+
+async def _registrar_usuario_normal(
+    db: AsyncSession, datos: MiembroRegistro
+) -> Miembro:
+    """
+    Lógica de registro para un usuario normal (ej. Hijo).
+    Valida que el hogar y el rol existan.
+    """
+    logger.info(
+        f"Iniciando flujo de registro de Usuario para: {datos.correo_electronico}"
+    )
+
+    # ¡Validación crítica!
+    if datos.id_hogar is None:
+        raise ValueError(
+            "El 'id_hogar' es obligatorio para registrar un miembro no-administrador."
+        )
+
+    rol_obj = await db.get(Rol, datos.id_rol)
+    hogar_obj = await db.get(Hogar, datos.id_hogar)
+
+    if not rol_obj:
+        raise ValueError(f"El rol con id {datos.id_rol} no existe.")
+    if not hogar_obj:
+        raise ValueError(f"El hogar con id {datos.id_hogar} no existe.")
+
+    # Crear el miembro
+    contrasena_hash = obtener_hash_contrasena(datos.contrasena)
+    miembro = Miembro(
+        nombre_completo=datos.nombre_completo,
+        correo_electronico=datos.correo_electronico,
+        contrasena_hash=contrasena_hash,
+        id_rol=datos.id_rol,
+        id_hogar=datos.id_hogar,
+        estado=True,
+    )
+    db.add(miembro)
+    await db.flush()
+    return miembro
+
+
+async def crear_miembro(db: AsyncSession, datos: MiembroRegistro) -> Miembro:
+    """
+    Servicio "calibrado" principal para crear un miembro.
     - NO hace commit (usa flush).
-    - Asigna permisos de Admin si 'id_rol' es 1.
+    - Decide qué flujo de registro usar (Admin vs. Usuario).
     """
     try:
         logger.info(
-            f"Intentando crear nuevo miembro con correo: {datos.correo_electronico}"
+            f"Iniciando registro para: {datos.correo_electronico} (Rol ID: {datos.id_rol})"
         )
 
-        # 1. Verificar si ya existe el correo
+        # 1. Verificar si ya existe el correo (común a ambos flujos)
         existe_stmt = select(Miembro).where(
             Miembro.correo_electronico == datos.correo_electronico
         )
         existe = await db.execute(existe_stmt)
         if existe.scalar_one_or_none():
-            logger.warning(
-                f"Intento de registro con correo ya existente: {datos.correo_electronico}"
-            )
+            logger.warning(f"Correo ya existente: {datos.correo_electronico}")
             raise ValueError(
                 "El correo electrónico ya se encuentra registrado en el sistema"
             )
 
-        # 2. Verificar que el rol y el hogar existan (esto previene el IntegrityError 1452)
-        rol_obj = await db.get(Rol, datos.id_rol)
-        hogar_obj = await db.get(Hogar, datos.id_hogar)
-
-        if not rol_obj:
-            raise ValueError(f"El rol con id {datos.id_rol} no existe.")
-        if not hogar_obj:
-            raise ValueError(f"El hogar con id {datos.id_hogar} no existe.")
-
-        # 3. Crear el miembro
-        contrasena_hash = obtener_hash_contrasena(datos.contrasena)
-        miembro = Miembro(
-            nombre_completo=datos.nombre_completo,
-            correo_electronico=datos.correo_electronico,
-            contrasena_hash=contrasena_hash,
-            id_rol=datos.id_rol,
-            id_hogar=datos.id_hogar,
-            estado=True,
-        )
-        db.add(miembro)
-        await db.flush()  # <-- ¡CAMBIO! de commit a flush
-
-        # --- MODIFICACIÓN: Asignar permisos automáticos a Admin ---
+        # --- ¡LÓGICA DE BIFURCACIÓN! ---
         # Asumimos que el ID del rol 'Administrador' es 1
-        if miembro.id_rol == 1:
-            logger.info(
-                f"Rol de Administrador detectado. Asignando todos los permisos para el rol ID: {miembro.id_rol}"
-            )
-
-            # 1. Obtener todos los IDs de los módulos
-            modulos_result = await db.execute(select(Modulo.id))
-            todos_los_modulos_ids = modulos_result.scalars().all()
-
-            permisos_a_crear = []
-
-            # 2. Verificar permisos existentes (para no duplicar)
-            permisos_existentes_stmt = select(Permiso.id_modulo).where(
-                Permiso.id_rol == miembro.id_rol
-            )
-            permisos_existentes = (
-                (await db.execute(permisos_existentes_stmt)).scalars().all()
-            )
-            set_permisos_existentes = set(permisos_existentes)
-
-            for modulo_id in todos_los_modulos_ids:
-                if modulo_id not in set_permisos_existentes:
-                    permisos_a_crear.append(
-                        Permiso(
-                            id_rol=miembro.id_rol,
-                            id_modulo=modulo_id,
-                            puede_crear=True,
-                            puede_leer=True,
-                            puede_actualizar=True,
-                            puede_eliminar=True,
-                            estado=True,
-                        )
-                    )
-
-            if permisos_a_crear:
-                db.add_all(permisos_a_crear)
-                await db.flush()
-                logger.info(
-                    f"Se asignaron {len(permisos_a_crear)} permisos nuevos al rol Admin (ID: {miembro.id_rol})."
+        miembro: Miembro
+        if datos.id_rol == 1:
+            if datos.id_hogar is not None:
+                logger.warning(
+                    f"Un Admin (rol 1) intentó registrarse con un 'id_hogar' explícito."
                 )
-        # --- FIN DE LA MODIFICACIÓN ---
+                raise ValueError(
+                    "El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente."
+                )
+            miembro = await _registrar_administrador(db, datos)
+        else:
+            miembro = await _registrar_usuario_normal(db, datos)
+        # --- FIN DE LA LÓGICA ---
+
+        await db.refresh(miembro)
+
+        # Recargar con el rol (necesario para crear el token)
+        miembro_con_rol_result = await db.execute(
+            select(Miembro)
+            .options(selectinload(Miembro.rol))
+            .where(Miembro.id == miembro.id)
+        )
+        miembro_con_rol = miembro_con_rol_result.scalar_one()
+
+        if not miembro_con_rol:
+            raise Exception(
+                "Error crítico: Miembro no encontrado después de crear y refrescar."
+            )
+
+        logger.info(
+            f"Miembro creado (sin commit): {miembro.nombre_completo} (ID: {miembro.id})"
+        )
+        return miembro_con_rol
+
+    except (ValueError, SQLAlchemyError, Exception) as e:
+        logger.error(f"Error al crear miembro (rollback pendiente): {str(e)}")
+        raise  # Relanzar para que la ruta (auth_routes) haga rollback
+
+        # async def crear_miembro(db: AsyncSession, datos: MiembroRegistro):
+        #     """
+        #     Servicio "calibrado" para crear un miembro.
+        #     - NO hace commit (usa flush).
+        #     - Asigna permisos de Admin si 'id_rol' es 1.
+        #     """
+        #     try:
+        #         logger.info(
+        #             f"Intentando crear nuevo miembro con correo: {datos.correo_electronico}"
+        #         )
+
+        #         # 1. Verificar si ya existe el correo
+        #         existe_stmt = select(Miembro).where(
+        #             Miembro.correo_electronico == datos.correo_electronico
+        #         )
+        #         existe = await db.execute(existe_stmt)
+        #         if existe.scalar_one_or_none():
+        #             logger.warning(
+        #                 f"Intento de registro con correo ya existente: {datos.correo_electronico}"
+        #             )
+        #             raise ValueError(
+        #                 "El correo electrónico ya se encuentra registrado en el sistema"
+        #             )
+
+        #         # 2. Verificar que el rol y el hogar existan (esto previene el IntegrityError 1452)
+        #         rol_obj = await db.get(Rol, datos.id_rol)
+        #         hogar_obj = await db.get(Hogar, datos.id_hogar)
+
+        #         if not rol_obj:
+        #             raise ValueError(f"El rol con id {datos.id_rol} no existe.")
+        #         if not hogar_obj:
+        #             raise ValueError(f"El hogar con id {datos.id_hogar} no existe.")
+
+        #         # 3. Crear el miembro
+        #         contrasena_hash = obtener_hash_contrasena(datos.contrasena)
+        #         miembro = Miembro(
+        #             nombre_completo=datos.nombre_completo,
+        #             correo_electronico=datos.correo_electronico,
+        #             contrasena_hash=contrasena_hash,
+        #             id_rol=datos.id_rol,
+        #             id_hogar=datos.id_hogar,
+        #             estado=True,
+        #         )
+        #         db.add(miembro)
+        #         await db.flush()  # <-- ¡CAMBIO! de commit a flush
+
+        #         # --- MODIFICACIÓN: Asignar permisos automáticos a Admin ---
+        #         # Asumimos que el ID del rol 'Administrador' es 1
+        #         if miembro.id_rol == 1:
+        #             logger.info(
+        #                 f"Rol de Administrador detectado. Asignando todos los permisos para el rol ID: {miembro.id_rol}"
+        #             )
+
+        #             # 1. Obtener todos los IDs de los módulos
+        #             modulos_result = await db.execute(select(Modulo.id))
+        #             todos_los_modulos_ids = modulos_result.scalars().all()
+
+        #             permisos_a_crear = []
+
+        #             # 2. Verificar permisos existentes (para no duplicar)
+        #             permisos_existentes_stmt = select(Permiso.id_modulo).where(
+        #                 Permiso.id_rol == miembro.id_rol
+        #             )
+        #             permisos_existentes = (
+        #                 (await db.execute(permisos_existentes_stmt)).scalars().all()
+        #             )
+        #             set_permisos_existentes = set(permisos_existentes)
+
+        #             for modulo_id in todos_los_modulos_ids:
+        #                 if modulo_id not in set_permisos_existentes:
+        #                     permisos_a_crear.append(
+        #                         Permiso(
+        #                             id_rol=miembro.id_rol,
+        #                             id_modulo=modulo_id,
+        #                             puede_crear=True,
+        #                             puede_leer=True,
+        #                             puede_actualizar=True,
+        #                             puede_eliminar=True,
+        #                             estado=True,
+        #                         )
+        #                     )
+
+        #             if permisos_a_crear:
+        #                 db.add_all(permisos_a_crear)
+        #                 await db.flush()
+        #                 logger.info(
+        #                     f"Se asignaron {len(permisos_a_crear)} permisos nuevos al rol Admin (ID: {miembro.id_rol})."
+        #                 )
 
         await db.refresh(miembro)
 
