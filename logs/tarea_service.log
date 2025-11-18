@@ -531,3 +531,5 @@
 2025-11-18 15:06:35 - tarea_service - INFO - [tarea_service.py:83] - Se encontraron 0 tareas activas para el miembro 1
 2025-11-18 15:56:58 - tarea_service - INFO - [tarea_service.py:230] - Admin listando TODAS las tareas del hogar 2
 2025-11-18 16:30:29 - tarea_service - INFO - [tarea_service.py:247] - Listando tareas creadas por Admin ID: 1
+2025-11-18 16:30:54 - tarea_service - INFO - [tarea_service.py:247] - Listando tareas creadas por Admin ID: 1
+2025-11-18 16:31:22 - tarea_service - INFO - [tarea_service.py:230] - Admin listando TODAS las tareas del hogar 2
