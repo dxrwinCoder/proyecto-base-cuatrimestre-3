@@ -18,7 +18,7 @@ async def asignar_permiso(db: AsyncSession, data: PermisoCreate):  # <-- ¡Recib
         if result.scalar_one_or_none():
             raise ValueError("Este permiso ya existe para este rol y módulo")
 
-        permiso = Permiso(**data.model_dump())
+        permiso = Permiso(**data.dict())
         db.add(permiso)
 
         await db.flush()  # <-- ¡CAMBIO! de commit a flush
@@ -39,7 +39,7 @@ async def actualizar_permiso(
         if not permiso or not permiso.estado:
             return None
 
-        update_data = updates.model_dump(exclude_unset=True)
+        update_data = updates.dict(exclude_unset=True)
         for k, v in update_data.items():
             setattr(permiso, k, v)
 

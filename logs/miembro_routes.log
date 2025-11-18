@@ -612,3 +612,84 @@
 2025-11-13 22:00:41 - miembro_routes - INFO - [miembro_routes.py:82] - Buscando miembro con ID: 1
 2025-11-13 22:00:41 - miembro_routes - INFO - [miembro_routes.py:101] - Miembro encontrado: Admin Principal
 2025-11-13 22:00:43 - miembro_routes - INFO - [miembro_routes.py:64] - Solicitando lista de todos los miembros
+2025-11-17 22:41:09 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Admin Secundario (Cónyuge) (Rol: 1)
+2025-11-17 22:41:09 - miembro_routes - ERROR - [miembro_routes.py:67] - Error al crear miembro: name '_asignar_permisos_totales_a_rol' is not defined
+2025-11-17 22:41:34 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Admin Secundario (Cónyuge) (Rol: 1)
+2025-11-17 22:41:34 - miembro_routes - ERROR - [miembro_routes.py:67] - Error al crear miembro: name '_asignar_permisos_totales_a_rol' is not defined
+2025-11-17 22:42:40 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Admin Secundario (Cónyuge) (Rol: 1)
+2025-11-17 22:42:40 - miembro_routes - ERROR - [miembro_routes.py:67] - Error al crear miembro: name '_asignar_permisos_totales_a_rol' is not defined
+2025-11-17 22:55:36 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Admin Secundario (Cónyuge) (Rol: 1)
+2025-11-17 22:55:37 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Admin Secundario (Cónyuge)
+2025-11-17 23:51:51 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Nuevo Miembro (Rol: 2)
+2025-11-17 23:51:51 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Nuevo Miembro
+2025-11-17 23:51:52 - miembro_routes - INFO - [miembro_routes.py:80] - Solicitando lista de todos los miembros
+2025-11-17 23:51:53 - miembro_routes - INFO - [miembro_routes.py:98] - Buscando miembro con ID: 1
+2025-11-17 23:51:53 - miembro_routes - INFO - [miembro_routes.py:117] - Miembro encontrado: Test User
+2025-11-17 23:51:54 - miembro_routes - INFO - [miembro_routes.py:98] - Buscando miembro con ID: 999
+2025-11-17 23:51:54 - miembro_routes - WARNING - [miembro_routes.py:102] - Miembro no encontrado con ID: 999
+2025-11-17 23:51:54 - miembro_routes - INFO - [miembro_routes.py:146] - Listando miembros activos para el hogar ID: 1
+2025-11-17 23:51:54 - miembro_routes - INFO - [miembro_routes.py:148] - Se encontraron 1 miembros activos en el hogar 1
+2025-11-17 23:51:54 - miembro_routes - INFO - [miembro_routes.py:170] - Intentando actualizar miembro: 1
+2025-11-17 23:51:54 - miembro_routes - ERROR - [miembro_routes.py:203] - Error al actualizar miembro: 'MiembroUpdate' object has no attribute 'model_dump'
+2025-11-17 23:51:55 - miembro_routes - INFO - [miembro_routes.py:170] - Intentando actualizar miembro: 999
+2025-11-17 23:51:55 - miembro_routes - WARNING - [miembro_routes.py:174] - Miembro no encontrado para actualizar: 999
+2025-11-17 23:51:56 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Miembro a Eliminar (Rol: 2)
+2025-11-17 23:51:56 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Miembro a Eliminar
+2025-11-17 23:51:57 - miembro_routes - INFO - [miembro_routes.py:271] - Solicitando cantidad de miembros para el hogar: 1
+2025-11-17 23:51:57 - miembro_routes - INFO - [miembro_routes.py:289] - Solicitando miembros con rol: 1
+2025-11-17 23:51:58 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Primer Miembro (Rol: 2)
+2025-11-17 23:51:58 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Primer Miembro
+2025-11-17 23:51:59 - miembro_routes - WARNING - [miembro_routes.py:34] - Intento no autorizado de crear miembro en hogar 2 por Admin 1
+2025-11-17 23:51:59 - miembro_routes - ERROR - [miembro_routes.py:67] - Error al crear miembro: 403: No tiene permiso para crear miembros en este hogar.
+2025-11-18 00:15:21 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Nuevo Miembro (Rol: 2)
+2025-11-18 00:15:22 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Nuevo Miembro
+2025-11-18 00:15:23 - miembro_routes - INFO - [miembro_routes.py:80] - Solicitando lista de todos los miembros
+2025-11-18 00:15:23 - miembro_routes - INFO - [miembro_routes.py:98] - Buscando miembro con ID: 1
+2025-11-18 00:15:23 - miembro_routes - INFO - [miembro_routes.py:117] - Miembro encontrado: Test User
+2025-11-18 00:15:24 - miembro_routes - INFO - [miembro_routes.py:98] - Buscando miembro con ID: 999
+2025-11-18 00:15:24 - miembro_routes - WARNING - [miembro_routes.py:102] - Miembro no encontrado con ID: 999
+2025-11-18 00:15:24 - miembro_routes - INFO - [miembro_routes.py:146] - Listando miembros activos para el hogar ID: 1
+2025-11-18 00:15:24 - miembro_routes - INFO - [miembro_routes.py:148] - Se encontraron 1 miembros activos en el hogar 1
+2025-11-18 00:15:25 - miembro_routes - INFO - [miembro_routes.py:170] - Intentando actualizar miembro: 1
+2025-11-18 00:15:25 - miembro_routes - ERROR - [miembro_routes.py:203] - Error al actualizar miembro: 'MiembroUpdate' object has no attribute 'model_dump'
+2025-11-18 00:15:26 - miembro_routes - INFO - [miembro_routes.py:170] - Intentando actualizar miembro: 999
+2025-11-18 00:15:26 - miembro_routes - WARNING - [miembro_routes.py:174] - Miembro no encontrado para actualizar: 999
+2025-11-18 00:15:26 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Miembro a Eliminar (Rol: 2)
+2025-11-18 00:15:26 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Miembro a Eliminar
+2025-11-18 00:15:27 - miembro_routes - INFO - [miembro_routes.py:271] - Solicitando cantidad de miembros para el hogar: 1
+2025-11-18 00:15:28 - miembro_routes - INFO - [miembro_routes.py:289] - Solicitando miembros con rol: 1
+2025-11-18 00:15:28 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Primer Miembro (Rol: 2)
+2025-11-18 00:15:28 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Primer Miembro
+2025-11-18 00:15:29 - miembro_routes - WARNING - [miembro_routes.py:34] - Intento no autorizado de crear miembro en hogar 2 por Admin 1
+2025-11-18 00:15:29 - miembro_routes - ERROR - [miembro_routes.py:67] - Error al crear miembro: 403: No tiene permiso para crear miembros en este hogar.
+2025-11-18 00:55:47 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Nuevo Miembro (Rol: 2)
+2025-11-18 00:55:47 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Nuevo Miembro
+2025-11-18 00:55:48 - miembro_routes - INFO - [miembro_routes.py:84] - Solicitando lista de todos los miembros
+2025-11-18 00:55:48 - miembro_routes - INFO - [miembro_routes.py:102] - Buscando miembro con ID: 1
+2025-11-18 00:55:48 - miembro_routes - INFO - [miembro_routes.py:121] - Miembro encontrado: Test User
+2025-11-18 00:55:49 - miembro_routes - INFO - [miembro_routes.py:102] - Buscando miembro con ID: 999
+2025-11-18 00:55:49 - miembro_routes - WARNING - [miembro_routes.py:106] - Miembro no encontrado con ID: 999
+2025-11-18 00:55:49 - miembro_routes - INFO - [miembro_routes.py:150] - Listando miembros activos para el hogar ID: 1
+2025-11-18 00:55:49 - miembro_routes - INFO - [miembro_routes.py:152] - Se encontraron 1 miembros activos en el hogar 1
+2025-11-18 00:55:50 - miembro_routes - INFO - [miembro_routes.py:174] - Intentando actualizar miembro: 1
+2025-11-18 00:55:50 - miembro_routes - ERROR - [miembro_routes.py:207] - Error al actualizar miembro: 'MiembroUpdate' object has no attribute 'model_dump'
+2025-11-18 00:55:50 - miembro_routes - INFO - [miembro_routes.py:174] - Intentando actualizar miembro: 999
+2025-11-18 00:55:50 - miembro_routes - WARNING - [miembro_routes.py:178] - Miembro no encontrado para actualizar: 999
+2025-11-18 00:55:51 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Miembro a Eliminar (Rol: 2)
+2025-11-18 00:55:51 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Miembro a Eliminar
+2025-11-18 00:55:51 - miembro_routes - INFO - [miembro_routes.py:221] - Intentando eliminar miembro: 2
+2025-11-18 00:55:51 - miembro_routes - INFO - [miembro_routes.py:242] - Miembro eliminado exitosamente: 2
+2025-11-18 00:55:52 - miembro_routes - INFO - [miembro_routes.py:275] - Solicitando cantidad de miembros para el hogar: 1
+2025-11-18 00:55:52 - miembro_routes - INFO - [miembro_routes.py:293] - Solicitando miembros con rol: 1
+2025-11-18 00:55:53 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Primer Miembro (Rol: 2)
+2025-11-18 00:55:53 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: Primer Miembro
+2025-11-18 00:55:53 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: Otro Miembro (Rol: 2)
+2025-11-18 00:55:53 - miembro_routes - WARNING - [miembro_routes.py:63] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-18 00:55:54 - miembro_routes - WARNING - [miembro_routes.py:34] - Intento no autorizado de crear miembro en hogar 2 por Admin 1
+2025-11-18 12:59:43 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: miembro 1 (Rol: 2)
+2025-11-18 12:59:43 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: miembro 1
+2025-11-18 13:46:05 - miembro_routes - INFO - [miembro_routes.py:42] - Intentando crear miembro: miembro 2 (Rol: 2)
+2025-11-18 13:46:06 - miembro_routes - INFO - [miembro_routes.py:53] - Miembro creado y transacción confirmada: miembro 2
+2025-11-18 15:02:01 - miembro_routes - INFO - [miembro_routes.py:84] - Solicitando lista de todos los miembros
+2025-11-18 15:02:40 - miembro_routes - INFO - [miembro_routes.py:275] - Solicitando cantidad de miembros para el hogar: 1
+2025-11-18 15:02:58 - miembro_routes - INFO - [miembro_routes.py:293] - Solicitando miembros con rol: 2

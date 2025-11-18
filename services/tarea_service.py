@@ -1,13 +1,12 @@
-# services/tarea_service.py
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
+from sqlalchemy.orm import joinedload
 from models.tarea import Tarea
 from models.comentario_tarea import ComentarioTarea
 from models.miembro import Miembro
 import time
 from utils.logger import setup_logger
-
-
+from datetime import datetime, timedelta, date
 from services.notificacion_service import crear_notificacion
 from schemas.notificacion import NotificacionCreate
 from schemas.tarea import TareaCreate  # ¡Asumiendo que tiene TareaCreate!
@@ -22,7 +21,7 @@ async def crear_tarea(db: AsyncSession, data: TareaCreate, creador_id: int):
     try:
         logger.info(f"Creando tarea con datos: {data.titulo}")
 
-        tarea_data = data.model_dump()
+        tarea_data = data.dict()
         tarea_data["creado_por"] = creador_id
 
         tarea = Tarea(**tarea_data)
@@ -30,6 +29,17 @@ async def crear_tarea(db: AsyncSession, data: TareaCreate, creador_id: int):
 
         await db.flush()
         await db.refresh(tarea)
+
+        # 1. Ejecutar consulta de carga ansiosa (joinedload)
+        stmt_select = (
+            select(Tarea).where(Tarea.id == tarea.id)
+            # --- (Añadir joinedload para la relación) ---
+            .options(joinedload(Tarea.comentarios))
+        )
+        result_loaded = await db.execute(stmt_select)
+
+        # 2. Aplicar .unique() (necesario para colecciones joinedload) y obtener el escalar
+        tarea_cargada = result_loaded.unique().scalar_one()
 
         logger.info(f"Tarea creada (sin commit) con ID: {tarea.id}")
 
@@ -43,7 +53,8 @@ async def crear_tarea(db: AsyncSession, data: TareaCreate, creador_id: int):
             )
             await crear_notificacion(db, notif_data)
 
-        return tarea
+        # return tarea
+        return tarea_cargada
     except Exception as e:
         logger.error(f"Error al crear tarea: {str(e)}")
         raise
@@ -171,7 +182,7 @@ async def agregar_comentario_a_tarea(
     try:
         logger.info(f"Agregando comentario a tarea {data.id_tarea}")
 
-        comentario_data = data.model_dump()
+        comentario_data = data.dict()
         comentario_data["id_miembro"] = miembro_id
 
         comentario = ComentarioTarea(**comentario_data)
@@ -210,4 +221,83 @@ async def agregar_comentario_a_tarea(
         return comentario
     except Exception as e:
         logger.error(f"Error al agregar comentario: {str(e)}")
+        raise
+
+
+# Listar TODAS las tareas del hogar (con comentarios para el req. 6)
+async def listar_todas_tareas_hogar(db: AsyncSession, hogar_id: int):
+    try:
+        logger.info(f"Admin listando TODAS las tareas del hogar {hogar_id}")
+        stmt = (
+            select(Tarea)
+            .where(Tarea.id_hogar == hogar_id, Tarea.estado == True)
+            .options(joinedload(Tarea.comentarios))  # Carga comentarios (Req. 6)
+            .order_by(Tarea.fecha_creacion.desc())
+        )
+        result = await db.execute(stmt)
+        return result.unique().scalars().all()
+    except Exception as e:
+        logger.error(f"Error al listar todas las tareas del hogar: {str(e)}")
+        raise
+
+
+# Listar tareas asignadas POR el administrador (creado_por)
+async def listar_tareas_creadas_por_mi(db: AsyncSession, admin_id: int):
+    try:
+        logger.info(f"Listando tareas creadas por Admin ID: {admin_id}")
+        stmt = (
+            select(Tarea)
+            .where(
+                Tarea.creado_por == admin_id,
+                Tarea.estado == True,  # Activas (no borradas)
+                # Opcional: Si "activas" significa "no completadas", añadir:
+                # Tarea.estado_actual != 'completada'
+            )
+            .options(joinedload(Tarea.miembro_asignado))  # Ver a quién se asignó
+        )
+        result = await db.execute(stmt)
+        return result.scalars().all()
+    except Exception as e:
+        logger.error(f"Error al listar tareas creadas por admin: {str(e)}")
+        raise
+
+
+# Listar tareas próximas a vencer (Filtro Manual)
+async def listar_tareas_proximas_a_vencer(
+    db: AsyncSession, hogar_id: int, fecha_limite: datetime
+):
+    try:
+        logger.info(f"Buscando tareas que vencen antes de: {fecha_limite}")
+        stmt = (
+            select(Tarea)
+            .where(
+                Tarea.id_hogar == hogar_id,
+                Tarea.estado_actual != "completada",  # Solo pendientes/progreso
+                Tarea.fecha_limite <= fecha_limite,  # Filtro de fecha
+                Tarea.fecha_limite
+                >= datetime.now().date(),  # Que no estén vencidas ya (opcional)
+            )
+            .order_by(Tarea.fecha_limite.asc())
+        )
+        result = await db.execute(stmt)
+        return result.scalars().all()
+    except Exception as e:
+        logger.error(f"Error al filtrar tareas por vencimiento: {str(e)}")
+        raise
+
+
+# Listar tareas en estado "En Progreso"
+async def listar_tareas_en_proceso(db: AsyncSession, hogar_id: int):
+    try:
+        logger.info(f"Listando tareas en proceso del hogar {hogar_id}")
+        stmt = (
+            select(Tarea)
+            .where(Tarea.id_hogar == hogar_id, Tarea.estado_actual == "en_progreso")
+            .options(joinedload(Tarea.miembro_asignado))
+        )
+
+        result = await db.execute(stmt)
+        return result.scalars().all()
+    except Exception as e:
+        logger.error(f"Error al listar tareas en proceso: {str(e)}")
         raise

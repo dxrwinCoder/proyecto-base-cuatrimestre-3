@@ -13,7 +13,7 @@ async def crear_notificacion(db: AsyncSession, notificacion_data: NotificacionCr
     ¡OJO! Esta función NO hace commit. Espera que la ruta/servicio que la llama lo haga.
     """
     try:
-        notificacion = Notificacion(**notificacion_data.model_dump())
+        notificacion = Notificacion(**notificacion_data.dict())
         db.add(notificacion)
         await db.flush()
         await db.refresh(notificacion)

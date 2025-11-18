@@ -469,3 +469,65 @@
 2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
 2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:145] - Tarea 1 completada en -17999 segundos
 2025-11-07 21:09:31 - tarea_service - INFO - [tarea_service.py:151] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-17 23:51:45 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-17 23:51:45 - tarea_service - ERROR - [tarea_service.py:48] - Error al crear tarea: 'TareaCreate' object has no attribute 'model_dump'
+2025-11-17 23:52:04 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-17 23:52:04 - tarea_service - ERROR - [tarea_service.py:48] - Error al crear tarea: 'TareaCreate' object has no attribute 'model_dump'
+2025-11-17 23:52:04 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-17 23:52:04 - tarea_service - ERROR - [tarea_service.py:48] - Error al crear tarea: 'TareaCreate' object has no attribute 'model_dump'
+2025-11-17 23:52:04 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-17 23:52:04 - tarea_service - ERROR - [tarea_service.py:48] - Error al crear tarea: 'TareaCreate' object has no attribute 'model_dump'
+2025-11-18 00:15:16 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-18 00:15:16 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:15:16 - tarea_service - INFO - [tarea_service.py:172] - Agregando comentario a tarea 1
+2025-11-18 00:15:16 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-18 00:15:16 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-18 00:15:16 - tarea_service - INFO - [tarea_service.py:200] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:117] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:138] - Tarea 1 completada en -17999 segundos
+2025-11-18 00:15:35 - tarea_service - INFO - [tarea_service.py:144] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-18 00:55:42 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Tarea para Comentar
+2025-11-18 00:55:42 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:55:42 - tarea_service - INFO - [tarea_service.py:172] - Agregando comentario a tarea 1
+2025-11-18 00:55:42 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-18 00:55:42 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Tarea para Comentar
+2025-11-18 00:55:42 - tarea_service - INFO - [tarea_service.py:200] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar platos
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Test
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:117] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:54] - Buscando tarea con ID: 1
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:59] - Tarea encontrada: Test
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:138] - Tarea 1 completada en -17999 segundos
+2025-11-18 00:55:59 - tarea_service - INFO - [tarea_service.py:144] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-18 13:16:11 - tarea_service - INFO - [tarea_service.py:23] - Creando tarea con datos: Lavar el carro
+2025-11-18 13:16:11 - tarea_service - INFO - [tarea_service.py:34] - Tarea creada (sin commit) con ID: 1
+2025-11-18 13:46:35 - tarea_service - INFO - [tarea_service.py:22] - Creando tarea con datos: Lavar el carro
+2025-11-18 13:46:35 - tarea_service - ERROR - [tarea_service.py:56] - Error al crear tarea: The unique() method must be invoked on this Result, as it contains results that include joined eager loads against collections
+2025-11-18 13:55:35 - tarea_service - INFO - [tarea_service.py:22] - Creando tarea con datos: Lavar el carro
+2025-11-18 13:55:35 - tarea_service - INFO - [tarea_service.py:41] - Tarea creada (sin commit) con ID: 3
+2025-11-18 14:01:29 - tarea_service - INFO - [tarea_service.py:22] - Creando tarea con datos: Lavar el carro
+2025-11-18 14:01:29 - tarea_service - INFO - [tarea_service.py:45] - Tarea creada (sin commit) con ID: 4
+2025-11-18 14:01:46 - tarea_service - INFO - [tarea_service.py:22] - Creando tarea con datos: Lavar el carro
+2025-11-18 14:01:46 - tarea_service - INFO - [tarea_service.py:44] - Tarea creada (sin commit) con ID: 5
+2025-11-18 14:09:18 - tarea_service - INFO - [tarea_service.py:22] - Creando tarea con datos: Lavar el carro
+2025-11-18 14:09:18 - tarea_service - INFO - [tarea_service.py:44] - Tarea creada (sin commit) con ID: 6
+2025-11-18 14:58:27 - tarea_service - INFO - [tarea_service.py:22] - Creando tarea con datos: Lavar el carro
+2025-11-18 14:58:27 - tarea_service - INFO - [tarea_service.py:44] - Tarea creada (sin commit) con ID: 7
+2025-11-18 15:00:26 - tarea_service - INFO - [tarea_service.py:22] - Creando tarea con datos: Lavar la moto
+2025-11-18 15:00:27 - tarea_service - INFO - [tarea_service.py:44] - Tarea creada (sin commit) con ID: 8
+2025-11-18 15:06:35 - tarea_service - INFO - [tarea_service.py:79] - Listando tareas asignadas al miembro ID: 1
+2025-11-18 15:06:35 - tarea_service - INFO - [tarea_service.py:83] - Se encontraron 0 tareas activas para el miembro 1
+2025-11-18 15:56:58 - tarea_service - INFO - [tarea_service.py:230] - Admin listando TODAS las tareas del hogar 2
+2025-11-18 16:30:29 - tarea_service - INFO - [tarea_service.py:247] - Listando tareas creadas por Admin ID: 1

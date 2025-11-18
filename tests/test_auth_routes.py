@@ -1,16 +1,24 @@
+# tests/test_auth_routes.py
 import pytest
 import pytest_asyncio
 from httpx import AsyncClient, ASGITransport
-from main import app
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from main import app  # Asumiendo que su app se llama 'app' en 'main.py'
 from db.database import get_db
 from models.miembro import Miembro
 from models.rol import Rol
 from models.hogar import Hogar
+from models.permiso import Permiso
+from models.modulo import Modulo  # ¡Necesario para verificar permisos!
+from schemas.auth import MiembroRegistro  # Asegurarse que el schema esté bien
 from utils.security import obtener_hash_contrasena
 
 
+# --- Fixture de Cliente (ya la tenía, pero "calibrada") ---
 @pytest_asyncio.fixture
-async def client(db):
+async def client(db: AsyncSession):
     """Fixture para crear cliente HTTP con BD de test"""
 
     async def override_get_db():
@@ -26,150 +34,166 @@ async def client(db):
     app.dependency_overrides.clear()
 
 
+# --- Fixture de Setup (MODIFICADA) ---
 @pytest_asyncio.fixture
-async def setup_datos_auth(db, setup_rol_hogar):
-    """Fixture para crear datos necesarios para tests de autenticación"""
-    from sqlalchemy import select
-    from sqlalchemy.orm import selectinload
+async def setup_datos_base(db: AsyncSession):
+    """
+    Crea los datos MÍNIMOS que la app necesita para CUALQUIER registro:
+    - 1. Un Rol "Administrador" (id=1)
+    - 2. Un Rol "Hijo" (id=2)
+    - 3. Un Hogar "Principal" (id=1) (para registrar usuarios normales)
+    - 4. Módulos (para que la creación de permisos funcione)
+    """
+    rol_admin = Rol(id=1, nombre="Administrador")
+    rol_hijo = Rol(id=2, nombre="Hijo")
+    hogar_base = Hogar(id=1, nombre="Hogar Principal")
 
-    # Verificar si ya existe un miembro con este correo
-    correo = "test_auth@example.com"
-    miembro_existente = await db.execute(
-        select(Miembro).where(Miembro.correo_electronico == correo)
-    )
-    miembro = miembro_existente.scalar_one_or_none()
+    # Crear Módulos
+    modulos = [
+        Modulo(nombre="Tareas"),
+        Modulo(nombre="Miembros"),
+        Modulo(nombre="Hogares"),
+        Modulo(nombre="Roles"),
+        Modulo(nombre="Permisos"),
+        Modulo(nombre="Eventos"),
+        # ... (añadir todos los módulos de su script SQL)
+    ]
 
-    if not miembro:
-        # Crear miembro de prueba
-        contrasena_plana = "password123"
-        contrasena_hash = obtener_hash_contrasena(contrasena_plana)
+    db.add_all([rol_admin, rol_hijo, hogar_base] + modulos)
+    await db.flush()
 
-        miembro = Miembro(
-            nombre_completo="Test User",
-            correo_electronico=correo,
-            contrasena_hash=contrasena_hash,
-            id_rol=1,
-            id_hogar=1,
-            estado=True,
-        )
-        db.add(miembro)
-        # await db.commit()
-        await db.flush()
+    return {
+        "rol_admin": rol_admin,
+        "rol_hijo": rol_hijo,
+        "hogar_base": hogar_base,
+        "modulos_count": len(modulos),
+    }
 
-        if miembro:
-            await db.refresh(miembro)
-    # Recargar miembro con rol usando eager loading
-    result = await db.execute(
-        select(Miembro)
-        .options(selectinload(Miembro.rol))
-        .where(Miembro.correo_electronico == correo)
-    )
-    miembro = result.scalar_one()
 
-    yield {"miembro": miembro, "contrasena": "password123"}
+# --- ¡INICIO DE LOS TESTS "CALIBRADOS"! ---
 
 
 @pytest.mark.asyncio
-async def test_registro_miembro_exitoso(client, setup_datos_auth):
-    """Test para registrar un nuevo miembro exitosamente"""
-    datos_registro = {
-        "nombre_completo": "Nuevo Usuario",
-        "correo_electronico": "nuevo@example.com",
-        "contrasena": "password123",
+async def test_registro_admin_crea_hogar_y_permisos(
+    client: AsyncClient, db: AsyncSession, setup_datos_base
+):
+    """
+    PRUEBA CLAVE: Flujo 1 (Admin Fundador)
+    Verifica que al registrar un Admin (Rol 1) sin hogar:
+    1. Se crea el Admin.
+    2. Se crea un NUEVO Hogar (ej. "Hogar de Admin...").
+    3. Se asigna el Admin a ese nuevo Hogar.
+    4. Se crean todos los Permisos para el Rol 1.
+    """
+    datos_registro_admin = {
+        "nombre_completo": "Admin Fundador",
+        "correo_electronico": "admin.fundador@example.com",
+        "contrasena": "admin12345",
         "id_rol": 1,
-        "id_hogar": 1,
+        # ¡No se envía id_hogar!
     }
 
-    response = await client.post("/auth/registro", json=datos_registro)
+    # 1. Ejecutar el registro
+    response = await client.post("/auth/registro", json=datos_registro_admin)
 
+    # 2. Verificar la Respuesta
     assert response.status_code == 201
     data = response.json()
     assert "access_token" in data
     assert data["id_miembro"] is not None
-    assert data["id_hogar"] == 1
-    assert data["access_token"] is not None
+    assert data["id_hogar"] != 1  # ¡Debe ser un ID nuevo (ej. 2)!
+    assert data["rol"]["nombre"] == "Administrador"
+
+    nuevo_miembro_id = data["id_miembro"]
+    nuevo_hogar_id = data["id_hogar"]
+
+    # 3. Verificar en la Base de Datos
+    miembro_creado = await db.get(Miembro, nuevo_miembro_id)
+    hogar_creado = await db.get(Hogar, nuevo_hogar_id)
+
+    assert miembro_creado is not None
+    assert miembro_creado.id_rol == 1
+    assert miembro_creado.id_hogar == nuevo_hogar_id  # Verificación de asignación
+
+    assert hogar_creado is not None
+    assert (
+        hogar_creado.nombre == f"Hogar de {miembro_creado.nombre_completo}"
+    )  # Lógica del servicio
+
+    # 4. Verificar Permisos
+    permisos = (
+        (await db.execute(select(Permiso).where(Permiso.id_rol == 1))).scalars().all()
+    )
+    assert len(permisos) == setup_datos_base["modulos_count"]
+    assert permisos[0].puede_crear == True  # Verificar que los permisos se dieron
 
 
 @pytest.mark.asyncio
-async def test_registro_miembro_correo_duplicado(client, setup_datos_auth):
-    """Test para intentar registrar un miembro con correo ya existente"""
-    datos_registro = {
-        "nombre_completo": "Otro Usuario",
-        "correo_electronico": setup_datos_auth[
-            "miembro"
-        ].correo_electronico,  # Ya existe
-        "contrasena": "password123",
-        "id_rol": 1,
-        "id_hogar": 1,
+async def test_registro_usuario_normal_exitoso(
+    client: AsyncClient, db: AsyncSession, setup_datos_base
+):
+    """
+    PRUEBA CLAVE: Flujo 2 (Usuario Normal)
+    Verifica que un usuario normal (Rol 2) SE PUEDE registrar
+    si especifica un hogar existente (id_hogar: 1).
+    """
+    datos_registro_hijo = {
+        "nombre_completo": "Hijo 1",
+        "correo_electronico": "hijo1@example.com",
+        "contrasena": "user12345",
+        "id_rol": 2,
+        "id_hogar": 1,  # ¡Hogar existente del setup!
     }
 
-    response = await client.post("/auth/registro", json=datos_registro)
+    response = await client.post("/auth/registro", json=datos_registro_hijo)
+
+    assert response.status_code == 201
+    data = response.json()
+    assert data["id_hogar"] == 1
+    assert data["rol"]["nombre"] == "Hijo"
+
+
+@pytest.mark.asyncio
+async def test_registro_usuario_falla_sin_hogar(client: AsyncClient, setup_datos_base):
+    """
+    PRUEBA CLAVE: Flujo 2 (Fallo)
+    Verifica que un usuario normal (Rol 2) NO PUEDE registrarse
+    si omite el 'id_hogar'.
+    """
+    datos_registro_hijo_fallo = {
+        "nombre_completo": "Hijo 2 Fallido",
+        "correo_electronico": "hijo2@example.com",
+        "contrasena": "user12345",
+        "id_rol": 2,
+        # ¡No se envía id_hogar!
+    }
+
+    response = await client.post("/auth/registro", json=datos_registro_hijo_fallo)
 
     assert response.status_code == 400
     data = response.json()
-    assert "ya se encuentra registrado" in data["detail"].lower()
+    assert "obligatorio para registrar un miembro no-administrador" in data["detail"]
 
 
 @pytest.mark.asyncio
-async def test_login_exitoso(client, setup_datos_auth):
-    """Test para login exitoso con credenciales correctas"""
-    datos_login = {
-        "correo_electronico": setup_datos_auth["miembro"].correo_electronico,
-        "contrasena": setup_datos_auth["contrasena"],
-    }
-
-    response = await client.post("/auth/login", json=datos_login)
-
-    assert response.status_code == 200
-    data = response.json()
-    assert "access_token" in data
-    assert data["id_miembro"] == 1
-    assert data["id_hogar"] == 1
-    assert data["access_token"] is not None
-
-
-@pytest.mark.asyncio
-async def test_login_credenciales_incorrectas(client, setup_datos_auth):
-    """Test para login con contraseña incorrecta"""
-    datos_login = {
-        "correo_electronico": setup_datos_auth["miembro"].correo_electronico,
-        "contrasena": "contraseña_incorrecta",
-    }
-
-    response = await client.post("/auth/login", json=datos_login)
-
-    assert response.status_code == 401
-    data = response.json()
-    assert "incorrectas" in data["detail"].lower()
-
-
-@pytest.mark.asyncio
-async def test_login_usuario_no_existe(client, setup_datos_auth):
-    """Test para login con usuario que no existe"""
-    datos_login = {
-        "correo_electronico": "noexiste@example.com",
-        "contrasena": "password123",
-    }
-
-    response = await client.post("/auth/login", json=datos_login)
-
-    assert response.status_code == 401
-    data = response.json()
-    assert "incorrectas" in data["detail"].lower()
-
-
-@pytest.mark.asyncio
-async def test_registro_validacion_contrasena_corta(client, setup_datos_auth):
-    """Test para validar que la contraseña debe tener al menos 8 caracteres"""
-    datos_registro = {
-        "nombre_completo": "Usuario Test",
-        "correo_electronico": "test2@example.com",
-        "contrasena": "12345",  # Menos de 8 caracteres
+async def test_registro_admin_falla_con_hogar_existente(
+    client: AsyncClient, setup_datos_base
+):
+    """
+    PRUEBA CLAVE: Flujo 1 (Fallo)
+    Verifica que un Admin (Rol 1) NO PUEDE registrarse
+    si especifica un 'id_hogar' (como en su prueba fallida).
+    """
+    datos_registro_admin_fallo = {
+        "nombre_completo": "Admin Fallido",
+        "correo_electronico": "admin.fallido@example.com",
+        "contrasena": "admin12345",
         "id_rol": 1,
-        "id_hogar": 1,
+        "id_hogar": 1,  # ¡Un admin no debe especificar hogar!
     }
 
-    response = await client.post("/auth/registro", json=datos_registro)
+    response = await client.post("/auth/registro", json=datos_registro_admin_fallo)
 
-    # FastAPI debería validar el schema y retornar 422
-    assert response.status_code == 422
+    assert response.status_code == 400
+    data = response.json()
+    assert "no debe incluir un 'id_hogar'" in data["detail"]

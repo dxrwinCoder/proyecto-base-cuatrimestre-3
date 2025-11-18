@@ -2,6 +2,7 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 from datetime import datetime, date
+from .comentario_tarea import ComentarioTarea  # Importar schema de comentario
 
 
 # Asumo que esta es su TareaBase
@@ -35,8 +36,16 @@ class Tarea(TareaBase):
     fecha_asignacion: datetime
     tiempo_total_segundos: Optional[int] = None
     creado_por: Optional[int] = None
-    
+
+    comentarios: list[ComentarioTarea] = (
+        []
+    )  # <-- ¡Esto expone los comentarios en el JSON!
+
     class Config:
         orm_mode = True
+        json_encoders = {
+            datetime: lambda v: v.isoformat(),
+            date: lambda v: v.isoformat(),
+        }
 
-    #model_config = ConfigDict(from_attributes=True)
+    # model_config = ConfigDict(from_attributes=True)

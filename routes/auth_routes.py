@@ -26,33 +26,34 @@ async def registrar_miembro(datos: MiembroRegistro, db: AsyncSession = Depends(g
     """
     try:
         # 1. Llamar al servicio (que usa flush)
-        # 'miembro_modelo' es un objeto SQLAlchemy
+        # 'miembro_modelo' es un objeto SQLAlchemy con su 'rol' cargado
         miembro_modelo = await crear_miembro(db, datos)
 
         # 2. Si todo sale bien, la RUTA hace commit
         await db.commit()
 
-        # Refrescar el objeto después del commit para asegurar que todas
-        # las relaciones (como el nuevo hogar) estén cargadas.
-        await db.refresh(miembro_modelo.hogar)
+        # --- ¡PARCHE DE SOLUCIÓN! ---
+        # La línea 'await db.refresh(miembro_modelo.hogar)' se elimina.
+        # Es innecesaria (el hogar ya está en la DB) y causaba
+        # el error 'MissingGreenlet' al operar fuera de la transacción.
+        # --- FIN DEL PARCHE ---
 
         logger.info(
             f"Miembro creado y transacción confirmada: {miembro_modelo.correo_electronico}"
         )
 
         # 3. Crear y devolver el token
-        # El servicio 'crear_token_para_miembro' espera un objeto Miembro (que ya tenemos)
         token_jwt = crear_token_para_miembro(miembro_modelo)
 
-        # Convertir el modelo SQLAlchemy (miembro_modelo) al schema Pydantic (MiembroResponse)
-        # Usamos .from_orm() porque su entorno está en Pydantic v1
+        # Convertir a Pydantic v1
+        # (Asumiendo que MiembroResponse usa 'class Config: orm_mode = True')
         miembro_schema = MiembroResponse.from_orm(miembro_modelo)
 
         return Token(
             access_token=token_jwt,
             id_miembro=miembro_schema.id,
             id_hogar=miembro_schema.id_hogar,
-            rol=miembro_schema.rol,  # Pasamos el objeto RolResponse
+            rol=miembro_schema.rol,
         )
 
     except ValueError as e:

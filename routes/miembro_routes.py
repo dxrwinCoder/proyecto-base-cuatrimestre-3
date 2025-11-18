@@ -21,33 +21,53 @@ logger = setup_logger("miembro_routes")
 router = APIRouter(prefix="/miembros", tags=["Miembros"])
 
 
-@router.post("/", response_model=MiembroResponse)
+@router.post("/", response_model=MiembroResponse, status_code=status.HTTP_201_CREATED)
 async def crear_miembro_endpoint(
     miembro: MiembroCreate,
     db: AsyncSession = Depends(get_db),
     current_user: Miembro = Depends(require_permission("Miembros", "crear")),
 ):
     try:
-        # Verificar que el usuario actual pertenece al mismo hogar o es administrador
-        if current_user.id_rol != 1 and current_user.id_hogar != miembro.id_hogar:
+        # 1. (Lógica de negocio/seguridad de la ruta)
+        # Un Admin solo puede crear miembros en SU propio hogar
+        if current_user.id_rol != 1 or current_user.id_hogar != miembro.id_hogar:
             logger.warning(
-                f"Intento no autorizado de crear miembro en hogar diferente: {miembro.id_hogar}"
+                f"Intento no autorizado de crear miembro en hogar {miembro.id_hogar} por Admin {current_user.id}"
             )
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
-                detail="No tiene permiso para crear miembros en este hogar",
+                detail="No tiene permiso para crear miembros en este hogar.",
             )
 
         logger.info(
-            f"Intentando crear miembro: {miembro.nombre_completo} ({miembro.correo_electronico})"
+            f"Intentando crear miembro: {miembro.nombre_completo} (Rol: {miembro.id_rol})"
         )
-        resultado = await crear_miembro(db, miembro.model_dump())
-        logger.info(f"Miembro creado exitosamente: {resultado.nombre_completo}")
-        return resultado
+
+        # 2. Llamar al servicio (que usa flush)
+        # (Asumiendo sintaxis Pydantic v1)
+        resultado_modelo = await crear_miembro(db, miembro.dict())
+
+        # 3. ¡La Ruta hace COMMIT!
+        await db.commit()
+
+        logger.info(
+            f"Miembro creado y transacción confirmada: {resultado_modelo.nombre_completo}"
+        )
+
+        # 4. Convertir a Pydantic v1 y retornar
+        # (Asumiendo sintaxis Pydantic v1: .from_orm())
+        return MiembroResponse.from_orm(resultado_modelo)
+
     except ValueError as e:
+        await db.rollback()
         logger.warning(f"Error de validación al crear miembro: {str(e)}")
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+    except HTTPException as e:
+        # ¡Dejar que las excepciones HTTP (como 403) se propaguen!
+        await db.rollback()  # Opcional, pero seguro
+        raise e
     except Exception as e:
+        await db.rollback()
         logger.error(f"Error al crear miembro: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
@@ -174,7 +194,7 @@ async def actualizar_miembro_endpoint(
             )
 
         resultado = await actualizar_miembro(
-            db, miembro_id, miembro_update.model_dump(exclude_unset=True)
+            db, miembro_id, miembro_update.dict(exclude_unset=True)
         )
         logger.info(f"Miembro actualizado exitosamente: {miembro_id}")
         return resultado

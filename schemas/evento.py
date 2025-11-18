@@ -1,7 +1,8 @@
 from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
-#from pydantic import ConfigDict
+
+# from pydantic import ConfigDict
 
 
 class EventoBase(BaseModel):
@@ -20,7 +21,12 @@ class EventoCreate(EventoBase):
 class Evento(EventoBase):
     id: int
 
-    #model_config = ConfigDict(from_attributes=True)
-
     class Config:
         orm_mode = True
+        json_encoders = {datetime: lambda v: v.isoformat()}
+
+    # class Config:
+    #     orm_mode = True
+    #     json_encoders = {
+    #         datetime: lambda v: v.isoformat()  # <-- Soluciona el 'TypeError: Object of type datetime is not JSON serializable'
+    #     }

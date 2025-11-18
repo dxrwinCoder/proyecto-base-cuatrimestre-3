@@ -2352,3 +2352,118 @@
 2025-11-13 22:00:43 - miembro_service - INFO - [miembro_service.py:192] - Se encontraron 2 miembros
 2025-11-15 12:54:41 - miembro_service - INFO - [miembro_service.py:286] - Listando miembros activos del hogar: 1
 2025-11-15 13:01:40 - miembro_service - INFO - [miembro_service.py:286] - Listando miembros activos del hogar: 1
+2025-11-17 22:41:09 - miembro_service - INFO - [miembro_service.py:21] - Creando nuevo miembro: Admin Secundario (Cónyuge)
+2025-11-17 22:41:09 - miembro_service - ERROR - [miembro_service.py:65] - Error al crear miembro (rollback pendiente): name '_asignar_permisos_totales_a_rol' is not defined
+2025-11-17 22:41:34 - miembro_service - INFO - [miembro_service.py:21] - Creando nuevo miembro: Admin Secundario (Cónyuge)
+2025-11-17 22:41:34 - miembro_service - ERROR - [miembro_service.py:65] - Error al crear miembro (rollback pendiente): name '_asignar_permisos_totales_a_rol' is not defined
+2025-11-17 22:42:40 - miembro_service - INFO - [miembro_service.py:21] - Creando nuevo miembro: Admin Secundario (Cónyuge)
+2025-11-17 22:42:40 - miembro_service - ERROR - [miembro_service.py:65] - Error al crear miembro (rollback pendiente): name '_asignar_permisos_totales_a_rol' is not defined
+2025-11-17 22:55:36 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Admin Secundario (Cónyuge)
+2025-11-17 22:55:37 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 9
+2025-11-17 23:51:51 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Nuevo Miembro
+2025-11-17 23:51:51 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-17 23:51:52 - miembro_service - INFO - [miembro_service.py:198] - Obteniendo todos los miembros
+2025-11-17 23:51:52 - miembro_service - INFO - [miembro_service.py:202] - Se encontraron 1 miembros
+2025-11-17 23:51:53 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 1
+2025-11-17 23:51:53 - miembro_service - INFO - [miembro_service.py:82] - Miembro encontrado: Test User
+2025-11-17 23:51:54 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 999
+2025-11-17 23:51:54 - miembro_service - WARNING - [miembro_service.py:84] - Miembro no encontrado con ID: 999
+2025-11-17 23:51:54 - miembro_service - INFO - [miembro_service.py:295] - Listando miembros activos del hogar: 1
+2025-11-17 23:51:54 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 1
+2025-11-17 23:51:54 - miembro_service - INFO - [miembro_service.py:82] - Miembro encontrado: Test User
+2025-11-17 23:51:55 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 999
+2025-11-17 23:51:55 - miembro_service - WARNING - [miembro_service.py:84] - Miembro no encontrado con ID: 999
+2025-11-17 23:51:56 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro a Eliminar
+2025-11-17 23:51:56 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-17 23:51:57 - miembro_service - INFO - [miembro_service.py:214] - Contando miembros activos del hogar: 1
+2025-11-17 23:51:57 - miembro_service - INFO - [miembro_service.py:220] - Se encontraron 1 miembros activos
+2025-11-17 23:51:57 - miembro_service - INFO - [miembro_service.py:232] - Obteniendo miembros con rol: 1
+2025-11-17 23:51:57 - miembro_service - INFO - [miembro_service.py:240] - Se encontraron 1 miembros con el rol 1
+2025-11-17 23:51:58 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Primer Miembro
+2025-11-17 23:51:58 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-17 23:51:59 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Hijo Creado por Admin
+2025-11-17 23:51:59 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-17 23:52:00 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Admin Secundario
+2025-11-17 23:52:00 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-17 23:52:00 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro 1
+2025-11-17 23:52:00 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-17 23:52:00 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro 2
+2025-11-17 23:52:00 - miembro_service - WARNING - [miembro_service.py:31] - Intento de crear miembro con correo existente: duplicado@example.com
+2025-11-17 23:52:00 - miembro_service - ERROR - [miembro_service.py:66] - Error al crear miembro (rollback pendiente): El correo electrónico ya está registrado
+2025-11-18 00:15:21 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Nuevo Miembro
+2025-11-18 00:15:22 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-18 00:15:23 - miembro_service - INFO - [miembro_service.py:198] - Obteniendo todos los miembros
+2025-11-18 00:15:23 - miembro_service - INFO - [miembro_service.py:202] - Se encontraron 1 miembros
+2025-11-18 00:15:23 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 1
+2025-11-18 00:15:23 - miembro_service - INFO - [miembro_service.py:82] - Miembro encontrado: Test User
+2025-11-18 00:15:24 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 999
+2025-11-18 00:15:24 - miembro_service - WARNING - [miembro_service.py:84] - Miembro no encontrado con ID: 999
+2025-11-18 00:15:24 - miembro_service - INFO - [miembro_service.py:295] - Listando miembros activos del hogar: 1
+2025-11-18 00:15:25 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 1
+2025-11-18 00:15:25 - miembro_service - INFO - [miembro_service.py:82] - Miembro encontrado: Test User
+2025-11-18 00:15:26 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 999
+2025-11-18 00:15:26 - miembro_service - WARNING - [miembro_service.py:84] - Miembro no encontrado con ID: 999
+2025-11-18 00:15:26 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro a Eliminar
+2025-11-18 00:15:26 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-18 00:15:27 - miembro_service - INFO - [miembro_service.py:214] - Contando miembros activos del hogar: 1
+2025-11-18 00:15:27 - miembro_service - INFO - [miembro_service.py:220] - Se encontraron 1 miembros activos
+2025-11-18 00:15:28 - miembro_service - INFO - [miembro_service.py:232] - Obteniendo miembros con rol: 1
+2025-11-18 00:15:28 - miembro_service - INFO - [miembro_service.py:240] - Se encontraron 1 miembros con el rol 1
+2025-11-18 00:15:28 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Primer Miembro
+2025-11-18 00:15:28 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-18 00:15:29 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Hijo Creado por Admin
+2025-11-18 00:15:30 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-18 00:15:30 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Admin Secundario
+2025-11-18 00:15:30 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-18 00:15:30 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro 1
+2025-11-18 00:15:31 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-18 00:15:31 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro 2
+2025-11-18 00:15:31 - miembro_service - WARNING - [miembro_service.py:31] - Intento de crear miembro con correo existente: duplicado@example.com
+2025-11-18 00:15:31 - miembro_service - ERROR - [miembro_service.py:66] - Error al crear miembro (rollback pendiente): El correo electrónico ya está registrado
+2025-11-18 00:55:47 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Nuevo Miembro
+2025-11-18 00:55:47 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-18 00:55:48 - miembro_service - INFO - [miembro_service.py:198] - Obteniendo todos los miembros
+2025-11-18 00:55:48 - miembro_service - INFO - [miembro_service.py:202] - Se encontraron 1 miembros
+2025-11-18 00:55:48 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 1
+2025-11-18 00:55:48 - miembro_service - INFO - [miembro_service.py:82] - Miembro encontrado: Test User
+2025-11-18 00:55:49 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 999
+2025-11-18 00:55:49 - miembro_service - WARNING - [miembro_service.py:84] - Miembro no encontrado con ID: 999
+2025-11-18 00:55:49 - miembro_service - INFO - [miembro_service.py:295] - Listando miembros activos del hogar: 1
+2025-11-18 00:55:50 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 1
+2025-11-18 00:55:50 - miembro_service - INFO - [miembro_service.py:82] - Miembro encontrado: Test User
+2025-11-18 00:55:50 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 999
+2025-11-18 00:55:50 - miembro_service - WARNING - [miembro_service.py:84] - Miembro no encontrado con ID: 999
+2025-11-18 00:55:51 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro a Eliminar
+2025-11-18 00:55:51 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-18 00:55:51 - miembro_service - INFO - [miembro_service.py:72] - Buscando miembro con ID: 2
+2025-11-18 00:55:51 - miembro_service - INFO - [miembro_service.py:82] - Miembro encontrado: Miembro a Eliminar
+2025-11-18 00:55:51 - miembro_service - INFO - [miembro_service.py:171] - Desactivando miembro: 2
+2025-11-18 00:55:51 - miembro_service - INFO - [miembro_service.py:184] - Miembro desactivado exitosamente: 2
+2025-11-18 00:55:52 - miembro_service - INFO - [miembro_service.py:214] - Contando miembros activos del hogar: 1
+2025-11-18 00:55:52 - miembro_service - INFO - [miembro_service.py:220] - Se encontraron 1 miembros activos
+2025-11-18 00:55:52 - miembro_service - INFO - [miembro_service.py:232] - Obteniendo miembros con rol: 1
+2025-11-18 00:55:52 - miembro_service - INFO - [miembro_service.py:240] - Se encontraron 1 miembros con el rol 1
+2025-11-18 00:55:53 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Primer Miembro
+2025-11-18 00:55:53 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-18 00:55:53 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Otro Miembro
+2025-11-18 00:55:53 - miembro_service - WARNING - [miembro_service.py:31] - Intento de crear miembro con correo existente: duplicado_c4827baa@example.com
+2025-11-18 00:55:53 - miembro_service - ERROR - [miembro_service.py:66] - Error al crear miembro (rollback pendiente): El correo electrónico ya está registrado
+2025-11-18 00:55:54 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Hijo Creado por Admin
+2025-11-18 00:55:54 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-18 00:55:55 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Admin Secundario
+2025-11-18 00:55:55 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-18 00:55:55 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro 1
+2025-11-18 00:55:55 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 1
+2025-11-18 00:55:55 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: Miembro 2
+2025-11-18 00:55:55 - miembro_service - WARNING - [miembro_service.py:31] - Intento de crear miembro con correo existente: duplicado@example.com
+2025-11-18 00:55:55 - miembro_service - ERROR - [miembro_service.py:66] - Error al crear miembro (rollback pendiente): El correo electrónico ya está registrado
+2025-11-18 12:59:43 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: miembro 1
+2025-11-18 12:59:43 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 2
+2025-11-18 13:46:05 - miembro_service - INFO - [miembro_service.py:22] - Creando nuevo miembro: miembro 2
+2025-11-18 13:46:06 - miembro_service - INFO - [miembro_service.py:62] - Miembro creado (sin commit) exitosamente: 3
+2025-11-18 15:02:01 - miembro_service - INFO - [miembro_service.py:198] - Obteniendo todos los miembros
+2025-11-18 15:02:01 - miembro_service - INFO - [miembro_service.py:202] - Se encontraron 3 miembros
+2025-11-18 15:02:40 - miembro_service - INFO - [miembro_service.py:214] - Contando miembros activos del hogar: 1
+2025-11-18 15:02:40 - miembro_service - INFO - [miembro_service.py:220] - Se encontraron 0 miembros activos
+2025-11-18 15:02:58 - miembro_service - INFO - [miembro_service.py:232] - Obteniendo miembros con rol: 2
+2025-11-18 15:02:58 - miembro_service - INFO - [miembro_service.py:240] - Se encontraron 2 miembros con el rol 2

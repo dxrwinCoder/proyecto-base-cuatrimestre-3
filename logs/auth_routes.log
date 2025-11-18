@@ -32,3 +32,30 @@
 2025-11-07 22:27:02 - auth_routes - INFO - [auth_routes.py:34] - Miembro creado y transacción confirmada: admin@example.com
 2025-11-15 15:12:46 - auth_routes - INFO - [auth_routes.py:34] - Miembro creado y transacción confirmada: emanuel@postman.com
 2025-11-16 08:57:42 - auth_routes - ERROR - [auth_routes.py:52] - Error interno al registrar miembro: Mapper 'mapped class Hogar->hogares' has no property 'miembros'
+2025-11-17 08:57:33 - auth_routes - ERROR - [auth_routes.py:64] - Error interno al registrar miembro: Mapper 'mapped class ComentarioTarea->comentarios_tarea' has no property 'miembro'
+2025-11-17 10:08:01 - auth_routes - ERROR - [auth_routes.py:64] - Error interno al registrar miembro: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Miembro->miembros'. Original exception was: Mapper 'mapped class ComentarioTarea->comentarios_tarea' has no property 'miembro'
+2025-11-17 10:08:42 - auth_routes - ERROR - [auth_routes.py:64] - Error interno al registrar miembro: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Miembro->miembros'. Original exception was: Mapper 'mapped class ComentarioTarea->comentarios_tarea' has no property 'miembro'
+2025-11-17 10:10:00 - auth_routes - ERROR - [auth_routes.py:64] - Error interno al registrar miembro: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Miembro->miembros'. Original exception was: Mapper 'mapped class ComentarioTarea->comentarios_tarea' has no property 'miembro'
+2025-11-17 10:18:11 - auth_routes - ERROR - [auth_routes.py:64] - Error interno al registrar miembro: Mapper 'mapped class Tarea->tareas' has no property 'comentarios'
+2025-11-17 10:20:35 - auth_routes - ERROR - [auth_routes.py:64] - Error interno al registrar miembro: Mapper 'mapped class Tarea->tareas' has no property 'creador'
+2025-11-17 22:15:01 - auth_routes - ERROR - [auth_routes.py:64] - Error interno al registrar miembro: (sqlalchemy.exc.MissingGreenlet) greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place?
+[SQL: SELECT hogares.id AS hogares_id, hogares.nombre AS hogares_nombre, hogares.estado AS hogares_estado 
+FROM hogares 
+WHERE hogares.id = %s]
+[parameters: [{'pk_1': 3}]]
+(Background on this error at: https://sqlalche.me/e/14/xd2s)
+2025-11-17 22:20:49 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El correo electrónico ya se encuentra registrado en el sistema
+2025-11-17 22:22:21 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: adminmaestro2@example.com
+2025-11-17 23:51:43 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-17 23:51:43 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-17 23:51:44 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-17 23:51:44 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-18 00:15:13 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-18 00:15:14 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-18 00:15:14 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-18 00:15:14 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-18 00:55:40 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-18 00:55:40 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-18 00:55:41 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-18 00:55:41 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-18 12:58:07 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: adminmaestro@example.com

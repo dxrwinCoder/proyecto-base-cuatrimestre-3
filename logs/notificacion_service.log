@@ -17,3 +17,14 @@
 2025-11-07 20:58:34 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 1
 2025-11-07 21:09:10 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 2
 2025-11-07 21:09:10 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 1
+2025-11-18 00:15:16 - notificacion_service - ERROR - [notificacion_service.py:25] - Error al crear notificación: 'NotificacionCreate' object has no attribute 'model_dump'
+2025-11-18 00:15:16 - notificacion_service - ERROR - [notificacion_service.py:25] - Error al crear notificación: 'NotificacionCreate' object has no attribute 'model_dump'
+2025-11-18 00:55:42 - notificacion_service - ERROR - [notificacion_service.py:25] - Error al crear notificación: 'NotificacionCreate' object has no attribute 'model_dump'
+2025-11-18 00:55:42 - notificacion_service - ERROR - [notificacion_service.py:25] - Error al crear notificación: 'NotificacionCreate' object has no attribute 'model_dump'
+2025-11-18 13:16:11 - notificacion_service - ERROR - [notificacion_service.py:25] - Error al crear notificación: 'NotificacionCreate' object has no attribute 'model_dump'
+2025-11-18 13:55:35 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 3
+2025-11-18 14:01:29 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 3
+2025-11-18 14:01:46 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 3
+2025-11-18 14:09:18 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 3
+2025-11-18 14:58:27 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 3
+2025-11-18 15:00:27 - notificacion_service - INFO - [notificacion_service.py:20] - Notificación creada (sin commit) para miembro 2

@@ -8,10 +8,15 @@ from services.tarea_service import (
     obtener_tarea_por_id,
     listar_tareas_por_miembro,
     listar_tareas_por_evento,
-    listar_tareas_por_tipo,  # ¡Ojo! Este servicio no lo he visto, ¡pero lo dejo!
+    listar_todas_tareas_hogar,
+    listar_tareas_creadas_por_mi,
+    listar_tareas_proximas_a_vencer,
+    listar_tareas_en_proceso,
     actualizar_estado_tarea,
 )
-from models.miembro import Miembro  # <-- ¡Importar Miembro!
+
+from datetime import date
+from models.miembro import Miembro
 from utils.auth import obtener_miembro_actual
 from utils.permissions import require_permission
 from utils.logger import setup_logger
@@ -30,7 +35,7 @@ router = APIRouter(prefix="/tareas", tags=["Tareas"])
 async def crear_tarea_endpoint(
     tarea: TareaCreate,
     db: AsyncSession = Depends(get_db),
-    current_user: Miembro = Depends(obtener_miembro_actual),  # ¡Cambiado a Miembro!
+    current_user: Miembro = Depends(obtener_miembro_actual),
 ):
     try:
         if tarea.id_hogar != current_user.id_hogar:
@@ -42,20 +47,92 @@ async def crear_tarea_endpoint(
                 detail="No puedes crear tareas en otro hogar",
             )
 
-        # --- ¡AQUÍ ESTÁ EL PARCHE "MAKIA"! ---
-        # 1. Pasamos el schema 'tarea' Y el 'current_user.id' como creador
-        # 2. El servicio (con 'flush') y la ruta (con 'commit') manejan la TXN
         resultado = await crear_tarea(db, tarea, current_user.id)
-        await db.commit()  # ¡LA RUTA "GRABA EN PIEDRA"!
+        await db.commit()
 
         return resultado
-        # --- FIN DEL PARCHE ---
 
-    except (ValueError, Exception) as e:  # Capturar ValueError del servicio
-        await db.rollback()  # ¡LA RUTA "DESHACE"!
+    except (ValueError, Exception) as e:
+        await db.rollback()
         logger.error(f"Error inesperado al crear tarea: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e)
+        )
+
+
+@router.get("/mias/", response_model=list[Tarea])
+async def listar_mis_tareas(
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    try:
+        return await listar_tareas_por_miembro(db, current_user.id)
+    except Exception as e:
+        logger.error(f"Error al listar tareas del usuario {current_user.id}: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error interno"
+        )
+
+
+@router.get("/hogar/todas", response_model=list[Tarea])
+async def listar_todas_las_tareas_hogar(
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(
+        require_permission("Tareas", "leer")
+    ),  # Permiso especial sugerido
+):
+    """
+    (Req 1 y 6) Admin consulta TODAS las tareas del hogar.
+    Incluye comentarios recientes (vía eager loading en el servicio).
+    Nota sobre Multi-Hogar: Si el usuario perteneciera a múltiples hogares,
+    aquí se iteraría sobre una lista de current_user.hogares_ids.
+    Por ahora, usamos current_user.id_hogar.
+    """
+    return await listar_todas_tareas_hogar(db, current_user.id_hogar)
+
+
+@router.get("/asignadas-por-mi", response_model=list[Tarea])
+async def listar_mis_asignaciones(
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(require_permission("Tareas", "leer")),
+):
+    """(Req 2) Lista tareas activas que este usuario (Admin) asignó a otros."""
+    return await listar_tareas_creadas_por_mi(db, current_user.id)
+
+
+@router.get("/proximas-vencer", response_model=list[Tarea])
+async def listar_vencimiento_proximo(
+    fecha_tope: date,  # Parametro de query: ?fecha_tope=2025-12-31
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(require_permission("Tareas", "leer")),
+):
+    """Filtro manual de fecha para tareas próximas a vencer."""
+    return await listar_tareas_proximas_a_vencer(db, current_user.id_hogar, fecha_tope)
+
+
+@router.get("/en-proceso", response_model=list[Tarea])
+async def listar_tareas_en_proceso_endpoint(
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(require_permission("Tareas", "leer")),
+):
+    """Lista solo las tareas en estado 'en_progreso'."""
+    return await listar_tareas_en_proceso(db, current_user.id_hogar)
+
+
+@router.get("/evento/{evento_id}", response_model=list[Tarea])
+async def listar_tareas_por_evento_endpoint(
+    evento_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),  # ¡Cambiado a Miembro!
+):
+    try:
+
+        tareas = await listar_tareas_por_evento(db, evento_id)
+        return [t for t in tareas if t.id_hogar == current_user.id_hogar]
+    except Exception as e:
+        logger.error(f"Error al listar tareas del evento {evento_id}: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error interno"
         )
 
 
@@ -67,11 +144,11 @@ async def crear_tarea_endpoint(
 async def ver_tarea(
     tarea_id: int,
     db: AsyncSession = Depends(get_db),
-    current_user: Miembro = Depends(obtener_miembro_actual),  # ¡Cambiado a Miembro!
+    current_user: Miembro = Depends(obtener_miembro_actual),
 ):
     try:
         tarea = await obtener_tarea_por_id(db, tarea_id)
-        # ¡Seguridad "Makia"! Verifica que la tarea exista Y que sea de su hogar.
+
         if not tarea or tarea.id_hogar != current_user.id_hogar:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND, detail="Tarea no encontrada"
@@ -86,20 +163,6 @@ async def ver_tarea(
         )
 
 
-@router.get("/mias/", response_model=list[Tarea])  # ¡Buena práctica: "/" al final!
-async def listar_mis_tareas(
-    db: AsyncSession = Depends(get_db),
-    current_user: Miembro = Depends(obtener_miembro_actual),  # ¡Cambiado a Miembro!
-):
-    try:
-        return await listar_tareas_por_miembro(db, current_user.id)
-    except Exception as e:
-        logger.error(f"Error al listar tareas del usuario {current_user.id}: {str(e)}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error interno"
-        )
-
-
 @router.put("/{tarea_id}/estado", response_model=Tarea)
 async def cambiar_estado_tarea(
     tarea_id: int,
@@ -108,9 +171,7 @@ async def cambiar_estado_tarea(
     current_user: Miembro = Depends(obtener_miembro_actual),  # ¡Cambiado a Miembro!
 ):
     try:
-        # --- ¡PARCHE "MAKIA" DE LÓGICA! ---
-        # ¡La ruta no valida! ¡El servicio valida!
-        # 1. Llamamos al servicio "calibrado"
+
         tarea = await actualizar_estado_tarea(
             db, tarea_id, update.estado_actual, current_user.id
         )
@@ -119,7 +180,6 @@ async def cambiar_estado_tarea(
         await db.commit()
 
         return tarea
-        # --- FIN DEL PARCHE ---
 
     except ValueError as e:  # ¡Capturamos los errores de lógica del servicio!
         await db.rollback()
@@ -136,19 +196,26 @@ async def cambiar_estado_tarea(
         )
 
 
-@router.get("/evento/{evento_id}", response_model=list[Tarea])
-async def listar_tareas_por_evento_endpoint(
+@router.get("/miembro/{miembro_id}", response_model=list[Tarea])
+async def listar_tareas_de_miembro(
+    miembro_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(
+        require_permission("Tareas", "leer")
+    ),  # Admin leyendo a otros
+):
+    """Admin lista las tareas de un miembro específico."""
+    # Validación de seguridad: ¿El miembro pertenece a mi hogar?
+    # (Se podría agregar una validación rápida aquí usando miembro_service)
+    return await listar_tareas_por_miembro(db, miembro_id)
+
+
+@router.get("/evento-proximo/{evento_id}", response_model=list[Tarea])
+async def listar_tareas_evento_proximo(
     evento_id: int,
     db: AsyncSession = Depends(get_db),
-    current_user: Miembro = Depends(obtener_miembro_actual),  # ¡Cambiado a Miembro!
+    current_user: Miembro = Depends(require_permission("Tareas", "leer")),
 ):
-    try:
-        # ¡OJO! ¡Esto es un N+1 "al revés"!
-        # Filtra en Python, no en la DB. ¡Pero dejémoslo así por ahora!
-        tareas = await listar_tareas_por_evento(db, evento_id)
-        return [t for t in tareas if t.id_hogar == current_user.id_hogar]
-    except Exception as e:
-        logger.error(f"Error al listar tareas del evento {evento_id}: {str(e)}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error interno"
-        )
+    """Lista tareas de un evento."""
+
+    return await listar_tareas_por_evento(db, evento_id)

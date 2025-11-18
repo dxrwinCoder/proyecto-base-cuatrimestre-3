@@ -3,6 +3,7 @@ from sqlalchemy import select, and_, func
 from models.miembro import Miembro
 from models.rol import Rol
 from models.tarea import Tarea
+from services.auth_service import _asignar_permisos_totales_a_rol
 from utils.security import obtener_hash_contrasena
 from sqlalchemy.orm import joinedload
 from sqlalchemy.exc import SQLAlchemyError
@@ -12,10 +13,15 @@ logger = setup_logger("miembro_service")
 
 
 async def crear_miembro(db: AsyncSession, data: dict):
+    """
+    Servicio "calibrado" para que un Admin cree otros miembros.
+    - Usa db.flush() (no commit).
+    - Asigna permisos si el nuevo miembro es también Admin (id_rol=1).
+    """
     try:
         logger.info(f"Creando nuevo miembro: {data['nombre_completo']}")
 
-        # Verificar si ya existe el correo
+        # 1. Verificar si ya existe el correo
         existe = await db.execute(
             select(Miembro).where(
                 Miembro.correo_electronico == data["correo_electronico"]
@@ -27,6 +33,8 @@ async def crear_miembro(db: AsyncSession, data: dict):
             )
             raise ValueError("El correo electrónico ya está registrado")
 
+        # 2. (Validación de 'miembro_routes') La ruta ya verifica que el hogar exista
+
         miembro = Miembro(
             nombre_completo=data["nombre_completo"],
             correo_electronico=data["correo_electronico"],
@@ -35,27 +43,28 @@ async def crear_miembro(db: AsyncSession, data: dict):
             id_hogar=data["id_hogar"],
         )
         db.add(miembro)
-        await db.commit()
-        # Recargar con rol usando eager loading
+        await db.flush()  # <-- ¡CAMBIO A FLUSH!
+
+        # 3. ¡LÓGICA DE PERMISOS AÑADIDA!
+        # Si el Admin está creando a OTRO Admin
+        if miembro.id_rol == 1:
+            # Reutilizamos la lógica del auth_service
+            await _asignar_permisos_totales_a_rol(db, miembro.id_rol)
+
+        # 4. Recargar con rol usando eager loading
         result = await db.execute(
             select(Miembro)
             .options(joinedload(Miembro.rol))
             .where(Miembro.id == miembro.id)
         )
-        miembro = result.scalar_one()
-        logger.info(f"Miembro creado exitosamente: {miembro.id}")
-        return miembro
-    except ValueError as e:
-        logger.error(f"Error de validación al crear miembro: {str(e)}")
-        raise
-    except SQLAlchemyError as e:
-        logger.error(f"Error de base de datos al crear miembro: {str(e)}")
-        await db.rollback()
-        raise
-    except Exception as e:
-        logger.error(f"Error inesperado al crear miembro: {str(e)}")
-        await db.rollback()
-        raise
+        miembro_con_rol = result.scalar_one()
+
+        logger.info(f"Miembro creado (sin commit) exitosamente: {miembro_con_rol.id}")
+        return miembro_con_rol
+
+    except (ValueError, SQLAlchemyError, Exception) as e:
+        logger.error(f"Error al crear miembro (rollback pendiente): {str(e)}")
+        raise  # Relanzar para que la ruta maneje el rollback
 
 
 async def obtener_miembro(db: AsyncSession, miembro_id: int):

@@ -24,7 +24,7 @@ async def crear_hogar(db: AsyncSession, hogar_data: HogarCreate):  # <-- ¡Recib
         # --- Fin de la validación ---
 
         logger.info(f"Creando hogar con nombre: {hogar_data.nombre}")
-        hogar = Hogar(**hogar_data.model_dump())
+        hogar = Hogar(**hogar_data.dict())
         db.add(hogar)
 
         await db.flush()  # <-- ¡CAMBIO! de commit a flush
@@ -90,7 +90,7 @@ async def actualizar_hogar(
             return None
 
         # Actualizar solo los campos enviados
-        update_data = hogar_data.model_dump(exclude_unset=True)
+        update_data = hogar_data.dict()(exclude_unset=True)
         for key, value in update_data.items():
             setattr(hogar, key, value)
 

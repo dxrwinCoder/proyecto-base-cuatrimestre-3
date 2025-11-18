@@ -8,6 +8,7 @@ from sqlalchemy import (
     DateTime,
     func,
 )
+from sqlalchemy.orm import relationship
 from db.database import Base
 
 
@@ -25,3 +26,6 @@ class ComentarioTarea(Base):
     url_imagen = Column(String(255), nullable=True)
     fecha_creacion = Column(DateTime, default=func.now())
     estado = Column(Boolean, default=True)
+
+    miembro = relationship("Miembro", back_populates="comentarios")
+    tarea = relationship("Tarea", back_populates="comentarios")

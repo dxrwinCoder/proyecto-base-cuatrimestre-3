@@ -84,6 +84,7 @@ async def setup_miembro_con_permisos(db, setup_rol_hogar):
 
     # await db.commit()
     await db.flush()
+    # yield admin # <-- ¡Debe devolver el objeto 'admin'!
     if modulo:
         await db.refresh(modulo)
     if permiso:
@@ -113,7 +114,7 @@ async def test_crear_miembro_con_autenticacion(client, setup_miembro_con_permiso
 
     response = await client.post("/miembros/", json=miembro_data, headers=headers)
 
-    assert response.status_code == 200
+    assert response.status_code == 201
     data = response.json()
     assert data["nombre_completo"] == "Nuevo Miembro"
     assert data["correo_electronico"] == correo
@@ -248,8 +249,8 @@ async def test_eliminar_miembro(client, setup_miembro_con_permisos):
         "/miembros/", json=miembro_data, headers=headers
     )
 
-    if create_response.status_code != 200:
-        # Si falló por permisos, usar el miembro del fixture
+    if create_response.status_code != 201:  # ¡Asumir 201!
+        # 'setup_miembro_con_permisos' ya no será None
         miembro_id = setup_miembro_con_permisos.id
     else:
         miembro_id = create_response.json()["id"]
@@ -314,7 +315,7 @@ async def test_crear_miembro_correo_duplicado(client, setup_miembro_con_permisos
     )
 
     # Si el primer miembro se creó exitosamente, intentar crear otro con el mismo correo
-    if create_response.status_code == 200:
+    if create_response.status_code == 201:
         miembro_data2 = {
             "nombre_completo": "Otro Miembro",
             "correo_electronico": correo,  # Mismo correo
@@ -380,4 +381,4 @@ async def test_crear_miembro_hogar_diferente_sin_permiso(
     # Debería fallar porque no es admin (id_rol != 1) y está intentando crear en otro hogar
     # Pero el usuario de prueba es admin (id_rol=1), así que debería funcionar
     # Cambiamos el test para verificar que funciona con admin
-    assert response.status_code == 200
+    assert response.status_code == 403

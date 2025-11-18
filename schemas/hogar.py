@@ -21,8 +21,9 @@ class Hogar(HogarBase):
     # ¡OJO! Su modelo 'Hogar' en el service usa 'estado'
     # Debería estar aquí también
     estado: bool = True
-    
+
     class Config:
         orm_mode = True
-    #esto se descomenta para usar  la version 2 de pydantic
-    #model_config = ConfigDict(from_attributes=True)
+
+    # esto se descomenta para usar  la version 2 de pydantic
+    # model_config = ConfigDict(from_attributes=True)

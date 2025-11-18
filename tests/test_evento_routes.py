@@ -1,6 +1,6 @@
 import pytest
 import pytest_asyncio
-from datetime import datetime, UTC
+from datetime import datetime, timedelta, timezone
 from httpx import AsyncClient, ASGITransport
 from main import app
 from db.database import get_db
@@ -26,7 +26,7 @@ async def test_crear_evento(client, setup_rol_hogar):
     payload = {
         "titulo": "Cumpleaños",
         "descripcion": "Fiesta",
-        "fecha_hora": datetime.now(UTC).isoformat(),
+        "fecha_hora": datetime.now(timezone.utc),
         "duracion_min": 120,
         "id_hogar": 1,
         "creado_por": 1,
@@ -46,7 +46,7 @@ async def test_listar_eventos_por_hogar(client, setup_rol_hogar):
         json={
             "titulo": "Reunión",
             "descripcion": None,
-            "fecha_hora": datetime.now(UTC).isoformat(),
+            "fecha_hora": datetime.now(timezone.utc),
             "duracion_min": 60,
             "id_hogar": 1,
             "creado_por": 1,

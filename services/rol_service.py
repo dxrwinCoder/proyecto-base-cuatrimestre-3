@@ -24,8 +24,7 @@ async def crear_rol(db: AsyncSession, rol_data: RolCreate):  # <-- ¡Recibe sche
 
         logger.info(f"Creando nuevo rol: {rol_data.nombre}")
 
-        # Usamos model_dump() para crear desde el schema
-        rol = Rol(**rol_data.model_dump())
+        rol = Rol(**rol_data.dict())
         db.add(rol)
 
         await db.flush()  # <-- ¡CAMBIO! de commit a flush

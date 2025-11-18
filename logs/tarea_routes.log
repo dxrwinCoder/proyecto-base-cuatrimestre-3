@@ -1,0 +1,2 @@
+2025-11-17 23:52:04 - tarea_routes - ERROR - [tarea_routes.py:56] - Error inesperado al crear tarea: 'TareaCreate' object has no attribute 'model_dump'
+2025-11-18 13:46:35 - tarea_routes - ERROR - [tarea_routes.py:57] - Error inesperado al crear tarea: The unique() method must be invoked on this Result, as it contains results that include joined eager loads against collections
