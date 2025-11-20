@@ -1,230 +1,228 @@
-# domain.yml
 version: "3.1"
 
-# 1. INTENCIONES (40+ Intenciones)
 intents:
-  - saludar
-  - despedirse
-  - afirmar
-  - negar
-  - soy_bot
-  - agradecer
-  - insultar
+  - saludo
+  - despedida
+  - agradecimiento
   - ayuda
 
-  # Flujo Usuario (Tareas)
-  - consultar_mis_tareas # DB
-  - consultar_estado_tarea # DB
-  - preguntar_como_hacer_tarea # DB
-  - marcar_tarea_progreso # DB (Acción)
-  - marcar_tarea_completada # DB (Acción)
-  - agregar_comentario_tarea # DB (Acción)
-  - ver_comentarios_tarea # DB
-  - consultar_tareas_categoria # DB
-  - consultar_tareas_vencidas # DB
-  - consultar_tiempo_total_tarea # DB
+  # Miembros
+  - crear_miembro
+  - actualizar_miembro
+  - eliminar_miembro
+  - listar_miembros
 
-  - admin_consultar_miembro_nombre
-  - admin_listar_tareas_miembro
-  - admin_listar_tareas_estado
-  - admin_crear_tarea_simple
+  # Comentarios
+  - crear_comentario
+  - actualizar_comentario
+  - eliminar_comentario
+  # admin
+  - admin_listar_todas_las_tareas
+  - admin_listar_eventos
+  - admin_crear_tarea
+  - admin_crear_evento
+  - admin_listar_notificaciones
 
-  # Flujo Administrador (Gestión)
-  - crear_tarea # DB (Acción)
-  - asignar_tarea_miembro # DB (Acción)
-  - consultar_tareas_miembro # DB
-  - consultar_tareas_hogar # DB
-  - sugerir_tarea_miembro # DB (Lógica de IA)
-  - eliminar_tarea # DB (Acción)
-  - modificar_tarea # DB (Acción)
-  - crear_evento # DB (Acción)
-  - asociar_tarea_evento # DB (Acción)
-  - consultar_tareas_evento # DB
+  # miembro
+  - miembro_consultar_mis_tareas
+  - miembro_consultar_eventos
+  - miembro_eventos_mes_actual
+  - miembro_eventos_semana_actual
+  - miembro_consultar_notificaciones
+  - miembro_detalle_tiempo_tareas
 
-  # Flujo Estadísticas (Gamificación)
-  - consultar_ranking_semanal # DB
-  - consultar_mis_estadisticas # DB
-  - consultar_estadisticas_miembro # DB
-  - quien_es_mas_responsable # (Sinónimo de ranking)
+  # Datos
+  - proporcionar_nombre
+  - proporcionar_correo
+  - proporcionar_password
+  - proporcionar_rol
+  - proporcionar_hogar
+  - proporcionar_id
+  - proporcionar_id_tarea
+  - proporcionar_id_comentario
+  - proporcionar_texto_comentario
+  - proporcionar_url_imagen
 
-  # Flujo Miembros y Perfil
-  - consultar_miembros_hogar # DB
-  - consultar_atributos_miembro # DB
-  - modificar_mi_atributo # DB (Acción)
-  - registrar_miembro # DB (Admin - Acción)
-  - eliminar_miembro # DB (Admin - Acción)
-
-  # Flujo Notificaciones y Chat
-  - consultar_notificaciones # DB
-  - marcar_notificaciones_leidas # DB (Acción)
-  - enviar_mensaje_chat # DB (Acción)
-  - consultar_chat_hogar # DB
-
-# 2. ENTIDADES (Palabras clave a extraer)
 entities:
-  - asignado_a_nombre
-  - miembro_nombre
-  - tarea_nombre
-  - tarea_id
-  - categoria_tarea
-  - estado_tarea
-  - contenido_comentario
-  - fecha
-  - nombre_evento
-  - atributo_nombre
-  - atributo_valor
+  - member_fullname
+  - member_email
+  - member_password
+  - member_role
+  - member_home
+  - member_id
+  - task_id
+  - comment_id
+  - comment_text
+  - comment_image
 
-# 3. SLOTS (Memoria del bot)
 slots:
-  miembro_nombre:
+  member_fullname:
     type: text
     influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: miembro_nombre
-
-  tarea_id:
-    type: text
-    influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: tarea_id
-
-  categoria_tarea:
-    type: text
-    influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: categoria_tarea
-
-  tarea_nombre:
-    type: text
-    influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: tarea_nombre
-
-  # Slots para el Formulario de Tareas
-  slot_tarea_titulo:
-    type: text
     mappings:
       - type: from_text
-        intent: none
 
-  slot_tarea_categoria:
-    type: text
-    mappings:
-      - type: from_entity
-        entity: categoria_tarea
-      - type: from_text
-        intent: none
-
-  slot_tarea_asignado_a:
-    type: text
-    mappings:
-      - type: from_entity
-        entity: asignado_a_nombre
-      - type: from_text
-        intent: none
-
-  # Slot para el estado
-  estado_tarea:
+  member_email:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: estado_tarea
+      - type: from_text
 
-# 4. ACCIONES (Lo que el bot HACE - aquí se conecta a la BD)
-actions:
-  # --- ¡NUEVAS ACCIONES DE ADMIN! ---
-  - action_admin_consultar_miembro
-  - action_admin_listar_tareas_miembro
-  - action_admin_listar_tareas_estado
-  # Acciones de la Base de Datos (las 10+ solicitadas)
-  - action_consultar_mis_tareas
-  - action_consultar_estado_tarea
-  - action_explicar_tarea
-  - action_marcar_tarea_progreso
-  - action_marcar_tarea_completada
-  - action_agregar_comentario_tarea
-  - action_ver_comentarios_tarea
-  - action_consultar_tareas_categoria
-  - action_consultar_tareas_vencidas
-  - action_consultar_tiempo_total_tarea
-  - action_crear_tarea
-  - action_asignar_tarea_miembro
-  - action_consultar_tareas_miembro
-  - action_consultar_tareas_hogar
-  - action_sugerir_tarea_miembro
-  - action_eliminar_tarea
-  - action_modificar_tarea
-  - action_crear_evento
-  - action_asociar_tarea_evento
-  - action_consultar_tareas_evento
-  - action_consultar_ranking_semanal
-  - action_consultar_mis_estadisticas
-  - action_consultar_estadisticas_miembro
-  - action_consultar_miembros_hogar
-  - action_consultar_atributos_miembro
-  - action_modificar_mi_atributo
-  - action_registrar_miembro
-  - action_eliminar_miembro
-  - action_consultar_notificaciones
-  - action_marcar_notificaciones_leidas
-  - action_enviar_mensaje_chat
-  - action_consultar_chat_hogar
+  member_password:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-# 5. RESPUESTAS (Lo que el bot DICE)
-responses:
-  utter_saludar:
-    - text: "¡Hola! Soy tu asistente de HomeTasks. ¿Listo para organizar el hogar? ¿En qué te ayudo?"
+  member_role:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-  utter_despedirse:
-    - text: "¡Ha sido un placer! Vuelve pronto. ¡Que tengas un día productivo!"
+  member_home:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-  utter_soy_bot:
-    - text: 'Soy un asistente virtual "calibrado" para ayudarte a gestionar las tareas, eventos y miembros de tu hogar.'
+  member_id:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-  utter_agradecer:
-    - text: "¡Con gusto! Estoy aquí para hacer la gestión del hogar más fácil."
+  task_id:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-  utter_ayuda:
-    - text: 'Puedo ayudarte con esto:\n* Consulta tus tareas: ''¿qué tengo pendiente?''\n* Actualiza una tarea: ''marca "lavar platos" como completada''\n* Consulta el ranking: ''¿quién va ganando?''\n* (Admin) Consulta miembros: ''¿quiénes están en casa?'''
+  comment_id:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-  utter_insulto_detectado:
-    - text: "Entendido. Prefiero mantener nuestra conversación enfocada en la gestión del hogar. ¿En qué te puedo asistir?"
+  comment_text:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-  utter_accion_exitosa:
-    - text: "¡Hecho! Tarea completada exitosamente."
-    - text: "¡Perfecto! Lo he actualizado en el sistema."
+  comment_image:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
 
-  utter_error_accion:
-    - text: "Lo siento, parece que no pude completar esa acción. Es posible que no tengas los permisos necesarios para esta operación."
-
-  utter_error_bd:
-    - text: "¡Uy! Tuve un problema técnico al intentar conectarme a la base de datos. Por favor, inténtalo de nuevo en un momento."
-
-  utter_no_entiendo:
-    - text: "Disculpa, no te he seguido. ¿Puedes intentarlo de nuevo?"
-    - text: "Lo siento, no he entendido bien tu solicitud. ¿Podrías reformularla?"
-
-  utter_no_es_admin:
-    - text: "Lo siento, esta acción solo está permitida para Administradores."
-
-  utter_ask_slot_tarea_titulo:
-    - text: "¡Perfecto! Vamos a crear una nueva tarea. ¿Cuál sería el título o nombre de la tarea?"
-
-  utter_ask_slot_tarea_categoria:
-    - text: "Entendido. ¿A qué categoría pertenece? (ej. 'cocina', 'limpieza', 'compras')"
-
-  utter_ask_slot_tarea_asignado_a:
-    - text: "¡Genial! ¿A qué miembro del hogar le asignamos esta tarea? (Dime su nombre)"
-
-# --- ¡NUEVO! DEFINICIÓN DEL FORMULARIO ---
 forms:
-  crear_tarea_form:
+  member_creation_form:
     required_slots:
-      - slot_tarea_titulo
-      - slot_tarea_categoria
-      - slot_tarea_asignado_a
+      - member_fullname
+      - member_email
+      - member_password
+      - member_role
+      - member_home
+
+  member_update_form:
+    required_slots:
+      - member_id
+      - member_fullname
+      - member_email
+      - member_role
+
+  create_task_comment_form:
+    required_slots:
+      - task_id
+      - member_id
+      - comment_text
+      - comment_image
+
+  update_task_comment_form:
+    required_slots:
+      - comment_id
+      - comment_text
+      - comment_image
+
+actions:
+  - member_creation_form
+  - member_update_form
+  - create_task_comment_form
+  - update_task_comment_form
+  - action_admin_listar_todas_las_tareas
+  - action_admin_listar_eventos
+
+  - delete_member
+  - list_members
+  - delete_comment
+
+  - action_confirm_member_created
+  - action_confirm_member_updated
+  - action_confirm_comment_created
+  - action_confirm_comment_updated
+
+responses:
+  utter_greet:
+    - text: "Hola, ¿en qué puedo ayudarte?"
+
+  utter_goodbye:
+    - text: "¡Hasta luego!"
+
+  utter_fallback:
+    - text: "No entendí eso, ¿puedes reformularlo?"
+
+  utter_thanks:
+    - text: "Con gusto 😊"
+
+  utter_ask_member_fullname:
+    - text: "¿Cuál es el nombre completo del miembro?"
+
+  utter_ask_member_email:
+    - text: "¿Cuál es el correo electrónico del miembro?"
+
+  utter_ask_member_password:
+    - text: "¿Qué contraseña tendrá el miembro?"
+
+  utter_ask_member_role:
+    - text: "¿Qué rol tendrá? (Ej: 1 = Admin, 2 = Hijo)"
+
+  utter_ask_member_home:
+    - text: "¿A qué ID de hogar pertenece?"
+
+  utter_ask_member_id:
+    - text: "Dime el ID del miembro."
+
+  utter_ask_task_id:
+    - text: "¿Cuál es el ID de la tarea?"
+
+  utter_ask_comment_id:
+    - text: "Dime el ID del comentario."
+
+  utter_ask_comment_text:
+    - text: "Escribe el contenido del comentario."
+
+  utter_ask_comment_image:
+    - text: "¿Quieres incluir una URL de imagen? (Puedes dejarlo vacío)"
+
+  # Respuestas simples para intents nuevas
+  utter_admin_listar_notificaciones:
+    - text: "Administrador, consultando notificaciones del hogar."
+
+  utter_admin_crear_tarea:
+    - text: "Creando una tarea como administrador."
+
+  utter_admin_crear_evento:
+    - text: "Creando un evento como administrador."
+
+  utter_miembro_notificaciones:
+    - text: "Consultando tus notificaciones."
+
+  utter_miembro_detalle_tiempo:
+    - text: "Calculando tiempos de tus tareas asignadas."
+
+  utter_miembro_eventos_mes:
+    - text: "Listando tus eventos del mes actual."
+
+  utter_miembro_eventos_semana:
+    - text: "Listando tus eventos de la semana actual."

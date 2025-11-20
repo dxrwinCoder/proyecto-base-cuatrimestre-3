@@ -3,6 +3,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 from db.database import get_db
 from schemas.tarea import TareaCreate, TareaUpdateEstado, Tarea
+from schemas.comentario_tarea import ComentarioTarea
 from services.tarea_service import (
     crear_tarea,
     obtener_tarea_por_id,
@@ -13,13 +14,17 @@ from services.tarea_service import (
     listar_tareas_proximas_a_vencer,
     listar_tareas_en_proceso,
     actualizar_estado_tarea,
+    agregar_comentario_con_imagen,
 )
 
 from datetime import date
 from models.miembro import Miembro
+from services.miembro_service import obtener_miembro
+from fastapi import UploadFile, File, Form, Request
 from utils.auth import obtener_miembro_actual
 from utils.permissions import require_permission
 from utils.logger import setup_logger
+from datetime import datetime
 
 logger = setup_logger("tarea_routes")
 
@@ -119,6 +124,22 @@ async def listar_tareas_en_proceso_endpoint(
     return await listar_tareas_en_proceso(db, current_user.id_hogar)
 
 
+@router.get("/mias/detalle-tiempo", response_model=list[Tarea])
+async def mis_tareas_con_tiempo(
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    tareas = await listar_tareas_por_miembro(db, current_user.id)
+    # Añadir campos con tiempos (se agregan dinámicamente; el schema ignorará extras)
+    now = datetime.now()
+    for t in tareas:
+        if t.fecha_asignacion:
+            t.tiempo_transcurrido_min = int((now - t.fecha_asignacion).total_seconds() // 60)
+        if t.fecha_limite:
+            t.tiempo_restante_min = int((t.fecha_limite - now.date()).total_seconds() // 60)
+    return tareas
+
+
 @router.get("/evento/{evento_id}", response_model=list[Tarea])
 async def listar_tareas_por_evento_endpoint(
     evento_id: int,
@@ -205,8 +226,19 @@ async def listar_tareas_de_miembro(
     ),  # Admin leyendo a otros
 ):
     """Admin lista las tareas de un miembro específico."""
-    # Validación de seguridad: ¿El miembro pertenece a mi hogar?
-    # (Se podría agregar una validación rápida aquí usando miembro_service)
+    # Validación de seguridad: el miembro debe pertenecer al mismo hogar, salvo que el usuario sea admin.
+    miembro_obj = await obtener_miembro(db, miembro_id)
+    if not miembro_obj:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Miembro no encontrado"
+        )
+
+    if current_user.id_rol != 1 and miembro_obj.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="No puedes ver tareas de un miembro de otro hogar",
+        )
+
     return await listar_tareas_por_miembro(db, miembro_id)
 
 
@@ -219,3 +251,63 @@ async def listar_tareas_evento_proximo(
     """Lista tareas de un evento."""
 
     return await listar_tareas_por_evento(db, evento_id)
+
+
+@router.post(
+    "/{tarea_id}/comentarios/imagen",
+    response_model=ComentarioTarea,
+    dependencies=[Depends(require_permission("Tareas", "leer"))],
+)
+async def comentar_con_imagen(
+    tarea_id: int,
+    request: Request,
+    contenido: str = Form(""),
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    """
+    Adjunta imagen local a una tarea como comentario. Guarda archivo y persiste url_imagen.
+    """
+    tarea = await obtener_tarea_por_id(db, tarea_id)
+    if not tarea or tarea.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Tarea no encontrada"
+        )
+
+    try:
+        form = await request.form()
+        archivo = None
+        for v in form.values():
+            if isinstance(v, UploadFile):
+                archivo = v
+                break
+        if archivo is None:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="No se adjuntó archivo de imagen",
+            )
+        # Si el campo 'contenido' no llegó en el form, usa el param por defecto
+        contenido_form = form.get("contenido")
+        if contenido_form is not None:
+            contenido = contenido_form
+
+        comentario = await agregar_comentario_con_imagen(
+            db=db,
+            tarea_id=tarea_id,
+            miembro_id=current_user.id,
+            contenido=contenido,
+            archivo=archivo,
+            media_root="utils/src",
+        )
+        await db.commit()
+        return comentario
+    except ValueError as e:
+        await db.rollback()
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+    except Exception as e:
+        await db.rollback()
+        logger.error(f"Error al adjuntar imagen a tarea {tarea_id}: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error interno al adjuntar imagen",
+        )

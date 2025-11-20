@@ -23,7 +23,8 @@ class ComentarioTarea(Base):
         Integer, ForeignKey("miembros.id", ondelete="CASCADE"), nullable=False
     )
     contenido = Column(Text, nullable=False)
-    url_imagen = Column(String(255), nullable=True)
+    # Se amplía a Text para permitir almacenar base64 si se desea
+    url_imagen = Column(Text, nullable=True)  # puede almacenar ruta o base64
     fecha_creacion = Column(DateTime, default=func.now())
     estado = Column(Boolean, default=True)
 

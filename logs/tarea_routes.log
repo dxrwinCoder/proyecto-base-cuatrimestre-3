@@ -1,2 +1,10 @@
 2025-11-17 23:52:04 - tarea_routes - ERROR - [tarea_routes.py:56] - Error inesperado al crear tarea: 'TareaCreate' object has no attribute 'model_dump'
 2025-11-18 13:46:35 - tarea_routes - ERROR - [tarea_routes.py:57] - Error inesperado al crear tarea: The unique() method must be invoked on this Result, as it contains results that include joined eager loads against collections
+2025-11-19 23:47:50 - tarea_routes - ERROR - [tarea_routes.py:290] - Error al adjuntar imagen a tarea 3: 400: No se adjuntó archivo de imagen
+2025-11-19 23:48:42 - tarea_routes - ERROR - [tarea_routes.py:290] - Error al adjuntar imagen a tarea 3: 400: No se adjuntó archivo de imagen
+2025-11-19 23:49:42 - tarea_routes - ERROR - [tarea_routes.py:290] - Error al adjuntar imagen a tarea 3: 400: No se adjuntó archivo de imagen
+2025-11-19 23:58:56 - tarea_routes - ERROR - [tarea_routes.py:290] - Error al adjuntar imagen a tarea 3: name 'request' is not defined
+2025-11-20 00:02:28 - tarea_routes - ERROR - [tarea_routes.py:290] - Error al adjuntar imagen a tarea 3: 400: No se adjuntó archivo de imagen
+2025-11-20 00:03:27 - tarea_routes - ERROR - [tarea_routes.py:290] - Error al adjuntar imagen a tarea 3: 400: No se adjuntó archivo de imagen
+2025-11-20 00:09:40 - tarea_routes - ERROR - [tarea_routes.py:292] - Error al adjuntar imagen a tarea 3: 400: No se adjuntó archivo de imagen
+2025-11-20 00:10:22 - tarea_routes - ERROR - [tarea_routes.py:292] - Error al adjuntar imagen a tarea 3: 400: No se adjuntó archivo de imagen

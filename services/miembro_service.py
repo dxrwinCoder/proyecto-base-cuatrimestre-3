@@ -3,6 +3,7 @@ from sqlalchemy import select, and_, func
 from models.miembro import Miembro
 from models.rol import Rol
 from models.tarea import Tarea
+from services.atributo_miembro_service import obtener_atributos_de_miembro
 from services.auth_service import _asignar_permisos_totales_a_rol
 from utils.security import obtener_hash_contrasena
 from sqlalchemy.orm import joinedload

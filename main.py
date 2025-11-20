@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import WebSocket
 
 # from fastapi.security import OAuth2PasswordBearer
 from db.database import engine, Base
@@ -24,7 +25,9 @@ from routes import (
     modulo_routes,
     atributo_routes,
     miembro_routes,
+    notificacion_routes,
 )
+from websocket.chat import chat_websocket
 
 from utils.logger import setup_logger
 
@@ -92,6 +95,7 @@ app.include_router(evento_routes.router)
 app.include_router(modulo_routes.router)
 app.include_router(atributo_routes.router)
 app.include_router(miembro_routes.router)
+app.include_router(notificacion_routes.router)
 
 
 @app.get("/")
@@ -102,3 +106,9 @@ async def root():
     except Exception as e:
         logger.error(f"Error en la ruta raíz: {str(e)}")
         raise
+
+
+@app.websocket("/ws/chat/{destinatario_id}")
+async def websocket_chat_endpoint(websocket: WebSocket, destinatario_id: int, token: str):
+    # token debe venir como query param ?token=...
+    await chat_websocket(websocket, token, destinatario_id)

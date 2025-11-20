@@ -45,6 +45,16 @@ def require_permission(modulo_nombre: str, accion: str):
             HTTPException: Si no se tienen los permisos necesarios
         """
         try:
+            # Superuser: rol 1 no requiere verificación de permisos específicos
+            if getattr(current_user, "id_rol", None) == 1:
+                logger.info(
+                    f"Acceso autorizado automático: Usuario {current_user.id} es rol 1 (admin)."
+                )
+                return current_user
+            # Permitir que un miembro consulte su propio perfil sin permisos explícitos
+            if modulo_nombre == "Miembros" and accion == "leer":
+                return current_user
+
             # Registrar el intento de verificación de permisos
             logger.info(
                 f"Verificando permisos para usuario {current_user.id} "

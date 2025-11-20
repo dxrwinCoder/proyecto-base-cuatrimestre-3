@@ -1,10 +1,11 @@
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select
+from sqlalchemy import select, or_
 from sqlalchemy.orm import joinedload
 from models.mensaje import Mensaje
 from models.tarea import Tarea
 from uuid import uuid4
 from utils.logger import setup_logger
+from models.miembro import Miembro
 
 logger = setup_logger("mensaje_service")
 
@@ -84,3 +85,60 @@ async def obtener_mensajes_por_hogar(db: AsyncSession, hogar_id: int):
     except Exception as e:
         logger.error(f"Error al obtener mensajes del hogar {hogar_id}: {str(e)}")
         raise
+
+
+async def enviar_mensaje_directo(
+    db: AsyncSession, id_hogar: int, remitente_id: int, destinatario_id: int, contenido: str
+):
+    """
+    Envía un mensaje directo entre dos miembros del mismo hogar.
+    """
+    # Validar miembros activos y pertenencia al hogar
+    remitente = await db.get(Miembro, remitente_id)
+    destinatario = await db.get(Miembro, destinatario_id)
+
+    if (
+        not remitente
+        or not destinatario
+        or not remitente.estado
+        or not destinatario.estado
+        or remitente.id_hogar != id_hogar
+        or destinatario.id_hogar != id_hogar
+    ):
+        raise ValueError("Miembros inválidos o de distinto hogar")
+
+    mensaje = Mensaje(
+        id_hogar=id_hogar,
+        id_remitente=remitente_id,
+        id_destinatario=destinatario_id,
+        contenido=contenido,
+    )
+    db.add(mensaje)
+    await db.flush()
+    await db.refresh(mensaje)
+    return mensaje
+
+
+async def listar_conversacion_directa(
+    db: AsyncSession, id_hogar: int, miembro_actual_id: int, otro_id: int
+):
+    """
+    Lista mensajes directos entre miembro_actual y otro_id (ambos en el mismo hogar).
+    """
+    stmt = (
+        select(Mensaje)
+        .where(
+            Mensaje.id_hogar == id_hogar,
+            Mensaje.estado == 1,
+            or_(
+                (Mensaje.id_remitente == miembro_actual_id)
+                & (Mensaje.id_destinatario == otro_id),
+                (Mensaje.id_remitente == otro_id)
+                & (Mensaje.id_destinatario == miembro_actual_id),
+            ),
+        )
+        .options(joinedload(Mensaje.remitente))
+        .order_by(Mensaje.fecha_envio.asc())
+    )
+    result = await db.execute(stmt)
+    return result.scalars().all()

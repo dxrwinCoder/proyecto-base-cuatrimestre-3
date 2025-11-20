@@ -31,6 +31,9 @@ class Miembro(Base):
     mensajes = relationship(
         "Mensaje", back_populates="remitente", foreign_keys="[Mensaje.id_remitente]"
     )
+    mensajes_recibidos = relationship(
+        "Mensaje", foreign_keys="[Mensaje.id_destinatario]"
+    )
 
     # Relación con Tareas Asignadas (N+1 Fix)
     tareas_asignadas = relationship(

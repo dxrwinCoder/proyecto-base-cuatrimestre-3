@@ -90,7 +90,7 @@ async def actualizar_hogar(
             return None
 
         # Actualizar solo los campos enviados
-        update_data = hogar_data.dict()(exclude_unset=True)
+        update_data = hogar_data.dict(exclude_unset=True)
         for key, value in update_data.items():
             setattr(hogar, key, value)
 

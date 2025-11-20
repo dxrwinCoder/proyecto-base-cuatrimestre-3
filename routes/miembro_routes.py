@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, Body
 from sqlalchemy.ext.asyncio import AsyncSession
 from db.database import get_db
 from schemas.miembro import MiembroCreate, MiembroUpdate, Miembro, MiembroResponse
@@ -12,9 +12,14 @@ from services.miembro_service import (
     contar_miembros_por_hogar,
     obtener_miembros_por_rol,
 )
+from services.atributo_miembro_service import (
+    asignar_atributo_a_miembro,
+    obtener_atributos_de_miembro,
+)
 from utils.logger import setup_logger
 from utils.permissions import require_permission
 from utils.auth import obtener_miembro_actual
+from schemas.atributo_miembro import AtributoMiembroCreate, AtributoMiembro
 
 logger = setup_logger("miembro_routes")
 
@@ -73,6 +78,45 @@ async def crear_miembro_endpoint(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Error interno al crear miembro",
         )
+
+
+@router.get("/perfil", response_model=MiembroResponse)
+async def mi_perfil(
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    atributos = await obtener_atributos_de_miembro(db, current_user.id)
+    miembro = await obtener_miembro(db, current_user.id)
+    resp = MiembroResponse.from_orm(miembro)
+    if hasattr(resp, "atributos"):
+        resp.atributos = atributos
+    return resp
+
+
+@router.put("/perfil", response_model=MiembroResponse)
+async def actualizar_mi_perfil(
+    payload: dict = Body(...),
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    try:
+        datos = MiembroUpdate(**{k: v for k, v in payload.items() if k != "atributos"})
+        attrs = payload.get("atributos")
+
+        result = await actualizar_miembro(
+            db, current_user.id, datos.dict(exclude_unset=True)
+        )
+        if attrs:
+            for attr in attrs:
+                await asignar_atributo_a_miembro(db, AtributoMiembroCreate(**attr))
+        await db.commit()
+        return result
+    except ValueError as e:
+        await db.rollback()
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        await db.rollback()
+        raise HTTPException(status_code=500, detail="Error interno al actualizar perfil")
 
 
 @router.get("/todos", response_model=list[MiembroResponse])
@@ -299,3 +343,11 @@ async def miembros_por_rol(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Error interno al obtener miembros por rol",
         )
+
+
+@router.get("/hogar", response_model=list[MiembroResponse])
+async def miembros_de_mi_hogar(
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    return await listar_miembros_activos_por_hogar(db, current_user.id_hogar)

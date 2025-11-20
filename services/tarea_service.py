@@ -4,10 +4,16 @@ from sqlalchemy.orm import joinedload
 from models.tarea import Tarea
 from models.comentario_tarea import ComentarioTarea
 from models.miembro import Miembro
+from models.evento import Evento
 import time
 from utils.logger import setup_logger
 from datetime import datetime, timedelta, date
 from services.notificacion_service import crear_notificacion
+from services.evento_service import notificar_si_evento_completado
+import os
+from uuid import uuid4
+from fastapi import UploadFile
+import base64
 from schemas.notificacion import NotificacionCreate
 from schemas.tarea import TareaCreate  # ¡Asumiendo que tiene TareaCreate!
 from schemas.comentario_tarea import (
@@ -63,7 +69,13 @@ async def crear_tarea(db: AsyncSession, data: TareaCreate, creador_id: int):
 async def obtener_tarea_por_id(db: AsyncSession, tarea_id: int):
     try:
         logger.info(f"Buscando tarea con ID: {tarea_id}")
-        tarea = await db.get(Tarea, tarea_id)
+        stmt = (
+            select(Tarea)
+            .where(Tarea.id == tarea_id)
+            .options(joinedload(Tarea.comentarios))
+        )
+        result = await db.execute(stmt)
+        tarea = result.unique().scalar_one_or_none()
         if not tarea or not tarea.estado:
             logger.warning(f"Tarea con ID {tarea_id} no encontrada o inactiva")
             return None
@@ -77,9 +89,13 @@ async def obtener_tarea_por_id(db: AsyncSession, tarea_id: int):
 async def listar_tareas_por_miembro(db: AsyncSession, miembro_id: int):
     try:
         logger.info(f"Listando tareas asignadas al miembro ID: {miembro_id}")
-        stmt = select(Tarea).where(Tarea.asignado_a == miembro_id, Tarea.estado == True)
+        stmt = (
+            select(Tarea)
+            .where(Tarea.asignado_a == miembro_id, Tarea.estado == True)
+            .options(joinedload(Tarea.comentarios))
+        )
         result = await db.execute(stmt)
-        tareas = result.scalars().all()
+        tareas = result.unique().scalars().all()
         logger.info(
             f"Se encontraron {len(tareas)} tareas activas para el miembro {miembro_id}"
         )
@@ -169,8 +185,18 @@ async def actualizar_estado_tarea(
                 f"Notificación enviada (sin commit) por cambio de estado en tarea {tarea_id}"
             )
 
-        await db.refresh(tarea)
-        return tarea
+        # Si la tarea pertenece a un evento, verificar si todas las tareas están completadas
+        if tarea.id_evento:
+            await notificar_si_evento_completado(db, tarea.id_evento)
+
+        # Evitar lazy-load en la respuesta: recargar con comentarios en modo eager
+        stmt = (
+            select(Tarea)
+            .where(Tarea.id == tarea_id)
+            .options(joinedload(Tarea.comentarios))
+        )
+        loaded = (await db.execute(stmt)).unique().scalar_one()
+        return loaded
     except (ValueError, Exception) as e:
         logger.error(f"Error al actualizar estado de tarea {tarea_id}: {str(e)}")
         raise
@@ -222,6 +248,123 @@ async def agregar_comentario_a_tarea(
     except Exception as e:
         logger.error(f"Error al agregar comentario: {str(e)}")
         raise
+
+
+async def agregar_comentario_con_imagen(
+    db: AsyncSession,
+    tarea_id: int,
+    miembro_id: int,
+    contenido: str | None,
+    archivo: UploadFile | None,
+    media_root: str,
+):
+    """
+    Agrega un comentario con imagen a una tarea. Guarda el archivo en disco y persiste la ruta.
+    """
+    try:
+        logger.info(f"Agregando comentario con imagen a tarea {tarea_id}")
+        tarea = await obtener_tarea_por_id(db, tarea_id)
+        if not tarea:
+            raise ValueError("Tarea no encontrada")
+
+        if not archivo:
+            raise ValueError("No se adjuntó archivo.")
+
+        os.makedirs(media_root, exist_ok=True)
+        ext = os.path.splitext(archivo.filename)[1] or ".bin"
+        nombre = f"{uuid4().hex}{ext}"
+        ruta_archivo = os.path.join(media_root, nombre)
+        contenido_bytes = await archivo.read()
+        with open(ruta_archivo, "wb") as f:
+            f.write(contenido_bytes)
+        # Guardamos en BD la ruta absoluta/relativa del archivo almacenado
+        ruta_imagen = ruta_archivo
+
+        comentario = ComentarioTarea(
+            id_tarea=tarea_id,
+            id_miembro=miembro_id,
+            contenido=contenido or "",
+            url_imagen=ruta_imagen,
+        )
+        db.add(comentario)
+        await db.flush()
+        await db.refresh(comentario)
+        return comentario
+    except Exception as e:
+        logger.error(f"Error al agregar comentario con imagen: {str(e)}")
+        raise
+
+
+async def listar_comentarios_por_tarea(db: AsyncSession, tarea_id: int):
+    """
+    Devuelve comentarios activos para la tarea dada, ordenados por creación.
+    Se mantiene sin commit para que la ruta decida el control transaccional.
+    """
+    try:
+        stmt = (
+            select(ComentarioTarea)
+            .where(ComentarioTarea.id_tarea == tarea_id, ComentarioTarea.estado == True)
+            .order_by(ComentarioTarea.fecha_creacion.asc())
+        )
+        result = await db.execute(stmt)
+        return result.scalars().all()
+    except Exception as e:
+        logger.error(f"Error al listar comentarios de la tarea {tarea_id}: {str(e)}")
+        raise
+
+
+async def asignar_tarea_a_evento(db: AsyncSession, tarea_id: int, evento_id: int):
+    """
+    Vincula una tarea existente a un evento y notifica al asignado.
+    """
+    tarea = await db.get(Tarea, tarea_id)
+    evento = await db.get(Evento, evento_id)
+    if not tarea or not tarea.estado:
+        raise ValueError("Tarea no encontrada o inactiva")
+    if not evento or not evento.estado:
+        raise ValueError("Evento no encontrado o inactivo")
+
+    tarea.id_evento = evento_id
+    await db.flush()
+
+    # Notificar al asignado
+    if tarea.asignado_a:
+        notif_data = NotificacionCreate(
+            id_miembro_destino=tarea.asignado_a,
+            id_miembro_origen=evento.creado_por,
+            id_tarea=tarea.id,
+            id_evento=evento_id,
+            tipo="tarea_asignada_evento",
+            mensaje=f"Se te asignó la tarea '{tarea.titulo}' en el evento '{evento.titulo}'",
+        )
+        await crear_notificacion(db, notif_data)
+
+    return tarea
+
+
+async def reasignar_miembro_tarea_evento(
+    db: AsyncSession, tarea_id: int, evento_id: int, nuevo_miembro_id: int, actor_id: int
+):
+    """
+    Reasigna un miembro a una tarea que pertenece a un evento.
+    """
+    tarea = await db.get(Tarea, tarea_id)
+    if not tarea or not tarea.estado or tarea.id_evento != evento_id:
+        raise ValueError("La tarea no pertenece al evento o está inactiva")
+
+    tarea.asignado_a = nuevo_miembro_id
+    await db.flush()
+
+    notif_data = NotificacionCreate(
+        id_miembro_destino=nuevo_miembro_id,
+        id_miembro_origen=actor_id,
+        id_tarea=tarea.id,
+        id_evento=evento_id,
+        tipo="tarea_reasignada",
+        mensaje=f"Se te reasignó la tarea '{tarea.titulo}' del evento.",
+    )
+    await crear_notificacion(db, notif_data)
+    return tarea
 
 
 # Listar TODAS las tareas del hogar (con comentarios para el req. 6)

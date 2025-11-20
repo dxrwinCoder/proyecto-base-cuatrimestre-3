@@ -244,3 +244,116 @@
 2025-11-18 00:55:58 - rol_service - INFO - [rol_service.py:49] - Rol encontrado: RolBuscable 909120
 2025-11-18 00:55:58 - rol_service - INFO - [rol_service.py:44] - Buscando rol con ID: 9999
 2025-11-18 00:55:58 - rol_service - WARNING - [rol_service.py:51] - Rol no encontrado con ID: 9999
+2025-11-19 19:52:07 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol 6bbb85
+2025-11-19 19:52:07 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 19:52:07 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado b2ceb7
+2025-11-19 19:52:07 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 19:52:07 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado b2ceb7
+2025-11-19 19:52:07 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-19 19:52:08 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable e964a8
+2025-11-19 19:52:08 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 19:52:08 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-19 19:52:08 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable e964a8
+2025-11-19 19:52:08 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-19 19:52:08 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol be5182
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado f73fd1
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 19:56:43 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado f73fd1
+2025-11-19 19:56:43 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable 635150
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable 635150
+2025-11-19 19:56:43 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-19 19:56:43 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-19 21:38:05 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Mensaje->mensajes'. Original exception was: Could not determine join condition between parent/child tables on relationship Mensaje.remitente - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-11-19 21:38:06 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Mensaje->mensajes'. Original exception was: Could not determine join condition between parent/child tables on relationship Mensaje.remitente - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-11-19 21:38:07 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Mensaje->mensajes'. Original exception was: Could not determine join condition between parent/child tables on relationship Mensaje.remitente - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-11-19 21:38:09 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-19 21:38:09 - rol_service - ERROR - [rol_service.py:55] - Error de base de datos al obtener rol: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Mensaje->mensajes'. Original exception was: Could not determine join condition between parent/child tables on relationship Mensaje.remitente - there are multiple foreign key paths linking the tables.  Specify the 'foreign_keys' argument, providing a list of those columns which should be counted as containing a foreign key reference to the parent table.
+2025-11-19 21:41:38 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol e91cab
+2025-11-19 21:41:38 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 21:41:39 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado f61c04
+2025-11-19 21:41:39 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 21:41:39 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado f61c04
+2025-11-19 21:41:39 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-19 21:41:39 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable b6c4bd
+2025-11-19 21:41:39 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-19 21:41:39 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-19 21:41:39 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable b6c4bd
+2025-11-19 21:41:39 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-19 21:41:39 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol c85b7b
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado f85f10
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:29:05 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado f85f10
+2025-11-20 09:29:05 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable cb6f7a
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable cb6f7a
+2025-11-20 09:29:05 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-20 09:29:05 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-20 09:37:23 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol 783bef
+2025-11-20 09:37:23 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:37:23 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado 8e3bd5
+2025-11-20 09:37:23 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:37:23 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado 8e3bd5
+2025-11-20 09:37:23 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-20 09:37:24 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable e73480
+2025-11-20 09:37:24 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:37:24 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-20 09:37:24 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable e73480
+2025-11-20 09:37:24 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-20 09:37:24 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol 02cb63
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado 1333bd
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:54:10 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado 1333bd
+2025-11-20 09:54:10 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable 8bd41d
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-20 09:54:10 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable 8bd41d
+2025-11-20 09:54:11 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-20 09:54:11 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-20 09:59:40 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol f65142
+2025-11-20 09:59:40 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:59:40 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado 8f0b86
+2025-11-20 09:59:40 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:59:40 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado 8f0b86
+2025-11-20 09:59:40 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-20 09:59:41 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable 4bf81a
+2025-11-20 09:59:41 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 09:59:41 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-20 09:59:41 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable 4bf81a
+2025-11-20 09:59:41 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-20 09:59:41 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-20 10:16:55 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol 3045d1
+2025-11-20 10:16:55 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 10:16:55 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado 3f1b8b
+2025-11-20 10:16:55 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 10:16:55 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado 3f1b8b
+2025-11-20 10:16:55 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-20 10:16:56 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable 0b0701
+2025-11-20 10:16:56 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 10:16:56 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-20 10:16:56 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable 0b0701
+2025-11-20 10:16:56 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-20 10:16:56 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999
+2025-11-20 10:23:58 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: Test Rol 50f39f
+2025-11-20 10:23:58 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 10:23:59 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolDuplicado 601f53
+2025-11-20 10:23:59 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 10:23:59 - rol_service - WARNING - [rol_service.py:19] - Intento de crear rol con nombre duplicado: RolDuplicado 601f53
+2025-11-20 10:23:59 - rol_service - ERROR - [rol_service.py:36] - Error de base de datos al crear rol: El nombre del rol ya existe
+2025-11-20 10:23:59 - rol_service - INFO - [rol_service.py:25] - Creando nuevo rol: RolBuscable 6d6ea5
+2025-11-20 10:23:59 - rol_service - INFO - [rol_service.py:33] - Rol creado (sin commit): 1
+2025-11-20 10:23:59 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 1
+2025-11-20 10:23:59 - rol_service - INFO - [rol_service.py:48] - Rol encontrado: RolBuscable 6d6ea5
+2025-11-20 10:23:59 - rol_service - INFO - [rol_service.py:43] - Buscando rol con ID: 9999
+2025-11-20 10:23:59 - rol_service - WARNING - [rol_service.py:50] - Rol no encontrado con ID: 9999

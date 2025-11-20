@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel
 from typing import Optional
 
 
@@ -22,4 +22,5 @@ class PermisoUpdate(PermisoBase):
 class Permiso(PermisoBase):
     id: int
 
-    model_config = ConfigDict(from_attributes=True)
+    class Config:
+        orm_mode = True

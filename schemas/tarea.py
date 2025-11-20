@@ -1,15 +1,16 @@
 # schemas/tarea.py
-from pydantic import BaseModel, Field
-from typing import Optional
 from datetime import datetime, date
-from .comentario_tarea import ComentarioTarea  # Importar schema de comentario
+from typing import Optional
+
+from pydantic import BaseModel, Field
+
+from .comentario_tarea import ComentarioTarea
 
 
-# Asumo que esta es su TareaBase
 class TareaBase(BaseModel):
     titulo: str
     descripcion: Optional[str] = None
-    categoria: str  # Asumiendo que usa el ENUM o lo valida en otro lugar
+    categoria: str
     fecha_limite: Optional[date] = None
     repeticion: Optional[str] = "ninguna"
     asignado_a: int
@@ -19,7 +20,7 @@ class TareaBase(BaseModel):
 
 
 class TareaCreate(TareaBase):
-    # 'creado_por' no va aquí, se obtiene del token (current_user)
+    # 'creado_por' se obtiene del usuario autenticado
     pass
 
 
@@ -36,10 +37,9 @@ class Tarea(TareaBase):
     fecha_asignacion: datetime
     tiempo_total_segundos: Optional[int] = None
     creado_por: Optional[int] = None
-
-    comentarios: list[ComentarioTarea] = (
-        []
-    )  # <-- ¡Esto expone los comentarios en el JSON!
+    tiempo_transcurrido_min: Optional[int] = None
+    tiempo_restante_min: Optional[int] = None
+    comentarios: list[ComentarioTarea] = Field(default_factory=list)
 
     class Config:
         orm_mode = True
@@ -47,5 +47,3 @@ class Tarea(TareaBase):
             datetime: lambda v: v.isoformat(),
             date: lambda v: v.isoformat(),
         }
-
-    # model_config = ConfigDict(from_attributes=True)

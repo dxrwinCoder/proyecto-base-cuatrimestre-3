@@ -222,3 +222,97 @@
 2025-11-18 00:55:44 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
 2025-11-18 00:55:45 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
 2025-11-18 00:55:45 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-18 18:14:31 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:14:31 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:18:25 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:18:25 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:20:13 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:20:13 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:22:04 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:22:04 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:23:15 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:23:15 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:27:10 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:27:10 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:27:12 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:27:12 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:27:16 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:27:16 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:27:21 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:27:21 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 18:29:12 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 18:29:12 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-18 21:25:21 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 2
+2025-11-18 21:25:21 - hogar_routes - INFO - [hogar_routes.py:67] - Hogar encontrado: Hogar de Admin Maestro
+2025-11-19 19:51:48 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin dcab93
+2025-11-19 19:51:48 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin dcab93
+2025-11-19 19:51:48 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta f94ed5
+2025-11-19 19:51:48 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta f94ed5
+2025-11-19 19:51:48 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta f94ed5
+2025-11-19 19:51:48 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-19 19:51:50 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-19 19:51:50 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-19 19:56:26 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin 57b6a4
+2025-11-19 19:56:26 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin 57b6a4
+2025-11-19 19:56:26 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 9e3b7a
+2025-11-19 19:56:26 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta 9e3b7a
+2025-11-19 19:56:26 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 9e3b7a
+2025-11-19 19:56:26 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-19 19:56:27 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-19 19:56:27 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-19 21:41:21 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin c211fc
+2025-11-19 21:41:21 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin c211fc
+2025-11-19 21:41:22 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta bcd5c5
+2025-11-19 21:41:22 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta bcd5c5
+2025-11-19 21:41:22 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta bcd5c5
+2025-11-19 21:41:22 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-19 21:41:23 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-19 21:41:23 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-20 09:28:45 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin 4b9039
+2025-11-20 09:28:45 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin 4b9039
+2025-11-20 09:28:46 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 1bc6e4
+2025-11-20 09:28:46 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta 1bc6e4
+2025-11-20 09:28:46 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 1bc6e4
+2025-11-20 09:28:46 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-20 09:28:47 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-20 09:28:47 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-20 09:37:03 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin 032aff
+2025-11-20 09:37:03 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin 032aff
+2025-11-20 09:37:04 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 6b8caf
+2025-11-20 09:37:04 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta 6b8caf
+2025-11-20 09:37:04 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 6b8caf
+2025-11-20 09:37:04 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-20 09:37:05 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-20 09:37:05 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-20 09:53:50 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin cec203
+2025-11-20 09:53:50 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin cec203
+2025-11-20 09:53:51 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 033db7
+2025-11-20 09:53:51 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta 033db7
+2025-11-20 09:53:51 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 033db7
+2025-11-20 09:53:51 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-20 09:53:52 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-20 09:53:52 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-20 09:59:20 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin 8ea1cc
+2025-11-20 09:59:20 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin 8ea1cc
+2025-11-20 09:59:21 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 96a4a2
+2025-11-20 09:59:21 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta 96a4a2
+2025-11-20 09:59:21 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 96a4a2
+2025-11-20 09:59:21 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-20 09:59:22 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-20 09:59:22 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-20 10:16:35 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin b1fada
+2025-11-20 10:16:35 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin b1fada
+2025-11-20 10:16:35 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta e7f10d
+2025-11-20 10:16:35 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta e7f10d
+2025-11-20 10:16:35 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta e7f10d
+2025-11-20 10:16:36 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-20 10:16:37 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-20 10:16:37 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999
+2025-11-20 10:23:39 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Admin 8dc1bc
+2025-11-20 10:23:39 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Admin 8dc1bc
+2025-11-20 10:23:39 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 198ea6
+2025-11-20 10:23:39 - hogar_routes - INFO - [hogar_routes.py:40] - Hogar creado exitosamente: Hogar Duplicado Ruta 198ea6
+2025-11-20 10:23:39 - hogar_routes - INFO - [hogar_routes.py:35] - Intentando crear hogar: Hogar Duplicado Ruta 198ea6
+2025-11-20 10:23:39 - hogar_routes - WARNING - [hogar_routes.py:44] - Error de validación al crear hogar: El nombre del hogar ya existe
+2025-11-20 10:23:41 - hogar_routes - INFO - [hogar_routes.py:59] - Buscando hogar con ID: 9999
+2025-11-20 10:23:41 - hogar_routes - WARNING - [hogar_routes.py:64] - Hogar no encontrado con ID: 9999

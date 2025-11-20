@@ -1283,3 +1283,592 @@
 2025-11-18 16:31:22 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Tareas'
 2025-11-18 16:36:48 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
 2025-11-18 16:36:48 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-18 18:14:31 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:14:31 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:14:31 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:14:31 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:14:31 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:14:31 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:18:25 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:18:25 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:18:25 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:18:25 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:18:25 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:18:25 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:20:13 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:20:13 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:20:13 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:20:13 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:20:13 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:20:13 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:22:04 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:22:04 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:22:04 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:22:04 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:22:04 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:22:04 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:23:15 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:23:15 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:23:15 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:23:15 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:23:15 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:23:15 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:10 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:10 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:27:10 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:10 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:27:10 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:10 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:12 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:12 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:12 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:27:12 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:12 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:27:12 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:16 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:16 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:27:16 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:27:16 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:16 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:16 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'leer'
+2025-11-18 18:27:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Tareas'
+2025-11-18 18:29:11 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:29:11 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 18:29:11 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 18:29:12 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'leer'
+2025-11-18 18:29:12 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:29:12 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 18:29:12 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Tareas'
+2025-11-18 18:29:12 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'leer'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Tareas'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-18 21:25:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 12:39:50 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'leer'
+2025-11-19 12:39:50 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Tareas'
+2025-11-19 12:41:06 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'leer'
+2025-11-19 12:41:06 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Tareas'
+2025-11-19 19:30:00 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'leer'
+2025-11-19 19:30:00 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Tareas'
+2025-11-19 19:51:37 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 19:51:37 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 19:51:37 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 19:51:37 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'actualizar'
+2025-11-19 19:51:38 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Atributos'
+2025-11-19 19:51:45 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'crear'
+2025-11-19 19:51:45 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-19 19:51:46 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'crear'
+2025-11-19 19:51:46 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-19 19:51:46 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'leer'
+2025-11-19 19:51:46 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-19 19:51:48 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:51:48 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:51:48 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:51:48 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:51:48 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:51:48 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:51:49 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:51:49 - permissions - WARNING - [permissions.py:58] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:51:49 - permissions - ERROR - [permissions.py:80] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-19 19:51:50 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-19 19:51:50 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-19 19:51:53 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:51:53 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:51:55 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:51:55 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:51:55 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:51:56 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:51:56 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:51:56 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:51:57 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:51:57 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:51:57 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'actualizar'
+2025-11-19 19:51:57 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Miembros'
+2025-11-19 19:51:58 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'actualizar'
+2025-11-19 19:51:58 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Miembros'
+2025-11-19 19:51:59 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:51:59 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:51:59 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'eliminar'
+2025-11-19 19:51:59 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'eliminar' en módulo 'Miembros'
+2025-11-19 19:52:00 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:52:00 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:52:00 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:52:00 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:52:01 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:52:01 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:52:01 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:52:01 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:52:02 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:52:02 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:52:04 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Modulos' para acción 'crear'
+2025-11-19 19:52:04 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Modulos'
+2025-11-19 19:52:05 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Permisos' para acción 'crear'
+2025-11-19 19:52:05 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Permisos'
+2025-11-19 19:52:08 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'crear'
+2025-11-19 19:52:08 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Tareas'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 19:56:18 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'actualizar'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Atributos'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'eliminar'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'eliminar' en módulo 'Atributos'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 19:56:19 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 19:56:24 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'crear'
+2025-11-19 19:56:24 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-19 19:56:25 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'crear'
+2025-11-19 19:56:25 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-19 19:56:25 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'leer'
+2025-11-19 19:56:25 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-19 19:56:26 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:56:26 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:56:26 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:56:26 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:56:26 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:56:26 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:56:27 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-19 19:56:27 - permissions - WARNING - [permissions.py:58] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 19:56:27 - permissions - ERROR - [permissions.py:80] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-19 19:56:27 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-19 19:56:27 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-19 19:56:30 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:56:30 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:56:31 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:56:31 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:56:32 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:56:32 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:56:33 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:56:33 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:56:33 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:56:33 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:56:34 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'actualizar'
+2025-11-19 19:56:34 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Miembros'
+2025-11-19 19:56:34 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'actualizar'
+2025-11-19 19:56:34 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Miembros'
+2025-11-19 19:56:35 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:56:35 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:56:36 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'eliminar'
+2025-11-19 19:56:36 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'eliminar' en módulo 'Miembros'
+2025-11-19 19:56:36 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:56:36 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:56:37 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 19:56:37 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 19:56:37 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:56:37 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:56:38 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:56:38 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:56:38 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 19:56:38 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 19:56:41 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Modulos' para acción 'crear'
+2025-11-19 19:56:41 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Modulos'
+2025-11-19 19:56:41 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Permisos' para acción 'crear'
+2025-11-19 19:56:41 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Permisos'
+2025-11-19 19:56:44 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'crear'
+2025-11-19 19:56:44 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Tareas'
+2025-11-19 20:07:51 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'crear'
+2025-11-19 20:07:51 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-19 20:08:09 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'leer'
+2025-11-19 20:08:09 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-19 20:08:15 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'leer'
+2025-11-19 20:08:15 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-19 21:41:13 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 21:41:13 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 21:41:13 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 21:41:13 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'crear'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Atributos'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'actualizar'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Atributos'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'eliminar'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'eliminar' en módulo 'Atributos'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Atributos' para acción 'leer'
+2025-11-19 21:41:14 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Atributos'
+2025-11-19 21:41:19 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'crear'
+2025-11-19 21:41:19 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-19 21:41:20 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'crear'
+2025-11-19 21:41:20 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-19 21:41:20 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Eventos' para acción 'leer'
+2025-11-19 21:41:20 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-19 21:41:21 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 21:41:21 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 21:41:22 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 21:41:22 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 21:41:22 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'crear'
+2025-11-19 21:41:22 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 21:41:23 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-19 21:41:23 - permissions - WARNING - [permissions.py:58] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-19 21:41:23 - permissions - ERROR - [permissions.py:80] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-19 21:41:23 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Hogares' para acción 'leer'
+2025-11-19 21:41:23 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-19 21:41:25 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Mensajes' para acción 'crear'
+2025-11-19 21:41:25 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Mensajes'
+2025-11-19 21:41:25 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Mensajes' para acción 'leer'
+2025-11-19 21:41:25 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Mensajes'
+2025-11-19 21:41:26 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 21:41:26 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 21:41:27 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 21:41:27 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 21:41:28 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 21:41:28 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 21:41:28 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 21:41:28 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 21:41:29 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 21:41:29 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 21:41:30 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'actualizar'
+2025-11-19 21:41:30 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Miembros'
+2025-11-19 21:41:30 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'actualizar'
+2025-11-19 21:41:30 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'actualizar' en módulo 'Miembros'
+2025-11-19 21:41:31 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 21:41:31 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 21:41:31 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'eliminar'
+2025-11-19 21:41:31 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'eliminar' en módulo 'Miembros'
+2025-11-19 21:41:32 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 21:41:32 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 21:41:33 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'leer'
+2025-11-19 21:41:33 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-19 21:41:33 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 21:41:33 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 21:41:33 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 21:41:34 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 21:41:34 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Miembros' para acción 'crear'
+2025-11-19 21:41:34 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Miembros'
+2025-11-19 21:41:36 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Modulos' para acción 'crear'
+2025-11-19 21:41:36 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Modulos'
+2025-11-19 21:41:37 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Permisos' para acción 'crear'
+2025-11-19 21:41:37 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Permisos'
+2025-11-19 21:41:40 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Tareas' para acción 'crear'
+2025-11-19 21:41:40 - permissions - INFO - [permissions.py:70] - Acceso autorizado: Usuario 1 tiene permisos para 'crear' en módulo 'Tareas'
+2025-11-19 23:05:40 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Mensajes' para acción 'crear'
+2025-11-19 23:05:40 - permissions - WARNING - [permissions.py:58] - Acceso denegado: Usuario 1 no tiene permisos para 'crear' en módulo 'Mensajes'
+2025-11-19 23:05:40 - permissions - ERROR - [permissions.py:80] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-19 23:05:47 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Mensajes' para acción 'crear'
+2025-11-19 23:05:47 - permissions - WARNING - [permissions.py:58] - Acceso denegado: Usuario 1 no tiene permisos para 'crear' en módulo 'Mensajes'
+2025-11-19 23:05:47 - permissions - ERROR - [permissions.py:80] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-19 23:06:18 - permissions - INFO - [permissions.py:49] - Verificando permisos para usuario 1 en módulo 'Mensajes' para acción 'crear'
+2025-11-19 23:06:18 - permissions - WARNING - [permissions.py:58] - Acceso denegado: Usuario 1 no tiene permisos para 'crear' en módulo 'Mensajes'
+2025-11-19 23:06:18 - permissions - ERROR - [permissions.py:80] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-19 23:12:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:18:36 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:20:22 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:24:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:24:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:25:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:35:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:35:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:47:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:48:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:49:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-19 23:58:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:02:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:03:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:09:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:10:22 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:42:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:44:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:47:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:48:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:49:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:49:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:51:16 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:51:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:52:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:52:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:52:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:57:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:58:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:58:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:58:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 00:58:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:17:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:44:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:46:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:49:45 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:49:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:50:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:50:21 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 01:50:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 02:16:08 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Miembros' para acción 'leer'
+2025-11-20 02:16:08 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-20 02:16:08 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:17:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 02:18:51 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Eventos' para acción 'leer'
+2025-11-20 02:18:51 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-20 02:18:51 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:19:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 02:19:35 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Miembros' para acción 'leer'
+2025-11-20 02:19:35 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-20 02:19:35 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:20:36 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Eventos' para acción 'leer'
+2025-11-20 02:20:36 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-20 02:20:36 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:20:46 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Eventos' para acción 'leer'
+2025-11-20 02:20:46 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-20 02:20:46 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:21:59 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Eventos' para acción 'leer'
+2025-11-20 02:21:59 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-20 02:21:59 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:25:48 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 02:28:08 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Eventos' para acción 'leer'
+2025-11-20 02:28:08 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Eventos'
+2025-11-20 02:28:08 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:34:51 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Miembros' para acción 'leer'
+2025-11-20 02:34:51 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-20 02:34:51 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 02:35:39 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Miembros' para acción 'leer'
+2025-11-20 02:35:39 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-20 02:35:39 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 09:28:36 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:36 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:44 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:44 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:45 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:46 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-20 09:28:46 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-20 09:28:46 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 09:28:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:50 - permissions - INFO - [permissions.py:56] - Verificando permisos para usuario 80 en módulo 'Miembros' para acción 'leer'
+2025-11-20 09:28:50 - permissions - WARNING - [permissions.py:65] - Acceso denegado: Usuario 80 no tiene permisos para 'leer' en módulo 'Miembros'
+2025-11-20 09:28:50 - permissions - ERROR - [permissions.py:87] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 09:28:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:53 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:53 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:57 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:57 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:28:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:29:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:29:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:29:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:36:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:05 - permissions - INFO - [permissions.py:59] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-20 09:37:05 - permissions - WARNING - [permissions.py:68] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-20 09:37:05 - permissions - ERROR - [permissions.py:90] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 09:37:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:16 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:16 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:18 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:22 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:37:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:52 - permissions - INFO - [permissions.py:59] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-20 09:53:52 - permissions - WARNING - [permissions.py:68] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-20 09:53:52 - permissions - ERROR - [permissions.py:90] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 09:53:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:53:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:54:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:21 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:21 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:22 - permissions - INFO - [permissions.py:59] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-20 09:59:22 - permissions - WARNING - [permissions.py:68] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-20 09:59:22 - permissions - ERROR - [permissions.py:90] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 09:59:22 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 09:59:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:36 - permissions - INFO - [permissions.py:59] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-20 10:16:36 - permissions - WARNING - [permissions.py:68] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-20 10:16:36 - permissions - ERROR - [permissions.py:90] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 10:16:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:44 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:45 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:45 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:48 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:16:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:40 - permissions - INFO - [permissions.py:59] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-20 10:23:40 - permissions - WARNING - [permissions.py:68] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-20 10:23:40 - permissions - ERROR - [permissions.py:90] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-20 10:23:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:44 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:48 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:53 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:53 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:23:57 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-20 10:24:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).

@@ -1,32 +1,106 @@
 version: "3.1"
 
 rules:
-  - rule: Responder a saludo
+  # Saludos y básicos
+  - rule: Saludo
     steps:
-    - intent: saludar
-    - action: utter_saludar
+      - intent: saludo
+      - action: utter_greet
 
-  - rule: Responder a despedida
+  - rule: Despedida
     steps:
-    - intent: despedirse
-    - action: utter_despedirse
+      - intent: despedida
+      - action: utter_goodbye
 
-  - rule: Responder a agradecimiento
+  - rule: Agradecimiento
     steps:
-    - intent: agradecer
-    - action: utter_agradecer
+      - intent: agradecimiento
+      - action: utter_thanks
 
-  - rule: Responder a pregunta 'eres un bot'
+  # FORMULARIO CREAR MIEMBRO
+  - rule: Activar formulario crear miembro
     steps:
-    - intent: soy_bot
-    - action: utter_soy_bot
+      - intent: crear_miembro
+      - action: member_creation_form
+      - active_loop: member_creation_form
 
-  - rule: Responder a insulto
+  - rule: Continuar formulario crear miembro
+    condition:
+      - active_loop: member_creation_form
     steps:
-    - intent: insultar
-    - action: utter_insulto_detectado
+      - action: member_creation_form
+      - active_loop: member_creation_form
 
-  - rule: Manejar baja confianza (Fallback)
+  - rule: Finalizar formulario crear miembro
+    condition:
+      - active_loop: member_creation_form
     steps:
-    - intent: nlu_fallback
-    - action: utter_no_entiendo
+      - action: member_creation_form
+      - active_loop: null
+      - action: action_confirm_member_created
+
+  # FORMULARIO ACTUALIZAR MIEMBRO
+  - rule: Activar actualizar miembro
+    steps:
+      - intent: actualizar_miembro
+      - action: member_update_form
+      - active_loop: member_update_form
+
+  - rule: Continuar actualizar miembro
+    condition:
+      - active_loop: member_update_form
+    steps:
+      - action: member_update_form
+      - active_loop: member_update_form
+
+  - rule: Finalizar actualizar miembro
+    condition:
+      - active_loop: member_update_form
+    steps:
+      - action: member_update_form
+      - active_loop: null
+      - action: action_confirm_member_updated
+
+  # CREAR COMENTARIO
+  - rule: Activar crear comentario tarea
+    steps:
+      - intent: crear_comentario
+      - action: create_task_comment_form
+      - active_loop: create_task_comment_form
+
+  - rule: Continuar crear comentario
+    condition:
+      - active_loop: create_task_comment_form
+    steps:
+      - action: create_task_comment_form
+      - active_loop: create_task_comment_form
+
+  - rule: Finalizar crear comentario
+    condition:
+      - active_loop: create_task_comment_form
+    steps:
+      - action: create_task_comment_form
+      - active_loop: null
+      - action: action_confirm_comment_created
+
+  # ACTUALIZAR COMENTARIO
+  - rule: Activar actualizar comentario
+    steps:
+      - intent: actualizar_comentario
+      - action: update_task_comment_form
+      - active_loop: update_task_comment_form
+
+  - rule: Continuar actualizar comentario
+    condition:
+      - active_loop: update_task_comment_form
+    steps:
+      - action: update_task_comment_form
+      - active_loop: update_task_comment_form
+
+  - rule: Finalizar actualizar comentario
+    condition:
+      - active_loop: update_task_comment_form
+    steps:
+      - action: update_task_comment_form
+      - active_loop: null
+      - action: action_confirm_comment_updated

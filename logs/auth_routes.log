@@ -59,3 +59,39 @@ WHERE hogares.id = %s]
 2025-11-18 00:55:41 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
 2025-11-18 00:55:41 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
 2025-11-18 12:58:07 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: adminmaestro@example.com
+2025-11-19 19:51:41 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-19 19:51:42 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-19 19:51:42 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-19 19:51:42 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-19 19:56:20 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-19 19:56:21 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-19 19:56:21 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-19 19:56:21 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-19 21:41:16 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-19 21:41:16 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-19 21:41:17 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-19 21:41:17 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-20 09:28:39 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-20 09:28:40 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-20 09:28:40 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-20 09:28:40 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-20 09:36:57 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-20 09:36:58 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-20 09:36:58 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-20 09:36:59 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-20 09:53:44 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-20 09:53:45 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-20 09:53:45 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-20 09:53:45 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-20 09:59:15 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-20 09:59:15 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-20 09:59:16 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-20 09:59:16 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-20 10:16:29 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-20 10:16:30 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-20 10:16:30 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-20 10:16:30 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-20 10:23:33 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: admin.fundador@example.com
+2025-11-20 10:23:34 - auth_routes - INFO - [auth_routes.py:41] - Miembro creado y transacción confirmada: hijo1@example.com
+2025-11-20 10:23:34 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-20 10:23:34 - auth_routes - WARNING - [auth_routes.py:61] - Error de validación al registrar miembro: El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.

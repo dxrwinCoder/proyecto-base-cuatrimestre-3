@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 from pydantic import ConfigDict
+from .rol import RolResponse
 
 
 class MiembroLogin(BaseModel):
@@ -24,9 +25,9 @@ class MiembroRegistro(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str = "bearer"
-    # rol: str
     id_miembro: int
     id_hogar: int
+    rol: Optional["RolResponse"] = None
 
     model_config = ConfigDict(from_attributes=True)
 

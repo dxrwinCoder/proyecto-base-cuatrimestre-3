@@ -1,239 +1,279 @@
-# probar_rasa_interactivo.py
-import httpx
-import asyncio
-import sys
-from rich import print
+from fastapi import FastAPI
+import requests
+from typing import Optional
+import logging
 
-# --- 1. CONFIGURACIÓN DEL SCRIPT ---
-# Asegúrese de que estas URLs coincidan con sus servidores en ejecución
-FASTAPI_URL = "http://localhost:8000"
-RASA_URL = "http://localhost:5005/webhooks/rest/webhook"
+# Config
+API_BASE = "http://localhost:8000"  # FastAPI
+RASA_ENDPOINT = "http://localhost:5005/webhooks/rest/webhook"
 
-# Credenciales de los usuarios de prueba (deben existir en su BD)
-ADMIN_CREDS = {"correo_electronico": "admin@example.com", "contrasena": "admin12345"}
-USER_CREDS = {"correo_electronico": "emanuel@ejemplo.com", "contrasena": "emanuel12345"}
-
-# --- 2. FUNCIONES DE CLIENTE ---
-
-
-def get_jwt_token(email, password):
-    """
-    Se autentica contra la API de FastAPI para obtener un token real.
-    """
-    print(
-        f"\n[INFO] Autenticando a [bold]{email}[/bold] contra FastAPI ({FASTAPI_URL})..."
-    )
-    try:
-        r = httpx.post(
-            f"{FASTAPI_URL}/auth/login",
-            json={"correo_electronico": email, "contrasena": password},
-        )
-        r.raise_for_status()
-        token = r.json().get("access_token")
-
-        if not token:
-            print(f"[ERROR] La respuesta de Login no contenía 'access_token'.")
-            return None
-
-        print(f"[SUCCESS] Token JWT obtenido para [bold]{email}[/bold].")
-        return token
-    except httpx.RequestError as e:
-        print(
-            f"[ERROR_FATAL] No se pudo conectar a la API de FastAPI en {FASTAPI_URL}."
-        )
-        print(f"       Detalle: {e}")
-        print("       (¿Está ejecutando 'uvicorn main:app'?)")
-        return None
-    except httpx.HTTPStatusError as e:
-        print(
-            f"[ERROR_FATAL] Falló el login en FastAPI (Status: {e.response.status_code})."
-        )
-        print(f"       Respuesta: {e.response.text}")
-        return None
-
-
-async def send_rasa_message(sender_id: str, message: str, token: str):
-    """
-    Envía un mensaje al servidor Rasa, incluyendo el token JWT
-    en el 'metadata' para que el Action Server lo use.
-    """
-    payload = {
-        "sender": sender_id,
-        "message": message,
-        "metadata": {"token": token},  # <-- ¡La clave de la integración!
-    }
-
-    print(f"\n[bold]>{'='*10} Enviando a Rasa ({sender_id}) {'='*10}>[/bold]")
-    print(f"[USER] {message}")
-
-    async with httpx.AsyncClient() as client:
-        try:
-            r = await client.post(RASA_URL, json=payload, timeout=20)
-            r.raise_for_status()
-
-            responses = r.json()
-            print("[BOT] Respuestas recibidas:")
-            if not responses:
-                print("   [italic](El bot no generó una respuesta visible)[/italic]")
-
-            for resp in responses:
-                print(f"   -> [green]{resp.get('text')}[/green]")
-            return responses
-
-        except httpx.RequestError as e:
-            print(f"[ERROR_FATAL] No se pudo conectar al servidor Rasa en {RASA_URL}.")
-            print(f"       Detalle: {e}")
-            print("       (¿Está ejecutando 'rasa run --enable-api'?)")
-        except httpx.HTTPStatusError as e:
-            print(
-                f"[ERROR_FATAL] El servidor Rasa devolvió un error (Status: {e.response.status_code})."
-            )
-            print(f"       Respuesta: {e.response.text}")
-
-
-# --- 3. LÓGICA DEL MENÚ INTERACTIVO "CALIBRADO" ---
-
-# Mapeo de intenciones para selección manual (¡Actualizado!)
-INTENT_MENU = {
-    # --- General / Chitchat ---
-    "1": ("saludar", "Hola"),
-    "2": ("despedirse", "Adiós"),
-    "3": ("ayuda", "¿Qué puedes hacer?"),
-    # --- Usuario (User) ---
-    "10": ("consultar_mis_tareas", "¿Cuáles son mis tareas?"),
-    "11": ("marcar_tarea_completada", "Marca la tarea {nombre} como completada"),
-    "12": (
-        "agregar_comentario_tarea",
-        "Agrega un comentario a la tarea {id}: {contenido}",
-    ),
-    "13": ("consultar_ranking_semanal", "¿Cómo va el ranking de la semana?"),
-    # --- Administrador (Admin) ---
-    "20": ("consultar_miembros_hogar", "¿Quiénes viven en mi hogar?"),
-    "21": ("admin_consultar_miembro_nombre", "Busca al miembro {nombre}"),
-    "22": ("admin_listar_tareas_miembro", "¿Qué tareas tiene {nombre}?"),
-    "23": ("admin_listar_tareas_estado", "Muéstrame las tareas {estado}"),
-    "24": (
-        "admin_crear_tarea_simple",
-        "Quiero crear una tarea",
-    ),  # ¡Inicia el Formulario!
-    # --- Fallback ---
-    "99": ("nlu_fallback", "cuánto es dos más dos"),
+# Credenciales para obtener tokens reales
+ADMIN_LOGIN = {
+    "correo_electronico": "adminmaestro@example.com",
+    "contrasena": "admin123",
+}
+MIEMBRO_LOGIN = {
+    "correo_electronico": "miembro@example.com",
+    "contrasena": "miembro123",
 }
 
+# Se llena tras login
+ADMIN_META: dict = {}
+MIEMBRO_META: dict = {}
 
-def print_menu():
-    """Imprime el menú de intenciones actualizado."""
-    print("\n--- [bold blue]Menú de Intenciones[/bold blue] ---")
-    print("  [bold]General:[/bold]")
-    print(f"  1. [cyan]saludar[/cyan] (Ej: '{INTENT_MENU['1'][1]}')")
-    print(f"  2. [cyan]despedirse[/cyan] (Ej: '{INTENT_MENU['2'][1]}')")
-    print(f"  3. [cyan]ayuda[/cyan] (Ej: '{INTENT_MENU['3'][1]}')")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
+log = logging.getLogger("rasa_tester")
 
-    print("  [bold]Acciones de Usuario:[/bold]")
-    print(f"  10. [cyan]consultar_mis_tareas[/cyan] (Ej: '{INTENT_MENU['10'][1]}')")
-    print(f"  11. [cyan]marcar_tarea_completada[/cyan] (Ej: '{INTENT_MENU['11'][1]}')")
-    print(f"  12. [cyan]agregar_comentario_tarea[/cyan] (Ej: '{INTENT_MENU['12'][1]}')")
+app = FastAPI(
+    title="Tester del Chatbot Rasa",
+    description="API y CLI para probar intenciones de Rasa",
+    version="1.1.2",
+)
+
+
+# ------------------ Utilidades ------------------
+def _login_y_meta(login_payload: dict) -> Optional[dict]:
+    """Hace login en la API para obtener token e IDs"""
+    try:
+        log.info(f"Autenticando contra API {API_BASE}/auth/login")
+        resp = requests.post(f"{API_BASE}/auth/login", json=login_payload, timeout=10)
+        if resp.status_code != 200:
+            log.error(f"Login falló {resp.status_code}: {resp.text}")
+            return None
+        data = resp.json()
+        token = data.get("access_token")
+        miembro_id = data.get("id_miembro") or data.get("id") or data.get("sub")
+        id_hogar = data.get("id_hogar")
+        id_rol = data.get("id_rol")
+        if not token or not miembro_id:
+            log.error("Login sin token o id_miembro en respuesta")
+            return None
+
+        # Si falta id_rol o id_hogar, consultar perfil
+        if id_rol is None or id_hogar is None:
+            try:
+                pf = requests.get(
+                    f"{API_BASE}/miembros/perfil",
+                    headers={"Authorization": f"Bearer {token}"},
+                    timeout=10,
+                )
+                if pf.status_code == 200:
+                    pdata = pf.json()
+                    id_hogar = id_hogar or pdata.get("id_hogar")
+                    id_rol = id_rol or pdata.get("id_rol")
+                    log.info("Perfil consultado para completar id_hogar/id_rol")
+                else:
+                    log.warning(
+                        f"No se pudo leer perfil (status {pf.status_code}): {pf.text}"
+                    )
+            except Exception as e:
+                log.warning(f"No se pudo completar datos desde perfil: {e}")
+
+        return {
+            "token": token,
+            "id_miembro": miembro_id,
+            "id_hogar": id_hogar,
+            "id_rol": id_rol,
+        }
+    except Exception as e:
+        log.exception(f"Error en login: {e}")
+        return None
+
+
+# ------------------ Rasa ------------------
+def send_to_rasa(
+    message: str, sender: str = "tester_user", metadata: Optional[dict] = None
+):
+    payload = {"sender": sender, "message": message}
+    if metadata:
+        payload["metadata"] = metadata
+    log.info(f"→ Rasa msg: {payload}")
+    response = requests.post(RASA_ENDPOINT, json=payload)
+    try:
+        data = response.json()
+        log.info(f"← Rasa resp: {data}")
+        return data
+    except Exception:
+        log.error("No se pudo interpretar la respuesta de Rasa.")
+        return {"error": "No se pudo interpretar la respuesta de Rasa."}
+
+
+def _formatear_respuesta(resp):
+    """Devuelve estructura amigable para consola/cliente."""
+    if resp is None:
+        return {"status": "error", "texto": "Sin respuesta"}
+    if isinstance(resp, dict) and "error" in resp:
+        return {"status": "error", "texto": resp.get("error"), "raw": resp}
+    textos = []
+    if isinstance(resp, list):
+        for item in resp:
+            if isinstance(item, dict):
+                if "text" in item:
+                    textos.append(item["text"])
+                elif "custom" in item:
+                    textos.append(str(item["custom"]))
+    elif isinstance(resp, dict) and "text" in resp:
+        textos.append(resp["text"])
+    texto_final = " | ".join(textos) if textos else str(resp)
+    return {"status": "ok", "texto": texto_final, "raw": resp}
+
+
+# ------------------ API FastAPI ------------------
+@app.post("/send/")
+def send_message(text: str):
+    return send_to_rasa(text)
+
+
+@app.get("/menu")
+def menu():
+    opciones = {
+        "1": "Listar tareas hogar (admin)",
+        "2": "Crear tarea para miembro (admin)",
+        "3": "Crear evento (admin)",
+        "4": "Listar eventos hogar (admin)",
+        "5": "Listar notificaciones (admin)",
+        "10": "Consultar mis tareas (miembro)",
+        "11": "Consultar eventos hogar (miembro)",
+        "15": "Mis eventos mes actual (miembro)",
+        "16": "Mis eventos semana actual (miembro)",
+        "17": "Mis notificaciones (miembro)",
+        "18": "Detalle tiempos de mis tareas (miembro)",
+        "12": "Saludo (miembro)",
+        "13": "Despedida (miembro)",
+        "14": "Agradecimiento (miembro)",
+    }
+    return opciones
+
+
+@app.get("/run-test/{opcion}")
+def run_test(opcion: int):
+    pruebas = {
+        1: {"msgs": ["muestra todas las tareas del hogar"], "meta": ADMIN_META},
+        2: {
+            "msgs": [
+                "crea una tarea para el usuario 2",
+                "el título es Lavar platos",
+                "descríbela como limpiar cocina",
+            ],
+            "meta": ADMIN_META,
+        },
+        3: {
+            "msgs": [
+                "crea un evento",
+                "título Reunion semanal",
+                "fecha 2025-12-31T18:00:00",
+                "descripcion cerramos tareas",
+            ],
+            "meta": ADMIN_META,
+        },
+        4: {"msgs": ["muestra los eventos del hogar"], "meta": ADMIN_META},
+        5: {"msgs": ["listar notificaciones del hogar"], "meta": ADMIN_META},
+        10: {"msgs": ["qué tareas tengo"], "meta": MIEMBRO_META},
+        11: {"msgs": ["qué eventos hay en mi hogar"], "meta": MIEMBRO_META},
+        15: {"msgs": ["eventos que tengo este mes"], "meta": MIEMBRO_META},
+        16: {"msgs": ["eventos de esta semana en los que participo"], "meta": MIEMBRO_META},
+        17: {"msgs": ["muéstrame mis notificaciones"], "meta": MIEMBRO_META},
+        18: {"msgs": ["detalle de tiempo de mis tareas"], "meta": MIEMBRO_META},
+        12: {"msgs": ["hola"], "meta": MIEMBRO_META},
+        13: {"msgs": ["adiós"], "meta": MIEMBRO_META},
+        14: {"msgs": ["gracias"], "meta": MIEMBRO_META},
+    }
+
+    if opcion not in pruebas:
+        return {"error": "Opción no válida, revisa /menu"}
+
+    mensajes = pruebas[opcion]["msgs"]
+    meta = pruebas[opcion]["meta"]
+
+    respuestas = []
+    for msg in mensajes:
+        r = send_to_rasa(msg, metadata=meta)
+        respuestas.append({"enviado": msg, "respuesta": _formatear_respuesta(r)})
+
+    return respuestas
+
+
+# ------------------ CLI interactivo ------------------
+def menu_interactivo():
+    # Login automático para rellenar los meta
+    global ADMIN_META, MIEMBRO_META
+    ADMIN_META = _login_y_meta(ADMIN_LOGIN) or ADMIN_META
+    MIEMBRO_META = _login_y_meta(MIEMBRO_LOGIN) or MIEMBRO_META
+
+    roles = {"admin": ADMIN_META, "miembro": MIEMBRO_META}
+    print("Selecciona rol (admin/miembro). Otro valor = admin por defecto.")
+    rol = input("Rol: ").strip().lower() or "admin"
+    meta_sel = roles.get(rol, ADMIN_META)
+    log.info(f"Usando rol '{rol}' con meta: {meta_sel}")
+
     print(
-        f"  13. [cyan]consultar_ranking_semanal[/cyan] (Ej: '{INTENT_MENU['13'][1]}')"
+        """
+============================
+ TESTER DEL CHATBOT RASA
+============================
+Rol Admin:
+ 1. Listar tareas hogar
+ 2. Crear tarea para miembro
+ 3. Crear evento
+ 4. Listar eventos hogar
+ 5. Listar notificaciones
+
+Rol Miembro:
+ 10. Consultar mis tareas
+ 11. Consultar eventos hogar
+ 12. Saludo
+ 13. Despedida
+ 14. Agradecimiento
+ 15. Mis eventos mes actual
+ 16. Mis eventos semana actual
+ 17. Mis notificaciones
+ 18. Detalle tiempos de mis tareas
+
+0. Salir
+"""
     )
-
-    print("  [bold]Acciones de Administrador:[/bold]")
-    print(f"  20. [cyan]consultar_miembros_hogar[/cyan] (Ej: '{INTENT_MENU['20'][1]}')")
-    print(
-        f"  21. [cyan]admin_consultar_miembro_nombre[/cyan] (Ej: '{INTENT_MENU['21'][1]}')"
-    )
-    print(
-        f"  22. [cyan]admin_listar_tareas_miembro[/cyan] (Ej: '{INTENT_MENU['22'][1]}')"
-    )
-    print(
-        f"  23. [cyan]admin_listar_tareas_estado[/cyan] (Ej: '{INTENT_MENU['23'][1]}')"
-    )
-    print(f"  24. [cyan]admin_crear_tarea_simple[/cyan] (Ej: '{INTENT_MENU['24'][1]}')")
-
-    print("  [bold]Pruebas:[/bold]")
-    print(f"  99. [cyan]nlu_fallback[/cyan] (Ej: '{INTENT_MENU['99'][1]}')")
-    print("  0. Salir")
-
-
-async def main_interactive_test():
-    """Bucle principal del script de prueba."""
-
-    admin_token = get_jwt_token(
-        ADMIN_CREDS["correo_electronico"], ADMIN_CREDS["contrasena"]
-    )
-
-    # Corregir las credenciales del usuario de prueba
-    user_token = get_jwt_token(
-        USER_CREDS["correo_electronico"], USER_CREDS["contrasena"]
-    )
-
-    if not admin_token or not user_token:
-        print("\n[ERROR_FATAL] Faltan tokens para continuar. Saliendo.")
-        return
-
-    current_token = None
-    current_sender_id = None
 
     while True:
-        print("\n--- [bold blue]Selección de Perfil[/bold blue] ---")
-        print("1. Probar como Administrador (admin@example.com)")
-        print(f"2. Probar como Usuario ({USER_CREDS['correo_electronico']})")
-        print("0. Salir")
-        profile_choice = input("Seleccione un perfil para probar: ")
-
-        if profile_choice == "1":
-            current_token = admin_token
-            current_sender_id = "admin_tester"
-        elif profile_choice == "2":
-            current_token = user_token
-            current_sender_id = "user_tester"
-        elif profile_choice == "0":
-            break
-        else:
-            print("[yellow]Opción no válida.[/yellow]")
+        try:
+            opcion = int(input("Selecciona una opción: "))
+        except Exception:
+            print("Debe ser un número.")
             continue
 
-        print(f"[INFO] Perfil [bold]{current_sender_id}[/bold] seleccionado.")
+        if opcion == 0:
+            print("Saliendo...")
+            break
 
-        while True:
-            print_menu()
-            intent_choice = input(
-                f"Seleccione intención para '{current_sender_id}' (o 'm' para cambiar de perfil): "
-            )
-
-            if intent_choice == "0" or intent_choice.lower() == "exit":
-                print("[INFO] Saliendo del script de prueba...")
-                return
-            if intent_choice.lower() == "m" or intent_choice.lower() == "menu":
-                print("[INFO] Regresando al menú de perfil...")
-                break
-
-            if intent_choice not in INTENT_MENU:
-                print("[yellow]Opción de intención no válida.[/yellow]")
-                continue
-
-            intent_key, message_template = INTENT_MENU[intent_choice]
-            message_to_send = message_template
-
-            # --- ¡MANEJO DE ENTIDADES "CALIBRADO"! ---
-            if "{nombre}" in message_template:
-                nombre = input("   -> Ingrese entidad [nombre]: ")
-                message_to_send = message_to_send.replace("{nombre}", nombre)
-            if "{id}" in message_template:
-                id_tarea = input("   -> Ingrese entidad [id] de tarea: ")
-                message_to_send = message_to_send.replace("{id}", id_tarea)
-            if "{contenido}" in message_template:
-                contenido = input("   -> Ingrese entidad [contenido]: ")
-                message_to_send = message_to_send.replace("{contenido}", contenido)
-            if "{estado}" in message_template:
-                estado = input(
-                    "   -> Ingrese entidad [estado] (ej: completada, pendiente): "
-                )
-                message_to_send = message_to_send.replace("{estado}", estado)
-
-            await send_rasa_message(current_sender_id, message_to_send, current_token)
+        print("Ejecutando pruebas...")
+        try:
+            # Inyecta el meta seleccionado antes de ejecutar
+            if opcion in (1, 2, 3, 4, 5):
+                ADMIN_META.update(meta_sel or {})
+            else:
+                MIEMBRO_META.update(meta_sel or {})
+            resultado = run_test(opcion)  # Llama directo, sin HTTP local
+        except Exception as e:
+            log.exception("Error ejecutando prueba")
+            resultado = {"error": str(e)}
+        print(resultado)
+        print("\n----------------------------\n")
 
 
 if __name__ == "__main__":
-    print("[INFO] Iniciando Script de Pruebas Interactivas E2E para Rasa...")
-    asyncio.run(main_interactive_test())
+    import sys
+
+    # Ejecutar menú interactivo directo: python probar_rasa_interactivo.py menu
+    if len(sys.argv) > 1 and sys.argv[1].lower() == "menu":
+        menu_interactivo()
+    else:
+        import uvicorn
+
+        # Ejecutar el tester como mini API en puerto 8010
+        uvicorn.run(
+            app,
+            host="0.0.0.0",
+            port=8010,
+            reload=True,
+        )

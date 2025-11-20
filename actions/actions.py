@@ -1,496 +1,625 @@
-# actions/actions.py
-import jwt
-from typing import Any, Text, Dict, List
-from rasa_sdk import Action, Tracker, FormValidationAction
+import requests
+from typing import Any, Dict, Text, List
+from rasa_sdk import Action
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.types import DomainDict
 from rasa_sdk.events import SlotSet
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.orm import joinedload
+from typing import Dict, Text, Any
+from rasa_sdk import FormValidationAction
+from rasa_sdk.types import DomainDict
 
-# --- 1. IMPORTACIONES DE SU PROYECTO FASTAPI ---
-try:
-    from db.database import AsyncSessionLocal
-    from models.miembro import Miembro
-    from models.tarea import Tarea
-    from models.comentario_tarea import ComentarioTarea
-    from models.rol import Rol
-    from schemas.tarea import TareaCreate
-    from schemas.comentario_tarea import ComentarioTareaCreate
-
-    # Importar los servicios "calibrados"
-    from services.tarea_service import (
-        listar_tareas_por_miembro,
-        obtener_tarea_por_id,
-        actualizar_estado_tarea,
-        agregar_comentario_a_tarea,
-        crear_tarea as svc_crear_tarea,
-    )
-    from services.ranking_service import obtener_ranking_hogar
-    from services.miembro_service import (
-        listar_miembros_activos_por_hogar,
-        obtener_miembro_por_nombre,
-        listar_tareas_por_estado_y_hogar,
-    )
-
-except ImportError as e:
-    print(f"\n[ERROR DE ACCIÓN RASA] Faltan importaciones: {e}")
-    print(
-        "Asegúrese de ejecutar 'rasa run actions' desde la raíz 'app/' y que todos los servicios existan."
-    )
-    exit(1)
-
-# --- 2. CONFIGURACIÓN DE JWT Y SESIÓN DE BD ---
-SECRET_KEY = "supersecretkey"  # ¡Debe coincidir con su .env!
-ALGORITHM = "HS256"
+API_BASE = "http://127.0.0.1:8000"
+TIMEOUT = 10
 
 
-def get_db_session() -> AsyncSession:
-    """Crea una nueva sesión asíncrona de SQLAlchemy."""
-    return AsyncSessionLocal()
+def _auth_headers(tracker) -> Dict[str, str]:
+    """
+    Obtiene el token JWT adjuntado en metadata o slot 'token' para construir el header Authorization.
+    """
+    meta = tracker.latest_message.get("metadata", {}) if tracker and tracker.latest_message else {}
+    token = meta.get("token") or tracker.get_slot("token")
+    return {"Authorization": f"Bearer {token}"} if token else {}
 
 
-async def get_miembro_from_tracker(
-    tracker: Tracker, db: AsyncSession
-) -> Miembro | None:
-    """Decodifica el token JWT y obtiene el Miembro con su Rol."""
-    metadata = tracker.get_slot("session_started_metadata") or {}
-    token = metadata.get("token")
-    if not token:
-        print("[ERROR DE ACCIÓN RASA] No se recibió token en 'metadata'.")
-        return None
+def api_get(path: str, tracker, params: Dict = None):
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        miembro_id = payload.get("sub")
-
-        stmt = (
-            select(Miembro)
-            .options(joinedload(Miembro.rol))
-            .where(Miembro.id == int(miembro_id))
+        r = requests.get(
+            f"{API_BASE}{path}",
+            params=params,
+            headers=_auth_headers(tracker),
+            timeout=TIMEOUT,
         )
-        miembro = (await db.execute(stmt)).scalar_one_or_none()
-
-        if not miembro:
-            print(f"[ERROR DE ACCIÓN RASA] Miembro ID {miembro_id} no encontrado.")
-            return None
-        print(
-            f"[INFO DE ACCIÓN RASA] Miembro autenticado: {miembro.correo_electronico} (Rol: {miembro.rol.nombre})"
-        )
-        return miembro
-    except Exception as e:
-        print(f"[ERROR DE ACCIÓN RASA] Error de autenticación/BD: {e}")
+        return r
+    except Exception:
         return None
 
 
-# --- 3. ACCIONES DE USUARIO Y GENERALES ---
-
-
-class ActionConsultarMisTareas(Action):
-    def name(self) -> Text:
-        return "action_consultar_mis_tareas"
-
-    async def run(self, dispatcher, tracker, domain):
-        db = get_db_session()
-        try:
-            miembro = await get_miembro_from_tracker(tracker, db)
-            if not miembro:
-                dispatcher.utter_message(response="utter_error_accion")
-                return []
-
-            tareas = await listar_tareas_por_miembro(db, miembro.id)
-            if not tareas:
-                dispatcher.utter_message(
-                    text=f"¡Buenas noticias, {miembro.nombre_completo}! No tienes ninguna tarea pendiente. ¡A disfrutar!"
-                )
-            else:
-                response_text = f"¡Hola {miembro.nombre_completo}! Tienes {len(tareas)} tarea(s) pendiente(s). ¡Manos a la obra!\n"
-                for i, tarea in enumerate(tareas):
-                    response_text += f"\n{i+1}. *{tarea.titulo}* (Categoría: {tarea.categoria}, ID: {tarea.id})"
-                dispatcher.utter_message(text=response_text)
-        except Exception as e:
-            print(f"[ERROR] {self.name()}: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-        finally:
-            await db.close()
-        return []
-
-
-class ActionMarcarTareaCompletada(Action):
-    def name(self) -> Text:
-        return "action_marcar_tarea_completada"
-
-    async def run(self, dispatcher, tracker, domain):
-        db = get_db_session()
-        try:
-            miembro = await get_miembro_from_tracker(tracker, db)
-            if not miembro:
-                dispatcher.utter_message(response="utter_error_accion")
-                return []
-
-            tarea_nombre = next(tracker.get_latest_entity_values("tarea_nombre"), None)
-            if not tarea_nombre:
-                dispatcher.utter_message(
-                    text="¿Qué tarea deseas marcar como completada? (Dime el nombre)"
-                )
-                return []
-
-            stmt = select(Tarea).where(
-                Tarea.titulo.ilike(
-                    f"%{tarea_nombre}%"
-                ),  # Usar 'ilike' para no ser sensible a mayúsculas
-                Tarea.asignado_a == miembro.id,
-                Tarea.estado_actual != "completada",
-            )
-            tarea = (await db.execute(stmt)).scalars().first()
-
-            if not tarea:
-                dispatcher.utter_message(
-                    text=f"Lo siento, no encontré una tarea pendiente llamada '{tarea_nombre}' que esté asignada a ti."
-                )
-                return []
-
-            try:
-                await actualizar_estado_tarea(db, tarea.id, "completada", miembro.id)
-                await db.commit()
-                dispatcher.utter_message(
-                    text=f"¡Excelente trabajo, {miembro.nombre_completo}! He marcado la tarea '{tarea.titulo}' como completada. 🥳"
-                )
-            except Exception as e:
-                await db.rollback()
-                raise e
-        except Exception as e:
-            print(f"[ERROR] {self.name()}: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-        finally:
-            await db.close()
-        return []
-
-
-class ActionConsultarRankingSemanal(Action):
-    def name(self) -> Text:
-        return "action_consultar_ranking_semanal"
-
-    async def run(self, dispatcher, tracker, domain):
-        db = get_db_session()
-        try:
-            miembro = await get_miembro_from_tracker(tracker, db)
-            if not miembro:
-                dispatcher.utter_message(response="utter_error_accion")
-                return []
-
-            ranking = await obtener_ranking_hogar(db, miembro.id_hogar)
-
-            if not ranking:
-                dispatcher.utter_message(
-                    text="¡El ranking de esta semana aún está vacío! ¡Es hora de completar algunas tareas!"
-                )
-            else:
-                response_text = "¡Aquí está el podio de la semana para tu hogar! 🏆\n"
-                iconos = ["🥇", "🥈", "🥉"]
-                for i, entry in enumerate(ranking):
-                    miembro_ranking = entry.get("miembro")
-                    completadas = entry.get("tareas_completadas")
-                    icono = iconos[i] if i < 3 else "🏅"
-                    response_text += f"\n{icono} {miembro_ranking.nombre_completo} - {completadas} tarea(s)"
-                dispatcher.utter_message(text=response_text)
-        except Exception as e:
-            print(f"[ERROR] {self.name()}: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-        finally:
-            await db.close()
-        return []
-
-
-class ActionConsultarMiembrosHogar(Action):
-    def name(self) -> Text:
-        return "action_consultar_miembros_hogar"
-
-    async def run(self, dispatcher, tracker, domain):
-        db = get_db_session()
-        try:
-            miembro = await get_miembro_from_tracker(tracker, db)
-            if not miembro:
-                dispatcher.utter_message(response="utter_error_accion")
-                return []
-
-            miembros = await listar_miembros_activos_por_hogar(db, miembro.id_hogar)
-            if not miembros:
-                dispatcher.utter_message(
-                    text=f"Parece que eres el único miembro registrado en el hogar {miembro.id_hogar} por ahora."
-                )
-            else:
-                response_text = f"¡Claro! Los miembros activos en tu hogar (Hogar ID: {miembro.id_hogar}) son:\n"
-                for i, m in enumerate(miembros):
-                    response_text += f"\n- {m.nombre_completo} (Rol: {m.rol.nombre})"
-                dispatcher.utter_message(text=response_text)
-        except Exception as e:
-            print(f"[ERROR] {self.name()}: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-        finally:
-            await db.close()
-        return []
-
-
-# --- 4. ACCIONES DE ADMIN (¡NUEVAS!) ---
-
-
-class ActionAdminListarTareasMiembro(Action):
-    def name(self) -> Text:
-        return "action_admin_listar_tareas_miembro"
-
-    async def run(self, dispatcher, tracker, domain):
-        db = get_db_session()
-        try:
-            admin = await get_miembro_from_tracker(tracker, db)
-            if not admin or admin.rol.nombre != "Administrador":
-                dispatcher.utter_message(response="utter_no_es_admin")
-                return []
-
-            miembro_nombre = next(
-                tracker.get_latest_entity_values("miembro_nombre"), None
-            )
-            if not miembro_nombre:
-                dispatcher.utter_message(
-                    text="¿De qué miembro te gustaría ver las tareas?"
-                )
-                return []
-
-            miembro_buscado = await obtener_miembro_por_nombre(
-                db, miembro_nombre, admin.id_hogar
-            )
-            if not miembro_buscado:
-                dispatcher.utter_message(
-                    text=f"No encontré a un miembro llamado '{miembro_nombre}' en tu hogar."
-                )
-                return []
-
-            tareas = await listar_tareas_por_miembro(db, miembro_buscado.id)
-            if not tareas:
-                dispatcher.utter_message(
-                    text=f"¡Buenas noticias! Parece que {miembro_buscado.nombre_completo} no tiene tareas pendientes."
-                )
-            else:
-                response_text = f"¡Claro! Aquí están las {len(tareas)} tareas pendientes de {miembro_buscado.nombre_completo}:\n"
-                for i, tarea in enumerate(tareas):
-                    response_text += f"\n- *{tarea.titulo}* (Estado: {tarea.estado_actual}, ID: {tarea.id})"
-                dispatcher.utter_message(text=response_text)
-        except Exception as e:
-            print(f"[ERROR] {self.name()}: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-        finally:
-            await db.close()
-        return []
-
-
-class ActionAdminListarTareasEstado(Action):
-    def name(self) -> Text:
-        return "action_admin_listar_tareas_estado"
-
-    async def run(self, dispatcher, tracker, domain):
-        db = get_db_session()
-        try:
-            admin = await get_miembro_from_tracker(tracker, db)
-            if not admin or admin.rol.nombre != "Administrador":
-                dispatcher.utter_message(response="utter_no_es_admin")
-                return []
-
-            estado = next(tracker.get_latest_entity_values("estado_tarea"), "pendiente")
-
-            tareas = await listar_tareas_por_estado_y_hogar(db, estado, admin.id_hogar)
-
-            if not tareas:
-                dispatcher.utter_message(
-                    text=f"No encontré tareas con el estado '{estado}' en tu hogar."
-                )
-            else:
-                response_text = f"Encontré {len(tareas)} tareas en estado '{estado}':\n"
-                for tarea in tareas:
-                    nombre = (
-                        tarea.miembro_asignado.nombre_completo
-                        if hasattr(tarea, "miembro_asignado") and tarea.miembro_asignado
-                        else "N/A"
-                    )
-                    response_text += (
-                        f"\n- *{tarea.titulo}* (Asignada a: {nombre}, ID: {tarea.id})"
-                    )
-                dispatcher.utter_message(text=response_text)
-        except Exception as e:
-            print(f"[ERROR] {self.name()}: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-        finally:
-            await db.close()
-        return []
-
-
-# --- 5. FORMULARIO DE CREAR TAREA (¡NUEVO!) ---
-
-
-class ValidateCrearTareaForm(FormValidationAction):
-    """Valida los slots del formulario 'crear_tarea_form'."""
-
-    def name(self) -> Text:
-        return "validate_crear_tarea_form"
-
-    async def validate_slot_tarea_titulo(
-        self,
-        slot_value: Any,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: DomainDict,
-    ) -> Dict[Text, Any]:
-        if len(str(slot_value)) < 3:
-            dispatcher.utter_message(
-                text="El título parece muy corto. Intenta con uno más descriptivo (ej. 'Lavar los platos')."
-            )
-            return {"slot_tarea_titulo": None}
-        return {"slot_tarea_titulo": slot_value}
-
-    async def validate_slot_tarea_categoria(
-        self,
-        slot_value: Any,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: DomainDict,
-    ) -> Dict[Text, Any]:
-        # TODO: Cargar esto desde la API de Catálogos
-        categorias_validas = [
-            "limpieza",
-            "cocina",
-            "compras",
-            "mantenimiento",
-            "mascotas",
-            "jardineria",
-            "estudio",
-            "recados",
-            "organizacion",
-            "basura",
-        ]
-        if str(slot_value).lower() not in categorias_validas:
-            dispatcher.utter_message(
-                text=f"No reconozco la categoría '{slot_value}'. Las válidas son: {', '.join(categorias_validas)}"
-            )
-            return {"slot_tarea_categoria": None}
-        return {"slot_tarea_categoria": str(slot_value).lower()}
-
-    async def validate_slot_tarea_asignado_a(
-        self,
-        slot_value: Any,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: DomainDict,
-    ) -> Dict[Text, Any]:
-        db = get_db_session()
-        try:
-            admin = await get_miembro_from_tracker(tracker, db)
-            if not admin:
-                dispatcher.utter_message(response="utter_error_accion")
-                return {"slot_tarea_asignado_a": None}
-
-            miembro_asignado = await obtener_miembro_por_nombre(
-                db, str(slot_value), admin.id_hogar
-            )
-
-            if not miembro_asignado:
-                dispatcher.utter_message(
-                    text=f"No encontré a un miembro llamado '{slot_value}' en tu hogar. ¿Quieres intentar con otro nombre?"
-                )
-                return {"slot_tarea_asignado_a": None}
-
-            return {"slot_tarea_asignado_a": miembro_asignado.id}
-        except Exception as e:
-            print(f"[ERROR] validate_slot_tarea_asignado_a: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-            return {"slot_tarea_asignado_a": None}
-        finally:
-            await db.close()
-
-
-class ActionCrearTarea(Action):
-    """Acción final que guarda la tarea del formulario en la BD."""
-
-    def name(self) -> Text:
-        return "action_crear_tarea"
-
-    async def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> List[Dict[Text, Any]]:
-        db = get_db_session()
-        try:
-            admin = await get_miembro_from_tracker(tracker, db)
-            if not admin or admin.rol.nombre != "Administrador":
-                dispatcher.utter_message(response="utter_no_es_admin")
-                return []
-
-            titulo = tracker.get_slot("slot_tarea_titulo")
-            categoria = tracker.get_slot("slot_tarea_categoria")
-            asignado_a_id = tracker.get_slot("slot_tarea_asignado_a")
-
-            if not all([titulo, categoria, asignado_a_id]):
-                dispatcher.utter_message(
-                    text="Faltaron datos para crear la tarea. Por favor, cancelando."
-                )
-                return [
-                    SlotSet("slot_tarea_titulo", None),
-                    SlotSet("slot_tarea_categoria", None),
-                    SlotSet("slot_tarea_asignado_a", None),
-                ]
-
-            tarea_data = TareaCreate(
-                titulo=titulo,
-                categoria=categoria,
-                asignado_a=asignado_a_id,
-                id_hogar=admin.id_hogar,
-            )
-
-            try:
-                tarea = await svc_crear_tarea(db, tarea_data, admin.id)
-                await db.commit()
-                dispatcher.utter_message(
-                    text=f"¡Perfecto! He creado la tarea '{tarea.titulo}' (ID: {tarea.id}) y se la he asignado al miembro {asignado_a_id}."
-                )
-            except Exception as e:
-                await db.rollback()
-                raise e
-        except Exception as e:
-            print(f"[ERROR] {self.name()}: {e}")
-            dispatcher.utter_message(response="utter_error_bd")
-        finally:
-            await db.close()
-
-        return [
-            SlotSet("slot_tarea_titulo", None),
-            SlotSet("slot_tarea_categoria", None),
-            SlotSet("slot_tarea_asignado_a", None),
-        ]
-
-
-# --- 6. ACCIONES RESTANTES (A implementar) ---
-
-
-class ActionExplicarTarea(Action):
-    def name(self) -> Text:
-        return "action_explicar_tarea"
-
-    async def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message(
-            text="[ACCIÓN PENDIENTE] Aún no puedo explicar tareas."
+def api_post(path: str, tracker, body: Dict = None):
+    try:
+        r = requests.post(
+            f"{API_BASE}{path}",
+            json=body,
+            headers=_auth_headers(tracker),
+            timeout=TIMEOUT,
         )
+        return r
+    except Exception:
+        return None
+
+
+def api_put(path: str, tracker, body: Dict = None):
+    try:
+        r = requests.put(
+            f"{API_BASE}{path}",
+            json=body,
+            headers=_auth_headers(tracker),
+            timeout=TIMEOUT,
+        )
+        return r
+    except Exception:
+        return None
+
+
+def api_delete(path: str, tracker):
+    try:
+        r = requests.delete(
+            f"{API_BASE}{path}", headers=_auth_headers(tracker), timeout=TIMEOUT
+        )
+        return r
+    except Exception:
+        return None
+
+
+class ValidateMemberCreationForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_member_creation_form"
+
+    async def validate_member_email(
+        self, slot_value, dispatcher, tracker, domain
+    ) -> Dict[Text, Any]:
+        if "@" in slot_value:
+            return {"member_email": slot_value}
+        dispatcher.utter_message(text="El correo no es válido. Intenta nuevamente.")
+        return {"member_email": None}
+
+    async def validate_member_role(self, slot_value, dispatcher, tracker, domain):
+        valid_roles = ["1", "2"]
+        if slot_value in valid_roles:
+            return {"member_role": slot_value}
+        dispatcher.utter_message(text="El rol debe ser 1 (Admin) o 2 (Hijo).")
+        return {"member_role": None}
+
+    async def validate_member_home(self, slot_value, dispatcher, tracker, domain):
+        if slot_value.isnumeric():
+            return {"member_home": slot_value}
+        dispatcher.utter_message(text="El ID del hogar debe ser numérico.")
+        return {"member_home": None}
+
+
+class ValidateMemberUpdateForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_member_update_form"
+
+    async def validate_member_id(self, slot_value, dispatcher, tracker, domain):
+        if slot_value.isnumeric():
+            return {"member_id": slot_value}
+        dispatcher.utter_message(text="El ID del miembro debe ser numérico.")
+        return {"member_id": None}
+
+
+class ValidateCreateTaskCommentForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_create_task_comment_form"
+
+    async def validate_task_id(self, slot_value, dispatcher, tracker, domain):
+        if slot_value.isnumeric():
+            return {"task_id": slot_value}
+        dispatcher.utter_message(text="El ID de la tarea debe ser numérico.")
+        return {"task_id": None}
+
+    async def validate_comment_image(self, slot_value, dispatcher, tracker, domain):
+        if slot_value and not slot_value.startswith("http"):
+            dispatcher.utter_message(text="La URL debe iniciar con http o https.")
+            return {"comment_image": None}
+        return {"comment_image": slot_value}
+
+
+class ValidateUpdateTaskCommentForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_update_task_comment_form"
+
+    async def validate_comment_id(self, slot_value, dispatcher, tracker, domain):
+        return {"comment_id": slot_value if slot_value.isnumeric() else None}
+
+
+# ----------------------------
+# ACCIONES PARA MIEMBRO
+# ----------------------------
+
+
+class ActionGetMemberTasks(Action):
+    def name(self) -> Text:
+        return "action_get_member_tasks"
+
+    def run(self, dispatcher, tracker, domain):
+        resp = api_get("/tareas/mias/", tracker)
+        if not resp or resp.status_code != 200:
+            dispatcher.utter_message("No se pudo obtener tus tareas.")
+            return []
+        data = resp.json()
+        if not data:
+            dispatcher.utter_message("No tienes tareas registradas.")
+            return []
+        msg = "Tus tareas:" + "".join(
+            [f"\n• {t['titulo']} - {t['estado_actual']}" for t in data]
+        )
+        dispatcher.utter_message(msg)
         return []
 
 
-class ActionAgregarComentarioATarea(Action):
+class ActionCreateMemberTask(Action):
     def name(self) -> Text:
-        return "action_agregar_comentario_tarea"
+        return "action_create_member_task"
+
+    def run(self, dispatcher, tracker, domain):
+        titulo = tracker.get_slot("task_title")
+        descripcion = tracker.get_slot("task_description")
+        asignado_a = tracker.get_slot("member_id")
+        meta = tracker.latest_message.get("metadata", {}) if tracker.latest_message else {}
+        id_hogar = meta.get("id_hogar")
+
+        if not (titulo and asignado_a and id_hogar):
+            dispatcher.utter_message("Faltan datos para crear la tarea (título, asignado, hogar).")
+            return []
+
+        body = {
+            "titulo": titulo,
+            "descripcion": descripcion,
+            "categoria": "limpieza",
+            "repeticion": "ninguna",
+            "asignado_a": int(asignado_a),
+            "id_hogar": int(id_hogar),
+        }
+        resp = api_post("/tareas/", tracker, body)
+        if not resp or resp.status_code != 201:
+            dispatcher.utter_message("No se pudo crear la tarea.")
+        else:
+            dispatcher.utter_message(f"Tarea '{titulo}' creada correctamente.")
+        return []
+
+
+class ActionGetMemberEvents(Action):
+    def name(self) -> Text:
+        return "action_get_member_events"
+
+    def run(self, dispatcher, tracker, domain):
+        meta = tracker.latest_message.get("metadata", {}) if tracker.latest_message else {}
+        id_hogar = meta.get("id_hogar")
+        if not id_hogar:
+            dispatcher.utter_message("No pude identificar tu hogar.")
+            return []
+        resp = api_get(f"/eventos/hogar/{id_hogar}", tracker)
+        if not resp or resp.status_code != 200:
+            dispatcher.utter_message("No se pudieron obtener los eventos.")
+            return []
+        data = resp.json()
+        if not data:
+            dispatcher.utter_message("No tienes eventos programados.")
+            return []
+        msg = "Tus eventos:" + "".join([f"\n• {e['titulo']} - {e['fecha_hora']}" for e in data])
+        dispatcher.utter_message(msg)
+        return []
+
+
+# ----------------------------
+# ACCIONES PARA ADMINISTRADOR
+# ----------------------------
+
+
+class ActionAdminCreateTask(Action):
+    def name(self) -> Text:
+        return "action_admin_create_task"
+
+    def run(self, dispatcher, tracker, domain):
+        asignado_a = tracker.get_slot("assigned_to")
+        titulo = tracker.get_slot("task_title")
+        descripcion = tracker.get_slot("task_description")
+        meta = tracker.latest_message.get("metadata", {}) if tracker.latest_message else {}
+        id_hogar = meta.get("id_hogar")
+        if not (asignado_a and titulo and id_hogar):
+            dispatcher.utter_message("Faltan datos para asignar la tarea (destinatario, título, hogar).")
+            return []
+        body = {
+            "titulo": titulo,
+            "descripcion": descripcion,
+            "categoria": "limpieza",
+            "repeticion": "ninguna",
+            "asignado_a": int(asignado_a),
+            "id_hogar": int(id_hogar),
+        }
+        resp = api_post("/tareas/", tracker, body)
+        if not resp or resp.status_code != 201:
+            dispatcher.utter_message("No se pudo crear la tarea.")
+        else:
+            dispatcher.utter_message(f"Tarea asignada a {asignado_a} correctamente.")
+        return []
+
+
+class ActionAdminDeleteTask(Action):
+    def name(self) -> Text:
+        return "action_admin_delete_task"
+
+    def run(self, dispatcher, tracker, domain):
+        task_id = tracker.get_slot("task_id")
+        if not task_id:
+            dispatcher.utter_message("Debes indicar el ID de la tarea.")
+            return []
+        resp = api_delete(f"/tareas/{task_id}", tracker)
+        if not resp or resp.status_code not in (200, 204):
+            dispatcher.utter_message("No se pudo eliminar la tarea.")
+        else:
+            dispatcher.utter_message(f"Tarea {task_id} eliminada correctamente.")
+        return []
+
+
+class ActionAdminGetAllTasks(Action):
+    def name(self) -> Text:
+        return "action_admin_get_all_tasks"
+
+    def run(self, dispatcher, tracker, domain):
+        resp = api_get("/tareas/hogar/todas", tracker)
+        if not resp or resp.status_code != 200:
+            dispatcher.utter_message("No se pudieron obtener las tareas.")
+            return []
+        data = resp.json()
+        if not data:
+            dispatcher.utter_message("No hay tareas registradas.")
+            return []
+        msg = "Tareas del hogar:" + "".join(
+            [f"\n• {t['id']} - {t['titulo']} - {t['estado_actual']}" for t in data]
+        )
+        dispatcher.utter_message(msg)
+        return []
+
+
+class ActionAdminCreateEvent(Action):
+    def name(self) -> Text:
+        return "action_admin_create_event"
+
+    def run(self, dispatcher, tracker, domain):
+        titulo = tracker.get_slot("event_title")
+        fecha = tracker.get_slot("event_date")
+        descripcion = tracker.get_slot("event_description")
+        meta = tracker.latest_message.get("metadata", {}) if tracker.latest_message else {}
+        id_hogar = meta.get("id_hogar")
+        creado_por = meta.get("id_miembro")
+
+        if not (titulo and fecha and id_hogar and creado_por):
+            dispatcher.utter_message("Faltan datos para crear el evento (título, fecha, hogar).")
+            return []
+
+        body = {
+            "titulo": titulo,
+            "descripcion": descripcion,
+            "fecha_hora": fecha,
+            "duracion_min": 60,
+            "id_hogar": int(id_hogar),
+            "creado_por": int(creado_por),
+        }
+        resp = api_post("/eventos/", tracker, body)
+        if not resp or resp.status_code != 201:
+            dispatcher.utter_message("No se pudo crear el evento.")
+        else:
+            dispatcher.utter_message(f"Evento '{titulo}' creado correctamente.")
+        return []
+
+
+class ActionAdminDeleteEvent(Action):
+    def name(self) -> Text:
+        return "action_admin_delete_event"
+
+    def run(self, dispatcher, tracker, domain):
+        event_id = tracker.get_slot("event_id")
+        if not event_id:
+            dispatcher.utter_message("Debes indicar el ID del evento.")
+            return []
+        resp = api_delete(f"/eventos/{event_id}", tracker)
+        if not resp or resp.status_code not in (200, 204):
+            dispatcher.utter_message("No se pudo eliminar el evento.")
+        else:
+            dispatcher.utter_message(f"Evento {event_id} eliminado.")
+        return []
+
+
+# ==============================================================================
+# FORMULARIO: CREAR MIEMBRO
+# ==============================================================================
+
+
+class MemberCreationForm(Action):
+
+    def name(self):
+        return "member_creation_form"
 
     async def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message(
-            text="[ACCIÓN PENDIENTE] Aún no puedo agregar comentarios."
-        )
+
+        nombre = tracker.get_slot("member_fullname")
+        correo = tracker.get_slot("member_email")
+        contrasena = tracker.get_slot("member_password")
+        id_rol = tracker.get_slot("member_role")
+        id_hogar = tracker.get_slot("member_home")
+
+        missing = []
+        if not nombre:
+            missing.append("nombre completo")
+        if not correo:
+            missing.append("correo electrónico")
+        if not contrasena:
+            missing.append("contraseña")
+        if not id_rol:
+            missing.append("rol")
+        if not id_hogar:
+            missing.append("hogar")
+
+        if missing:
+            dispatcher.utter_message(text=f"Faltan datos: {', '.join(missing)}")
+            return []
+
+        payload = {
+            "nombre_completo": nombre,
+            "correo_electronico": correo,
+            "password": contrasena,
+            "id_rol": int(id_rol),
+            "id_hogar": int(id_hogar),
+        }
+
+        try:
+            response = requests.post(f"{BASE_URL}/miembros/create", json=payload)
+
+            if response.status_code == 200:
+                dispatcher.utter_message(text="Miembro creado correctamente.")
+            else:
+                dispatcher.utter_message(text="No se pudo crear el miembro.")
+
+        except Exception:
+            dispatcher.utter_message(text="Error al conectar con el servidor FastAPI.")
+
         return []
 
 
-# ... (y así sucesivamente para todas las 40+ acciones) ...
+# ==============================================================================
+# FORMULARIO: ACTUALIZAR MIEMBRO
+# ==============================================================================
+
+
+class MemberUpdateForm(Action):
+
+    def name(self):
+        return "member_update_form"
+
+    async def run(self, dispatcher, tracker, domain):
+
+        member_id = tracker.get_slot("member_id")
+        nombre = tracker.get_slot("member_fullname")
+        correo = tracker.get_slot("member_email")
+        id_rol = tracker.get_slot("member_role")
+
+        if not member_id:
+            dispatcher.utter_message(text="Debes indicar el ID del miembro.")
+            return []
+
+        payload = {}
+        if nombre:
+            payload["nombre_completo"] = nombre
+        if correo:
+            payload["correo_electronico"] = correo
+        if id_rol:
+            payload["id_rol"] = int(id_rol)
+
+        if not payload:
+            dispatcher.utter_message(text="No se proporcionaron datos para actualizar.")
+            return []
+
+        try:
+            response = requests.put(
+                f"{BASE_URL}/miembros/{member_id}/update", json=payload
+            )
+
+            if response.status_code == 200:
+                dispatcher.utter_message(text="Miembro actualizado correctamente.")
+            else:
+                dispatcher.utter_message(text="No se pudo actualizar el miembro.")
+
+        except Exception:
+            dispatcher.utter_message(text="Error al conectar con el servidor FastAPI.")
+
+        return []
+
+
+# ==============================================================================
+# ACCIÓN: ELIMINAR MIEMBRO
+# ==============================================================================
+
+
+class DeleteMember(Action):
+
+    def name(self):
+        return "delete_member"
+
+    async def run(self, dispatcher, tracker, domain):
+
+        member_id = tracker.get_slot("member_id")
+
+        if not member_id:
+            dispatcher.utter_message(
+                text="Debes indicar un ID de miembro para eliminarlo."
+            )
+            return []
+
+        try:
+            response = requests.delete(f"{BASE_URL}/miembros/{member_id}/delete")
+
+            if response.status_code == 200:
+                dispatcher.utter_message(text="Miembro eliminado exitosamente.")
+            else:
+                dispatcher.utter_message(text="No se logró eliminar el miembro.")
+
+        except Exception:
+            dispatcher.utter_message(text="Error al conectar con FastAPI.")
+
+        return []
+
+
+# ==============================================================================
+# ACCIÓN: LISTAR MIEMBROS
+# ==============================================================================
+
+
+class ListMembers(Action):
+
+    def name(self):
+        return "list_members"
+
+    async def run(self, dispatcher, tracker, domain):
+
+        try:
+            response = requests.get(f"{BASE_URL}/miembros/list")
+
+            if response.status_code != 200:
+                dispatcher.utter_message(
+                    text="No se pudo obtener la lista de miembros."
+                )
+                return []
+
+            data = response.json()
+            text = "Miembros registrados:\n\n"
+            for m in data:
+                text += (
+                    f"- {m['id']}: {m['nombre_completo']} ({m['correo_electronico']})\n"
+                )
+
+            dispatcher.utter_message(text=text)
+
+        except:
+            dispatcher.utter_message(text="No fue posible conectar con el servidor.")
+
+        return []
+
+
+# ==============================================================================
+# FORMULARIO: CREAR COMENTARIO EN TAREA
+# ==============================================================================
+
+
+class CreateTaskCommentForm(Action):
+
+    def name(self):
+        return "create_task_comment_form"
+
+    async def run(self, dispatcher, tracker, domain):
+
+        id_tarea = tracker.get_slot("task_id")
+        id_miembro = tracker.get_slot("member_id")
+        contenido = tracker.get_slot("comment_text")
+        url_imagen = tracker.get_slot("comment_image")
+
+        if not id_tarea or not id_miembro or not contenido:
+            dispatcher.utter_message(text="Faltan datos para crear el comentario.")
+            return []
+
+        payload = {
+            "id_tarea": int(id_tarea),
+            "id_miembro": int(id_miembro),
+            "contenido": contenido,
+            "url_imagen": url_imagen,
+        }
+
+        try:
+            response = requests.post(f"{BASE_URL}/comentarios/create", json=payload)
+
+            if response.status_code == 200:
+                dispatcher.utter_message(text="Comentario creado correctamente.")
+            else:
+                dispatcher.utter_message(text="No se pudo crear el comentario.")
+
+        except Exception:
+            dispatcher.utter_message(text="Error al conectar con FastAPI.")
+
+        return []
+
+
+# ==============================================================================
+# FORMULARIO: ACTUALIZAR COMENTARIO
+# ==============================================================================
+
+
+class UpdateTaskCommentForm(Action):
+
+    def name(self):
+        return "update_task_comment_form"
+
+    async def run(self, dispatcher, tracker, domain):
+
+        comment_id = tracker.get_slot("comment_id")
+        contenido = tracker.get_slot("comment_text")
+        url_imagen = tracker.get_slot("comment_image")
+
+        if not comment_id:
+            dispatcher.utter_message(text="Debes indicar el ID del comentario.")
+            return []
+
+        payload = {}
+        if contenido:
+            payload["contenido"] = contenido
+        if url_imagen:
+            payload["url_imagen"] = url_imagen
+
+        if not payload:
+            dispatcher.utter_message(text="No se enviaron cambios para actualizar.")
+            return []
+
+        try:
+            response = requests.put(
+                f"{BASE_URL}/comentarios/{comment_id}/update", json=payload
+            )
+
+            if response.status_code == 200:
+                dispatcher.utter_message(text="Comentario actualizado.")
+            else:
+                dispatcher.utter_message(text="No se pudo actualizar el comentario.")
+
+        except Exception:
+            dispatcher.utter_message(text="Error al conectar con FastAPI.")
+
+        return []
+
+
+# ==============================================================================
+# ACCIÓN: ELIMINAR COMENTARIO
+# ==============================================================================
+
+
+class DeleteComment(Action):
+
+    def name(self):
+        return "delete_comment"
+
+    async def run(self, dispatcher, tracker, domain):
+
+        comment_id = tracker.get_slot("comment_id")
+
+        if not comment_id:
+            dispatcher.utter_message(text="Indica el ID del comentario a eliminar.")
+            return []
+
+        try:
+            response = requests.delete(f"{BASE_URL}/comentarios/{comment_id}/delete")
+
+            if response.status_code == 200:
+                dispatcher.utter_message(text="Comentario eliminado.")
+            else:
+                dispatcher.utter_message(text="No se pudo eliminar el comentario.")
+
+        except:
+            dispatcher.utter_message(text="No fue posible conectar con FastAPI.")
+
+        return []

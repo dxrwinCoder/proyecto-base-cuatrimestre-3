@@ -24,5 +24,5 @@ class AtributoMiembro(AtributoMiembroBase):
 
     model_config = ConfigDict(from_attributes=True)
 
-    # class Config:
-    #     from_attributes = True
+    class Config:
+        orm_mode = True
