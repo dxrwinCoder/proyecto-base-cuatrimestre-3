@@ -1,0 +1,6 @@
+# Usa Python 3.10 en tu entorno virtual.
+rasa==3.6.20
+rasa-sdk==3.6.2
+spacy==3.7.2
+requests>=2.31.0,<3
+pydantic<2

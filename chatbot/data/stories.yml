@@ -1,0 +1,128 @@
+version: "3.1"
+
+stories:
+  # -------------------------
+  # SALUDOS Y FLUJO BÁSICO
+  # -------------------------
+
+  - story: saludo_basico
+    steps:
+      - intent: saludo
+      - action: utter_greet
+
+  - story: despedida
+    steps:
+      - intent: despedida
+      - action: utter_goodbye
+
+  - story: agradecimiento
+    steps:
+      - intent: agradecimiento
+      - action: utter_thanks
+
+  # -------------------------
+  # ADMIN - CREAR MIEMBRO
+  # -------------------------
+
+  - story: admin_crea_miembro
+    steps:
+      - intent: crear_miembro
+      - action: member_creation_form
+      - active_loop: member_creation_form
+      - intent: proporcionar_nombre
+      - action: member_creation_form
+      - intent: proporcionar_correo
+      - action: member_creation_form
+      - intent: proporcionar_password
+      - action: member_creation_form
+      - intent: proporcionar_rol
+      - action: member_creation_form
+      - intent: proporcionar_hogar
+      - action: member_creation_form
+      - active_loop: null
+      - action: action_confirm_member_created
+
+  # -------------------------
+  # ADMIN - ACTUALIZAR MIEMBRO
+  # -------------------------
+
+  - story: admin_actualiza_miembro
+    steps:
+      - intent: actualizar_miembro
+      - action: member_update_form
+      - active_loop: member_update_form
+      - intent: proporcionar_id
+      - action: member_update_form
+      - intent: proporcionar_nombre
+      - action: member_update_form
+      - intent: proporcionar_correo
+      - action: member_update_form
+      - intent: proporcionar_rol
+      - action: member_update_form
+      - active_loop: null
+      - action: action_confirm_member_updated
+
+  # -------------------------
+  # ADMIN - ELIMINAR MIEMBRO
+  # -------------------------
+
+  - story: admin_elimina_miembro
+    steps:
+      - intent: eliminar_miembro
+      - action: delete_member
+
+  # -------------------------
+  # ADMIN - LISTAR MIEMBROS
+  # -------------------------
+
+  - story: admin_lista_miembros
+    steps:
+      - intent: listar_miembros
+      - action: list_members
+
+  # -------------------------
+  # COMENTARIOS - CREAR
+  # -------------------------
+
+  - story: crear_comentario_tarea
+    steps:
+      - intent: crear_comentario
+      - action: create_task_comment_form
+      - active_loop: create_task_comment_form
+      - intent: proporcionar_id_tarea
+      - action: create_task_comment_form
+      - intent: proporcionar_id
+      - action: create_task_comment_form
+      - intent: proporcionar_texto_comentario
+      - action: create_task_comment_form
+      - intent: proporcionar_url_imagen
+      - action: create_task_comment_form
+      - active_loop: null
+      - action: action_confirm_comment_created
+
+  # -------------------------
+  # COMENTARIOS - ACTUALIZAR
+  # -------------------------
+
+  - story: actualizar_comentario
+    steps:
+      - intent: actualizar_comentario
+      - action: update_task_comment_form
+      - active_loop: update_task_comment_form
+      - intent: proporcionar_id_comentario
+      - action: update_task_comment_form
+      - intent: proporcionar_texto_comentario
+      - action: update_task_comment_form
+      - intent: proporcionar_url_imagen
+      - action: update_task_comment_form
+      - active_loop: null
+      - action: action_confirm_comment_updated
+
+  # -------------------------
+  # COMENTARIOS - ELIMINAR
+  # -------------------------
+
+  - story: eliminar_comentario
+    steps:
+      - intent: eliminar_comentario
+      - action: delete_comment

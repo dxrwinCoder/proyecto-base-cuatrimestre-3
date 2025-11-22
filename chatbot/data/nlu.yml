@@ -1,0 +1,428 @@
+version: "3.1"
+nlu:
+  ###########################################################
+  #                     INTENCIONES BÁSICAS                 #
+  ###########################################################
+
+  - intent: saludo
+    examples: |
+      - hola
+      - holaaa
+      - buenas
+      - ey hola
+      - qué tal
+      - hola hᴏᴍᴇᴛᴀsᴋs
+      - buen día
+      - buenas noches
+      - buenas tardes
+      - hey bot
+      - holi
+      - holita
+      - qué onda
+      - cómo andas
+      - cómo vas
+      - que mas
+      - hola máquina
+      - hola asistente
+
+  - intent: despedida
+    examples: |
+      - adiós
+      - bye
+      - chao
+      - nos vemos
+      - hasta luego
+      - hablamos después
+      - me voy
+      - gracias, chao
+      - eso era todo, adiós
+
+  - intent: agradecimiento
+    examples: |
+      - gracias
+      - muchísimas gracias
+      - gracias crack
+      - te lo agradezco
+      - mil gracias
+      - muy amable
+      - perfecto, gracias
+
+  - intent: ayuda
+    examples: |
+      - ayuda
+      - necesito ayuda
+      - puedes ayudarme?
+      - qué puedes hacer?
+
+  - intent: soy_bot
+    examples: |
+      - eres un bot?
+      - eres real?
+      - quién eres?
+      - qué tipo de asistente eres?
+      - eres humano?
+      - eres inteligente?
+      - qué puedes hacer?
+
+  - intent: afirmacion
+    examples: |
+      - sí
+      - sip
+      - claro
+      - obvio
+      - correcto
+      - afirmativo
+      - dale que sí
+      - por supuesto
+
+  - intent: negacion
+    examples: |
+      - no
+      - nop
+      - no quiero
+      - negativo
+      - para nada
+      - no es así
+
+  ###########################################################
+  #                 USUARIO – HIJO (OPERACIONES)            #
+  ###########################################################
+
+  - intent: consultar_mis_tareas
+    examples: |
+      - qué tareas tengo?
+      - muéstrame mis tareas
+      - cuáles son mis tareas
+      - tareas asignadas a mí
+      - qué tengo pendiente?
+      - mis tareas por favor
+      - dime las tareas que me tocan
+      - qué tareas debo hacer?
+
+  - intent: consultar_mis_tareas_hoy
+    examples: |
+      - qué tareas tengo hoy?
+      - qué hago hoy?
+      - tareas de hoy
+      - algo pendiente para hoy?
+      - qué debo hacer hoy?
+
+  - intent: consultar_mis_tareas_estado
+    examples: |
+      - mis tareas completadas
+      - mis tareas pendientes
+      - mis tareas sin hacer
+      - tareas que ya terminé
+      - muéstrame mis tareas en progreso
+      - ver mis tareas finalizadas
+
+  - intent: completar_tarea
+    examples: |
+      - ya terminé la tarea [lavar platos](tarea_titulo)
+      - ya completé [sacar la basura](tarea_titulo)
+      - completé mi tarea [guardar ropa](tarea_titulo)
+      - terminé [limpiar cocina](tarea_titulo)
+      - marca como completa [arreglar cama](tarea_titulo)
+
+  - intent: registrar_avance_tarea
+    examples: |
+      - avancé en [limpiar cuarto](tarea_titulo)
+      - ya hice una parte de la tarea [ordenar juguetes](tarea_titulo)
+      - progreso en la tarea [regar plantas](tarea_titulo)
+      - ya hice la mitad de [lavar baño](tarea_titulo)
+
+  - intent: explicar_mi_tarea
+    examples: |
+      - explícame mi tarea [lavar platos](tarea_titulo)
+      - qué debo hacer en [sacar basura](tarea_titulo)?
+      - no entiendo la tarea [ordenar cuarto](tarea_titulo)
+      - de qué trata [limpiar baño](tarea_titulo)
+      - dame instrucciones de la tarea [barrer patio](tarea_titulo)
+
+  - intent: comentar_mi_tarea
+    examples: |
+      - quiero dejar un comentario a mi tarea [lavar platos](tarea_titulo)
+      - quiero comentar mi tarea
+      - quiero agregar un comentario
+      - deja un comentario en [cocinar arroz](tarea_titulo)
+
+  - intent: ver_comentarios_mi_tarea
+    examples: |
+      - ver comentarios de mi tarea [lavar platos](tarea_titulo)
+      - tiene comentarios mi tarea?
+      - qué comentarios hay en mi tarea?
+      - muéstrame los comentarios de [sacar basura](tarea_titulo)
+
+  - intent: consultar_mi_ranking
+    examples: |
+      - cuál es mi puntuación?
+      - cómo voy en el ranking?
+      - en qué posición estoy?
+      - cuál es mi nivel?
+
+  - intent: consultar_ranking_semanal
+    examples: |
+      - ranking semanal
+      - quién va ganando esta semana?
+      - posiciones de esta semana
+      - muestra el ranking del hogar
+
+  ###########################################################
+  #                ADMIN – MIEMBROS DEL HOGAR               #
+  ###########################################################
+
+  - intent: admin_consultar_miembros_hogar
+    examples: |
+      - quiénes viven en mi hogar?
+      - lista de miembros del hogar
+      - quienes son los integrantes?
+      - muéstrame los usuarios del hogar
+      - quién es parte del hogar?
+
+  - intent: admin_consultar_miembro_por_nombre
+    examples: |
+      - información de [Juan](miembro_nombre)
+      - detalles del miembro [María](miembro_nombre)
+      - dime datos de [Pedro](miembro_nombre)
+      - quién es [Antonio](miembro_nombre)?
+
+  ###########################################################
+  #                 ADMIN – GESTIÓN DE TAREAS               #
+  ###########################################################
+
+  - intent: admin_crear_tarea_simple
+    examples: |
+      - quiero crear una tarea
+      - crear tarea nueva
+      - agregar una tarea
+      - nueva tarea
+      - crea una tarea simple
+
+  - intent: admin_crear_tarea_detallada
+    examples: |
+      - crear una tarea completa
+      - agregar una tarea detallada
+      - quiero una tarea con más datos
+      - crear tarea con fecha y asignado
+      - crear tarea avanzada
+
+  - intent: admin_listar_tareas_miembro
+    examples: |
+      - qué tareas tiene [Juan](miembro_nombre)
+      - tareas asignadas a [María](miembro_nombre)
+      - listar tareas de [Pedro](miembro_nombre)
+      - muéstrame lo que debe hacer [Ana](miembro_nombre)
+
+  - intent: admin_listar_tareas_estado
+    examples: |
+      - listar tareas completadas
+      - dame tareas pendientes
+      - tareas en progreso del hogar
+      - tareas finalizadas en la casa
+      - mostrar tareas sin terminar
+
+  - intent: admin_listar_todas_las_tareas
+    examples: |
+      - todas las tareas del hogar
+      - lista completa de tareas
+      - mostrar todas las tareas
+      - ver todas las tareas
+
+  - intent: admin_actualizar_tarea
+    examples: |
+      - actualizar la tarea [lavar platos](tarea_titulo)
+      - modificar tarea [sacar basura](tarea_titulo)
+      - quiero cambiar algo en [barrer patio](tarea_titulo)
+
+  - intent: admin_eliminar_tarea
+    examples: |
+      - eliminar la tarea [lavar platos](tarea_titulo)
+      - borra la tarea [sacar basura](tarea_titulo)
+      - quiero eliminar una tarea
+      - borrar tarea [regar plantas](tarea_titulo)
+
+  ###########################################################
+  #                 ADMIN – COMENTARIOS                     #
+  ###########################################################
+
+  - intent: admin_ver_comentarios_tarea
+    examples: |
+      - ver comentarios de la tarea [lavar platos](tarea_titulo)
+      - mostrar comentarios de [organizar cuarto](tarea_titulo)
+      - qué comentarios tiene [regar plantas](tarea_titulo)
+
+  - intent: admin_agregar_comentario_tarea
+    examples: |
+      - agregar comentario a [limpiar cocina](tarea_titulo)
+      - añadir comentario a la tarea
+      - deja un comentario en [barrer patio](tarea_titulo)
+      - comentar la tarea [ordenar cuarto](tarea_titulo)
+
+  ###########################################################
+  #                 ADMIN – EVENTOS                         #
+  ###########################################################
+
+  - intent: admin_crear_evento
+    examples: |
+      - crear un evento
+      - quiero agregar un evento
+      - nuevo evento
+      - registrar evento
+
+  - intent: admin_listar_eventos
+    examples: |
+      - mostrar eventos
+      - lista de eventos
+      - qué eventos hay?
+      - ver todos los eventos
+
+  - intent: admin_asociar_tarea_evento
+    examples: |
+      - asociar la tarea [limpiar baño](tarea_titulo) al evento [fiesta](evento_nombre)
+      - vincular tarea a evento
+      - unir tarea con evento
+      - enlazar [regar plantas](tarea_titulo) con el evento [cumpleaños](evento_nombre)
+
+  - intent: admin_listar_tareas_evento
+    examples: |
+      - tareas del evento [cumpleaños](evento_nombre)
+      - mostrar tareas asociadas al evento
+      - listar tareas de un evento
+
+  ###########################################################
+  #                    FECHAS Y TIEMPO                      #
+  ###########################################################
+
+  - intent: informar_fecha
+    examples: |
+      - para el [viernes](fecha)
+      - el día [15 de diciembre](fecha)
+      - el [2 de enero](fecha)
+      - el [3 de agosto](fecha)
+
+  - intent: informar_tiempo_relativo
+    examples: |
+      - para mañana
+      - pasado mañana
+      - esta semana
+      - el próximo mes
+      - el fin de semana
+
+  ###########################################################
+  #                     OUT OF SCOPE                        #
+  ###########################################################
+
+  - intent: out_of_scope
+    examples: |
+      - cuántos planetas hay?
+      - quién ganó el mundial?
+      - qué es la fotosíntesis?
+      - abre spotify
+      - súbeme el volumen
+      - quiero comprar un carro
+
+  ###########################################################
+  #                 INTENCIONES DE FORMULARIOS              #
+  ###########################################################
+
+  - intent: crear_miembro
+    examples: |
+      - quiero registrar un miembro
+      - crear miembro nuevo
+      - agrega un miembro
+
+  - intent: actualizar_miembro
+    examples: |
+      - quiero actualizar un miembro
+      - modificar datos de un miembro
+      - actualizar miembro existente
+
+  - intent: eliminar_miembro
+    examples: |
+      - eliminar miembro
+      - borrar un miembro
+      - quiero eliminar a un usuario
+
+  - intent: listar_miembros
+    examples: |
+      - listar miembros
+      - muestra los miembros
+      - ver miembros del hogar
+
+  - intent: crear_comentario
+    examples: |
+      - quiero crear un comentario
+      - agregar comentario a una tarea
+      - escribir comentario
+
+  - intent: actualizar_comentario
+    examples: |
+      - actualizar un comentario
+      - modificar comentario
+      - editar comentario
+
+  - intent: eliminar_comentario
+    examples: |
+      - eliminar un comentario
+      - borrar comentario
+      - quitar comentario
+
+  - intent: proporcionar_nombre
+    examples: |
+      - mi nombre es Juan Pérez
+      - se llama Ana López
+      - el nombre completo es Carlos Díaz
+
+  - intent: proporcionar_correo
+    examples: |
+      - el correo es prueba@correo.com
+      - mi email es usuario@example.com
+      - usa el correo demo@demo.com
+
+  - intent: proporcionar_password
+    examples: |
+      - la contraseña es 12345
+      - password temporal 98765
+      - usa la clave hogar2024
+
+  - intent: proporcionar_rol
+    examples: |
+      - el rol es 1
+      - será rol 2
+      - rol 1
+
+  - intent: proporcionar_hogar
+    examples: |
+      - el hogar es 10
+      - id de hogar 3
+      - pertenece al hogar 5
+
+  - intent: proporcionar_id
+    examples: |
+      - el id es 8
+      - usa el id 12
+      - sería el identificador 4
+
+  - intent: proporcionar_id_tarea
+    examples: |
+      - la tarea es la 7
+      - id de tarea 15
+      - usa la tarea 20
+
+  - intent: proporcionar_id_comentario
+    examples: |
+      - el comentario 9
+      - id de comentario 5
+      - comentario número 11
+
+  - intent: proporcionar_texto_comentario
+    examples: |
+      - escribe "bien hecho"
+      - el comentario es que falta poco
+      - pon que ya avanzamos
+
+  - intent: proporcionar_url_imagen
+    examples: |
+      - la imagen está en https://ejemplo.com/foto.png
+      - usa la url http://misitio.com/imagen.jpg
+      - aquí la foto: https://imgs.com/foto

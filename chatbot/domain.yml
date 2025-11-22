@@ -1,0 +1,215 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - agradecimiento
+  - ayuda
+  - soy_bot
+  - afirmacion
+  - negacion
+  - consultar_mis_tareas
+  - consultar_mis_tareas_hoy
+  - consultar_mis_tareas_estado
+  - completar_tarea
+  - registrar_avance_tarea
+  - explicar_mi_tarea
+  - comentar_mi_tarea
+  - ver_comentarios_mi_tarea
+  - consultar_mi_ranking
+  - consultar_ranking_semanal
+  - admin_consultar_miembros_hogar
+  - admin_consultar_miembro_por_nombre
+  - admin_crear_tarea_simple
+  - admin_crear_tarea_detallada
+  - admin_listar_tareas_miembro
+  - admin_listar_tareas_estado
+  - admin_listar_todas_las_tareas
+  - admin_actualizar_tarea
+  - admin_eliminar_tarea
+  - admin_ver_comentarios_tarea
+  - admin_agregar_comentario_tarea
+  - admin_crear_evento
+  - admin_listar_eventos
+  - admin_asociar_tarea_evento
+  - admin_listar_tareas_evento
+  - informar_fecha
+  - informar_tiempo_relativo
+  - out_of_scope
+  - crear_miembro
+  - actualizar_miembro
+  - eliminar_miembro
+  - listar_miembros
+  - crear_comentario
+  - actualizar_comentario
+  - eliminar_comentario
+  - proporcionar_nombre
+  - proporcionar_correo
+  - proporcionar_password
+  - proporcionar_rol
+  - proporcionar_hogar
+  - proporcionar_id
+  - proporcionar_id_tarea
+  - proporcionar_id_comentario
+  - proporcionar_texto_comentario
+  - proporcionar_url_imagen
+
+entities:
+  - tarea_titulo
+  - miembro_nombre
+  - evento_nombre
+  - fecha
+  - member_id
+  - task_id
+  - comment_id
+
+slots:
+  member_fullname:
+    type: text
+    influence_conversation: false
+  member_email:
+    type: text
+    influence_conversation: false
+  member_password:
+    type: text
+    influence_conversation: false
+  member_role:
+    type: text
+    influence_conversation: false
+  member_home:
+    type: text
+    influence_conversation: false
+  member_id:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: member_id
+  assigned_to:
+    type: text
+    influence_conversation: false
+  task_title:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tarea_titulo
+  task_description:
+    type: text
+    influence_conversation: false
+  task_id:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: task_id
+  comment_id:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: comment_id
+  comment_text:
+    type: text
+    influence_conversation: false
+  comment_image:
+    type: text
+    influence_conversation: false
+  event_title:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: evento_nombre
+  event_date:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: fecha
+  event_description:
+    type: text
+    influence_conversation: false
+
+forms:
+  member_creation_form:
+    required_slots:
+      - member_fullname
+      - member_email
+      - member_password
+      - member_role
+      - member_home
+  member_update_form:
+    required_slots:
+      - member_id
+      - member_fullname
+      - member_email
+      - member_role
+  create_task_comment_form:
+    required_slots:
+      - task_id
+      - member_id
+      - comment_text
+      - comment_image
+  update_task_comment_form:
+    required_slots:
+      - comment_id
+      - comment_text
+      - comment_image
+
+responses:
+  utter_greet:
+    - text: "¡Hola! Soy tu asistente de HomeTasks. ¿En qué te ayudo?"
+  utter_goodbye:
+    - text: "¡Hasta luego!"
+  utter_thanks:
+    - text: "¡Con gusto! ¿Hay algo más que pueda hacer?"
+  utter_ask_member_fullname:
+    - text: "¿Cuál es el nombre completo del miembro?"
+  utter_ask_member_email:
+    - text: "¿Cuál es el correo electrónico del miembro?"
+  utter_ask_member_password:
+    - text: "Indica la contraseña temporal para el miembro."
+  utter_ask_member_role:
+    - text: "¿Qué rol tendrá? Usa 1 para Admin o 2 para Hijo."
+  utter_ask_member_home:
+    - text: "¿Cuál es el ID del hogar?"
+  utter_ask_task_id:
+    - text: "¿Qué ID de tarea quieres usar?"
+  utter_ask_member_id:
+    - text: "Dime el ID del miembro."
+  utter_ask_comment_text:
+    - text: "¿Qué comentario deseas guardar?"
+  utter_ask_comment_image:
+    - text: "Comparte la URL de la imagen (opcional)."
+  utter_ask_comment_id:
+    - text: "¿Qué ID de comentario vas a modificar?"
+
+actions:
+  - validate_member_creation_form
+  - validate_member_update_form
+  - validate_create_task_comment_form
+  - validate_update_task_comment_form
+  - action_get_member_tasks
+  - action_create_member_task
+  - action_get_member_events
+  - action_admin_create_task
+  - action_admin_delete_task
+  - action_admin_get_all_tasks
+  - action_admin_create_event
+  - action_admin_delete_event
+  - action_confirm_member_created
+  - action_confirm_member_updated
+  - action_confirm_comment_created
+  - action_confirm_comment_updated
+  - member_creation_form
+  - member_update_form
+  - delete_member
+  - list_members
+  - create_task_comment_form
+  - update_task_comment_form
+  - delete_comment
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

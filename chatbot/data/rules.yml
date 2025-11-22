@@ -1,0 +1,106 @@
+version: "3.1"
+
+rules:
+  # Saludos y básicos
+  - rule: Saludo
+    steps:
+      - intent: saludo
+      - action: utter_greet
+
+  - rule: Despedida
+    steps:
+      - intent: despedida
+      - action: utter_goodbye
+
+  - rule: Agradecimiento
+    steps:
+      - intent: agradecimiento
+      - action: utter_thanks
+
+  # FORMULARIO CREAR MIEMBRO
+  - rule: Activar formulario crear miembro
+    steps:
+      - intent: crear_miembro
+      - action: member_creation_form
+      - active_loop: member_creation_form
+
+  - rule: Continuar formulario crear miembro
+    condition:
+      - active_loop: member_creation_form
+    steps:
+      - action: member_creation_form
+      - active_loop: member_creation_form
+
+  - rule: Finalizar formulario crear miembro
+    condition:
+      - active_loop: member_creation_form
+    steps:
+      - action: member_creation_form
+      - active_loop: null
+      - action: action_confirm_member_created
+
+  # FORMULARIO ACTUALIZAR MIEMBRO
+  - rule: Activar actualizar miembro
+    steps:
+      - intent: actualizar_miembro
+      - action: member_update_form
+      - active_loop: member_update_form
+
+  - rule: Continuar actualizar miembro
+    condition:
+      - active_loop: member_update_form
+    steps:
+      - action: member_update_form
+      - active_loop: member_update_form
+
+  - rule: Finalizar actualizar miembro
+    condition:
+      - active_loop: member_update_form
+    steps:
+      - action: member_update_form
+      - active_loop: null
+      - action: action_confirm_member_updated
+
+  # CREAR COMENTARIO
+  - rule: Activar crear comentario tarea
+    steps:
+      - intent: crear_comentario
+      - action: create_task_comment_form
+      - active_loop: create_task_comment_form
+
+  - rule: Continuar crear comentario
+    condition:
+      - active_loop: create_task_comment_form
+    steps:
+      - action: create_task_comment_form
+      - active_loop: create_task_comment_form
+
+  - rule: Finalizar crear comentario
+    condition:
+      - active_loop: create_task_comment_form
+    steps:
+      - action: create_task_comment_form
+      - active_loop: null
+      - action: action_confirm_comment_created
+
+  # ACTUALIZAR COMENTARIO
+  - rule: Activar actualizar comentario
+    steps:
+      - intent: actualizar_comentario
+      - action: update_task_comment_form
+      - active_loop: update_task_comment_form
+
+  - rule: Continuar actualizar comentario
+    condition:
+      - active_loop: update_task_comment_form
+    steps:
+      - action: update_task_comment_form
+      - active_loop: update_task_comment_form
+
+  - rule: Finalizar actualizar comentario
+    condition:
+      - active_loop: update_task_comment_form
+    steps:
+      - action: update_task_comment_form
+      - active_loop: null
+      - action: action_confirm_comment_updated
