@@ -2059,3 +2059,85 @@ WHERE roles.id = %s]
 2025-11-20 12:50:58 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: miembro 1
 2025-11-20 12:50:58 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: miembro 1
 2025-11-20 12:50:58 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 00:21:41 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: miembro@example.com
+2025-11-22 00:21:41 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: miembro 1
+2025-11-22 00:21:41 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: miembro 1
+2025-11-22 00:21:42 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 00:53:39 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: miembro@example.com
+2025-11-22 00:53:41 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: miembro 1
+2025-11-22 00:53:41 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: miembro 1
+2025-11-22 00:53:41 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: admin.fundador@example.com (Rol ID: 1)
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:99] - Iniciando flujo de registro de Administrador para: admin.fundador@example.com
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:62] - Asignando permisos totales al rol ID: 1
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:89] - Se asignaron 6 permisos nuevos al rol ID: 1.
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:219] - Miembro creado (sin commit): Admin Fundador (ID: 1)
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: Admin Fundador
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: hijo1@example.com (Rol ID: 2)
+2025-11-22 07:48:20 - auth_service - INFO - [auth_service.py:133] - Iniciando flujo de registro de Usuario para: hijo1@example.com
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:219] - Miembro creado (sin commit): Hijo 1 (ID: 1)
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: Hijo 1
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: hijo2@example.com (Rol ID: 2)
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:133] - Iniciando flujo de registro de Usuario para: hijo2@example.com
+2025-11-22 07:48:21 - auth_service - ERROR - [auth_service.py:225] - Error al crear miembro (rollback pendiente): El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: admin.fallido@example.com (Rol ID: 1)
+2025-11-22 07:48:21 - auth_service - WARNING - [auth_service.py:193] - Un Admin (rol 1) intentó registrarse con un 'id_hogar' explícito.
+2025-11-22 07:48:21 - auth_service - ERROR - [auth_service.py:225] - Error al crear miembro (rollback pendiente): El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: admin.servicio@example.com (Rol ID: 1)
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:99] - Iniciando flujo de registro de Administrador para: admin.servicio@example.com
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:62] - Asignando permisos totales al rol ID: 1
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:89] - Se asignaron 6 permisos nuevos al rol ID: 1.
+2025-11-22 07:48:21 - auth_service - INFO - [auth_service.py:219] - Miembro creado (sin commit): Admin Servicio Test (ID: 1)
+2025-11-22 07:48:22 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: hijo.servicio@example.com (Rol ID: 2)
+2025-11-22 07:48:22 - auth_service - INFO - [auth_service.py:133] - Iniciando flujo de registro de Usuario para: hijo.servicio@example.com
+2025-11-22 07:48:22 - auth_service - INFO - [auth_service.py:219] - Miembro creado (sin commit): Hijo Servicio Test (ID: 1)
+2025-11-22 07:48:22 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: admin.fallo@example.com (Rol ID: 1)
+2025-11-22 07:48:22 - auth_service - WARNING - [auth_service.py:193] - Un Admin (rol 1) intentó registrarse con un 'id_hogar' explícito.
+2025-11-22 07:48:22 - auth_service - ERROR - [auth_service.py:225] - Error al crear miembro (rollback pendiente): El registro de un Administrador no debe incluir un 'id_hogar'; el hogar se crea automáticamente.
+2025-11-22 07:48:22 - auth_service - INFO - [auth_service.py:173] - Iniciando registro para: hijo.fallo@example.com (Rol ID: 2)
+2025-11-22 07:48:22 - auth_service - INFO - [auth_service.py:133] - Iniciando flujo de registro de Usuario para: hijo.fallo@example.com
+2025-11-22 07:48:22 - auth_service - ERROR - [auth_service.py:225] - Error al crear miembro (rollback pendiente): El 'id_hogar' es obligatorio para registrar un miembro no-administrador.
+2025-11-22 07:48:39 - auth_service - INFO - [auth_service.py:62] - Asignando permisos totales al rol ID: 1
+2025-11-22 07:48:39 - auth_service - INFO - [auth_service.py:89] - Se asignaron 2 permisos nuevos al rol ID: 1.
+2025-11-22 09:00:40 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: adminmaestro@example.com
+2025-11-22 09:00:41 - auth_service - WARNING - [auth_service.py:44] - Contraseña incorrecta para el correo: adminmaestro@example.com
+2025-11-22 09:01:13 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: adminmaestro@example.com
+2025-11-22 09:01:14 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: Admin Maestro
+2025-11-22 09:01:14 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: Admin Maestro
+2025-11-22 09:01:14 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 09:38:53 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: adminmaestro@example.com
+2025-11-22 09:38:55 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: Admin Maestro
+2025-11-22 09:38:55 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: Admin Maestro
+2025-11-22 09:38:55 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 11:17:25 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: test@test.com
+2025-11-22 11:17:25 - auth_service - WARNING - [auth_service.py:40] - No se encontró ningún miembro con el correo: test@test.com
+2025-11-22 11:17:36 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: test@test.comtest@test.com
+2025-11-22 11:17:36 - auth_service - WARNING - [auth_service.py:40] - No se encontró ningún miembro con el correo: test@test.comtest@test.com
+2025-11-22 11:17:53 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: test@test.comtest@test.comtest@test.com
+2025-11-22 11:17:53 - auth_service - WARNING - [auth_service.py:40] - No se encontró ningún miembro con el correo: test@test.comtest@test.comtest@test.com
+2025-11-22 11:25:44 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: adminmaestro@example.com
+2025-11-22 11:25:45 - auth_service - WARNING - [auth_service.py:44] - Contraseña incorrecta para el correo: adminmaestro@example.com
+2025-11-22 11:25:50 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: adminmaestro@example.com
+2025-11-22 11:25:51 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: Admin Maestro
+2025-11-22 11:25:51 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: Admin Maestro
+2025-11-22 11:25:51 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 11:30:55 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: miembro@example.com
+2025-11-22 11:30:56 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: miembro 1
+2025-11-22 11:30:56 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: miembro 1
+2025-11-22 11:30:56 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 11:30:57 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: miembro@example.com
+2025-11-22 11:30:58 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: miembro 1
+2025-11-22 11:30:58 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: miembro 1
+2025-11-22 11:30:58 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 11:31:00 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: miembro@example.com
+2025-11-22 11:31:00 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: miembro 1
+2025-11-22 11:31:00 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: miembro 1
+2025-11-22 11:31:00 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente
+2025-11-22 12:13:04 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: adminmaestro@example.com
+2025-11-22 12:13:04 - auth_service - WARNING - [auth_service.py:44] - Contraseña incorrecta para el correo: adminmaestro@example.com
+2025-11-22 12:13:08 - auth_service - INFO - [auth_service.py:31] - Intentando autenticar al miembro con correo: adminmaestro@example.com
+2025-11-22 12:13:08 - auth_service - INFO - [auth_service.py:47] - Autenticación exitosa para el miembro: Admin Maestro
+2025-11-22 12:13:08 - auth_service - INFO - [auth_service.py:416] - Generando token de acceso para miembro: Admin Maestro
+2025-11-22 12:13:08 - auth_service - INFO - [auth_service.py:432] - Token de acceso generado exitosamente

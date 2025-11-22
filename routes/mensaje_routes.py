@@ -31,7 +31,6 @@ async def listar_mensajes(
     "/directo/{destinatario_id}",
     response_model=MensajeResponse,
     status_code=status.HTTP_201_CREATED,
-    dependencies=[Depends(require_permission("Mensajes", "crear"))],
 )
 async def enviar_directo(
     destinatario_id: int,
@@ -40,8 +39,14 @@ async def enviar_directo(
     current_user: Miembro = Depends(obtener_miembro_actual),
 ):
     # Forzar hogar y remitente desde el token/usuario
+    # Validar que se envíe dentro del mismo hogar
     if payload.id_hogar != current_user.id_hogar:
         raise HTTPException(status_code=403, detail="No puedes enviar a otro hogar")
+    destinatario = await db.get(Miembro, destinatario_id)
+    if not destinatario or destinatario.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=403, detail="Destinatario inválido o de otro hogar"
+        )
 
     try:
         mensaje = await enviar_mensaje_directo(
@@ -65,13 +70,17 @@ async def enviar_directo(
 @router.get(
     "/directo/{otro_id}",
     response_model=list[MensajeResponse],
-    dependencies=[Depends(require_permission("Mensajes", "leer"))],
 )
 async def conversacion_directa(
     otro_id: int,
     db: AsyncSession = Depends(get_db),
     current_user: Miembro = Depends(obtener_miembro_actual),
 ):
+    destinatario = await db.get(Miembro, otro_id)
+    if not destinatario or destinatario.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=403, detail="Destinatario inválido o de otro hogar"
+        )
     mensajes = await listar_conversacion_directa(
         db, current_user.id_hogar, current_user.id, otro_id
     )

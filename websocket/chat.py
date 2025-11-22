@@ -67,4 +67,8 @@ async def chat_websocket(websocket: WebSocket, token: str, destinatario_id: int)
                     continue
         except Exception:
             manager.disconnect(websocket, conv_key)
+            manager.mark_offline(miembro.id)
+        # al salir del loop limpiamos
+        manager.disconnect(websocket, conv_key)
+        manager.mark_offline(miembro.id)
         break

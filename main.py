@@ -6,15 +6,6 @@ from fastapi import WebSocket
 from db.database import engine, Base
 from contextlib import asynccontextmanager
 
-# from sqlalchemy.ext.asyncio import AsyncEngine
-# from models.hogar import Hogar
-# from models.rol import Rol
-# from models.modulo import Modulo
-# from models.permiso import Permiso
-# from models.miembro import Miembro
-# from models.tarea import Tarea
-# from models.mensaje import Mensaje
-# from models.evento import Evento
 from routes import (
     permiso_routes,
     tarea_routes,
@@ -26,6 +17,9 @@ from routes import (
     atributo_routes,
     miembro_routes,
     notificacion_routes,
+    assistant_routes,
+    assistant_ai_routes,
+    asistente_service_routes,
 )
 from websocket.chat import chat_websocket
 
@@ -96,6 +90,9 @@ app.include_router(modulo_routes.router)
 app.include_router(atributo_routes.router)
 app.include_router(miembro_routes.router)
 app.include_router(notificacion_routes.router)
+app.include_router(assistant_routes.router)
+app.include_router(assistant_ai_routes.router)
+app.include_router(asistente_service_routes.router)
 
 
 @app.get("/")
@@ -109,6 +106,8 @@ async def root():
 
 
 @app.websocket("/ws/chat/{destinatario_id}")
-async def websocket_chat_endpoint(websocket: WebSocket, destinatario_id: int, token: str):
+async def websocket_chat_endpoint(
+    websocket: WebSocket, destinatario_id: int, token: str
+):
     # token debe venir como query param ?token=...
     await chat_websocket(websocket, token, destinatario_id)

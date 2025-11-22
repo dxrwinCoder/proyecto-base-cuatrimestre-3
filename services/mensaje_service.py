@@ -142,3 +142,21 @@ async def listar_conversacion_directa(
     )
     result = await db.execute(stmt)
     return result.scalars().all()
+
+
+async def contar_mensajes_no_leidos(db: AsyncSession, miembro_id: int) -> int:
+    """
+    Cuenta los mensajes directos no leídos que tienen como destinatario al miembro indicado.
+    Útil para mostrar alertas en el asistente o el frontend.
+    """
+    stmt = (
+        select(Mensaje)
+        .where(
+            Mensaje.id_destinatario == miembro_id,
+            Mensaje.estado == 1,
+            Mensaje.leido == False,
+        )
+    )
+    result = await db.execute(stmt)
+    # Se usa count en Python para evitar depender de func.count y mantener coherencia con el resto del servicio
+    return len(result.scalars().all())

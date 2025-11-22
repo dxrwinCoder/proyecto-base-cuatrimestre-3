@@ -54,6 +54,20 @@ def require_permission(modulo_nombre: str, accion: str):
             # Permitir que un miembro consulte su propio perfil sin permisos explícitos
             if modulo_nombre == "Miembros" and accion == "leer":
                 return current_user
+            # Permitir leer eventos a miembros sin revisar permisos explícitos (mismo hogar se valida en rutas)
+            if modulo_nombre == "Eventos" and accion == "leer":
+                return current_user
+            # Rol 2 puede leer Eventos, Miembros y Tareas aunque no tenga permisos asignados en BD
+            if (
+                getattr(current_user, "id_rol", None) == 2
+                and modulo_nombre in {"Eventos", "Miembros", "Tareas"}
+                and accion == "leer"
+            ):
+                logger.info(
+                    "Acceso de lectura concedido por regla fija a rol 2 para %s",
+                    modulo_nombre,
+                )
+                return current_user
 
             # Registrar el intento de verificación de permisos
             logger.info(

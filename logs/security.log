@@ -5822,3 +5822,195 @@
 2025-11-20 12:50:58 - security - INFO - [security.py:33] - Contraseña verificada correctamente
 2025-11-20 12:50:58 - security - INFO - [security.py:44] - Generando token de acceso
 2025-11-20 12:50:58 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 00:21:41 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 00:21:41 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 00:21:41 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 00:21:42 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 00:53:40 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 00:53:41 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 00:53:41 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 00:53:41 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:18 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:18 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:18 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:18 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:18 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:18 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:18 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:18 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:19 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:19 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:19 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:19 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:20 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:20 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:20 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:20 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:20 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:21 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:21 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:21 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:21 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:21 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:22 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:22 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:23 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:23 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:23 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:23 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:23 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:24 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:24 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:24 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:24 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:24 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:24 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:24 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:25 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:25 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:25 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:25 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:25 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:26 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:26 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:26 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:26 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:26 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:26 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:26 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:27 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:27 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:27 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:27 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:28 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:28 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:28 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:28 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:28 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:28 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:29 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:29 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:29 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:29 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:29 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:30 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:30 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:30 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:30 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:30 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:30 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:30 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:30 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:30 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:31 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:31 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:31 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:31 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:31 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:31 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:32 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:32 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:32 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:32 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:32 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:33 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:33 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:33 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:33 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:33 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:33 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:33 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:33 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:34 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:34 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:34 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:34 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:34 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:34 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:34 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:34 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:35 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:35 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:35 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:35 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:35 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:35 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:36 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:36 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:36 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:36 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:36 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:36 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:36 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:37 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:37 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:37 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:37 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:37 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:37 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:38 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:38 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:38 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:38 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:38 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:38 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:39 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:39 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:39 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:39 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:39 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:40 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:40 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:40 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:40 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:40 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:40 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:40 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:41 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:41 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:41 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:41 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:41 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:42 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:43 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:43 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:43 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:43 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 07:48:44 - security - INFO - [security.py:14] - Generando hash de contraseña
+2025-11-22 07:48:44 - security - INFO - [security.py:21] - Hash de contraseña generado exitosamente
+2025-11-22 07:48:44 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 07:48:44 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 09:00:40 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 09:00:41 - security - WARNING - [security.py:35] - Verificación de contraseña fallida
+2025-11-22 09:01:13 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 09:01:14 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 09:01:14 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 09:01:14 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 09:38:54 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 09:38:55 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 09:38:55 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 09:38:55 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 11:25:44 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 11:25:45 - security - WARNING - [security.py:35] - Verificación de contraseña fallida
+2025-11-22 11:25:50 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 11:25:51 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 11:25:51 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 11:25:51 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 11:30:56 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 11:30:56 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 11:30:56 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 11:30:56 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 11:30:57 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 11:30:58 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 11:30:58 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 11:30:58 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 11:31:00 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 11:31:00 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 11:31:00 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 11:31:00 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
+2025-11-22 12:13:04 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 12:13:04 - security - WARNING - [security.py:35] - Verificación de contraseña fallida
+2025-11-22 12:13:08 - security - INFO - [security.py:30] - Verificando contraseña
+2025-11-22 12:13:08 - security - INFO - [security.py:33] - Contraseña verificada correctamente
+2025-11-22 12:13:08 - security - INFO - [security.py:44] - Generando token de acceso
+2025-11-22 12:13:08 - security - INFO - [security.py:50] - Token de acceso generado exitosamente
