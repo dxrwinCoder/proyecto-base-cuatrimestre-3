@@ -1177,3 +1177,1048 @@
 2025-11-22 12:37:29 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
 2025-11-22 12:37:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
 2025-11-22 12:37:29 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:01 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:01:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:04 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:04 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:04 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:04 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:10 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:01:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:12 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:12 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:12 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:12 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:14 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:14 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:27 - miembro_routes - INFO - [miembro_routes.py:146] - Buscando miembro con ID: 3
+2025-11-22 14:01:28 - miembro_routes - INFO - [miembro_routes.py:165] - Miembro encontrado: miembro 2
+2025-11-22 14:01:31 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:01:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:01:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:02:17 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:02:17 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:02:17 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:02:17 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:02:17 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:02:18 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:02:18 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:02:19 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:02:19 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:02:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:02:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:03:11 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:03:11 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:12:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:12:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:12:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:12:07 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:12:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:12:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:12:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:06 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:15:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:11 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:11 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:26 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:26 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:15:26 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:26 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:26 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:29 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:29 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:15:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:15:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:18:38 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:18:38 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:18:38 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:18:38 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:21:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:21:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:21:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:21:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:21:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:21:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:25:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:25:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:25:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:25:07 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:25:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:25:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:25:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:28:03 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:28:03 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:28:03 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:28:04 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:28:04 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:28:12 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:28:12 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:30:42 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:30:42 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:30:42 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:30:42 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:30:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:30:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:30:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:30:54 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:30:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:30:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:30:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:31:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:31:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:31:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:31:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:31:09 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:31:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:31:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:31:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:31:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:09 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:32:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:12 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:12 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:13 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:13 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:16 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:16 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:23 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:32:23 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:23 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:23 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:23 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:24 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:24 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:24 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:24 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:37 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:32:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:37 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:37 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:39 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:40 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:32:41 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:32:41 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:33:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:33:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:33:08 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:33:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:33:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:33:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:33:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:33:42 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:33:42 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:33:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:33:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:33:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:33:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:33:50 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:33:50 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:34:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:34:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:34:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:34:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:42 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:42 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:43 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:35:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:50 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:50 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:35:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:35:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:37:03 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:37:03 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:37:03 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:37:03 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:37:03 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:02 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:40:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:11 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:11 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:25 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:40:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:40:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:40:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:44:27 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:44:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:44:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:44:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:44:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:44:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:44:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:44:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:44:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:44:35 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:44:35 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:44:35 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:44:35 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:44:35 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:47:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:47:29 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:47:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:47:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:47:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:48:15 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:48:15 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:48:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:48:15 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:48:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:50:55 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:50:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:50:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:50:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:50:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:51:19 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:51:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:51:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:51:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:51:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:52:42 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:52:42 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:52:42 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:52:42 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:52:42 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:54:00 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:54:00 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:54:00 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:54:00 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:54:00 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:54:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:54:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:54:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:54:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:54:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:54:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:54:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:54:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:56:56 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:56:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:56:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:56:57 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:56:57 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:57:33 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:57:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:57:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:57:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:57:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:59:47 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 14:59:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:59:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 14:59:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 14:59:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:00:45 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:00:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:01:34 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 15:01:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:01:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:01:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:01:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:01:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:01:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:02:07 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 15:02:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:02:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:02:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:02:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:23:50 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 15:23:50 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:23:50 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:23:50 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:23:50 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:23:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:23:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:25:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:25:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:25:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:25:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:25:35 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:25:35 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:25:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:25:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:27:24 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:27:24 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:27:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:27:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:27:32 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:27:32 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:27:48 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:27:48 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:27:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:27:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:27:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:27:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:27:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:27:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:30:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:30:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:31:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:31:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:31:14 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 15:31:14 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:31:14 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:31:14 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:31:14 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:32:41 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:32:41 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:35:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:35:09 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 15:35:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:35:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:35:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:35:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:35:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:41:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:41:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:42:18 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:42:18 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:42:18 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:42:18 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:42:20 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 15:42:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:42:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:42:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:42:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:42:40 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:42:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 15:52:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 15:52:11 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:10:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:10:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:12:13 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:12:13 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:15:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:15:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:16:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:16:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:16:59 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:16:59 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:16:59 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:16:59 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:17:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:17:02 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:17:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:17:03 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:17:03 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:17:19 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:17:19 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:20:35 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:20:35 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:23:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:23:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:23:15 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:23:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:23:15 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:23:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:23:16 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:23:16 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:23:19 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:23:19 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:23:19 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:23:19 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:23:19 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:23:39 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:23:39 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:26:45 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:26:45 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:27:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:27:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:28:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:28:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:28:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:28:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:28:56 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:28:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:28:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:28:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:28:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:28:58 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:28:58 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:29:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:29:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:29:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:29:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:29:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:29:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:29:27 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:29:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:29:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:29:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:29:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:29:43 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:29:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:29:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:29:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:29:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:35 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:35 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:39 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:39 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:39 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:39 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:41 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:41 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:51 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:30:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:30:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:30:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:35:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:35:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:36:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:36:21 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:37:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:37:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:38:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:38:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:38:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:38:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:00 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:00 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:03 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:03 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:04 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:04 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:04 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:04 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:39:12 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:39:12 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:15 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:15 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:40:59 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:40:59 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:01 - miembro_routes - INFO - [miembro_routes.py:146] - Buscando miembro con ID: 3
+2025-11-22 16:41:01 - miembro_routes - INFO - [miembro_routes.py:165] - Miembro encontrado: miembro 2
+2025-11-22 16:41:04 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:04 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:04 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:41:04 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:04 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:08 - miembro_routes - INFO - [miembro_routes.py:146] - Buscando miembro con ID: 3
+2025-11-22 16:41:08 - miembro_routes - INFO - [miembro_routes.py:165] - Miembro encontrado: miembro 2
+2025-11-22 16:41:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:40 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:41:40 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:40 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:41:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:41:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:42:51 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 16:42:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:42:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:42:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:42:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:42:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:42:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:42:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:42:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:43:14 - miembro_routes - INFO - [miembro_routes.py:218] - Intentando actualizar miembro: 2
+2025-11-22 16:43:15 - miembro_routes - INFO - [miembro_routes.py:243] - Miembro actualizado exitosamente: 2
+2025-11-22 16:43:23 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:43:23 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:43:23 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:43:23 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:44:50 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:44:50 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:45:14 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:45:14 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:48:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:48:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:50:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:50:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:54:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:54:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:54:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:54:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:58:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:58:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:58:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:58:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:58:17 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:58:17 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 16:58:17 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 16:58:17 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:37 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:37 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:37 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:00:51 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:00:51 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:01:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:04:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:04:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:04:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:04:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:04:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:04:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:05:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:05:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:05:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:05:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:05:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:05:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:05:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:05:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:05:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:05:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:05:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:05:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:07:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:07:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:07:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:07:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:07:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:07:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:07:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:07:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:07:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:07:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:07:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:07:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:58 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:58 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:58 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:58 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:08:58 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:08:58 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:13 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:13 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:13 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:13 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:13 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:13 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:14 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:14 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:14 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:15 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:15 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:54 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:54 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:56 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:57 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:57 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:09:57 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:09:57 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:21 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:21 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:48 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:48 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:48 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:48 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:48 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:48 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:49 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:49 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:13:49 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:13:49 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:16:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:16:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:16:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:16:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:17:08 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:17:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:17:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:17:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:17:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:17:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:17:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:20:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:20:28 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:20:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:20:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:20:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:20:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:20:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:20:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:20:29 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:20:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:20:29 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:25:06 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:25:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:25:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:25:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:25:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:25:06 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:25:06 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:18 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:18 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:18 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:18 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:18 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:18 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:21 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:21 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:21 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:30 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:26:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:45 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:45 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:45 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:45 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:45 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:45 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:47 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:47 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:26:48 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:26:48 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:00 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:00 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:00 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:27:00 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:01 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:01 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:21 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:45 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:45 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:45 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:45 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:52 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:52 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:27:55 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:27:55 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:31:40 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:31:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:31:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:31:43 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:31:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:31:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:31:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:31:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:31:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:33:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:33:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:33:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:33:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:33:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:33:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:33:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:33:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:34:18 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:34:18 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:34:20 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:34:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:34:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:34:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:34:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:34:20 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:34:20 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:34:23 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:34:23 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:34:23 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:34:23 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:34:23 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:34:23 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:36:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:36:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:36:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:36:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:36:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:36:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:39:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:39:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:39:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:39:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:39:22 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:39:22 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:39:34 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-22 17:39:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:39:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:39:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:39:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-22 17:39:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-22 17:39:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 12:15:50 - miembro_routes - INFO - [miembro_routes.py:47] - Intentando crear miembro: Nuevo Miembro (Rol: 2)
+2025-11-26 12:15:50 - miembro_routes - INFO - [miembro_routes.py:58] - Miembro creado y transacción confirmada: Nuevo Miembro
+2025-11-26 12:15:51 - miembro_routes - INFO - [miembro_routes.py:128] - Solicitando lista de todos los miembros
+2025-11-26 12:15:52 - miembro_routes - INFO - [miembro_routes.py:146] - Buscando miembro con ID: 1
+2025-11-26 12:15:52 - miembro_routes - INFO - [miembro_routes.py:165] - Miembro encontrado: Test User
+2025-11-26 12:15:52 - miembro_routes - INFO - [miembro_routes.py:146] - Buscando miembro con ID: 999
+2025-11-26 12:15:52 - miembro_routes - WARNING - [miembro_routes.py:150] - Miembro no encontrado con ID: 999
+2025-11-26 12:15:53 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 1
+2025-11-26 12:15:53 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 1 miembros activos en el hogar 1
+2025-11-26 12:15:54 - miembro_routes - INFO - [miembro_routes.py:218] - Intentando actualizar miembro: 1
+2025-11-26 12:15:54 - miembro_routes - INFO - [miembro_routes.py:243] - Miembro actualizado exitosamente: 1
+2025-11-26 12:15:54 - miembro_routes - INFO - [miembro_routes.py:218] - Intentando actualizar miembro: 999
+2025-11-26 12:15:54 - miembro_routes - WARNING - [miembro_routes.py:222] - Miembro no encontrado para actualizar: 999
+2025-11-26 12:15:55 - miembro_routes - INFO - [miembro_routes.py:47] - Intentando crear miembro: Miembro a Eliminar (Rol: 2)
+2025-11-26 12:15:55 - miembro_routes - INFO - [miembro_routes.py:58] - Miembro creado y transacción confirmada: Miembro a Eliminar
+2025-11-26 12:15:55 - miembro_routes - INFO - [miembro_routes.py:265] - Intentando eliminar miembro: 2
+2025-11-26 12:15:55 - miembro_routes - INFO - [miembro_routes.py:286] - Miembro eliminado exitosamente: 2
+2025-11-26 12:15:56 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 1
+2025-11-26 12:15:56 - miembro_routes - INFO - [miembro_routes.py:337] - Solicitando miembros con rol: 1
+2025-11-26 12:15:57 - miembro_routes - INFO - [miembro_routes.py:47] - Intentando crear miembro: Primer Miembro (Rol: 2)
+2025-11-26 12:15:57 - miembro_routes - INFO - [miembro_routes.py:58] - Miembro creado y transacción confirmada: Primer Miembro
+2025-11-26 12:15:57 - miembro_routes - INFO - [miembro_routes.py:47] - Intentando crear miembro: Otro Miembro (Rol: 2)
+2025-11-26 12:15:57 - miembro_routes - WARNING - [miembro_routes.py:68] - Error de validación al crear miembro: El correo electrónico ya está registrado
+2025-11-26 12:15:58 - miembro_routes - WARNING - [miembro_routes.py:39] - Intento no autorizado de crear miembro en hogar 2 por Admin 1
+2025-11-26 22:57:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:09 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-26 22:57:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:19 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:19 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:19 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:19 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:19 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:19 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:30 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:30 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:58 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:58 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:58 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:58 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:58 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:58 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 22:57:59 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 22:57:59 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:01:36 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:01:36 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:01:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:01:37 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:01:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:01:37 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:01:37 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:01:38 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:01:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:01:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:02 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:02 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:03 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:03 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:05 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-26 23:04:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:05 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:05 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:07 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:07 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:04:11 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:04:11 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:29 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:29 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:31 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:31 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:33 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:33 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:38 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:39 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:39 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:39 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:43 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:43 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:44 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:44 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:05:46 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:05:46 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:06:24 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-26 23:06:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:06:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:06:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:06:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:06:25 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:06:25 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:06:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:06:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:06:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:06:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:06:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:06:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:06:34 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:06:34 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:08 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:08 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:09 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:09 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:10 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:10 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:27 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:27 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:27 - miembro_routes - INFO - [miembro_routes.py:319] - Solicitando cantidad de miembros para el hogar: 2
+2025-11-26 23:07:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:28 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:28 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:40 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:40 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:40 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:48 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:48 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:48 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:48 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2
+2025-11-26 23:07:49 - miembro_routes - INFO - [miembro_routes.py:194] - Listando miembros activos para el hogar ID: 2
+2025-11-26 23:07:49 - miembro_routes - INFO - [miembro_routes.py:196] - Se encontraron 3 miembros activos en el hogar 2

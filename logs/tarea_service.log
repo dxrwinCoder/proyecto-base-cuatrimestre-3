@@ -894,3 +894,417 @@
 2025-11-22 12:37:28 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
 2025-11-22 12:37:28 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
 2025-11-22 12:37:29 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:01:01 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:01:04 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:01:07 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 14:01:07 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:01:10 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:01:12 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:01:14 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 14:01:14 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:01:31 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:01:32 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:01:34 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
+2025-11-22 14:01:34 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
+2025-11-22 14:01:55 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 1
+2025-11-22 14:01:55 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 0 tareas activas para el miembro 1
+2025-11-22 14:01:55 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 1
+2025-11-22 14:01:55 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 0 tareas activas para el miembro 1
+2025-11-22 14:01:55 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 1
+2025-11-22 14:01:55 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 0 tareas activas para el miembro 1
+2025-11-22 14:02:17 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:02:18 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:02:25 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
+2025-11-22 14:02:25 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
+2025-11-22 14:03:11 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
+2025-11-22 14:03:11 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
+2025-11-22 14:11:02 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 1
+2025-11-22 14:11:02 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 0 tareas activas para el miembro 1
+2025-11-22 14:12:06 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
+2025-11-22 14:12:06 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
+2025-11-22 14:12:07 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:15:06 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:15:08 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:15:11 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 14:15:11 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:15:26 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:15:29 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:15:32 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 14:15:32 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:15:33 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:18:38 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:21:53 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:21:55 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 14:21:55 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:22:05 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 14:22:05 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 14:22:05 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 14:22:05 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 14:22:38 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 14:22:38 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 14:25:06 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 14:25:06 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:25:07 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:28:03 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:30:42 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:30:44 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 5
+2025-11-22 14:30:44 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:30:53 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:31:08 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:31:09 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:32:09 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:32:12 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:32:16 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 14:32:16 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:32:23 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:32:24 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:32:37 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:32:39 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:32:41 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 14:32:41 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:32:48 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 1
+2025-11-22 14:32:48 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 0 tareas activas para el miembro 1
+2025-11-22 14:32:48 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 1
+2025-11-22 14:32:48 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 0 tareas activas para el miembro 1
+2025-11-22 14:33:07 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 14:33:07 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:33:08 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:33:46 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:33:50 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 14:33:50 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:34:22 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 14:34:22 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 14:34:47 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:35:42 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:35:46 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:35:50 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 14:35:50 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:35:51 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:37:03 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:40:02 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:40:07 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:40:11 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 14:40:11 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:40:24 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 14:40:25 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 14:40:25 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:44:27 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:44:35 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:47:29 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:48:15 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:50:55 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:51:20 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:52:42 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:54:00 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:56:56 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:57:33 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 14:59:47 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:01:34 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:02:07 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:23:50 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:30:43 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 15:30:43 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 15:31:14 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:35:09 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:42:18 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:42:20 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 15:57:07 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 15:57:07 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:16:59 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:17:02 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:20:34 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:20:34 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:23:09 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:23:09 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:23:15 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:23:16 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
+2025-11-22 16:23:16 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
+2025-11-22 16:23:19 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:23:39 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:23:39 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:26:45 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:26:45 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:27:54 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:27:55 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:28:54 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:28:56 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:29:20 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:29:20 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:29:22 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:29:27 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:29:43 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:30:33 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:30:33 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:30:33 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:30:35 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:30:35 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:30:39 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:30:51 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:30:52 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:30:53 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:30:53 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:35:51 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:35:51 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:36:21 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:36:21 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:37:44 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:37:44 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:38:07 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:39:00 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:39:00 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:39:01 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:39:02 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:39:02 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:39:02 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:39:03 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:39:03 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:39:04 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:39:05 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:39:05 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:39:06 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:39:12 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:39:12 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:40:05 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:40:05 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:40:09 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:40:09 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:40:15 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:40:20 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 16:40:20 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 16:40:32 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:40:32 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 2 tareas activas para el miembro 2
+2025-11-22 16:40:59 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 16:40:59 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 16:41:04 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:41:08 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 16:41:08 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 16:41:09 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:41:40 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:42:51 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:43:23 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 16:44:28 - tarea_service - INFO - [tarea_service.py:28] - Creando tarea con datos: lavar la moto
+2025-11-22 16:44:28 - tarea_service - INFO - [tarea_service.py:50] - Tarea creada (sin commit) con ID: 9
+2025-11-22 16:44:50 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:44:51 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 16:45:13 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:45:14 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 16:50:31 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:50:31 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 16:54:44 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:54:44 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 16:58:07 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 16:58:07 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 16:58:17 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:00:08 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:00:37 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:00:51 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:00:51 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:01:07 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:01:07 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:01:09 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:01:25 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:01:30 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:01:30 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:01:30 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:01:31 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:01:31 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:01:31 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:04:52 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:05:01 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:05:05 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:07:05 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:07:54 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:08:08 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:08:10 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:08:58 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:08:58 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:09:01 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:09:01 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:09:02 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:09:13 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:09:13 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:09:14 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:09:14 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:09:54 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:09:55 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:09:55 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:09:55 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:09:56 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:09:56 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:09:56 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:13:20 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:13:20 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:13:48 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:17:08 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:20:28 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:25:06 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:26:18 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:26:18 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:26:21 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:26:27 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 7
+2025-11-22 17:26:27 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 17:26:30 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:26:45 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:26:45 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:26:47 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:26:48 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 9
+2025-11-22 17:26:48 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: lavar la moto
+2025-11-22 17:27:00 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 9
+2025-11-22 17:27:00 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: lavar la moto
+2025-11-22 17:27:00 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:27:22 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:27:22 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:27:44 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:27:45 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:27:51 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:27:55 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 17:27:55 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 17:28:51 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:28:51 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:31:30 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:31:30 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:31:40 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 6
+2025-11-22 17:31:40 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar el carro
+2025-11-22 17:31:44 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:33:22 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:33:25 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
+2025-11-22 17:33:25 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
+2025-11-22 17:34:18 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 8
+2025-11-22 17:34:18 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Lavar la moto
+2025-11-22 17:34:20 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:34:23 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-22 17:34:37 - tarea_service - INFO - [tarea_service.py:144] - Actualizando estado de tarea 9 a 'en_progreso' por miembro 2
+2025-11-22 17:34:37 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 9
+2025-11-22 17:34:37 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: lavar la moto
+2025-11-22 17:34:37 - tarea_service - INFO - [tarea_service.py:171] - Estado de tarea 9 actualizado (sin commit) a 'en_progreso'
+2025-11-22 17:34:37 - tarea_service - INFO - [tarea_service.py:184] - Notificación enviada (sin commit) por cambio de estado en tarea 9
+2025-11-22 17:36:30 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:36:30 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:39:22 - tarea_service - INFO - [tarea_service.py:91] - Listando tareas asignadas al miembro ID: 2
+2025-11-22 17:39:22 - tarea_service - INFO - [tarea_service.py:99] - Se encontraron 3 tareas activas para el miembro 2
+2025-11-22 17:39:34 - tarea_service - INFO - [tarea_service.py:373] - Admin listando TODAS las tareas del hogar 2
+2025-11-25 23:59:13 - tarea_service - INFO - [tarea_service.py:28] - Creando tarea con datos: Revisar inventario
+2025-11-25 23:59:13 - tarea_service - INFO - [tarea_service.py:50] - Tarea creada (sin commit) con ID: 1
+2025-11-25 23:59:13 - tarea_service - INFO - [tarea_service.py:144] - Actualizando estado de tarea 1 a 'en_progreso' por miembro 1
+2025-11-25 23:59:13 - tarea_service - INFO - [tarea_service.py:71] - Buscando tarea con ID: 1
+2025-11-25 23:59:13 - tarea_service - INFO - [tarea_service.py:82] - Tarea encontrada: Revisar inventario
+2025-11-25 23:59:13 - tarea_service - INFO - [tarea_service.py:171] - Estado de tarea 1 actualizado (sin commit) a 'en_progreso'
+2025-11-25 23:59:14 - tarea_service - INFO - [tarea_service.py:28] - Creando tarea con datos: Preparar sala
+2025-11-25 23:59:14 - tarea_service - INFO - [tarea_service.py:50] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:48:20 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea base
+2025-11-26 00:48:20 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:48:23 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea a borrar
+2025-11-26 00:48:23 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea rol2
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:145] - Actualizando estado de tarea 1 a 'completada' por miembro 3
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea rol2
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:166] - Tarea 1 completada en -17999 segundos
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:172] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-26 00:48:24 - tarea_service - INFO - [tarea_service.py:185] - Notificación enviada (sin commit) por cambio de estado en tarea 1
+2025-11-26 00:48:25 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea con comentario
+2025-11-26 00:48:25 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:48:58 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea base
+2025-11-26 00:48:58 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:48:59 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea a borrar
+2025-11-26 00:48:59 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea rol2
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:145] - Actualizando estado de tarea 1 a 'completada' por miembro 3
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea rol2
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:166] - Tarea 1 completada en -17999 segundos
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:172] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-26 00:49:00 - tarea_service - INFO - [tarea_service.py:185] - Notificación enviada (sin commit) por cambio de estado en tarea 1
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea con comentario
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea con comentario
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:231] - Agregando comentario a tarea 1
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea con comentario
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:259] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 00:49:01 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea con comentario
+2025-11-26 12:15:38 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea para Comentar
+2025-11-26 12:15:39 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:15:39 - tarea_service - INFO - [tarea_service.py:231] - Agregando comentario a tarea 1
+2025-11-26 12:15:39 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 12:15:39 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea para Comentar
+2025-11-26 12:15:39 - tarea_service - INFO - [tarea_service.py:259] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-26 12:15:43 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Preparar sala
+2025-11-26 12:15:43 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:04 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Lavar platos
+2025-11-26 12:16:04 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:05 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea base
+2025-11-26 12:16:05 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:06 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea a borrar
+2025-11-26 12:16:06 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea rol2
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:145] - Actualizando estado de tarea 1 a 'completada' por miembro 3
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea rol2
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:166] - Tarea 1 completada en -17999 segundos
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:172] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-26 12:16:07 - tarea_service - INFO - [tarea_service.py:185] - Notificación enviada (sin commit) por cambio de estado en tarea 1
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Tarea con comentario
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea con comentario
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:231] - Agregando comentario a tarea 1
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea con comentario
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:259] - Comentario y notificación creados (sin commit) para tarea 1
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 12:16:08 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Tarea con comentario
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Revisar inventario
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:145] - Actualizando estado de tarea 1 a 'en_progreso' por miembro 1
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Revisar inventario
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:172] - Estado de tarea 1 actualizado (sin commit) a 'en_progreso'
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Lavar platos
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:29] - Creando tarea con datos: Test
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:51] - Tarea creada (sin commit) con ID: 1
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:145] - Actualizando estado de tarea 1 a 'completada' por miembro 1
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 1
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Test
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:166] - Tarea 1 completada en -17999 segundos
+2025-11-26 12:16:09 - tarea_service - INFO - [tarea_service.py:172] - Estado de tarea 1 actualizado (sin commit) a 'completada'
+2025-11-26 12:16:10 - tarea_service - INFO - [tarea_service.py:92] - Listando tareas asignadas al miembro ID: 90
+2025-11-26 12:16:10 - tarea_service - INFO - [tarea_service.py:100] - Se encontraron 1 tareas activas para el miembro 90
+2025-11-26 22:57:09 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 22:57:19 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 22:57:58 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 22:57:59 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 9
+2025-11-26 22:57:59 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: lavar la moto
+2025-11-26 23:01:36 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 9
+2025-11-26 23:01:36 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: lavar la moto
+2025-11-26 23:01:37 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:01:43 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 9
+2025-11-26 23:01:43 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: lavar la moto
+2025-11-26 23:04:02 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:04:05 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:04:07 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:04:11 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 7
+2025-11-26 23:04:11 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Lavar el carro
+2025-11-26 23:04:49 - tarea_service - INFO - [tarea_service.py:92] - Listando tareas asignadas al miembro ID: 3
+2025-11-26 23:04:49 - tarea_service - INFO - [tarea_service.py:100] - Se encontraron 5 tareas activas para el miembro 3
+2025-11-26 23:05:29 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 7
+2025-11-26 23:05:29 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: Lavar el carro
+2025-11-26 23:05:31 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:05:46 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:06:25 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:06:27 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:06:34 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 9
+2025-11-26 23:06:34 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: lavar la moto
+2025-11-26 23:06:50 - tarea_service - INFO - [tarea_service.py:92] - Listando tareas asignadas al miembro ID: 3
+2025-11-26 23:06:50 - tarea_service - INFO - [tarea_service.py:100] - Se encontraron 5 tareas activas para el miembro 3
+2025-11-26 23:07:08 - tarea_service - INFO - [tarea_service.py:72] - Buscando tarea con ID: 9
+2025-11-26 23:07:08 - tarea_service - INFO - [tarea_service.py:83] - Tarea encontrada: lavar la moto
+2025-11-26 23:07:09 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:07:27 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2
+2025-11-26 23:07:48 - tarea_service - INFO - [tarea_service.py:421] - Admin listando TODAS las tareas del hogar 2

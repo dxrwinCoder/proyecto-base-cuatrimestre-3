@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 from db.database import get_db
-from schemas.evento import EventoCreate, Evento
+from schemas.evento import EventoCreate, Evento, EventoUpdate
 from services.evento_service import (
     crear_evento,
     listar_eventos_asignados_a_miembro,
@@ -15,6 +15,8 @@ from services.evento_service import (
     miembros_relacionados_a_evento,
     quitar_tarea_de_evento,
     obtener_evento,
+    actualizar_evento,
+    eliminar_evento,
 )
 from services.tarea_service import (
     asignar_tarea_a_evento,
@@ -23,6 +25,7 @@ from services.tarea_service import (
 from utils.auth import obtener_miembro_actual
 from utils.permissions import require_permission
 from models.miembro import Miembro
+from models.evento import Evento as EventoModel
 
 router = APIRouter(prefix="/eventos", tags=["Eventos"])
 
@@ -44,6 +47,84 @@ async def crear_evento_endpoint(
             detail=f"Error al crear evento: {str(e)}",
         )
 
+
+@router.put("/{evento_id}", response_model=Evento)
+async def actualizar_evento_endpoint(
+    evento_id: int,
+    updates: EventoUpdate,
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(require_permission("Eventos", "actualizar")),
+):
+    evento_db = await db.get(EventoModel, evento_id)
+    if not evento_db:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Evento no encontrado",
+        )
+
+    if current_user.id_rol != 1 and evento_db.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="No puedes modificar eventos de otro hogar",
+        )
+
+    try:
+        resultado = await actualizar_evento(
+            db, evento_id, updates.dict(exclude_unset=True)
+        )
+        if not resultado:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND, detail="Evento no encontrado"
+            )
+        await db.commit()
+        return resultado
+    except HTTPException:
+        await db.rollback()
+        raise
+    except Exception as e:
+        await db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error al actualizar evento: {str(e)}",
+        )
+
+
+@router.delete("/{evento_id}", response_model=dict)
+async def eliminar_evento_endpoint(
+    evento_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(require_permission("Eventos", "eliminar")),
+):
+    evento_db = await db.get(EventoModel, evento_id)
+    if not evento_db:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Evento no encontrado",
+        )
+
+    if current_user.id_rol != 1 and evento_db.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="No puedes eliminar eventos de otro hogar",
+        )
+
+    try:
+        eliminado = await eliminar_evento(db, evento_id)
+        if not eliminado:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND, detail="Evento no encontrado"
+            )
+        await db.commit()
+        return {"mensaje": "Evento eliminado", "id": evento_id}
+    except HTTPException:
+        await db.rollback()
+        raise
+    except Exception as e:
+        await db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error al eliminar evento: {str(e)}",
+        )
 
 @router.get("/hogar/actuales", response_model=list[Evento])
 async def eventos_mes_actual(

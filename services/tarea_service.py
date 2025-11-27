@@ -15,9 +15,10 @@ from uuid import uuid4
 from fastapi import UploadFile
 import base64
 from schemas.notificacion import NotificacionCreate
-from schemas.tarea import TareaCreate  # ¡Asumiendo que tiene TareaCreate!
+from schemas.tarea import TareaCreate, TareaUpdate  # ¡Asumiendo que tiene TareaCreate!
 from schemas.comentario_tarea import (
     ComentarioTareaCreate,
+    ComentarioTareaUpdate,
 )
 
 logger = setup_logger("tarea_service")
@@ -202,6 +203,27 @@ async def actualizar_estado_tarea(
         raise
 
 
+async def actualizar_tarea(db: AsyncSession, tarea_id: int, updates: TareaUpdate):
+    tarea = await db.get(Tarea, tarea_id)
+    if not tarea:
+        return None
+
+    update_data = updates.dict(exclude_unset=True)
+    for k, v in update_data.items():
+        setattr(tarea, k, v)
+
+    await db.flush()
+
+    # Evitar lazy-load en la respuesta
+    stmt = (
+        select(Tarea)
+        .where(Tarea.id == tarea_id)
+        .options(joinedload(Tarea.comentarios))
+    )
+    result = await db.execute(stmt)
+    return result.unique().scalar_one()
+
+
 async def agregar_comentario_a_tarea(
     db: AsyncSession, data: ComentarioTareaCreate, miembro_id: int
 ):
@@ -248,6 +270,21 @@ async def agregar_comentario_a_tarea(
     except Exception as e:
         logger.error(f"Error al agregar comentario: {str(e)}")
         raise
+
+
+async def actualizar_comentario_tarea(
+    db: AsyncSession, comentario_id: int, updates: ComentarioTareaUpdate
+):
+    comentario = await db.get(ComentarioTarea, comentario_id)
+    if not comentario:
+        return None
+
+    for k, v in updates.dict(exclude_unset=True).items():
+        setattr(comentario, k, v)
+
+    await db.flush()
+    await db.refresh(comentario)
+    return comentario
 
 
 async def agregar_comentario_con_imagen(
@@ -364,6 +401,17 @@ async def reasignar_miembro_tarea_evento(
         mensaje=f"Se te reasignó la tarea '{tarea.titulo}' del evento.",
     )
     await crear_notificacion(db, notif_data)
+    return tarea
+
+
+async def eliminar_tarea(db: AsyncSession, tarea_id: int):
+    tarea = await db.get(Tarea, tarea_id)
+    if not tarea:
+        return None
+
+    tarea.estado = False
+    await db.flush()
+    await db.refresh(tarea)
     return tarea
 
 

@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 from db.database import get_db
-from schemas.tarea import TareaCreate, TareaUpdateEstado, Tarea
+from schemas.tarea import TareaCreate, TareaUpdateEstado, Tarea, TareaUpdate
 from schemas.comentario_tarea import ComentarioTarea
 from services.tarea_service import (
     crear_tarea,
@@ -15,6 +15,8 @@ from services.tarea_service import (
     listar_tareas_en_proceso,
     actualizar_estado_tarea,
     agregar_comentario_con_imagen,
+    actualizar_tarea,
+    eliminar_tarea,
 )
 
 from datetime import date
@@ -25,6 +27,7 @@ from utils.auth import obtener_miembro_actual
 from utils.permissions import require_permission
 from utils.logger import setup_logger
 from datetime import datetime
+from models.tarea import Tarea as TareaModel
 
 logger = setup_logger("tarea_routes")
 
@@ -62,6 +65,49 @@ async def crear_tarea_endpoint(
         logger.error(f"Error inesperado al crear tarea: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e)
+        )
+
+
+@router.put(
+    "/{tarea_id}",
+    response_model=Tarea,
+    dependencies=[Depends(require_permission("Tareas", "actualizar"))],
+)
+async def actualizar_tarea_endpoint(
+    tarea_id: int,
+    updates: TareaUpdate,
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    tarea_db = await db.get(TareaModel, tarea_id)
+    if not tarea_db:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Tarea no encontrada"
+        )
+
+    if current_user.id_rol != 1 and tarea_db.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="No puedes modificar tareas de otro hogar",
+        )
+
+    try:
+        resultado = await actualizar_tarea(db, tarea_id, updates)
+        if not resultado:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND, detail="Tarea no encontrada"
+            )
+        await db.commit()
+        return resultado
+    except HTTPException:
+        await db.rollback()
+        raise
+    except Exception as e:
+        await db.rollback()
+        logger.error(f"Error al actualizar tarea {tarea_id}: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error interno",
         )
 
 
@@ -216,6 +262,47 @@ async def cambiar_estado_tarea(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Error interno"
         )
 
+
+@router.delete(
+    "/{tarea_id}",
+    response_model=dict,
+    dependencies=[Depends(require_permission("Tareas", "eliminar"))],
+)
+async def eliminar_tarea_endpoint(
+    tarea_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: Miembro = Depends(obtener_miembro_actual),
+):
+    tarea_db = await db.get(TareaModel, tarea_id)
+    if not tarea_db:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Tarea no encontrada"
+        )
+
+    if current_user.id_rol != 1 and tarea_db.id_hogar != current_user.id_hogar:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="No puedes eliminar tareas de otro hogar",
+        )
+
+    try:
+        resultado = await eliminar_tarea(db, tarea_id)
+        if not resultado:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND, detail="Tarea no encontrada"
+            )
+        await db.commit()
+        return {"mensaje": "Tarea eliminada", "id": tarea_id}
+    except HTTPException:
+        await db.rollback()
+        raise
+    except Exception as e:
+        await db.rollback()
+        logger.error(f"Error al eliminar tarea {tarea_id}: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error interno",
+        )
 
 @router.get("/miembro/{miembro_id}", response_model=list[Tarea])
 async def listar_tareas_de_miembro(

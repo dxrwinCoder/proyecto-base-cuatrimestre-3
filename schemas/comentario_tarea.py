@@ -9,6 +9,11 @@ class ComentarioTareaCreate(BaseModel):
     url_imagen: Optional[str] = None
 
 
+class ComentarioTareaUpdate(BaseModel):
+    contenido: Optional[str] = None
+    url_imagen: Optional[str] = None
+
+
 
 class ComentarioTarea(ComentarioTareaCreate):
     id: int

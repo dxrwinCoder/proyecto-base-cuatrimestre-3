@@ -18,8 +18,17 @@ class EventoCreate(EventoBase):
     pass
 
 
+class EventoUpdate(BaseModel):
+    titulo: Optional[str] = None
+    descripcion: Optional[str] = None
+    fecha_hora: Optional[datetime] = None
+    duracion_min: Optional[int] = None
+    estado: Optional[bool] = None
+
+
 class Evento(EventoBase):
     id: int
+    estado: bool = True
 
     class Config:
         orm_mode = True

@@ -20,7 +20,9 @@ from routes import (
     assistant_routes,
     assistant_ai_routes,
     asistente_service_routes,
+    comentario_tarea_routes,
 )
+from notificaciones_cloud_api.router import router as whatsapp_cloud_router
 from websocket.chat import chat_websocket
 
 from utils.logger import setup_logger
@@ -93,6 +95,8 @@ app.include_router(notificacion_routes.router)
 app.include_router(assistant_routes.router)
 app.include_router(assistant_ai_routes.router)
 app.include_router(asistente_service_routes.router)
+app.include_router(comentario_tarea_routes.router)
+app.include_router(whatsapp_cloud_router)
 
 
 @app.get("/")

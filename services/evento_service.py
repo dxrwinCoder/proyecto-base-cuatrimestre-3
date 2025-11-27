@@ -66,6 +66,30 @@ async def obtener_evento(db: AsyncSession, evento_id: int):
     return result.scalar_one_or_none()
 
 
+async def actualizar_evento(db: AsyncSession, evento_id: int, updates: dict):
+    evento = await db.get(Evento, evento_id)
+    if not evento:
+        return None
+
+    for k, v in updates.items():
+        setattr(evento, k, v)
+
+    await db.flush()
+    await db.refresh(evento)
+    return evento
+
+
+async def eliminar_evento(db: AsyncSession, evento_id: int):
+    evento = await db.get(Evento, evento_id)
+    if not evento:
+        return None
+
+    evento.estado = False
+    await db.flush()
+    await db.refresh(evento)
+    return evento
+
+
 async def listar_tareas_de_evento(db: AsyncSession, evento_id: int):
     stmt = select(Tarea).where(Tarea.id_evento == evento_id, Tarea.estado == True)
     result = await db.execute(stmt)

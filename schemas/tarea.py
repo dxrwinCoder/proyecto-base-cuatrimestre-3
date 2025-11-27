@@ -28,6 +28,19 @@ class TareaUpdateEstado(BaseModel):
     estado_actual: str
 
 
+class TareaUpdate(BaseModel):
+    titulo: Optional[str] = None
+    descripcion: Optional[str] = None
+    categoria: Optional[str] = None
+    fecha_limite: Optional[date] = None
+    repeticion: Optional[str] = None
+    asignado_a: Optional[int] = None
+    ubicacion: Optional[str] = None
+    id_evento: Optional[int] = None
+    estado_actual: Optional[str] = None
+    estado: Optional[bool] = None
+
+
 class Tarea(TareaBase):
     id: int
     estado: bool

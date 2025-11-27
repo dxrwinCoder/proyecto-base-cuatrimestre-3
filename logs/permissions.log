@@ -2138,3 +2138,678 @@
 2025-11-22 12:37:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
 2025-11-22 12:37:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
 2025-11-22 12:37:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:17 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:18 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:18 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:02:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:03:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:03:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:12:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:15:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:18:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:18:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:18:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:21:53 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:21:55 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:25:06 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:25:07 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 14:25:07 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:25:08 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 14:25:08 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 14:28:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:28:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:28:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:28:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:28:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:28:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:28:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:30:42 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:30:44 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:30:53 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:30:54 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 14:30:54 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 14:30:54 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 14:31:08 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:31:09 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 14:31:09 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:31:09 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 14:31:09 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 14:32:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:12 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:16 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:16 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:32:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:33:46 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:33:50 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:34:47 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:35:42 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:35:42 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 14:35:43 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 14:35:43 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 14:35:46 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:35:50 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:35:51 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 14:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:37:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:40:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:44:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:47:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:47:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:47:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:47:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:47:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:47:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:47:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:48:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:48:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:48:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:48:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:48:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:48:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:48:15 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:50:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:50:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:50:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:50:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:50:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:50:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:50:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:51:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:51:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:51:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:51:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:51:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:51:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:51:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:52:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:52:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:52:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:52:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:52:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:52:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:52:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:54:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:56:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:56:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:56:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:56:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:56:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:56:57 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:56:57 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:57:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:57:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:57:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:57:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:57:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:57:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:57:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:59:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:59:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:59:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:59:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:59:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:59:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 14:59:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:00:45 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:01:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:02:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:02:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:02:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:02:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:02:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:02:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:02:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:50 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:23:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:25:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:25:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:25:35 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:25:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:27:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:27:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:27:32 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:27:48 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:27:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:27:53 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:27:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:30:47 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:31:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:32:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:35:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:35:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:35:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:35:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:35:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:35:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:35:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 15:42:18 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 15:42:20 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 15:42:20 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 15:42:20 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 15:42:20 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:16:59 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:17:02 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:17:02 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 16:17:03 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 16:17:03 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:23:15 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:23:16 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:23:19 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 16:23:19 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 16:23:19 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:23:19 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:28:54 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:28:56 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:28:56 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 16:28:56 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 16:28:56 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:29:22 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:29:27 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 16:29:27 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:29:27 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 16:29:27 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:29:43 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 16:29:43 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 16:29:43 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:29:43 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:30:33 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:30:39 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:30:51 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:30:51 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 16:30:51 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 16:30:51 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:30:52 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:38:07 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:39:01 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:39:02 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:39:04 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:39:06 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:40:15 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:40:20 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:40:59 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:41:04 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:41:04 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 16:41:04 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 16:41:04 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 16:41:08 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:41:09 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 16:41:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:41:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:41:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:41:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:41:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:41:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:41:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:41:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:53 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:42:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:43:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:43:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:43:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:43:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:44:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 16:58:17 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:00:08 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:00:37 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:01:09 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:01:25 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:01:30 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:01:31 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:04:52 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:05:01 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:05:05 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:07:05 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:07:54 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:08:08 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:08:10 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:09:02 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:09:54 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:09:55 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:09:56 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:13:48 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:17:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:17:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:17:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:17:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:17:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:17:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:17:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:17:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:20:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:25:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:26:21 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:26:27 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:26:30 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 17:26:30 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 17:26:30 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 17:26:30 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:26:47 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:26:48 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:27:00 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:27:00 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 17:27:00 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 17:27:00 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 17:27:00 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:27:51 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:27:55 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:31:40 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:31:43 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 17:31:43 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 17:31:43 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 17:31:44 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:32:47 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Eventos' para acción 'crear'
+2025-11-22 17:32:47 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Eventos'
+2025-11-22 17:32:47 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 17:33:22 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:33:25 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:34:18 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:34:20 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'leer'
+2025-11-22 17:34:20 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:34:20 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'leer' en módulo 'Hogares'
+2025-11-22 17:34:20 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 17:34:23 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-22 17:37:47 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Tareas' para acción 'crear'
+2025-11-22 17:37:47 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Tareas'
+2025-11-22 17:37:47 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-22 17:39:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-25 23:59:13 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-25 23:59:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-25 23:59:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-25 23:59:14 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:20 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:23 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:25 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 4 en módulo 'Tareas' para acción 'leer'
+2025-11-26 00:48:25 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 4 no tiene permisos para 'leer' en módulo 'Tareas'
+2025-11-26 00:48:25 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-26 00:48:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:26 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:48:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:49:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:49:01 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:49:01 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-26 00:49:01 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-26 00:49:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:49:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:49:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 00:49:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:41 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:42 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:44 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:45 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:45 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:45 - permissions - INFO - [permissions.py:73] - Verificando permisos para usuario 2 en módulo 'Hogares' para acción 'crear'
+2025-11-26 12:15:45 - permissions - WARNING - [permissions.py:82] - Acceso denegado: Usuario 2 no tiene permisos para 'crear' en módulo 'Hogares'
+2025-11-26 12:15:45 - permissions - ERROR - [permissions.py:104] - Error HTTP en verificación de permisos: 403 - No tienes permiso para esta acción
+2025-11-26 12:15:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:51 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:52 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:53 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:54 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:55 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:56 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:57 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:57 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:15:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:00 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:04 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 12:16:08 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-26 12:16:08 - permissions - INFO - [permissions.py:66] - Acceso de lectura concedido por regla fija a rol 2 para Tareas
+2025-11-26 12:16:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:19 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:30 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:58 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 22:57:59 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:36 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:36 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:37 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:01:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:02 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:03 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:05 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:06 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:07 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:04:11 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:29 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:31 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:33 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:38 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:43 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:44 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:05:46 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:24 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:25 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:06:34 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:08 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:09 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:10 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:27 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:28 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:39 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:40 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:48 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:48 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:48 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
+2025-11-26 23:07:49 - permissions - INFO - [permissions.py:50] - Acceso autorizado automático: Usuario 1 es rol 1 (admin).
